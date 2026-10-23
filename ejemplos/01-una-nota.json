@@ -1,0 +1,37 @@
+{
+  "titulo": "Una nota y sus resonancias",
+  "bpm": 100,
+  "compases": 2,
+  "semilla": 20261020,
+  "pistas": [
+    {
+      "nombre": "Una nota",
+      "parciales": [
+        [
+          1,
+          1,
+          1.5
+        ],
+        [
+          2.76,
+          0.35,
+          0.675
+        ],
+        [
+          5.4,
+          0.16,
+          0.3
+        ]
+      ],
+      "ataque": 0.003,
+      "notas": [
+        {
+          "pulso": 0,
+          "midi": 62,
+          "dur": 2,
+          "vel": 0.7
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "motor_propio": "mar-voces",
+  "config": {
+    "dur": 4,
+    "semilla": 20261020,
+    "argumentos": {
+      "voces": [
+        {
+          "t": 0.1,
+          "dur": 3,
+          "desde": 55,
+          "m": 57,
+          "dev0": 35,
+          "pan": -0.4
+        },
+        {
+          "t": 0.1,
+          "dur": 3,
+          "desde": 64,
+          "m": 62,
+          "dev0": -25,
+          "pan": 0.4
+        }
+      ]
+    }
+  }
+}

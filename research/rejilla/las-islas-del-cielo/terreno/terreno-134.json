@@ -1,0 +1,57 @@
+{
+ "semilla": "134",
+ "arq": "mesa",
+ "nombre": "MESA",
+ "G": 360,
+ "relieve": 630,
+ "anchoKm": 11.5,
+ "umbralMar": 0.0001,
+ "nivelMar": null,
+ "umbralMarFondo": 0.0001,
+ "relieveFondo": 630,
+ "historia": [
+  "LEVANTAMIENTO",
+  "BARRANCA",
+  "EROSIÓN",
+  "ABANICO ALUVIAL"
+ ],
+ "especiales": [],
+ "nombres": [
+  {
+   "nombre": "EL TESO CHATO",
+   "clase": "cumbre",
+   "u": 0.29526462395543174,
+   "v": 0.8690807799442897
+  },
+  {
+   "nombre": "PU'UK",
+   "clase": "cumbre",
+   "u": 0.4596100278551532,
+   "v": 0.8913649025069638
+  },
+  {
+   "nombre": "EL GOLLIZO",
+   "clase": "paso",
+   "u": 0.45403899721448465,
+   "v": 0.8579387186629527
+  },
+  {
+   "nombre": "EL RÍO FRÍO",
+   "clase": "rio",
+   "u": 0.6155988857938719,
+   "v": 0.5809540389972145
+  },
+  {
+   "nombre": "EL RÍO BLANCO",
+   "clase": "rio",
+   "u": 0.2031685236768802,
+   "v": 0.5490076601671309
+  },
+  {
+   "nombre": "EL CONO DE DEYECCIÓN DEL PONIENTE",
+   "clase": "especial",
+   "u": -0.07623733723022014,
+   "v": 0.296150522765988
+  }
+ ]
+}

@@ -1,0 +1,2317 @@
+{
+ "seed": "yoshi-es-un-vector-9-coro-de-gritos",
+ "bpm": 140,
+ "t0": 0.35,
+ "compases": 40,
+ "len": 73.0,
+ "secciones": [
+  [
+   "intro",
+   0,
+   4
+  ],
+  [
+   "verso",
+   4,
+   12
+  ],
+  [
+   "pre",
+   12,
+   16
+  ],
+  [
+   "drop",
+   16,
+   24
+  ],
+  [
+   "break",
+   24,
+   28
+  ],
+  [
+   "drop2",
+   28,
+   36
+  ],
+  [
+   "outro",
+   36,
+   40
+  ]
+ ],
+ "acordes": [
+  "G",
+  "A",
+  "F#m",
+  "Bm",
+  "G",
+  "A",
+  "F#m",
+  "Bm",
+  "G",
+  "A",
+  "D",
+  "D",
+  "Em",
+  "F#m",
+  "G",
+  "A",
+  "G",
+  "A",
+  "F#m",
+  "Bm",
+  "G",
+  "A",
+  "F#m",
+  "Bm",
+  "Em",
+  "F#m",
+  "G",
+  "A",
+  "G",
+  "A",
+  "F#m",
+  "Bm",
+  "G",
+  "A",
+  "F#m",
+  "Bm",
+  "G",
+  "A",
+  "D",
+  "D"
+ ],
+ "voicing": {
+  "G": [
+   62,
+   67,
+   71,
+   74
+  ],
+  "A": [
+   64,
+   69,
+   73,
+   76
+  ],
+  "F#m": [
+   61,
+   66,
+   69,
+   73
+  ],
+  "Bm": [
+   62,
+   66,
+   71,
+   74
+  ],
+  "Em": [
+   64,
+   67,
+   71,
+   76
+  ],
+  "D": [
+   62,
+   66,
+   69,
+   74
+  ]
+ },
+ "elenco": {
+  "kirby": [
+   "14_675",
+   "14_667",
+   "14_653",
+   "14_661",
+   "14_677",
+   "14_678",
+   "14_662",
+   "14_663",
+   "14_672",
+   "14_676",
+   "14_684",
+   "14_655"
+  ],
+  "pikachu": [
+   "24_1006",
+   "24_1007",
+   "24_1014",
+   "24_1002",
+   "24_1008",
+   "24_1001",
+   "24_1000",
+   "24_1015"
+  ],
+  "jigglypuff": [
+   "25_1041",
+   "25_1033",
+   "25_1034",
+   "25_1039",
+   "25_1042",
+   "25_1036",
+   "25_1035",
+   "25_1038",
+   "25_1040",
+   "25_1043"
+  ],
+  "yoshi": [
+   "28_1145",
+   "28_1158",
+   "28_1150",
+   "28_1140",
+   "28_1137",
+   "28_1156",
+   "28_1155",
+   "28_1148",
+   "28_1152"
+  ],
+  "popo": [
+   "13_623",
+   "13_628",
+   "13_612",
+   "13_626",
+   "13_624",
+   "13_625",
+   "13_620",
+   "13_630",
+   "13_590",
+   "13_614",
+   "13_608",
+   "13_622",
+   "13_609",
+   "13_618",
+   "13_602",
+   "13_606",
+   "13_631"
+  ],
+  "peach": [
+   "22_947",
+   "22_937",
+   "22_948",
+   "22_936",
+   "22_938",
+   "22_940",
+   "22_931",
+   "22_939",
+   "22_945",
+   "22_943",
+   "22_932"
+  ],
+  "ness": [
+   "21_904",
+   "21_913",
+   "21_905",
+   "21_907",
+   "21_897",
+   "21_910"
+  ],
+  "fox": [
+   "11_529",
+   "11_562",
+   "11_530",
+   "11_527"
+  ]
+ },
+ "eventos": [
+  {
+   "t": 0.35,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 62,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 0.35,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 67,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 0.35,
+   "dur": 1.749,
+   "quien": "jigglypuff",
+   "nota": 71,
+   "tipo": "coro",
+   "voz": "25_1041"
+  },
+  {
+   "t": 0.35,
+   "dur": 1.749,
+   "quien": "kirby",
+   "nota": 74,
+   "tipo": "coro",
+   "voz": "14_675"
+  },
+  {
+   "t": 2.064,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 64,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 2.064,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 2.064,
+   "dur": 1.749,
+   "quien": "jigglypuff",
+   "nota": 73,
+   "tipo": "coro",
+   "voz": "25_1041"
+  },
+  {
+   "t": 2.064,
+   "dur": 1.749,
+   "quien": "kirby",
+   "nota": 76,
+   "tipo": "coro",
+   "voz": "14_675"
+  },
+  {
+   "t": 3.779,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 61,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 3.779,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 66,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 3.779,
+   "dur": 1.749,
+   "quien": "jigglypuff",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "25_1041"
+  },
+  {
+   "t": 3.779,
+   "dur": 1.749,
+   "quien": "kirby",
+   "nota": 73,
+   "tipo": "coro",
+   "voz": "14_675"
+  },
+  {
+   "t": 5.493,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 62,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 5.493,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 66,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 5.493,
+   "dur": 1.749,
+   "quien": "jigglypuff",
+   "nota": 71,
+   "tipo": "coro",
+   "voz": "25_1041"
+  },
+  {
+   "t": 5.493,
+   "dur": 1.749,
+   "quien": "kirby",
+   "nota": 74,
+   "tipo": "coro",
+   "voz": "14_675"
+  },
+  {
+   "t": 7.207,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 62,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 7.207,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 67,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 7.207,
+   "dur": 1.749,
+   "quien": "popo",
+   "nota": 71,
+   "tipo": "coro",
+   "voz": "13_623"
+  },
+  {
+   "t": 7.207,
+   "dur": 1.749,
+   "quien": "ness",
+   "nota": 74,
+   "tipo": "coro",
+   "voz": "21_904"
+  },
+  {
+   "t": 8.921,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 64,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 8.921,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 8.921,
+   "dur": 1.749,
+   "quien": "popo",
+   "nota": 73,
+   "tipo": "coro",
+   "voz": "13_623"
+  },
+  {
+   "t": 8.921,
+   "dur": 1.749,
+   "quien": "ness",
+   "nota": 76,
+   "tipo": "coro",
+   "voz": "21_904"
+  },
+  {
+   "t": 10.207,
+   "dur": 0.193,
+   "quien": "kirby",
+   "nota": 74,
+   "tipo": "chop",
+   "voz": "14_672"
+  },
+  {
+   "t": 10.421,
+   "dur": 0.193,
+   "quien": "pikachu",
+   "nota": 73,
+   "tipo": "chop",
+   "voz": "24_1006"
+  },
+  {
+   "t": 10.636,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 61,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 10.636,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 66,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 10.636,
+   "dur": 1.749,
+   "quien": "popo",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "13_623"
+  },
+  {
+   "t": 10.636,
+   "dur": 1.749,
+   "quien": "ness",
+   "nota": 73,
+   "tipo": "coro",
+   "voz": "21_904"
+  },
+  {
+   "t": 12.35,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 62,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 12.35,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 66,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 12.35,
+   "dur": 1.749,
+   "quien": "popo",
+   "nota": 71,
+   "tipo": "coro",
+   "voz": "13_623"
+  },
+  {
+   "t": 12.35,
+   "dur": 1.749,
+   "quien": "ness",
+   "nota": 74,
+   "tipo": "coro",
+   "voz": "21_904"
+  },
+  {
+   "t": 13.636,
+   "dur": 0.193,
+   "quien": "jigglypuff",
+   "nota": 71,
+   "tipo": "chop",
+   "voz": "25_1041"
+  },
+  {
+   "t": 13.85,
+   "dur": 0.193,
+   "quien": "yoshi",
+   "nota": 74,
+   "tipo": "chop",
+   "voz": "28_1145"
+  },
+  {
+   "t": 14.064,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 62,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 14.064,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 67,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 14.064,
+   "dur": 1.749,
+   "quien": "popo",
+   "nota": 71,
+   "tipo": "coro",
+   "voz": "13_623"
+  },
+  {
+   "t": 14.064,
+   "dur": 1.749,
+   "quien": "ness",
+   "nota": 74,
+   "tipo": "coro",
+   "voz": "21_904"
+  },
+  {
+   "t": 15.779,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 64,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 15.779,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 15.779,
+   "dur": 1.749,
+   "quien": "popo",
+   "nota": 73,
+   "tipo": "coro",
+   "voz": "13_623"
+  },
+  {
+   "t": 15.779,
+   "dur": 1.749,
+   "quien": "ness",
+   "nota": 76,
+   "tipo": "coro",
+   "voz": "21_904"
+  },
+  {
+   "t": 15.779,
+   "dur": 0.193,
+   "quien": "kirby",
+   "nota": 74,
+   "tipo": "chop",
+   "voz": "14_672"
+  },
+  {
+   "t": 15.993,
+   "dur": 0.193,
+   "quien": "kirby",
+   "nota": 71,
+   "tipo": "chop",
+   "voz": "14_667"
+  },
+  {
+   "t": 16.207,
+   "dur": 0.193,
+   "quien": "pikachu",
+   "nota": 76,
+   "tipo": "chop",
+   "voz": "24_1015"
+  },
+  {
+   "t": 16.421,
+   "dur": 0.193,
+   "quien": "pikachu",
+   "nota": 73,
+   "tipo": "chop",
+   "voz": "24_1006"
+  },
+  {
+   "t": 16.636,
+   "dur": 0.193,
+   "quien": "jigglypuff",
+   "nota": 69,
+   "tipo": "chop",
+   "voz": "25_1043"
+  },
+  {
+   "t": 16.85,
+   "dur": 0.193,
+   "quien": "jigglypuff",
+   "nota": 69,
+   "tipo": "chop",
+   "voz": "25_1043"
+  },
+  {
+   "t": 17.064,
+   "dur": 0.193,
+   "quien": "jigglypuff",
+   "nota": 69,
+   "tipo": "chop",
+   "voz": "25_1043"
+  },
+  {
+   "t": 17.493,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 62,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 17.493,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 66,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 17.493,
+   "dur": 1.749,
+   "quien": "popo",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "13_623"
+  },
+  {
+   "t": 17.493,
+   "dur": 1.749,
+   "quien": "ness",
+   "nota": 74,
+   "tipo": "coro",
+   "voz": "21_904"
+  },
+  {
+   "t": 19.207,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 62,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 19.207,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 66,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 19.207,
+   "dur": 1.749,
+   "quien": "popo",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "13_623"
+  },
+  {
+   "t": 19.207,
+   "dur": 1.749,
+   "quien": "ness",
+   "nota": 74,
+   "tipo": "coro",
+   "voz": "21_904"
+  },
+  {
+   "t": 20.064,
+   "dur": 0.193,
+   "quien": "popo",
+   "nota": 74,
+   "tipo": "chop",
+   "voz": "13_623"
+  },
+  {
+   "t": 20.279,
+   "dur": 0.193,
+   "quien": "ness",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "21_904"
+  },
+  {
+   "t": 20.493,
+   "dur": 0.193,
+   "quien": "peach",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "22_939"
+  },
+  {
+   "t": 20.921,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 64,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 20.921,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 67,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 20.921,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 71,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 20.921,
+   "dur": 1.749,
+   "quien": "pikachu",
+   "nota": 76,
+   "tipo": "coro",
+   "voz": "24_1006"
+  },
+  {
+   "t": 22.636,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 61,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 22.636,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 66,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 22.636,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 22.636,
+   "dur": 1.749,
+   "quien": "pikachu",
+   "nota": 73,
+   "tipo": "coro",
+   "voz": "24_1006"
+  },
+  {
+   "t": 24.35,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 62,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 24.35,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 67,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 24.35,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 71,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 24.35,
+   "dur": 1.749,
+   "quien": "pikachu",
+   "nota": 74,
+   "tipo": "coro",
+   "voz": "24_1006"
+  },
+  {
+   "t": 26.064,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 64,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 26.064,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 26.064,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 73,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 26.064,
+   "dur": 1.749,
+   "quien": "pikachu",
+   "nota": 76,
+   "tipo": "coro",
+   "voz": "24_1006"
+  },
+  {
+   "t": 27.779,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 62,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 27.779,
+   "dur": 1.749,
+   "quien": "jigglypuff",
+   "nota": 67,
+   "tipo": "coro",
+   "voz": "25_1041"
+  },
+  {
+   "t": 27.779,
+   "dur": 1.749,
+   "quien": "kirby",
+   "nota": 71,
+   "tipo": "coro",
+   "voz": "14_675"
+  },
+  {
+   "t": 27.779,
+   "dur": 1.749,
+   "quien": "pikachu",
+   "nota": 74,
+   "tipo": "coro",
+   "voz": "24_1006"
+  },
+  {
+   "t": 27.779,
+   "dur": 0.204,
+   "quien": "popo",
+   "nota": 74,
+   "tipo": "chop",
+   "voz": "13_623"
+  },
+  {
+   "t": 27.993,
+   "dur": 0.204,
+   "quien": "jigglypuff",
+   "nota": 76,
+   "tipo": "chop",
+   "voz": "25_1035"
+  },
+  {
+   "t": 28.207,
+   "dur": 0.407,
+   "quien": "kirby",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "14_655"
+  },
+  {
+   "t": 28.636,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "22_939"
+  },
+  {
+   "t": 28.85,
+   "dur": 0.204,
+   "quien": "pikachu",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "24_1008"
+  },
+  {
+   "t": 29.064,
+   "dur": 0.407,
+   "quien": "ness",
+   "nota": 76,
+   "tipo": "chop",
+   "voz": "21_913"
+  },
+  {
+   "t": 29.493,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 64,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 29.493,
+   "dur": 1.749,
+   "quien": "jigglypuff",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "25_1041"
+  },
+  {
+   "t": 29.493,
+   "dur": 1.749,
+   "quien": "kirby",
+   "nota": 73,
+   "tipo": "coro",
+   "voz": "14_675"
+  },
+  {
+   "t": 29.493,
+   "dur": 1.749,
+   "quien": "pikachu",
+   "nota": 76,
+   "tipo": "coro",
+   "voz": "24_1006"
+  },
+  {
+   "t": 29.493,
+   "dur": 0.204,
+   "quien": "jigglypuff",
+   "nota": 76,
+   "tipo": "chop",
+   "voz": "25_1035"
+  },
+  {
+   "t": 29.707,
+   "dur": 0.204,
+   "quien": "popo",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "13_626"
+  },
+  {
+   "t": 29.921,
+   "dur": 0.407,
+   "quien": "peach",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "22_939"
+  },
+  {
+   "t": 30.35,
+   "dur": 0.204,
+   "quien": "jigglypuff",
+   "nota": 85,
+   "tipo": "chop",
+   "voz": "25_1040"
+  },
+  {
+   "t": 30.564,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 83,
+   "tipo": "chop",
+   "voz": "22_940"
+  },
+  {
+   "t": 30.779,
+   "dur": 0.407,
+   "quien": "jigglypuff",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "25_1033"
+  },
+  {
+   "t": 31.207,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 61,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 31.207,
+   "dur": 1.749,
+   "quien": "jigglypuff",
+   "nota": 66,
+   "tipo": "coro",
+   "voz": "25_1041"
+  },
+  {
+   "t": 31.207,
+   "dur": 1.749,
+   "quien": "kirby",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "14_675"
+  },
+  {
+   "t": 31.207,
+   "dur": 1.749,
+   "quien": "pikachu",
+   "nota": 73,
+   "tipo": "coro",
+   "voz": "24_1006"
+  },
+  {
+   "t": 31.207,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "22_939"
+  },
+  {
+   "t": 31.421,
+   "dur": 0.204,
+   "quien": "kirby",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "14_655"
+  },
+  {
+   "t": 31.636,
+   "dur": 0.407,
+   "quien": "peach",
+   "nota": 85,
+   "tipo": "chop",
+   "voz": "22_943"
+  },
+  {
+   "t": 32.064,
+   "dur": 0.204,
+   "quien": "jigglypuff",
+   "nota": 83,
+   "tipo": "chop",
+   "voz": "25_1033"
+  },
+  {
+   "t": 32.279,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "22_939"
+  },
+  {
+   "t": 32.493,
+   "dur": 0.407,
+   "quien": "popo",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "13_626"
+  },
+  {
+   "t": 32.921,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 62,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 32.921,
+   "dur": 1.749,
+   "quien": "jigglypuff",
+   "nota": 66,
+   "tipo": "coro",
+   "voz": "25_1041"
+  },
+  {
+   "t": 32.921,
+   "dur": 1.749,
+   "quien": "kirby",
+   "nota": 71,
+   "tipo": "coro",
+   "voz": "14_675"
+  },
+  {
+   "t": 32.921,
+   "dur": 1.749,
+   "quien": "pikachu",
+   "nota": 74,
+   "tipo": "coro",
+   "voz": "24_1006"
+  },
+  {
+   "t": 32.921,
+   "dur": 0.204,
+   "quien": "pikachu",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "24_1008"
+  },
+  {
+   "t": 33.136,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "22_939"
+  },
+  {
+   "t": 33.35,
+   "dur": 0.407,
+   "quien": "jigglypuff",
+   "nota": 83,
+   "tipo": "chop",
+   "voz": "25_1033"
+  },
+  {
+   "t": 33.779,
+   "dur": 0.611,
+   "quien": "peach",
+   "nota": 86,
+   "tipo": "chop",
+   "voz": "22_943"
+  },
+  {
+   "t": 34.636,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 62,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 34.636,
+   "dur": 1.749,
+   "quien": "jigglypuff",
+   "nota": 67,
+   "tipo": "coro",
+   "voz": "25_1041"
+  },
+  {
+   "t": 34.636,
+   "dur": 1.749,
+   "quien": "kirby",
+   "nota": 71,
+   "tipo": "coro",
+   "voz": "14_675"
+  },
+  {
+   "t": 34.636,
+   "dur": 1.749,
+   "quien": "pikachu",
+   "nota": 74,
+   "tipo": "coro",
+   "voz": "24_1006"
+  },
+  {
+   "t": 34.636,
+   "dur": 0.204,
+   "quien": "pikachu",
+   "nota": 74,
+   "tipo": "chop",
+   "voz": "24_1006"
+  },
+  {
+   "t": 34.85,
+   "dur": 0.204,
+   "quien": "kirby",
+   "nota": 76,
+   "tipo": "chop",
+   "voz": "14_675"
+  },
+  {
+   "t": 35.064,
+   "dur": 0.407,
+   "quien": "pikachu",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "24_1008"
+  },
+  {
+   "t": 35.493,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "22_939"
+  },
+  {
+   "t": 35.707,
+   "dur": 0.204,
+   "quien": "kirby",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "14_655"
+  },
+  {
+   "t": 35.921,
+   "dur": 0.407,
+   "quien": "jigglypuff",
+   "nota": 76,
+   "tipo": "chop",
+   "voz": "25_1035"
+  },
+  {
+   "t": 36.35,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 64,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 36.35,
+   "dur": 1.749,
+   "quien": "jigglypuff",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "25_1041"
+  },
+  {
+   "t": 36.35,
+   "dur": 1.749,
+   "quien": "kirby",
+   "nota": 73,
+   "tipo": "coro",
+   "voz": "14_675"
+  },
+  {
+   "t": 36.35,
+   "dur": 1.749,
+   "quien": "pikachu",
+   "nota": 76,
+   "tipo": "coro",
+   "voz": "24_1006"
+  },
+  {
+   "t": 36.35,
+   "dur": 0.204,
+   "quien": "popo",
+   "nota": 76,
+   "tipo": "chop",
+   "voz": "13_614"
+  },
+  {
+   "t": 36.564,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "22_937"
+  },
+  {
+   "t": 36.779,
+   "dur": 0.407,
+   "quien": "jigglypuff",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "25_1033"
+  },
+  {
+   "t": 37.207,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 85,
+   "tipo": "chop",
+   "voz": "22_943"
+  },
+  {
+   "t": 37.421,
+   "dur": 0.204,
+   "quien": "jigglypuff",
+   "nota": 83,
+   "tipo": "chop",
+   "voz": "25_1033"
+  },
+  {
+   "t": 37.636,
+   "dur": 0.407,
+   "quien": "peach",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "22_939"
+  },
+  {
+   "t": 38.064,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 61,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 38.064,
+   "dur": 1.749,
+   "quien": "jigglypuff",
+   "nota": 66,
+   "tipo": "coro",
+   "voz": "25_1041"
+  },
+  {
+   "t": 38.064,
+   "dur": 1.749,
+   "quien": "kirby",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "14_675"
+  },
+  {
+   "t": 38.064,
+   "dur": 1.749,
+   "quien": "pikachu",
+   "nota": 73,
+   "tipo": "coro",
+   "voz": "24_1006"
+  },
+  {
+   "t": 38.064,
+   "dur": 0.204,
+   "quien": "jigglypuff",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "25_1033"
+  },
+  {
+   "t": 38.279,
+   "dur": 0.204,
+   "quien": "popo",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "13_626"
+  },
+  {
+   "t": 38.493,
+   "dur": 0.407,
+   "quien": "peach",
+   "nota": 85,
+   "tipo": "chop",
+   "voz": "22_943"
+  },
+  {
+   "t": 38.921,
+   "dur": 0.204,
+   "quien": "jigglypuff",
+   "nota": 83,
+   "tipo": "chop",
+   "voz": "25_1033"
+  },
+  {
+   "t": 39.136,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "22_939"
+  },
+  {
+   "t": 39.35,
+   "dur": 0.407,
+   "quien": "kirby",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "14_655"
+  },
+  {
+   "t": 39.779,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 62,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 39.779,
+   "dur": 1.749,
+   "quien": "jigglypuff",
+   "nota": 66,
+   "tipo": "coro",
+   "voz": "25_1041"
+  },
+  {
+   "t": 39.779,
+   "dur": 1.749,
+   "quien": "kirby",
+   "nota": 71,
+   "tipo": "coro",
+   "voz": "14_675"
+  },
+  {
+   "t": 39.779,
+   "dur": 1.749,
+   "quien": "pikachu",
+   "nota": 74,
+   "tipo": "coro",
+   "voz": "24_1006"
+  },
+  {
+   "t": 39.779,
+   "dur": 0.204,
+   "quien": "popo",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "13_626"
+  },
+  {
+   "t": 39.993,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "22_939"
+  },
+  {
+   "t": 40.207,
+   "dur": 0.407,
+   "quien": "jigglypuff",
+   "nota": 83,
+   "tipo": "chop",
+   "voz": "25_1033"
+  },
+  {
+   "t": 40.636,
+   "dur": 0.611,
+   "quien": "popo",
+   "nota": 86,
+   "tipo": "chop",
+   "voz": "13_631"
+  },
+  {
+   "t": 41.493,
+   "dur": 1.764,
+   "quien": "popo",
+   "nota": 64,
+   "tipo": "solo",
+   "voz": "13_628"
+  },
+  {
+   "t": 41.921,
+   "dur": 1.336,
+   "quien": "ness",
+   "nota": 67,
+   "tipo": "solo",
+   "voz": "21_905"
+  },
+  {
+   "t": 42.35,
+   "dur": 0.907,
+   "quien": "peach",
+   "nota": 71,
+   "tipo": "solo",
+   "voz": "22_947"
+  },
+  {
+   "t": 42.779,
+   "dur": 0.479,
+   "quien": "yoshi",
+   "nota": 88,
+   "tipo": "solo",
+   "voz": "28_1148"
+  },
+  {
+   "t": 43.207,
+   "dur": 1.764,
+   "quien": "kirby",
+   "nota": 61,
+   "tipo": "solo",
+   "voz": "14_676"
+  },
+  {
+   "t": 43.636,
+   "dur": 1.336,
+   "quien": "jigglypuff",
+   "nota": 66,
+   "tipo": "solo",
+   "voz": "25_1038"
+  },
+  {
+   "t": 44.064,
+   "dur": 0.907,
+   "quien": "pikachu",
+   "nota": 69,
+   "tipo": "solo",
+   "voz": "24_1002"
+  },
+  {
+   "t": 44.493,
+   "dur": 0.479,
+   "quien": "fox",
+   "nota": 85,
+   "tipo": "solo",
+   "voz": "11_562"
+  },
+  {
+   "t": 44.921,
+   "dur": 1.764,
+   "quien": "yoshi",
+   "nota": 62,
+   "tipo": "solo",
+   "voz": "28_1150"
+  },
+  {
+   "t": 45.35,
+   "dur": 1.336,
+   "quien": "peach",
+   "nota": 67,
+   "tipo": "solo",
+   "voz": "22_947"
+  },
+  {
+   "t": 45.779,
+   "dur": 0.907,
+   "quien": "ness",
+   "nota": 71,
+   "tipo": "solo",
+   "voz": "21_910"
+  },
+  {
+   "t": 46.207,
+   "dur": 0.479,
+   "quien": "popo",
+   "nota": 86,
+   "tipo": "solo",
+   "voz": "13_631"
+  },
+  {
+   "t": 46.636,
+   "dur": 1.764,
+   "quien": "fox",
+   "nota": 64,
+   "tipo": "solo",
+   "voz": "11_529"
+  },
+  {
+   "t": 47.064,
+   "dur": 1.336,
+   "quien": "pikachu",
+   "nota": 69,
+   "tipo": "solo",
+   "voz": "24_1002"
+  },
+  {
+   "t": 47.493,
+   "dur": 0.907,
+   "quien": "jigglypuff",
+   "nota": 73,
+   "tipo": "solo",
+   "voz": "25_1039"
+  },
+  {
+   "t": 47.921,
+   "dur": 0.479,
+   "quien": "kirby",
+   "nota": 88,
+   "tipo": "solo",
+   "voz": "14_655"
+  },
+  {
+   "t": 48.35,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 62,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 48.35,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 67,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 48.35,
+   "dur": 1.749,
+   "quien": "popo",
+   "nota": 71,
+   "tipo": "coro",
+   "voz": "13_623"
+  },
+  {
+   "t": 48.35,
+   "dur": 1.749,
+   "quien": "ness",
+   "nota": 74,
+   "tipo": "coro",
+   "voz": "21_904"
+  },
+  {
+   "t": 48.35,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 74,
+   "tipo": "chop",
+   "voz": "22_932"
+  },
+  {
+   "t": 48.564,
+   "dur": 0.204,
+   "quien": "popo",
+   "nota": 76,
+   "tipo": "chop",
+   "voz": "13_614"
+  },
+  {
+   "t": 48.779,
+   "dur": 0.407,
+   "quien": "pikachu",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "24_1008"
+  },
+  {
+   "t": 49.207,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "22_939"
+  },
+  {
+   "t": 49.421,
+   "dur": 0.204,
+   "quien": "kirby",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "14_655"
+  },
+  {
+   "t": 49.636,
+   "dur": 0.407,
+   "quien": "jigglypuff",
+   "nota": 76,
+   "tipo": "chop",
+   "voz": "25_1035"
+  },
+  {
+   "t": 50.064,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 64,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 50.064,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 50.064,
+   "dur": 1.749,
+   "quien": "popo",
+   "nota": 73,
+   "tipo": "coro",
+   "voz": "13_623"
+  },
+  {
+   "t": 50.064,
+   "dur": 1.749,
+   "quien": "ness",
+   "nota": 76,
+   "tipo": "coro",
+   "voz": "21_904"
+  },
+  {
+   "t": 50.064,
+   "dur": 0.204,
+   "quien": "popo",
+   "nota": 76,
+   "tipo": "chop",
+   "voz": "13_614"
+  },
+  {
+   "t": 50.279,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "22_937"
+  },
+  {
+   "t": 50.493,
+   "dur": 0.407,
+   "quien": "jigglypuff",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "25_1033"
+  },
+  {
+   "t": 50.921,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 85,
+   "tipo": "chop",
+   "voz": "22_943"
+  },
+  {
+   "t": 51.136,
+   "dur": 0.204,
+   "quien": "jigglypuff",
+   "nota": 83,
+   "tipo": "chop",
+   "voz": "25_1033"
+  },
+  {
+   "t": 51.35,
+   "dur": 0.407,
+   "quien": "peach",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "22_939"
+  },
+  {
+   "t": 51.779,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 61,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 51.779,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 66,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 51.779,
+   "dur": 1.749,
+   "quien": "popo",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "13_623"
+  },
+  {
+   "t": 51.779,
+   "dur": 1.749,
+   "quien": "ness",
+   "nota": 73,
+   "tipo": "coro",
+   "voz": "21_904"
+  },
+  {
+   "t": 51.779,
+   "dur": 0.204,
+   "quien": "jigglypuff",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "25_1033"
+  },
+  {
+   "t": 51.993,
+   "dur": 0.204,
+   "quien": "pikachu",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "24_1008"
+  },
+  {
+   "t": 52.207,
+   "dur": 0.407,
+   "quien": "peach",
+   "nota": 85,
+   "tipo": "chop",
+   "voz": "22_943"
+  },
+  {
+   "t": 52.636,
+   "dur": 0.204,
+   "quien": "jigglypuff",
+   "nota": 83,
+   "tipo": "chop",
+   "voz": "25_1033"
+  },
+  {
+   "t": 52.85,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "22_939"
+  },
+  {
+   "t": 53.064,
+   "dur": 0.407,
+   "quien": "kirby",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "14_655"
+  },
+  {
+   "t": 53.493,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 62,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 53.493,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 66,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 53.493,
+   "dur": 1.749,
+   "quien": "popo",
+   "nota": 71,
+   "tipo": "coro",
+   "voz": "13_623"
+  },
+  {
+   "t": 53.493,
+   "dur": 1.749,
+   "quien": "ness",
+   "nota": 74,
+   "tipo": "coro",
+   "voz": "21_904"
+  },
+  {
+   "t": 53.493,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "22_937"
+  },
+  {
+   "t": 53.707,
+   "dur": 0.204,
+   "quien": "jigglypuff",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "25_1033"
+  },
+  {
+   "t": 53.921,
+   "dur": 0.407,
+   "quien": "peach",
+   "nota": 83,
+   "tipo": "chop",
+   "voz": "22_940"
+  },
+  {
+   "t": 54.35,
+   "dur": 0.611,
+   "quien": "jigglypuff",
+   "nota": 86,
+   "tipo": "chop",
+   "voz": "25_1040"
+  },
+  {
+   "t": 55.207,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 62,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 55.207,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 67,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 55.207,
+   "dur": 1.749,
+   "quien": "popo",
+   "nota": 71,
+   "tipo": "coro",
+   "voz": "13_623"
+  },
+  {
+   "t": 55.207,
+   "dur": 1.749,
+   "quien": "ness",
+   "nota": 74,
+   "tipo": "coro",
+   "voz": "21_904"
+  },
+  {
+   "t": 55.207,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 74,
+   "tipo": "chop",
+   "voz": "22_932"
+  },
+  {
+   "t": 55.421,
+   "dur": 0.204,
+   "quien": "ness",
+   "nota": 76,
+   "tipo": "chop",
+   "voz": "21_913"
+  },
+  {
+   "t": 55.636,
+   "dur": 0.407,
+   "quien": "peach",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "22_937"
+  },
+  {
+   "t": 56.064,
+   "dur": 0.204,
+   "quien": "jigglypuff",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "25_1033"
+  },
+  {
+   "t": 56.279,
+   "dur": 0.204,
+   "quien": "kirby",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "14_655"
+  },
+  {
+   "t": 56.493,
+   "dur": 0.407,
+   "quien": "jigglypuff",
+   "nota": 76,
+   "tipo": "chop",
+   "voz": "25_1035"
+  },
+  {
+   "t": 56.921,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 64,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 56.921,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 56.921,
+   "dur": 1.749,
+   "quien": "popo",
+   "nota": 73,
+   "tipo": "coro",
+   "voz": "13_623"
+  },
+  {
+   "t": 56.921,
+   "dur": 1.749,
+   "quien": "ness",
+   "nota": 76,
+   "tipo": "coro",
+   "voz": "21_904"
+  },
+  {
+   "t": 56.921,
+   "dur": 0.204,
+   "quien": "kirby",
+   "nota": 76,
+   "tipo": "chop",
+   "voz": "14_675"
+  },
+  {
+   "t": 57.136,
+   "dur": 0.204,
+   "quien": "popo",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "13_626"
+  },
+  {
+   "t": 57.35,
+   "dur": 0.407,
+   "quien": "peach",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "22_939"
+  },
+  {
+   "t": 57.779,
+   "dur": 0.204,
+   "quien": "jigglypuff",
+   "nota": 85,
+   "tipo": "chop",
+   "voz": "25_1040"
+  },
+  {
+   "t": 57.993,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 83,
+   "tipo": "chop",
+   "voz": "22_940"
+  },
+  {
+   "t": 58.207,
+   "dur": 0.407,
+   "quien": "jigglypuff",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "25_1033"
+  },
+  {
+   "t": 58.636,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 61,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 58.636,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 66,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 58.636,
+   "dur": 1.749,
+   "quien": "popo",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "13_623"
+  },
+  {
+   "t": 58.636,
+   "dur": 1.749,
+   "quien": "ness",
+   "nota": 73,
+   "tipo": "coro",
+   "voz": "21_904"
+  },
+  {
+   "t": 58.636,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "22_939"
+  },
+  {
+   "t": 58.85,
+   "dur": 0.204,
+   "quien": "popo",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "13_626"
+  },
+  {
+   "t": 59.064,
+   "dur": 0.407,
+   "quien": "peach",
+   "nota": 85,
+   "tipo": "chop",
+   "voz": "22_943"
+  },
+  {
+   "t": 59.493,
+   "dur": 0.204,
+   "quien": "jigglypuff",
+   "nota": 83,
+   "tipo": "chop",
+   "voz": "25_1033"
+  },
+  {
+   "t": 59.707,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "22_939"
+  },
+  {
+   "t": 59.921,
+   "dur": 0.407,
+   "quien": "pikachu",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "24_1008"
+  },
+  {
+   "t": 60.35,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 62,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 60.35,
+   "dur": 1.749,
+   "quien": "peach",
+   "nota": 66,
+   "tipo": "coro",
+   "voz": "22_947"
+  },
+  {
+   "t": 60.35,
+   "dur": 1.749,
+   "quien": "popo",
+   "nota": 71,
+   "tipo": "coro",
+   "voz": "13_623"
+  },
+  {
+   "t": 60.35,
+   "dur": 1.749,
+   "quien": "ness",
+   "nota": 74,
+   "tipo": "coro",
+   "voz": "21_904"
+  },
+  {
+   "t": 60.35,
+   "dur": 0.204,
+   "quien": "popo",
+   "nota": 78,
+   "tipo": "chop",
+   "voz": "13_626"
+  },
+  {
+   "t": 60.564,
+   "dur": 0.204,
+   "quien": "peach",
+   "nota": 81,
+   "tipo": "chop",
+   "voz": "22_939"
+  },
+  {
+   "t": 60.779,
+   "dur": 0.407,
+   "quien": "jigglypuff",
+   "nota": 83,
+   "tipo": "chop",
+   "voz": "25_1033"
+  },
+  {
+   "t": 61.207,
+   "dur": 0.611,
+   "quien": "popo",
+   "nota": 86,
+   "tipo": "chop",
+   "voz": "13_631"
+  },
+  {
+   "t": 62.064,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 62,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 62.064,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 67,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 62.064,
+   "dur": 1.749,
+   "quien": "jigglypuff",
+   "nota": 71,
+   "tipo": "coro",
+   "voz": "25_1041"
+  },
+  {
+   "t": 62.064,
+   "dur": 1.749,
+   "quien": "kirby",
+   "nota": 74,
+   "tipo": "coro",
+   "voz": "14_675"
+  },
+  {
+   "t": 63.779,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 64,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 63.779,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 63.779,
+   "dur": 1.749,
+   "quien": "jigglypuff",
+   "nota": 73,
+   "tipo": "coro",
+   "voz": "25_1041"
+  },
+  {
+   "t": 63.779,
+   "dur": 1.749,
+   "quien": "kirby",
+   "nota": 76,
+   "tipo": "coro",
+   "voz": "14_675"
+  },
+  {
+   "t": 65.493,
+   "dur": 1.749,
+   "quien": "fox",
+   "nota": 62,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 65.493,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 66,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 65.493,
+   "dur": 1.749,
+   "quien": "jigglypuff",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "25_1041"
+  },
+  {
+   "t": 65.493,
+   "dur": 1.749,
+   "quien": "kirby",
+   "nota": 74,
+   "tipo": "coro",
+   "voz": "14_675"
+  },
+  {
+   "t": 67.207,
+   "dur": 2.608,
+   "quien": "fox",
+   "nota": 62,
+   "tipo": "coro",
+   "voz": "11_529"
+  },
+  {
+   "t": 67.207,
+   "dur": 1.669,
+   "quien": "yoshi",
+   "nota": 66,
+   "tipo": "coro",
+   "voz": "28_1145"
+  },
+  {
+   "t": 67.207,
+   "dur": 2.084,
+   "quien": "jigglypuff",
+   "nota": 69,
+   "tipo": "coro",
+   "voz": "25_1041"
+  },
+  {
+   "t": 67.207,
+   "dur": 2.226,
+   "quien": "kirby",
+   "nota": 74,
+   "tipo": "coro",
+   "voz": "14_675"
+  }
+ ]
+}

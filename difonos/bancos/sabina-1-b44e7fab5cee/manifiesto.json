@@ -1,0 +1,5998 @@
+{
+ "id": "b44e7fab5cee98b2ff4fe35fe93dd08762e2225d9570633b05c055da630c7510",
+ "version": "sabina-1",
+ "nonce": "897e5e0796af1c9761c6ba52095b087b",
+ "voz": "Microsoft Sabina Desktop",
+ "sr": 22050,
+ "nota_base_midi": 57,
+ "margen_s": 0.015,
+ "unidades": {
+  "#C": {
+   "inicio": 0,
+   "largo": 2227,
+   "izq": 330,
+   "der": 1896,
+   "modo": "iniC",
+   "palabra": "chata",
+   "cents": null,
+   "orilla_dB": [
+    -47.0,
+    -5.2
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 71.0
+  },
+  "#N": {
+   "inicio": 3109,
+   "largo": 2380,
+   "izq": 330,
+   "der": 2049,
+   "modo": "iniC",
+   "palabra": "ñata",
+   "cents": 1.5,
+   "orilla_dB": [
+    -82.6,
+    1.8
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 78.0
+  },
+  "#R": {
+   "inicio": 6371,
+   "largo": 2271,
+   "izq": 330,
+   "der": 1940,
+   "modo": "iniC",
+   "palabra": "rata",
+   "cents": null,
+   "orilla_dB": [
+    -71.6,
+    -5.0
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 73.0
+  },
+  "#a": {
+   "inicio": 9524,
+   "largo": 1993,
+   "izq": 330,
+   "der": 1662,
+   "modo": "ini",
+   "palabra": "ata",
+   "cents": null,
+   "orilla_dB": [
+    -83.1,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 60.4
+  },
+  "#b": {
+   "inicio": 12399,
+   "largo": 1990,
+   "izq": 330,
+   "der": 1659,
+   "modo": "iniC",
+   "palabra": "bata",
+   "cents": -2.9,
+   "orilla_dB": [
+    -56.1,
+    -13.9
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 60.2
+  },
+  "#d": {
+   "inicio": 15271,
+   "largo": 2043,
+   "izq": 330,
+   "der": 1712,
+   "modo": "iniC",
+   "palabra": "data",
+   "cents": -8.7,
+   "orilla_dB": [
+    -72.1,
+    -19.0
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 62.7
+  },
+  "#e": {
+   "inicio": 18196,
+   "largo": 2609,
+   "izq": 330,
+   "der": 2278,
+   "modo": "ini",
+   "palabra": "eta",
+   "cents": -0.5,
+   "orilla_dB": [
+    -46.5,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 88.3
+  },
+  "#f": {
+   "inicio": 21687,
+   "largo": 1887,
+   "izq": 330,
+   "der": 1556,
+   "modo": "iniC",
+   "palabra": "fata",
+   "cents": null,
+   "orilla_dB": [
+    -31.4,
+    -21.4
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 55.6
+  },
+  "#g": {
+   "inicio": 24456,
+   "largo": 2180,
+   "izq": 330,
+   "der": 1849,
+   "modo": "iniC",
+   "palabra": "gata",
+   "cents": -3.4,
+   "orilla_dB": [
+    -71.3,
+    -15.1
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 68.9
+  },
+  "#i": {
+   "inicio": 27518,
+   "largo": 2757,
+   "izq": 330,
+   "der": 2426,
+   "modo": "ini",
+   "palabra": "ita",
+   "cents": 104.6,
+   "orilla_dB": [
+    -56.3,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 95.0
+  },
+  "#k": {
+   "inicio": 31157,
+   "largo": 1779,
+   "izq": 330,
+   "der": 1448,
+   "modo": "iniC",
+   "palabra": "cata",
+   "cents": null,
+   "orilla_dB": [
+    -59.6,
+    -21.1
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 50.7
+  },
+  "#l": {
+   "inicio": 33818,
+   "largo": 1500,
+   "izq": 330,
+   "der": 1169,
+   "modo": "iniC",
+   "palabra": "lata",
+   "cents": null,
+   "orilla_dB": [
+    -57.5,
+    -12.6
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 38.0
+  },
+  "#m": {
+   "inicio": 36200,
+   "largo": 2133,
+   "izq": 330,
+   "der": 1802,
+   "modo": "iniC",
+   "palabra": "mata",
+   "cents": 4.8,
+   "orilla_dB": [
+    -70.5,
+    1.4
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 66.7
+  },
+  "#n": {
+   "inicio": 39215,
+   "largo": 2537,
+   "izq": 330,
+   "der": 2206,
+   "modo": "iniC",
+   "palabra": "nata",
+   "cents": 18.0,
+   "orilla_dB": [
+    -76.5,
+    3.4
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 85.1
+  },
+  "#o": {
+   "inicio": 42634,
+   "largo": 2000,
+   "izq": 330,
+   "der": 1669,
+   "modo": "ini",
+   "palabra": "ota",
+   "cents": -5.6,
+   "orilla_dB": [
+    -82.4,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 60.7
+  },
+  "#p": {
+   "inicio": 45516,
+   "largo": 1554,
+   "izq": 330,
+   "der": 1223,
+   "modo": "iniC",
+   "palabra": "pata",
+   "cents": null,
+   "orilla_dB": [
+    -43.9,
+    -8.0
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 40.5
+  },
+  "#s": {
+   "inicio": 47952,
+   "largo": 2670,
+   "izq": 330,
+   "der": 2339,
+   "modo": "iniC",
+   "palabra": "sata",
+   "cents": null,
+   "orilla_dB": [
+    -40.6,
+    -18.8
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 91.1
+  },
+  "#t": {
+   "inicio": 51504,
+   "largo": 1607,
+   "izq": 330,
+   "der": 1276,
+   "modo": "iniC",
+   "palabra": "tata",
+   "cents": null,
+   "orilla_dB": [
+    -46.4,
+    -15.5
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 42.9
+  },
+  "#u": {
+   "inicio": 53993,
+   "largo": 2929,
+   "izq": 330,
+   "der": 2598,
+   "modo": "ini",
+   "palabra": "uta",
+   "cents": -4.0,
+   "orilla_dB": [
+    -44.0,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 102.9
+  },
+  "#x": {
+   "inicio": 57804,
+   "largo": 2604,
+   "izq": 330,
+   "der": 2273,
+   "modo": "iniC",
+   "palabra": "jata",
+   "cents": null,
+   "orilla_dB": [
+    -50.0,
+    -20.0
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 88.1
+  },
+  "#y": {
+   "inicio": 61290,
+   "largo": 2299,
+   "izq": 330,
+   "der": 1968,
+   "modo": "iniC",
+   "palabra": "yata",
+   "cents": -4.1,
+   "orilla_dB": [
+    -57.2,
+    -19.7
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 74.3
+  },
+  "C#": {
+   "inicio": 64471,
+   "largo": 3913,
+   "izq": 330,
+   "der": 3582,
+   "modo": "finC",
+   "palabra": "tach",
+   "cents": null,
+   "orilla_dB": [
+    -25.5,
+    -46.7
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 147.5
+  },
+  "Ca": {
+   "inicio": 69266,
+   "largo": 3477,
+   "izq": 330,
+   "der": 3146,
+   "modo": "CV",
+   "palabra": "tachata",
+   "cents": 3.0,
+   "orilla_dB": [
+    -33.7,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 127.7
+  },
+  "Ce": {
+   "inicio": 73625,
+   "largo": 3477,
+   "izq": 330,
+   "der": 3146,
+   "modo": "CV",
+   "palabra": "techeta",
+   "cents": 9.5,
+   "orilla_dB": [
+    -36.3,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 127.7
+  },
+  "Ci": {
+   "inicio": 77984,
+   "largo": 2949,
+   "izq": 330,
+   "der": 2618,
+   "modo": "CV",
+   "palabra": "tichita",
+   "cents": null,
+   "orilla_dB": [
+    -40.9,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 103.8
+  },
+  "Co": {
+   "inicio": 81815,
+   "largo": 3653,
+   "izq": 330,
+   "der": 3322,
+   "modo": "CV",
+   "palabra": "tochota",
+   "cents": 6.1,
+   "orilla_dB": [
+    -34.0,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 135.7
+  },
+  "Cu": {
+   "inicio": 86350,
+   "largo": 4005,
+   "izq": 330,
+   "der": 3674,
+   "modo": "CV",
+   "palabra": "tuchuta",
+   "cents": 13.9,
+   "orilla_dB": [
+    -33.7,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 151.7
+  },
+  "N#": {
+   "inicio": 91237,
+   "largo": 5870,
+   "izq": 330,
+   "der": 5539,
+   "modo": "finC",
+   "palabra": "tañ",
+   "cents": -0.7,
+   "orilla_dB": [
+    -12.3,
+    -61.9
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 236.2
+  },
+  "Na": {
+   "inicio": 97989,
+   "largo": 2509,
+   "izq": 330,
+   "der": 2178,
+   "modo": "CV",
+   "palabra": "tañata",
+   "cents": 5.7,
+   "orilla_dB": [
+    -0.3,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 83.8
+  },
+  "Ne": {
+   "inicio": 101380,
+   "largo": 2421,
+   "izq": 330,
+   "der": 2090,
+   "modo": "CV",
+   "palabra": "teñeta",
+   "cents": 3.0,
+   "orilla_dB": [
+    0.6,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 79.8
+  },
+  "Ni": {
+   "inicio": 104683,
+   "largo": 2069,
+   "izq": 330,
+   "der": 1738,
+   "modo": "CV",
+   "palabra": "tiñita",
+   "cents": 7.4,
+   "orilla_dB": [
+    -2.2,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 63.9
+  },
+  "No": {
+   "inicio": 107634,
+   "largo": 3125,
+   "izq": 330,
+   "der": 2794,
+   "modo": "CV",
+   "palabra": "toñota",
+   "cents": -1.3,
+   "orilla_dB": [
+    3.7,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 111.7
+  },
+  "Nu": {
+   "inicio": 111641,
+   "largo": 3565,
+   "izq": 330,
+   "der": 3234,
+   "modo": "CV",
+   "palabra": "tuñuta",
+   "cents": 0.2,
+   "orilla_dB": [
+    0.9,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 131.7
+  },
+  "Ra": {
+   "inicio": 116088,
+   "largo": 1981,
+   "izq": 330,
+   "der": 1650,
+   "modo": "CV",
+   "palabra": "tarrata",
+   "cents": 7.7,
+   "orilla_dB": [
+    -11.6,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 59.9
+  },
+  "Re": {
+   "inicio": 118951,
+   "largo": 1365,
+   "izq": 330,
+   "der": 1034,
+   "modo": "CV",
+   "palabra": "terreta",
+   "cents": 6.1,
+   "orilla_dB": [
+    -13.3,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 31.9
+  },
+  "Ri": {
+   "inicio": 121198,
+   "largo": 1453,
+   "izq": 330,
+   "der": 1122,
+   "modo": "CV",
+   "palabra": "tirrita",
+   "cents": 19.0,
+   "orilla_dB": [
+    -10.3,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 35.9
+  },
+  "Ro": {
+   "inicio": 123533,
+   "largo": 1541,
+   "izq": 330,
+   "der": 1210,
+   "modo": "CV",
+   "palabra": "torrota",
+   "cents": 11.6,
+   "orilla_dB": [
+    -12.9,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 39.9
+  },
+  "Ru": {
+   "inicio": 125956,
+   "largo": 1629,
+   "izq": 330,
+   "der": 1298,
+   "modo": "CV",
+   "palabra": "turruta",
+   "cents": 3.5,
+   "orilla_dB": [
+    -12.9,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 43.9
+  },
+  "a#": {
+   "inicio": 128467,
+   "largo": 3598,
+   "izq": 330,
+   "der": 3267,
+   "modo": "fin",
+   "palabra": "tata",
+   "cents": -5.4,
+   "orilla_dB": [
+    -0.0,
+    -41.7
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 133.2
+  },
+  "aC": {
+   "inicio": 132947,
+   "largo": 2949,
+   "izq": 330,
+   "der": 2618,
+   "modo": "VC",
+   "palabra": "tachata",
+   "cents": 1.6,
+   "orilla_dB": [
+    -0.0,
+    -37.3
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 103.8
+  },
+  "aN": {
+   "inicio": 136778,
+   "largo": 3125,
+   "izq": 330,
+   "der": 2794,
+   "modo": "VC",
+   "palabra": "tañata",
+   "cents": -1.8,
+   "orilla_dB": [
+    -0.0,
+    -4.4
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 111.7
+  },
+  "aR": {
+   "inicio": 140785,
+   "largo": 2597,
+   "izq": 330,
+   "der": 2266,
+   "modo": "VC",
+   "palabra": "tarrata",
+   "cents": -0.2,
+   "orilla_dB": [
+    -0.0,
+    -14.2
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 87.8
+  },
+  "aa": {
+   "inicio": 144264,
+   "largo": 2685,
+   "izq": 330,
+   "der": 2354,
+   "modo": "VV",
+   "palabra": "taata",
+   "cents": 5.6,
+   "orilla_dB": [
+    -0.0,
+    0.0
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 91.8
+  },
+  "ab": {
+   "inicio": 147831,
+   "largo": 2333,
+   "izq": 330,
+   "der": 2002,
+   "modo": "VC",
+   "palabra": "tabata",
+   "cents": -0.4,
+   "orilla_dB": [
+    -0.0,
+    -17.9
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 75.8
+  },
+  "ad": {
+   "inicio": 151046,
+   "largo": 2509,
+   "izq": 330,
+   "der": 2178,
+   "modo": "VC",
+   "palabra": "tadata",
+   "cents": 1.9,
+   "orilla_dB": [
+    -0.0,
+    -15.1
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 83.8
+  },
+  "ae": {
+   "inicio": 154437,
+   "largo": 2861,
+   "izq": 330,
+   "der": 2530,
+   "modo": "VV",
+   "palabra": "taeta",
+   "cents": -0.3,
+   "orilla_dB": [
+    0.1,
+    -0.0
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 99.8
+  },
+  "af": {
+   "inicio": 158180,
+   "largo": 2597,
+   "izq": 330,
+   "der": 2266,
+   "modo": "VC",
+   "palabra": "tafata",
+   "cents": -0.7,
+   "orilla_dB": [
+    -0.0,
+    -34.5
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 87.8
+  },
+  "ag": {
+   "inicio": 161659,
+   "largo": 2597,
+   "izq": 330,
+   "der": 2266,
+   "modo": "VC",
+   "palabra": "tagata",
+   "cents": -131.4,
+   "orilla_dB": [
+    -0.0,
+    -21.7
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 87.8
+  },
+  "ai": {
+   "inicio": 165138,
+   "largo": 1717,
+   "izq": 330,
+   "der": 1386,
+   "modo": "VV",
+   "palabra": "taita",
+   "cents": 2.0,
+   "orilla_dB": [
+    0.0,
+    -0.1
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 47.9
+  },
+  "ak": {
+   "inicio": 167737,
+   "largo": 2861,
+   "izq": 330,
+   "der": 2530,
+   "modo": "VC",
+   "palabra": "tacata",
+   "cents": 1.0,
+   "orilla_dB": [
+    -0.0,
+    -41.0
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 99.8
+  },
+  "al": {
+   "inicio": 171480,
+   "largo": 2157,
+   "izq": 330,
+   "der": 1826,
+   "modo": "VC",
+   "palabra": "talata",
+   "cents": 0.2,
+   "orilla_dB": [
+    -0.0,
+    -3.0
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 67.8
+  },
+  "am": {
+   "inicio": 174519,
+   "largo": 2597,
+   "izq": 330,
+   "der": 2266,
+   "modo": "VC",
+   "palabra": "tamata",
+   "cents": -1.5,
+   "orilla_dB": [
+    -0.0,
+    -6.9
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 87.8
+  },
+  "an": {
+   "inicio": 177998,
+   "largo": 2949,
+   "izq": 330,
+   "der": 2618,
+   "modo": "VC",
+   "palabra": "tanata",
+   "cents": -1.1,
+   "orilla_dB": [
+    -0.0,
+    -1.5
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 103.8
+  },
+  "ao": {
+   "inicio": 181829,
+   "largo": 2333,
+   "izq": 330,
+   "der": 2002,
+   "modo": "VV",
+   "palabra": "taota",
+   "cents": 0.7,
+   "orilla_dB": [
+    0.0,
+    -0.0
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 75.8
+  },
+  "ap": {
+   "inicio": 185044,
+   "largo": 3037,
+   "izq": 330,
+   "der": 2706,
+   "modo": "VC",
+   "palabra": "tapata",
+   "cents": -0.3,
+   "orilla_dB": [
+    -0.0,
+    -38.5
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 107.8
+  },
+  "ar": {
+   "inicio": 188963,
+   "largo": 2245,
+   "izq": 330,
+   "der": 1914,
+   "modo": "VC",
+   "palabra": "tarata",
+   "cents": 0.8,
+   "orilla_dB": [
+    -0.0,
+    -11.9
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 71.8
+  },
+  "as": {
+   "inicio": 192090,
+   "largo": 3477,
+   "izq": 330,
+   "der": 3146,
+   "modo": "VC",
+   "palabra": "tasata",
+   "cents": 0.6,
+   "orilla_dB": [
+    -0.0,
+    -28.3
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 127.7
+  },
+  "at": {
+   "inicio": 196449,
+   "largo": 2949,
+   "izq": 330,
+   "der": 2618,
+   "modo": "VC",
+   "palabra": "tatata",
+   "cents": -0.5,
+   "orilla_dB": [
+    -0.0,
+    -42.6
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 103.8
+  },
+  "au": {
+   "inicio": 200280,
+   "largo": 1937,
+   "izq": 330,
+   "der": 1606,
+   "modo": "VV",
+   "palabra": "tauta",
+   "cents": -1.4,
+   "orilla_dB": [
+    0.1,
+    -0.1
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 57.9
+  },
+  "ax": {
+   "inicio": 203099,
+   "largo": 2773,
+   "izq": 330,
+   "der": 2442,
+   "modo": "VC",
+   "palabra": "tajata",
+   "cents": -1.8,
+   "orilla_dB": [
+    -0.0,
+    -28.0
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 95.8
+  },
+  "ay": {
+   "inicio": 206754,
+   "largo": 3125,
+   "izq": 330,
+   "der": 2794,
+   "modo": "VC",
+   "palabra": "tayata",
+   "cents": -6.8,
+   "orilla_dB": [
+    -0.0,
+    -18.3
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 111.7
+  },
+  "b#": {
+   "inicio": 210761,
+   "largo": 2845,
+   "izq": 330,
+   "der": 2514,
+   "modo": "finC",
+   "palabra": "tab",
+   "cents": null,
+   "orilla_dB": [
+    -30.8,
+    -40.8
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 99.0
+  },
+  "ba": {
+   "inicio": 214488,
+   "largo": 2069,
+   "izq": 330,
+   "der": 1738,
+   "modo": "CV",
+   "palabra": "tabata",
+   "cents": 7.2,
+   "orilla_dB": [
+    -15.7,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 63.9
+  },
+  "be": {
+   "inicio": 217439,
+   "largo": 2069,
+   "izq": 330,
+   "der": 1738,
+   "modo": "CV",
+   "palabra": "tebeta",
+   "cents": 5.0,
+   "orilla_dB": [
+    -11.1,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 63.9
+  },
+  "bi": {
+   "inicio": 220390,
+   "largo": 1453,
+   "izq": 330,
+   "der": 1122,
+   "modo": "CV",
+   "palabra": "tibita",
+   "cents": 18.1,
+   "orilla_dB": [
+    -17.5,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 35.9
+  },
+  "bl": {
+   "inicio": 222725,
+   "largo": 1849,
+   "izq": 330,
+   "der": 1518,
+   "modo": "CC",
+   "palabra": "tabla",
+   "cents": -0.3,
+   "orilla_dB": [
+    -12.8,
+    -9.4
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 53.9
+  },
+  "bo": {
+   "inicio": 225456,
+   "largo": 2949,
+   "izq": 330,
+   "der": 2618,
+   "modo": "CV",
+   "palabra": "tobota",
+   "cents": 3.7,
+   "orilla_dB": [
+    -13.8,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 103.8
+  },
+  "br": {
+   "inicio": 229287,
+   "largo": 1673,
+   "izq": 330,
+   "der": 1342,
+   "modo": "CC",
+   "palabra": "tabra",
+   "cents": -0.3,
+   "orilla_dB": [
+    -12.8,
+    -4.5
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 45.9
+  },
+  "bs": {
+   "inicio": 231842,
+   "largo": 2905,
+   "izq": 330,
+   "der": 2574,
+   "modo": "CC",
+   "palabra": "tabsa",
+   "cents": null,
+   "orilla_dB": [
+    -21.4,
+    -20.9
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 101.8
+  },
+  "bu": {
+   "inicio": 235629,
+   "largo": 2949,
+   "izq": 330,
+   "der": 2618,
+   "modo": "CV",
+   "palabra": "tubuta",
+   "cents": 6.9,
+   "orilla_dB": [
+    -16.8,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 103.8
+  },
+  "bx": {
+   "inicio": 239460,
+   "largo": 1409,
+   "izq": 330,
+   "der": 1078,
+   "modo": "CC",
+   "palabra": "tabja",
+   "cents": 36.2,
+   "orilla_dB": [
+    -9.7,
+    -11.0
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 33.9
+  },
+  "d#": {
+   "inicio": 241751,
+   "largo": 2166,
+   "izq": 330,
+   "der": 1835,
+   "modo": "finC",
+   "palabra": "tad",
+   "cents": -2.2,
+   "orilla_dB": [
+    -17.1,
+    -30.5
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 68.2
+  },
+  "da": {
+   "inicio": 244799,
+   "largo": 1893,
+   "izq": 330,
+   "der": 1562,
+   "modo": "CV",
+   "palabra": "tadata",
+   "cents": 6.1,
+   "orilla_dB": [
+    -14.0,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 55.9
+  },
+  "dd": {
+   "inicio": 247574,
+   "largo": 1365,
+   "izq": 330,
+   "der": 1034,
+   "modo": "CC",
+   "palabra": "tadda",
+   "cents": null,
+   "orilla_dB": [
+    -6.8,
+    -15.9
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 31.9
+  },
+  "de": {
+   "inicio": 249821,
+   "largo": 1805,
+   "izq": 330,
+   "der": 1474,
+   "modo": "CV",
+   "palabra": "tedeta",
+   "cents": 8.1,
+   "orilla_dB": [
+    -13.5,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 51.9
+  },
+  "di": {
+   "inicio": 252508,
+   "largo": 1453,
+   "izq": 330,
+   "der": 1122,
+   "modo": "CV",
+   "palabra": "tidita",
+   "cents": 0.6,
+   "orilla_dB": [
+    -14.5,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 35.9
+  },
+  "dk": {
+   "inicio": 254843,
+   "largo": 1212,
+   "izq": 330,
+   "der": 881,
+   "modo": "CC",
+   "palabra": "tadca",
+   "cents": -0.2,
+   "orilla_dB": [
+    -2.1,
+    -1.4
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 25.0
+  },
+  "dn": {
+   "inicio": 256937,
+   "largo": 1212,
+   "izq": 330,
+   "der": 881,
+   "modo": "CC",
+   "palabra": "tadna",
+   "cents": 0.2,
+   "orilla_dB": [
+    -2.1,
+    -1.5
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 25.0
+  },
+  "do": {
+   "inicio": 259031,
+   "largo": 2421,
+   "izq": 330,
+   "der": 2090,
+   "modo": "CV",
+   "palabra": "todota",
+   "cents": 4.0,
+   "orilla_dB": [
+    -15.9,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 79.8
+  },
+  "dr": {
+   "inicio": 262334,
+   "largo": 1321,
+   "izq": 330,
+   "der": 990,
+   "modo": "CC",
+   "palabra": "tadra",
+   "cents": null,
+   "orilla_dB": [
+    -7.8,
+    -17.2
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 29.9
+  },
+  "ds": {
+   "inicio": 264537,
+   "largo": 1212,
+   "izq": 330,
+   "der": 881,
+   "modo": "CC",
+   "palabra": "tadsa",
+   "cents": null,
+   "orilla_dB": [
+    -2.5,
+    -1.7
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 25.0
+  },
+  "du": {
+   "inicio": 266631,
+   "largo": 1629,
+   "izq": 330,
+   "der": 1298,
+   "modo": "CV",
+   "palabra": "tuduta",
+   "cents": 4.6,
+   "orilla_dB": [
+    -16.9,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 43.9
+  },
+  "e#": {
+   "inicio": 269142,
+   "largo": 3760,
+   "izq": 330,
+   "der": 3429,
+   "modo": "fin",
+   "palabra": "tate",
+   "cents": -4.2,
+   "orilla_dB": [
+    -0.0,
+    -54.3
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 140.5
+  },
+  "eC": {
+   "inicio": 273784,
+   "largo": 2421,
+   "izq": 330,
+   "der": 2090,
+   "modo": "VC",
+   "palabra": "techeta",
+   "cents": -2.0,
+   "orilla_dB": [
+    -0.0,
+    -42.0
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 79.8
+  },
+  "eN": {
+   "inicio": 277087,
+   "largo": 3037,
+   "izq": 330,
+   "der": 2706,
+   "modo": "VC",
+   "palabra": "teñeta",
+   "cents": -3.9,
+   "orilla_dB": [
+    -0.0,
+    -5.5
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 107.8
+  },
+  "eR": {
+   "inicio": 281006,
+   "largo": 2421,
+   "izq": 330,
+   "der": 2090,
+   "modo": "VC",
+   "palabra": "terreta",
+   "cents": -3.6,
+   "orilla_dB": [
+    -0.0,
+    -13.9
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 79.8
+  },
+  "ea": {
+   "inicio": 284309,
+   "largo": 2861,
+   "izq": 330,
+   "der": 2530,
+   "modo": "VV",
+   "palabra": "teata",
+   "cents": 5.2,
+   "orilla_dB": [
+    0.1,
+    -0.1
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 99.8
+  },
+  "eb": {
+   "inicio": 288052,
+   "largo": 2069,
+   "izq": 330,
+   "der": 1738,
+   "modo": "VC",
+   "palabra": "tebeta",
+   "cents": -1.7,
+   "orilla_dB": [
+    -0.0,
+    -14.4
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 63.9
+  },
+  "ed": {
+   "inicio": 291003,
+   "largo": 1981,
+   "izq": 330,
+   "der": 1650,
+   "modo": "VC",
+   "palabra": "tedeta",
+   "cents": 0.3,
+   "orilla_dB": [
+    -0.0,
+    -15.4
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 59.9
+  },
+  "ee": {
+   "inicio": 293866,
+   "largo": 2861,
+   "izq": 330,
+   "der": 2530,
+   "modo": "VV",
+   "palabra": "teeta",
+   "cents": 0.2,
+   "orilla_dB": [
+    0.1,
+    -0.1
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 99.8
+  },
+  "ef": {
+   "inicio": 297609,
+   "largo": 2333,
+   "izq": 330,
+   "der": 2002,
+   "modo": "VC",
+   "palabra": "tefeta",
+   "cents": -0.7,
+   "orilla_dB": [
+    -0.0,
+    -35.1
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 75.8
+  },
+  "eg": {
+   "inicio": 300824,
+   "largo": 2421,
+   "izq": 330,
+   "der": 2090,
+   "modo": "VC",
+   "palabra": "tegueta",
+   "cents": -2.2,
+   "orilla_dB": [
+    -0.0,
+    -22.0
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 79.8
+  },
+  "ei": {
+   "inicio": 304127,
+   "largo": 1673,
+   "izq": 330,
+   "der": 1342,
+   "modo": "VV",
+   "palabra": "teita",
+   "cents": 1.9,
+   "orilla_dB": [
+    0.0,
+    -0.0
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 45.9
+  },
+  "ek": {
+   "inicio": 306682,
+   "largo": 2597,
+   "izq": 330,
+   "der": 2266,
+   "modo": "VC",
+   "palabra": "tequeta",
+   "cents": -8.3,
+   "orilla_dB": [
+    -0.0,
+    -47.7
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 87.8
+  },
+  "el": {
+   "inicio": 310161,
+   "largo": 2597,
+   "izq": 330,
+   "der": 2266,
+   "modo": "VC",
+   "palabra": "teleta",
+   "cents": -5.0,
+   "orilla_dB": [
+    -0.0,
+    -4.0
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 87.8
+  },
+  "em": {
+   "inicio": 313640,
+   "largo": 2069,
+   "izq": 330,
+   "der": 1738,
+   "modo": "VC",
+   "palabra": "temeta",
+   "cents": -0.0,
+   "orilla_dB": [
+    -0.0,
+    -4.5
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 63.9
+  },
+  "en": {
+   "inicio": 316591,
+   "largo": 2685,
+   "izq": 330,
+   "der": 2354,
+   "modo": "VC",
+   "palabra": "teneta",
+   "cents": -1.6,
+   "orilla_dB": [
+    -0.0,
+    -1.6
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 91.8
+  },
+  "eo": {
+   "inicio": 320158,
+   "largo": 2773,
+   "izq": 330,
+   "der": 2442,
+   "modo": "VV",
+   "palabra": "teota",
+   "cents": 4.3,
+   "orilla_dB": [
+    0.0,
+    -0.0
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 95.8
+  },
+  "ep": {
+   "inicio": 323813,
+   "largo": 2773,
+   "izq": 330,
+   "der": 2442,
+   "modo": "VC",
+   "palabra": "tepeta",
+   "cents": 0.3,
+   "orilla_dB": [
+    -0.0,
+    -40.6
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 95.8
+  },
+  "er": {
+   "inicio": 327468,
+   "largo": 1981,
+   "izq": 330,
+   "der": 1650,
+   "modo": "VC",
+   "palabra": "tereta",
+   "cents": -1.1,
+   "orilla_dB": [
+    -0.0,
+    -10.6
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 59.9
+  },
+  "es": {
+   "inicio": 330331,
+   "largo": 2949,
+   "izq": 330,
+   "der": 2618,
+   "modo": "VC",
+   "palabra": "teseta",
+   "cents": -7.0,
+   "orilla_dB": [
+    -0.0,
+    -27.0
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 103.8
+  },
+  "et": {
+   "inicio": 334162,
+   "largo": 2685,
+   "izq": 330,
+   "der": 2354,
+   "modo": "VC",
+   "palabra": "teteta",
+   "cents": -0.3,
+   "orilla_dB": [
+    -0.0,
+    -44.8
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 91.8
+  },
+  "eu": {
+   "inicio": 337729,
+   "largo": 1497,
+   "izq": 330,
+   "der": 1166,
+   "modo": "VV",
+   "palabra": "teuta",
+   "cents": 3.4,
+   "orilla_dB": [
+    0.1,
+    -0.1
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 37.9
+  },
+  "ex": {
+   "inicio": 340108,
+   "largo": 2773,
+   "izq": 330,
+   "der": 2442,
+   "modo": "VC",
+   "palabra": "tejeta",
+   "cents": -6.7,
+   "orilla_dB": [
+    -0.0,
+    -24.9
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 95.8
+  },
+  "ey": {
+   "inicio": 343763,
+   "largo": 2597,
+   "izq": 330,
+   "der": 2266,
+   "modo": "VC",
+   "palabra": "teyeta",
+   "cents": -1.0,
+   "orilla_dB": [
+    -0.0,
+    -20.4
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 87.8
+  },
+  "f#": {
+   "inicio": 347242,
+   "largo": 4940,
+   "izq": 330,
+   "der": 4609,
+   "modo": "finC",
+   "palabra": "taf",
+   "cents": -3.4,
+   "orilla_dB": [
+    -6.5,
+    -47.2
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 194.1
+  },
+  "fa": {
+   "inicio": 353064,
+   "largo": 3301,
+   "izq": 330,
+   "der": 2970,
+   "modo": "CV",
+   "palabra": "tafata",
+   "cents": 6.3,
+   "orilla_dB": [
+    -32.0,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 119.7
+  },
+  "fe": {
+   "inicio": 357247,
+   "largo": 2861,
+   "izq": 330,
+   "der": 2530,
+   "modo": "CV",
+   "palabra": "tefeta",
+   "cents": 9.1,
+   "orilla_dB": [
+    -30.9,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 99.8
+  },
+  "fi": {
+   "inicio": 360990,
+   "largo": 2421,
+   "izq": 330,
+   "der": 2090,
+   "modo": "CV",
+   "palabra": "tifita",
+   "cents": -14.5,
+   "orilla_dB": [
+    -28.9,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 79.8
+  },
+  "fl": {
+   "inicio": 364293,
+   "largo": 2509,
+   "izq": 330,
+   "der": 2178,
+   "modo": "CC",
+   "palabra": "tafla",
+   "cents": null,
+   "orilla_dB": [
+    -24.4,
+    -16.7
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 83.8
+  },
+  "fo": {
+   "inicio": 367684,
+   "largo": 3037,
+   "izq": 330,
+   "der": 2706,
+   "modo": "CV",
+   "palabra": "tofota",
+   "cents": 3.6,
+   "orilla_dB": [
+    -32.9,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 107.8
+  },
+  "fr": {
+   "inicio": 371603,
+   "largo": 2377,
+   "izq": 330,
+   "der": 2046,
+   "modo": "CC",
+   "palabra": "tafra",
+   "cents": null,
+   "orilla_dB": [
+    -23.2,
+    -12.5
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 77.8
+  },
+  "fu": {
+   "inicio": 374862,
+   "largo": 3741,
+   "izq": 330,
+   "der": 3410,
+   "modo": "CV",
+   "palabra": "tufuta",
+   "cents": -0.1,
+   "orilla_dB": [
+    -30.2,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 139.7
+  },
+  "g#": {
+   "inicio": 379485,
+   "largo": 2212,
+   "izq": 330,
+   "der": 1881,
+   "modo": "finC",
+   "palabra": "tag",
+   "cents": 10.1,
+   "orilla_dB": [
+    -16.2,
+    -40.8
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 70.3
+  },
+  "ga": {
+   "inicio": 382579,
+   "largo": 2245,
+   "izq": 330,
+   "der": 1914,
+   "modo": "CV",
+   "palabra": "tagata",
+   "cents": 6.0,
+   "orilla_dB": [
+    -20.2,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 71.8
+  },
+  "ge": {
+   "inicio": 385706,
+   "largo": 2949,
+   "izq": 330,
+   "der": 2618,
+   "modo": "CV",
+   "palabra": "tegueta",
+   "cents": 1.7,
+   "orilla_dB": [
+    -16.8,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 103.8
+  },
+  "gi": {
+   "inicio": 389537,
+   "largo": 1893,
+   "izq": 330,
+   "der": 1562,
+   "modo": "CV",
+   "palabra": "tiguita",
+   "cents": 6.7,
+   "orilla_dB": [
+    -19.2,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 55.9
+  },
+  "gl": {
+   "inicio": 392312,
+   "largo": 2025,
+   "izq": 330,
+   "der": 1694,
+   "modo": "CC",
+   "palabra": "tagla",
+   "cents": -2.2,
+   "orilla_dB": [
+    -11.7,
+    -8.4
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 61.9
+  },
+  "gm": {
+   "inicio": 395219,
+   "largo": 2861,
+   "izq": 330,
+   "der": 2530,
+   "modo": "CC",
+   "palabra": "tagma",
+   "cents": 0.4,
+   "orilla_dB": [
+    -25.2,
+    -5.4
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 99.8
+  },
+  "gn": {
+   "inicio": 398962,
+   "largo": 2685,
+   "izq": 330,
+   "der": 2354,
+   "modo": "CC",
+   "palabra": "tagna",
+   "cents": 8.4,
+   "orilla_dB": [
+    -20.9,
+    -3.9
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 91.8
+  },
+  "go": {
+   "inicio": 402529,
+   "largo": 1981,
+   "izq": 330,
+   "der": 1650,
+   "modo": "CV",
+   "palabra": "togota",
+   "cents": 9.5,
+   "orilla_dB": [
+    -21.0,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 59.9
+  },
+  "gr": {
+   "inicio": 405392,
+   "largo": 2025,
+   "izq": 330,
+   "der": 1694,
+   "modo": "CC",
+   "palabra": "tagra",
+   "cents": -6.5,
+   "orilla_dB": [
+    -11.7,
+    -4.4
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 61.9
+  },
+  "gu": {
+   "inicio": 408299,
+   "largo": 3037,
+   "izq": 330,
+   "der": 2706,
+   "modo": "CV",
+   "palabra": "tuguta",
+   "cents": 2.5,
+   "orilla_dB": [
+    -12.7,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 107.8
+  },
+  "i#": {
+   "inicio": 412218,
+   "largo": 4121,
+   "izq": 330,
+   "der": 3790,
+   "modo": "fin",
+   "palabra": "tatí",
+   "cents": 0.4,
+   "orilla_dB": [
+    -0.0,
+    -52.6
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 156.9
+  },
+  "iC": {
+   "inicio": 417221,
+   "largo": 1981,
+   "izq": 330,
+   "der": 1650,
+   "modo": "VC",
+   "palabra": "tichita",
+   "cents": 0.0,
+   "orilla_dB": [
+    -0.0,
+    -40.6
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 59.9
+  },
+  "iN": {
+   "inicio": 420084,
+   "largo": 2685,
+   "izq": 330,
+   "der": 2354,
+   "modo": "VC",
+   "palabra": "tiñita",
+   "cents": -1.2,
+   "orilla_dB": [
+    -0.0,
+    -2.3
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 91.8
+  },
+  "iR": {
+   "inicio": 423651,
+   "largo": 1629,
+   "izq": 330,
+   "der": 1298,
+   "modo": "VC",
+   "palabra": "tirrita",
+   "cents": -1.7,
+   "orilla_dB": [
+    -0.0,
+    -9.6
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 43.9
+  },
+  "ia": {
+   "inicio": 426162,
+   "largo": 1673,
+   "izq": 330,
+   "der": 1342,
+   "modo": "VV",
+   "palabra": "tiata",
+   "cents": 9.2,
+   "orilla_dB": [
+    0.0,
+    -0.1
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 45.9
+  },
+  "ib": {
+   "inicio": 428717,
+   "largo": 2069,
+   "izq": 330,
+   "der": 1738,
+   "modo": "VC",
+   "palabra": "tibita",
+   "cents": -15.4,
+   "orilla_dB": [
+    -0.0,
+    -20.3
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 63.9
+  },
+  "id": {
+   "inicio": 431668,
+   "largo": 1541,
+   "izq": 330,
+   "der": 1210,
+   "modo": "VC",
+   "palabra": "tidita",
+   "cents": 5.4,
+   "orilla_dB": [
+    -0.0,
+    -17.6
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 39.9
+  },
+  "ie": {
+   "inicio": 434091,
+   "largo": 1717,
+   "izq": 330,
+   "der": 1386,
+   "modo": "VV",
+   "palabra": "tieta",
+   "cents": 1.8,
+   "orilla_dB": [
+    0.2,
+    -0.1
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 47.9
+  },
+  "if": {
+   "inicio": 436690,
+   "largo": 2245,
+   "izq": 330,
+   "der": 1914,
+   "modo": "VC",
+   "palabra": "tifita",
+   "cents": -14.1,
+   "orilla_dB": [
+    -0.0,
+    -30.3
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 71.8
+  },
+  "ig": {
+   "inicio": 439817,
+   "largo": 2245,
+   "izq": 330,
+   "der": 1914,
+   "modo": "VC",
+   "palabra": "tiguita",
+   "cents": -1.7,
+   "orilla_dB": [
+    -0.0,
+    -21.4
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 71.8
+  },
+  "ii": {
+   "inicio": 442944,
+   "largo": 2509,
+   "izq": 330,
+   "der": 2178,
+   "modo": "VV",
+   "palabra": "tiita",
+   "cents": -0.4,
+   "orilla_dB": [
+    -0.0,
+    0.0
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 83.8
+  },
+  "ik": {
+   "inicio": 446335,
+   "largo": 2333,
+   "izq": 330,
+   "der": 2002,
+   "modo": "VC",
+   "palabra": "tiquita",
+   "cents": 17.1,
+   "orilla_dB": [
+    -0.0,
+    -37.4
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 75.8
+  },
+  "il": {
+   "inicio": 449550,
+   "largo": 2157,
+   "izq": 330,
+   "der": 1826,
+   "modo": "VC",
+   "palabra": "tilita",
+   "cents": -0.8,
+   "orilla_dB": [
+    -0.0,
+    -3.5
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 67.8
+  },
+  "im": {
+   "inicio": 452589,
+   "largo": 1453,
+   "izq": 330,
+   "der": 1122,
+   "modo": "VC",
+   "palabra": "timita",
+   "cents": -10.8,
+   "orilla_dB": [
+    -0.0,
+    -0.3
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 35.9
+  },
+  "in": {
+   "inicio": 454924,
+   "largo": 1981,
+   "izq": 330,
+   "der": 1650,
+   "modo": "VC",
+   "palabra": "tinita",
+   "cents": -5.0,
+   "orilla_dB": [
+    -0.0,
+    -0.2
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 59.9
+  },
+  "io": {
+   "inicio": 457787,
+   "largo": 1761,
+   "izq": 330,
+   "der": 1430,
+   "modo": "VV",
+   "palabra": "tiota",
+   "cents": 8.9,
+   "orilla_dB": [
+    0.2,
+    -0.1
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 49.9
+  },
+  "ip": {
+   "inicio": 460430,
+   "largo": 2773,
+   "izq": 330,
+   "der": 2442,
+   "modo": "VC",
+   "palabra": "tipita",
+   "cents": 2.8,
+   "orilla_dB": [
+    -0.0,
+    -37.3
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 95.8
+  },
+  "ir": {
+   "inicio": 464085,
+   "largo": 1277,
+   "izq": 330,
+   "der": 946,
+   "modo": "VC",
+   "palabra": "tirita",
+   "cents": -5.5,
+   "orilla_dB": [
+    -0.0,
+    -8.5
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 27.9
+  },
+  "is": {
+   "inicio": 466244,
+   "largo": 2861,
+   "izq": 330,
+   "der": 2530,
+   "modo": "VC",
+   "palabra": "tisita",
+   "cents": -5.7,
+   "orilla_dB": [
+    -0.0,
+    -21.5
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 99.8
+  },
+  "it": {
+   "inicio": 469987,
+   "largo": 2685,
+   "izq": 330,
+   "der": 2354,
+   "modo": "VC",
+   "palabra": "titita",
+   "cents": 0.9,
+   "orilla_dB": [
+    -0.0,
+    -41.3
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 91.8
+  },
+  "iu": {
+   "inicio": 473554,
+   "largo": 1673,
+   "izq": 330,
+   "der": 1342,
+   "modo": "VV",
+   "palabra": "tiuta",
+   "cents": 3.0,
+   "orilla_dB": [
+    0.1,
+    -0.0
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 45.9
+  },
+  "ix": {
+   "inicio": 476109,
+   "largo": 2509,
+   "izq": 330,
+   "der": 2178,
+   "modo": "VC",
+   "palabra": "tijita",
+   "cents": -7.6,
+   "orilla_dB": [
+    -0.0,
+    -22.6
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 83.8
+  },
+  "iy": {
+   "inicio": 479500,
+   "largo": 2597,
+   "izq": 330,
+   "der": 2266,
+   "modo": "VC",
+   "palabra": "tiyita",
+   "cents": -1.9,
+   "orilla_dB": [
+    -0.0,
+    -20.2
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 87.8
+  },
+  "k#": {
+   "inicio": 482979,
+   "largo": 3335,
+   "izq": 330,
+   "der": 3004,
+   "modo": "finC",
+   "palabra": "tac",
+   "cents": null,
+   "orilla_dB": [
+    -34.6,
+    -44.3
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 121.3
+  },
+  "ka": {
+   "inicio": 487196,
+   "largo": 2509,
+   "izq": 330,
+   "der": 2178,
+   "modo": "CV",
+   "palabra": "tacata",
+   "cents": null,
+   "orilla_dB": [
+    -38.9,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 83.8
+  },
+  "ke": {
+   "inicio": 490587,
+   "largo": 2333,
+   "izq": 330,
+   "der": 2002,
+   "modo": "CV",
+   "palabra": "tequeta",
+   "cents": -3.5,
+   "orilla_dB": [
+    -45.6,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 75.8
+  },
+  "ki": {
+   "inicio": 493802,
+   "largo": 3213,
+   "izq": 330,
+   "der": 2882,
+   "modo": "CV",
+   "palabra": "tiquita",
+   "cents": -6.0,
+   "orilla_dB": [
+    -39.1,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 115.7
+  },
+  "kl": {
+   "inicio": 497897,
+   "largo": 3037,
+   "izq": 330,
+   "der": 2706,
+   "modo": "CC",
+   "palabra": "tacla",
+   "cents": null,
+   "orilla_dB": [
+    -32.6,
+    -5.7
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 107.8
+  },
+  "kn": {
+   "inicio": 501816,
+   "largo": 2861,
+   "izq": 330,
+   "der": 2530,
+   "modo": "CC",
+   "palabra": "tacna",
+   "cents": null,
+   "orilla_dB": [
+    -29.3,
+    -5.9
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 99.8
+  },
+  "ko": {
+   "inicio": 505559,
+   "largo": 2157,
+   "izq": 330,
+   "der": 1826,
+   "modo": "CV",
+   "palabra": "tocota",
+   "cents": 38.6,
+   "orilla_dB": [
+    -41.4,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 67.8
+  },
+  "kr": {
+   "inicio": 508598,
+   "largo": 2377,
+   "izq": 330,
+   "der": 2046,
+   "modo": "CC",
+   "palabra": "tacra",
+   "cents": null,
+   "orilla_dB": [
+    -31.2,
+    -22.6
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 77.8
+  },
+  "ks": {
+   "inicio": 511857,
+   "largo": 2861,
+   "izq": 330,
+   "der": 2530,
+   "modo": "CC",
+   "palabra": "tacsa",
+   "cents": null,
+   "orilla_dB": [
+    -29.9,
+    -21.9
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 99.8
+  },
+  "kt": {
+   "inicio": 515600,
+   "largo": 3037,
+   "izq": 330,
+   "der": 2706,
+   "modo": "CC",
+   "palabra": "tacta",
+   "cents": null,
+   "orilla_dB": [
+    -29.5,
+    -43.5
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 107.8
+  },
+  "ku": {
+   "inicio": 519519,
+   "largo": 3213,
+   "izq": 330,
+   "der": 2882,
+   "modo": "CV",
+   "palabra": "tucuta",
+   "cents": 10.4,
+   "orilla_dB": [
+    -38.5,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 115.7
+  },
+  "l#": {
+   "inicio": 523614,
+   "largo": 2835,
+   "izq": 330,
+   "der": 2504,
+   "modo": "finC",
+   "palabra": "tal",
+   "cents": -16.3,
+   "orilla_dB": [
+    -11.9,
+    -47.5
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 98.6
+  },
+  "lC": {
+   "inicio": 527331,
+   "largo": 1212,
+   "izq": 330,
+   "der": 881,
+   "modo": "CC",
+   "palabra": "talcha",
+   "cents": -3.5,
+   "orilla_dB": [
+    -0.2,
+    -1.0
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 25.0
+  },
+  "lR": {
+   "inicio": 529425,
+   "largo": 1212,
+   "izq": 330,
+   "der": 881,
+   "modo": "CC",
+   "palabra": "talra",
+   "cents": null,
+   "orilla_dB": [
+    -1.4,
+    -4.1
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 25.0
+  },
+  "la": {
+   "inicio": 531519,
+   "largo": 2685,
+   "izq": 330,
+   "der": 2354,
+   "modo": "CV",
+   "palabra": "talata",
+   "cents": 0.8,
+   "orilla_dB": [
+    -0.1,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 91.8
+  },
+  "lb": {
+   "inicio": 535086,
+   "largo": 1673,
+   "izq": 330,
+   "der": 1342,
+   "modo": "CC",
+   "palabra": "talba",
+   "cents": -2.5,
+   "orilla_dB": [
+    -6.3,
+    -16.7
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 45.9
+  },
+  "ld": {
+   "inicio": 537641,
+   "largo": 1212,
+   "izq": 330,
+   "der": 881,
+   "modo": "CC",
+   "palabra": "talda",
+   "cents": null,
+   "orilla_dB": [
+    -1.6,
+    -1.4
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 25.0
+  },
+  "le": {
+   "inicio": 539735,
+   "largo": 1277,
+   "izq": 330,
+   "der": 946,
+   "modo": "CV",
+   "palabra": "teleta",
+   "cents": 13.3,
+   "orilla_dB": [
+    -3.8,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 27.9
+  },
+  "lf": {
+   "inicio": 541894,
+   "largo": 1212,
+   "izq": 330,
+   "der": 881,
+   "modo": "CC",
+   "palabra": "talfa",
+   "cents": null,
+   "orilla_dB": [
+    -1.2,
+    -1.3
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 25.0
+  },
+  "lg": {
+   "inicio": 543988,
+   "largo": 1212,
+   "izq": 330,
+   "der": 881,
+   "modo": "CC",
+   "palabra": "talga",
+   "cents": null,
+   "orilla_dB": [
+    -2.0,
+    -2.6
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 25.0
+  },
+  "li": {
+   "inicio": 546082,
+   "largo": 1277,
+   "izq": 330,
+   "der": 946,
+   "modo": "CV",
+   "palabra": "tilita",
+   "cents": -0.7,
+   "orilla_dB": [
+    -2.0,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 27.9
+  },
+  "lk": {
+   "inicio": 548241,
+   "largo": 1212,
+   "izq": 330,
+   "der": 881,
+   "modo": "CC",
+   "palabra": "talca",
+   "cents": null,
+   "orilla_dB": [
+    -0.6,
+    -1.8
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 25.0
+  },
+  "ll": {
+   "inicio": 550335,
+   "largo": 1321,
+   "izq": 330,
+   "der": 990,
+   "modo": "CC",
+   "palabra": "tal la",
+   "cents": 1.4,
+   "orilla_dB": [
+    -2.7,
+    -2.9
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 29.9
+  },
+  "lm": {
+   "inicio": 552538,
+   "largo": 2113,
+   "izq": 330,
+   "der": 1782,
+   "modo": "CC",
+   "palabra": "talma",
+   "cents": -2.9,
+   "orilla_dB": [
+    -4.8,
+    -5.4
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 65.9
+  },
+  "ln": {
+   "inicio": 555533,
+   "largo": 1212,
+   "izq": 330,
+   "der": 881,
+   "modo": "CC",
+   "palabra": "talna",
+   "cents": null,
+   "orilla_dB": [
+    -1.2,
+    -1.5
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 25.0
+  },
+  "lo": {
+   "inicio": 557627,
+   "largo": 1893,
+   "izq": 330,
+   "der": 1562,
+   "modo": "CV",
+   "palabra": "tolota",
+   "cents": 12.5,
+   "orilla_dB": [
+    -1.5,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 55.9
+  },
+  "lp": {
+   "inicio": 560402,
+   "largo": 2069,
+   "izq": 330,
+   "der": 1738,
+   "modo": "CC",
+   "palabra": "talpa",
+   "cents": -15.6,
+   "orilla_dB": [
+    -10.6,
+    -42.3
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 63.9
+  },
+  "ls": {
+   "inicio": 563353,
+   "largo": 2421,
+   "izq": 330,
+   "der": 2090,
+   "modo": "CC",
+   "palabra": "talsa",
+   "cents": -44.3,
+   "orilla_dB": [
+    -14.8,
+    -21.7
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 79.8
+  },
+  "lt": {
+   "inicio": 566656,
+   "largo": 2465,
+   "izq": 330,
+   "der": 2134,
+   "modo": "CC",
+   "palabra": "talta",
+   "cents": -22.0,
+   "orilla_dB": [
+    -3.2,
+    -42.0
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 81.8
+  },
+  "lu": {
+   "inicio": 570003,
+   "largo": 1717,
+   "izq": 330,
+   "der": 1386,
+   "modo": "CV",
+   "palabra": "tuluta",
+   "cents": 23.2,
+   "orilla_dB": [
+    -4.2,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 47.9
+  },
+  "m#": {
+   "inicio": 572602,
+   "largo": 2872,
+   "izq": 330,
+   "der": 2541,
+   "modo": "finC",
+   "palabra": "tam",
+   "cents": 0.7,
+   "orilla_dB": [
+    -8.8,
+    -49.9
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 100.2
+  },
+  "ma": {
+   "inicio": 576356,
+   "largo": 1805,
+   "izq": 330,
+   "der": 1474,
+   "modo": "CV",
+   "palabra": "tamata",
+   "cents": 7.1,
+   "orilla_dB": [
+    -3.1,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 51.9
+  },
+  "mb": {
+   "inicio": 579043,
+   "largo": 2069,
+   "izq": 330,
+   "der": 1738,
+   "modo": "CC",
+   "palabra": "tamba",
+   "cents": 1.5,
+   "orilla_dB": [
+    -5.5,
+    -8.6
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 63.9
+  },
+  "me": {
+   "inicio": 581994,
+   "largo": 2157,
+   "izq": 330,
+   "der": 1826,
+   "modo": "CV",
+   "palabra": "temeta",
+   "cents": 10.9,
+   "orilla_dB": [
+    -0.4,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 67.8
+  },
+  "mi": {
+   "inicio": 585033,
+   "largo": 2245,
+   "izq": 330,
+   "der": 1914,
+   "modo": "CV",
+   "palabra": "timita",
+   "cents": 1.7,
+   "orilla_dB": [
+    -0.7,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 71.8
+  },
+  "mm": {
+   "inicio": 588160,
+   "largo": 1717,
+   "izq": 330,
+   "der": 1386,
+   "modo": "CC",
+   "palabra": "tamma",
+   "cents": -4.9,
+   "orilla_dB": [
+    -5.1,
+    -6.7
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 47.9
+  },
+  "mo": {
+   "inicio": 590759,
+   "largo": 3037,
+   "izq": 330,
+   "der": 2706,
+   "modo": "CV",
+   "palabra": "tomota",
+   "cents": 4.2,
+   "orilla_dB": [
+    -1.4,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 107.8
+  },
+  "mp": {
+   "inicio": 594678,
+   "largo": 2641,
+   "izq": 330,
+   "der": 2310,
+   "modo": "CC",
+   "palabra": "tampa",
+   "cents": -12.4,
+   "orilla_dB": [
+    -2.4,
+    -41.8
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 89.8
+  },
+  "ms": {
+   "inicio": 598201,
+   "largo": 2993,
+   "izq": 330,
+   "der": 2662,
+   "modo": "CC",
+   "palabra": "tamsa",
+   "cents": -3.7,
+   "orilla_dB": [
+    -5.3,
+    -21.2
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 105.8
+  },
+  "mu": {
+   "inicio": 602076,
+   "largo": 3037,
+   "izq": 330,
+   "der": 2706,
+   "modo": "CV",
+   "palabra": "tumuta",
+   "cents": 2.1,
+   "orilla_dB": [
+    -1.4,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 107.8
+  },
+  "n#": {
+   "inicio": 605995,
+   "largo": 3080,
+   "izq": 330,
+   "der": 2749,
+   "modo": "finC",
+   "palabra": "tan",
+   "cents": -12.3,
+   "orilla_dB": [
+    -10.6,
+    -46.2
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 109.7
+  },
+  "nC": {
+   "inicio": 609957,
+   "largo": 2861,
+   "izq": 330,
+   "der": 2530,
+   "modo": "CC",
+   "palabra": "tancha",
+   "cents": -6.6,
+   "orilla_dB": [
+    -8.1,
+    -8.4
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 99.8
+  },
+  "nR": {
+   "inicio": 613700,
+   "largo": 2509,
+   "izq": 330,
+   "der": 2178,
+   "modo": "CC",
+   "palabra": "tanra",
+   "cents": -6.6,
+   "orilla_dB": [
+    -6.7,
+    -7.5
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 83.8
+  },
+  "na": {
+   "inicio": 617091,
+   "largo": 1981,
+   "izq": 330,
+   "der": 1650,
+   "modo": "CV",
+   "palabra": "tanata",
+   "cents": 9.5,
+   "orilla_dB": [
+    1.2,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 59.9
+  },
+  "nb": {
+   "inicio": 619954,
+   "largo": 2069,
+   "izq": 330,
+   "der": 1738,
+   "modo": "CC",
+   "palabra": "tanba",
+   "cents": 1.5,
+   "orilla_dB": [
+    -5.5,
+    -8.6
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 63.9
+  },
+  "nd": {
+   "inicio": 622905,
+   "largo": 1981,
+   "izq": 330,
+   "der": 1650,
+   "modo": "CC",
+   "palabra": "tanda",
+   "cents": 3.3,
+   "orilla_dB": [
+    -6.9,
+    -14.1
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 59.9
+  },
+  "ne": {
+   "inicio": 625768,
+   "largo": 1541,
+   "izq": 330,
+   "der": 1210,
+   "modo": "CV",
+   "palabra": "teneta",
+   "cents": 8.7,
+   "orilla_dB": [
+    1.3,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 39.9
+  },
+  "nf": {
+   "inicio": 628191,
+   "largo": 2553,
+   "izq": 330,
+   "der": 2222,
+   "modo": "CC",
+   "palabra": "tanfa",
+   "cents": -1.8,
+   "orilla_dB": [
+    -4.4,
+    -27.7
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 85.8
+  },
+  "ng": {
+   "inicio": 631626,
+   "largo": 2157,
+   "izq": 330,
+   "der": 1826,
+   "modo": "CC",
+   "palabra": "tanga",
+   "cents": -7.2,
+   "orilla_dB": [
+    -4.9,
+    -12.3
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 67.8
+  },
+  "ni": {
+   "inicio": 634665,
+   "largo": 1541,
+   "izq": 330,
+   "der": 1210,
+   "modo": "CV",
+   "palabra": "tinita",
+   "cents": 4.3,
+   "orilla_dB": [
+    -2.2,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 39.9
+  },
+  "nk": {
+   "inicio": 637088,
+   "largo": 2641,
+   "izq": 330,
+   "der": 2310,
+   "modo": "CC",
+   "palabra": "tanca",
+   "cents": 2.3,
+   "orilla_dB": [
+    -6.2,
+    -36.8
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 89.8
+  },
+  "nl": {
+   "inicio": 640611,
+   "largo": 2245,
+   "izq": 330,
+   "der": 1914,
+   "modo": "CC",
+   "palabra": "tanla",
+   "cents": -1.4,
+   "orilla_dB": [
+    -5.0,
+    -5.2
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 71.8
+  },
+  "nm": {
+   "inicio": 643738,
+   "largo": 2773,
+   "izq": 330,
+   "der": 2442,
+   "modo": "CC",
+   "palabra": "tanma",
+   "cents": 1.1,
+   "orilla_dB": [
+    -5.8,
+    -8.0
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 95.8
+  },
+  "nn": {
+   "inicio": 647393,
+   "largo": 1629,
+   "izq": 330,
+   "der": 1298,
+   "modo": "CC",
+   "palabra": "tanna",
+   "cents": null,
+   "orilla_dB": [
+    -3.1,
+    -5.2
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 43.9
+  },
+  "no": {
+   "inicio": 649904,
+   "largo": 2069,
+   "izq": 330,
+   "der": 1738,
+   "modo": "CV",
+   "palabra": "tonota",
+   "cents": 6.0,
+   "orilla_dB": [
+    0.9,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 63.9
+  },
+  "np": {
+   "inicio": 652855,
+   "largo": 2641,
+   "izq": 330,
+   "der": 2310,
+   "modo": "CC",
+   "palabra": "tanpa",
+   "cents": -12.4,
+   "orilla_dB": [
+    -2.4,
+    -41.8
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 89.8
+  },
+  "ns": {
+   "inicio": 656378,
+   "largo": 2773,
+   "izq": 330,
+   "der": 2442,
+   "modo": "CC",
+   "palabra": "tansa",
+   "cents": -4.0,
+   "orilla_dB": [
+    -5.9,
+    -23.0
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 95.8
+  },
+  "nt": {
+   "inicio": 660033,
+   "largo": 2685,
+   "izq": 330,
+   "der": 2354,
+   "modo": "CC",
+   "palabra": "tanta",
+   "cents": 7.0,
+   "orilla_dB": [
+    -7.3,
+    -31.3
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 91.8
+  },
+  "nu": {
+   "inicio": 663600,
+   "largo": 1629,
+   "izq": 330,
+   "der": 1298,
+   "modo": "CV",
+   "palabra": "tunuta",
+   "cents": 4.3,
+   "orilla_dB": [
+    -0.7,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 43.9
+  },
+  "nx": {
+   "inicio": 666111,
+   "largo": 2377,
+   "izq": 330,
+   "der": 2046,
+   "modo": "CC",
+   "palabra": "tanja",
+   "cents": -6.8,
+   "orilla_dB": [
+    -6.3,
+    -18.0
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 77.8
+  },
+  "ny": {
+   "inicio": 669370,
+   "largo": 2421,
+   "izq": 330,
+   "der": 2090,
+   "modo": "CC",
+   "palabra": "tanya",
+   "cents": -3.8,
+   "orilla_dB": [
+    -8.9,
+    -15.3
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 79.8
+  },
+  "o#": {
+   "inicio": 672673,
+   "largo": 3490,
+   "izq": 330,
+   "der": 3159,
+   "modo": "fin",
+   "palabra": "tato",
+   "cents": -5.1,
+   "orilla_dB": [
+    -0.0,
+    -48.7
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 128.3
+  },
+  "oC": {
+   "inicio": 677045,
+   "largo": 2509,
+   "izq": 330,
+   "der": 2178,
+   "modo": "VC",
+   "palabra": "tochota",
+   "cents": 1.4,
+   "orilla_dB": [
+    -0.0,
+    -34.6
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 83.8
+  },
+  "oN": {
+   "inicio": 680436,
+   "largo": 2949,
+   "izq": 330,
+   "der": 2618,
+   "modo": "VC",
+   "palabra": "toñota",
+   "cents": -1.4,
+   "orilla_dB": [
+    -0.0,
+    -2.3
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 103.8
+  },
+  "oR": {
+   "inicio": 684267,
+   "largo": 2421,
+   "izq": 330,
+   "der": 2090,
+   "modo": "VC",
+   "palabra": "torrota",
+   "cents": -1.4,
+   "orilla_dB": [
+    -0.0,
+    -15.9
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 79.8
+  },
+  "oa": {
+   "inicio": 687570,
+   "largo": 2597,
+   "izq": 330,
+   "der": 2266,
+   "modo": "VV",
+   "palabra": "toata",
+   "cents": 7.6,
+   "orilla_dB": [
+    0.1,
+    -0.0
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 87.8
+  },
+  "ob": {
+   "inicio": 691049,
+   "largo": 2421,
+   "izq": 330,
+   "der": 2090,
+   "modo": "VC",
+   "palabra": "tobota",
+   "cents": -2.4,
+   "orilla_dB": [
+    -0.0,
+    -17.3
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 79.8
+  },
+  "od": {
+   "inicio": 694352,
+   "largo": 2421,
+   "izq": 330,
+   "der": 2090,
+   "modo": "VC",
+   "palabra": "todota",
+   "cents": -1.1,
+   "orilla_dB": [
+    -0.0,
+    -16.9
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 79.8
+  },
+  "oe": {
+   "inicio": 697655,
+   "largo": 3389,
+   "izq": 330,
+   "der": 3058,
+   "modo": "VV",
+   "palabra": "toeta",
+   "cents": 6.1,
+   "orilla_dB": [
+    0.1,
+    -0.1
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 123.7
+  },
+  "of": {
+   "inicio": 701926,
+   "largo": 2509,
+   "izq": 330,
+   "der": 2178,
+   "modo": "VC",
+   "palabra": "tofota",
+   "cents": -5.6,
+   "orilla_dB": [
+    -0.0,
+    -33.1
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 83.8
+  },
+  "og": {
+   "inicio": 705317,
+   "largo": 2597,
+   "izq": 330,
+   "der": 2266,
+   "modo": "VC",
+   "palabra": "togota",
+   "cents": -5.3,
+   "orilla_dB": [
+    -0.0,
+    -21.6
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 87.8
+  },
+  "oi": {
+   "inicio": 708796,
+   "largo": 1629,
+   "izq": 330,
+   "der": 1298,
+   "modo": "VV",
+   "palabra": "toita",
+   "cents": -0.7,
+   "orilla_dB": [
+    0.0,
+    -0.0
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 43.9
+  },
+  "ok": {
+   "inicio": 711307,
+   "largo": 2773,
+   "izq": 330,
+   "der": 2442,
+   "modo": "VC",
+   "palabra": "tocota",
+   "cents": -10.7,
+   "orilla_dB": [
+    -0.0,
+    -41.2
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 95.8
+  },
+  "ol": {
+   "inicio": 714962,
+   "largo": 2685,
+   "izq": 330,
+   "der": 2354,
+   "modo": "VC",
+   "palabra": "tolota",
+   "cents": -4.3,
+   "orilla_dB": [
+    -0.0,
+    -2.9
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 91.8
+  },
+  "om": {
+   "inicio": 718529,
+   "largo": 2597,
+   "izq": 330,
+   "der": 2266,
+   "modo": "VC",
+   "palabra": "tomota",
+   "cents": -9.9,
+   "orilla_dB": [
+    -0.0,
+    -7.2
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 87.8
+  },
+  "on": {
+   "inicio": 722008,
+   "largo": 2861,
+   "izq": 330,
+   "der": 2530,
+   "modo": "VC",
+   "palabra": "tonota",
+   "cents": -1.0,
+   "orilla_dB": [
+    -0.0,
+    -3.5
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 99.8
+  },
+  "oo": {
+   "inicio": 725751,
+   "largo": 2773,
+   "izq": 330,
+   "der": 2442,
+   "modo": "VV",
+   "palabra": "toota",
+   "cents": 6.3,
+   "orilla_dB": [
+    -0.0,
+    0.0
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 95.8
+  },
+  "op": {
+   "inicio": 729406,
+   "largo": 2949,
+   "izq": 330,
+   "der": 2618,
+   "modo": "VC",
+   "palabra": "topota",
+   "cents": -8.5,
+   "orilla_dB": [
+    -0.0,
+    -38.3
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 103.8
+  },
+  "or": {
+   "inicio": 733237,
+   "largo": 1981,
+   "izq": 330,
+   "der": 1650,
+   "modo": "VC",
+   "palabra": "torota",
+   "cents": -2.6,
+   "orilla_dB": [
+    -0.0,
+    -11.0
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 59.9
+  },
+  "os": {
+   "inicio": 736100,
+   "largo": 3037,
+   "izq": 330,
+   "der": 2706,
+   "modo": "VC",
+   "palabra": "tosota",
+   "cents": -2.8,
+   "orilla_dB": [
+    -0.0,
+    -14.9
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 107.8
+  },
+  "ot": {
+   "inicio": 740019,
+   "largo": 2861,
+   "izq": 330,
+   "der": 2530,
+   "modo": "VC",
+   "palabra": "totota",
+   "cents": -0.6,
+   "orilla_dB": [
+    -0.0,
+    -40.4
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 99.8
+  },
+  "ou": {
+   "inicio": 743762,
+   "largo": 1937,
+   "izq": 330,
+   "der": 1606,
+   "modo": "VV",
+   "palabra": "touta",
+   "cents": -1.4,
+   "orilla_dB": [
+    0.1,
+    -0.1
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 57.9
+  },
+  "ox": {
+   "inicio": 746581,
+   "largo": 2685,
+   "izq": 330,
+   "der": 2354,
+   "modo": "VC",
+   "palabra": "tojota",
+   "cents": -8.2,
+   "orilla_dB": [
+    -0.0,
+    -30.8
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 91.8
+  },
+  "oy": {
+   "inicio": 750148,
+   "largo": 2597,
+   "izq": 330,
+   "der": 2266,
+   "modo": "VC",
+   "palabra": "toyota",
+   "cents": -2.0,
+   "orilla_dB": [
+    -0.0,
+    -15.4
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 87.8
+  },
+  "p#": {
+   "inicio": 753627,
+   "largo": 3284,
+   "izq": 330,
+   "der": 2953,
+   "modo": "finC",
+   "palabra": "tap",
+   "cents": null,
+   "orilla_dB": [
+    -40.2,
+    -52.7
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 118.9
+  },
+  "pa": {
+   "inicio": 757793,
+   "largo": 2245,
+   "izq": 330,
+   "der": 1914,
+   "modo": "CV",
+   "palabra": "tapata",
+   "cents": 9.8,
+   "orilla_dB": [
+    -37.3,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 71.8
+  },
+  "pe": {
+   "inicio": 760920,
+   "largo": 1893,
+   "izq": 330,
+   "der": 1562,
+   "modo": "CV",
+   "palabra": "tepeta",
+   "cents": null,
+   "orilla_dB": [
+    -36.2,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 55.9
+  },
+  "pi": {
+   "inicio": 763695,
+   "largo": 1717,
+   "izq": 330,
+   "der": 1386,
+   "modo": "CV",
+   "palabra": "tipita",
+   "cents": null,
+   "orilla_dB": [
+    -33.9,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 47.9
+  },
+  "pk": {
+   "inicio": 766294,
+   "largo": 2773,
+   "izq": 330,
+   "der": 2442,
+   "modo": "CC",
+   "palabra": "tapca",
+   "cents": null,
+   "orilla_dB": [
+    -33.4,
+    -42.9
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 95.8
+  },
+  "pl": {
+   "inicio": 769949,
+   "largo": 2289,
+   "izq": 330,
+   "der": 1958,
+   "modo": "CC",
+   "palabra": "tapla",
+   "cents": null,
+   "orilla_dB": [
+    -32.5,
+    -9.2
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 73.8
+  },
+  "po": {
+   "inicio": 773120,
+   "largo": 2069,
+   "izq": 330,
+   "der": 1738,
+   "modo": "CV",
+   "palabra": "topota",
+   "cents": null,
+   "orilla_dB": [
+    -37.4,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 63.9
+  },
+  "pp": {
+   "inicio": 776071,
+   "largo": 2817,
+   "izq": 330,
+   "der": 2486,
+   "modo": "CC",
+   "palabra": "tappa",
+   "cents": null,
+   "orilla_dB": [
+    -34.1,
+    -45.1
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 97.8
+  },
+  "pr": {
+   "inicio": 779770,
+   "largo": 2069,
+   "izq": 330,
+   "der": 1738,
+   "modo": "CC",
+   "palabra": "tapra",
+   "cents": null,
+   "orilla_dB": [
+    -29.5,
+    -2.1
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 63.9
+  },
+  "ps": {
+   "inicio": 782721,
+   "largo": 2729,
+   "izq": 330,
+   "der": 2398,
+   "modo": "CC",
+   "palabra": "tapsa",
+   "cents": null,
+   "orilla_dB": [
+    -34.2,
+    -21.3
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 93.8
+  },
+  "pt": {
+   "inicio": 786332,
+   "largo": 2993,
+   "izq": 330,
+   "der": 2662,
+   "modo": "CC",
+   "palabra": "tapta",
+   "cents": null,
+   "orilla_dB": [
+    -33.0,
+    -48.3
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 105.8
+  },
+  "pu": {
+   "inicio": 790207,
+   "largo": 3037,
+   "izq": 330,
+   "der": 2706,
+   "modo": "CV",
+   "palabra": "tuputa",
+   "cents": 3.9,
+   "orilla_dB": [
+    -33.3,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 107.8
+  },
+  "r#": {
+   "inicio": 794126,
+   "largo": 2986,
+   "izq": 330,
+   "der": 2655,
+   "modo": "finC",
+   "palabra": "tar",
+   "cents": null,
+   "orilla_dB": [
+    -20.1,
+    -40.8
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 105.4
+  },
+  "rR": {
+   "inicio": 797994,
+   "largo": 1937,
+   "izq": 330,
+   "der": 1606,
+   "modo": "CC",
+   "palabra": "tar ra",
+   "cents": -1.9,
+   "orilla_dB": [
+    -9.7,
+    -5.1
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 57.9
+  },
+  "ra": {
+   "inicio": 800813,
+   "largo": 1717,
+   "izq": 330,
+   "der": 1386,
+   "modo": "CV",
+   "palabra": "tarata",
+   "cents": 9.9,
+   "orilla_dB": [
+    -8.5,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 47.9
+  },
+  "rb": {
+   "inicio": 803412,
+   "largo": 1805,
+   "izq": 330,
+   "der": 1474,
+   "modo": "CC",
+   "palabra": "tarba",
+   "cents": 8.9,
+   "orilla_dB": [
+    -12.4,
+    -19.6
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 51.9
+  },
+  "rd": {
+   "inicio": 806099,
+   "largo": 1212,
+   "izq": 330,
+   "der": 881,
+   "modo": "CC",
+   "palabra": "tarda",
+   "cents": -7.5,
+   "orilla_dB": [
+    -5.0,
+    -6.0
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 25.0
+  },
+  "re": {
+   "inicio": 808193,
+   "largo": 2685,
+   "izq": 330,
+   "der": 2354,
+   "modo": "CV",
+   "palabra": "tereta",
+   "cents": 3.9,
+   "orilla_dB": [
+    -5.4,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 91.8
+  },
+  "rf": {
+   "inicio": 811760,
+   "largo": 1212,
+   "izq": 330,
+   "der": 881,
+   "modo": "CC",
+   "palabra": "tarfa",
+   "cents": null,
+   "orilla_dB": [
+    -1.9,
+    -2.4
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 25.0
+  },
+  "rg": {
+   "inicio": 813854,
+   "largo": 1893,
+   "izq": 330,
+   "der": 1562,
+   "modo": "CC",
+   "palabra": "targa",
+   "cents": 8.6,
+   "orilla_dB": [
+    -12.5,
+    -22.6
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 55.9
+  },
+  "ri": {
+   "inicio": 816629,
+   "largo": 1365,
+   "izq": 330,
+   "der": 1034,
+   "modo": "CV",
+   "palabra": "tirita",
+   "cents": 10.3,
+   "orilla_dB": [
+    -8.2,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 31.9
+  },
+  "rk": {
+   "inicio": 818876,
+   "largo": 2421,
+   "izq": 330,
+   "der": 2090,
+   "modo": "CC",
+   "palabra": "tarca",
+   "cents": 13.0,
+   "orilla_dB": [
+    -6.0,
+    -37.8
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 79.8
+  },
+  "rl": {
+   "inicio": 822179,
+   "largo": 1893,
+   "izq": 330,
+   "der": 1562,
+   "modo": "CC",
+   "palabra": "tarla",
+   "cents": -5.5,
+   "orilla_dB": [
+    -9.0,
+    -13.7
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 55.9
+  },
+  "rm": {
+   "inicio": 824954,
+   "largo": 2113,
+   "izq": 330,
+   "der": 1782,
+   "modo": "CC",
+   "palabra": "tarma",
+   "cents": 5.1,
+   "orilla_dB": [
+    -7.4,
+    -6.1
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 65.9
+  },
+  "rn": {
+   "inicio": 827949,
+   "largo": 2157,
+   "izq": 330,
+   "der": 1826,
+   "modo": "CC",
+   "palabra": "tarna",
+   "cents": 2.6,
+   "orilla_dB": [
+    -11.9,
+    -7.4
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 67.8
+  },
+  "ro": {
+   "inicio": 830988,
+   "largo": 2509,
+   "izq": 330,
+   "der": 2178,
+   "modo": "CV",
+   "palabra": "torota",
+   "cents": 9.2,
+   "orilla_dB": [
+    -5.9,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 83.8
+  },
+  "rp": {
+   "inicio": 834379,
+   "largo": 2377,
+   "izq": 330,
+   "der": 2046,
+   "modo": "CC",
+   "palabra": "tarpa",
+   "cents": 0.2,
+   "orilla_dB": [
+    -10.0,
+    -35.9
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 77.8
+  },
+  "rs": {
+   "inicio": 837638,
+   "largo": 1212,
+   "izq": 330,
+   "der": 881,
+   "modo": "CC",
+   "palabra": "tarsa",
+   "cents": null,
+   "orilla_dB": [
+    -1.0,
+    -2.0
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 25.0
+  },
+  "rt": {
+   "inicio": 839732,
+   "largo": 2377,
+   "izq": 330,
+   "der": 2046,
+   "modo": "CC",
+   "palabra": "tarta",
+   "cents": 7.3,
+   "orilla_dB": [
+    -6.2,
+    -35.7
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 77.8
+  },
+  "ru": {
+   "inicio": 842991,
+   "largo": 1277,
+   "izq": 330,
+   "der": 946,
+   "modo": "CV",
+   "palabra": "turuta",
+   "cents": -15.1,
+   "orilla_dB": [
+    -8.8,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 27.9
+  },
+  "rx": {
+   "inicio": 845150,
+   "largo": 2377,
+   "izq": 330,
+   "der": 2046,
+   "modo": "CC",
+   "palabra": "tarja",
+   "cents": 4.3,
+   "orilla_dB": [
+    -10.2,
+    -24.5
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 77.8
+  },
+  "s#": {
+   "inicio": 848409,
+   "largo": 3482,
+   "izq": 330,
+   "der": 3151,
+   "modo": "finC",
+   "palabra": "tas",
+   "cents": null,
+   "orilla_dB": [
+    -19.7,
+    -32.2
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 127.9
+  },
+  "sC": {
+   "inicio": 852773,
+   "largo": 3257,
+   "izq": 330,
+   "der": 2926,
+   "modo": "CC",
+   "palabra": "tascha",
+   "cents": null,
+   "orilla_dB": [
+    -21.1,
+    -17.6
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 117.7
+  },
+  "sR": {
+   "inicio": 856912,
+   "largo": 2641,
+   "izq": 330,
+   "der": 2310,
+   "modo": "CC",
+   "palabra": "tasra",
+   "cents": null,
+   "orilla_dB": [
+    -19.8,
+    -17.0
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 89.8
+  },
+  "sa": {
+   "inicio": 860435,
+   "largo": 2509,
+   "izq": 330,
+   "der": 2178,
+   "modo": "CV",
+   "palabra": "tasata",
+   "cents": 8.2,
+   "orilla_dB": [
+    -23.9,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 83.8
+  },
+  "sb": {
+   "inicio": 863826,
+   "largo": 2069,
+   "izq": 330,
+   "der": 1738,
+   "modo": "CC",
+   "palabra": "tasba",
+   "cents": null,
+   "orilla_dB": [
+    -15.0,
+    -25.0
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 63.9
+  },
+  "sd": {
+   "inicio": 866777,
+   "largo": 2069,
+   "izq": 330,
+   "der": 1738,
+   "modo": "CC",
+   "palabra": "tasda",
+   "cents": null,
+   "orilla_dB": [
+    -14.8,
+    -20.8
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 63.9
+  },
+  "se": {
+   "inicio": 869728,
+   "largo": 2421,
+   "izq": 330,
+   "der": 2090,
+   "modo": "CV",
+   "palabra": "teseta",
+   "cents": 2.5,
+   "orilla_dB": [
+    -24.1,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 79.8
+  },
+  "sf": {
+   "inicio": 873031,
+   "largo": 2685,
+   "izq": 330,
+   "der": 2354,
+   "modo": "CC",
+   "palabra": "tasfa",
+   "cents": null,
+   "orilla_dB": [
+    -17.2,
+    -36.1
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 91.8
+  },
+  "sg": {
+   "inicio": 876598,
+   "largo": 2025,
+   "izq": 330,
+   "der": 1694,
+   "modo": "CC",
+   "palabra": "tasga",
+   "cents": null,
+   "orilla_dB": [
+    -16.1,
+    -24.5
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 61.9
+  },
+  "si": {
+   "inicio": 879505,
+   "largo": 1893,
+   "izq": 330,
+   "der": 1562,
+   "modo": "CV",
+   "palabra": "tisita",
+   "cents": 39.1,
+   "orilla_dB": [
+    -21.6,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 55.9
+  },
+  "sk": {
+   "inicio": 882280,
+   "largo": 2773,
+   "izq": 330,
+   "der": 2442,
+   "modo": "CC",
+   "palabra": "tasca",
+   "cents": null,
+   "orilla_dB": [
+    -20.7,
+    -49.8
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 95.8
+  },
+  "sl": {
+   "inicio": 885935,
+   "largo": 2773,
+   "izq": 330,
+   "der": 2442,
+   "modo": "CC",
+   "palabra": "tasla",
+   "cents": null,
+   "orilla_dB": [
+    -21.2,
+    -10.3
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 95.8
+  },
+  "sm": {
+   "inicio": 889590,
+   "largo": 2817,
+   "izq": 330,
+   "der": 2486,
+   "modo": "CC",
+   "palabra": "tasma",
+   "cents": 2.5,
+   "orilla_dB": [
+    -18.5,
+    -6.9
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 97.8
+  },
+  "sn": {
+   "inicio": 893289,
+   "largo": 2729,
+   "izq": 330,
+   "der": 2398,
+   "modo": "CC",
+   "palabra": "tasna",
+   "cents": null,
+   "orilla_dB": [
+    -19.1,
+    -5.0
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 93.8
+  },
+  "so": {
+   "inicio": 896900,
+   "largo": 2597,
+   "izq": 330,
+   "der": 2266,
+   "modo": "CV",
+   "palabra": "tosota",
+   "cents": 12.9,
+   "orilla_dB": [
+    -14.7,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 87.8
+  },
+  "sp": {
+   "inicio": 900379,
+   "largo": 2905,
+   "izq": 330,
+   "der": 2574,
+   "modo": "CC",
+   "palabra": "taspa",
+   "cents": null,
+   "orilla_dB": [
+    -16.6,
+    -43.1
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 101.8
+  },
+  "ss": {
+   "inicio": 904166,
+   "largo": 2245,
+   "izq": 330,
+   "der": 1914,
+   "modo": "CC",
+   "palabra": "tassa",
+   "cents": null,
+   "orilla_dB": [
+    -18.6,
+    -21.6
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 71.8
+  },
+  "st": {
+   "inicio": 907293,
+   "largo": 2905,
+   "izq": 330,
+   "der": 2574,
+   "modo": "CC",
+   "palabra": "tasta",
+   "cents": null,
+   "orilla_dB": [
+    -16.9,
+    -52.5
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 101.8
+  },
+  "su": {
+   "inicio": 911080,
+   "largo": 3037,
+   "izq": 330,
+   "der": 2706,
+   "modo": "CV",
+   "palabra": "tusuta",
+   "cents": 12.7,
+   "orilla_dB": [
+    -12.4,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 107.8
+  },
+  "sy": {
+   "inicio": 914999,
+   "largo": 2333,
+   "izq": 330,
+   "der": 2002,
+   "modo": "CC",
+   "palabra": "tasya",
+   "cents": null,
+   "orilla_dB": [
+    -20.3,
+    -21.3
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 75.8
+  },
+  "t#": {
+   "inicio": 918214,
+   "largo": 3226,
+   "izq": 330,
+   "der": 2895,
+   "modo": "finC",
+   "palabra": "tat",
+   "cents": null,
+   "orilla_dB": [
+    -31.7,
+    -45.9
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 116.3
+  },
+  "tR": {
+   "inicio": 922322,
+   "largo": 2245,
+   "izq": 330,
+   "der": 1914,
+   "modo": "CC",
+   "palabra": "tatrra",
+   "cents": null,
+   "orilla_dB": [
+    -27.5,
+    -11.7
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 71.8
+  },
+  "ta": {
+   "inicio": 925449,
+   "largo": 2245,
+   "izq": 330,
+   "der": 1914,
+   "modo": "CV",
+   "palabra": "tatata",
+   "cents": 7.6,
+   "orilla_dB": [
+    -38.5,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 71.8
+  },
+  "tb": {
+   "inicio": 928576,
+   "largo": 2421,
+   "izq": 330,
+   "der": 2090,
+   "modo": "CC",
+   "palabra": "tatba",
+   "cents": null,
+   "orilla_dB": [
+    -26.1,
+    -28.2
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 79.8
+  },
+  "te": {
+   "inicio": 931879,
+   "largo": 1981,
+   "izq": 330,
+   "der": 1650,
+   "modo": "CV",
+   "palabra": "teteta",
+   "cents": 13.9,
+   "orilla_dB": [
+    -41.6,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 59.9
+  },
+  "tf": {
+   "inicio": 934742,
+   "largo": 2377,
+   "izq": 330,
+   "der": 2046,
+   "modo": "CC",
+   "palabra": "tatfa",
+   "cents": null,
+   "orilla_dB": [
+    -28.0,
+    -30.6
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 77.8
+  },
+  "ti": {
+   "inicio": 938001,
+   "largo": 1893,
+   "izq": 330,
+   "der": 1562,
+   "modo": "CV",
+   "palabra": "titita",
+   "cents": null,
+   "orilla_dB": [
+    -39.7,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 55.9
+  },
+  "tk": {
+   "inicio": 940776,
+   "largo": 2113,
+   "izq": 330,
+   "der": 1782,
+   "modo": "CC",
+   "palabra": "tatca",
+   "cents": 4.8,
+   "orilla_dB": [
+    -20.7,
+    -24.2
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 65.9
+  },
+  "tm": {
+   "inicio": 943771,
+   "largo": 2861,
+   "izq": 330,
+   "der": 2530,
+   "modo": "CC",
+   "palabra": "tatma",
+   "cents": null,
+   "orilla_dB": [
+    -32.5,
+    -6.8
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 99.8
+  },
+  "to": {
+   "inicio": 947514,
+   "largo": 2333,
+   "izq": 330,
+   "der": 2002,
+   "modo": "CV",
+   "palabra": "totota",
+   "cents": 9.7,
+   "orilla_dB": [
+    -41.0,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 75.8
+  },
+  "tp": {
+   "inicio": 950729,
+   "largo": 1937,
+   "izq": 330,
+   "der": 1606,
+   "modo": "CC",
+   "palabra": "tatpa",
+   "cents": null,
+   "orilla_dB": [
+    -25.8,
+    -39.8
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 57.9
+  },
+  "tr": {
+   "inicio": 953548,
+   "largo": 2201,
+   "izq": 330,
+   "der": 1870,
+   "modo": "CC",
+   "palabra": "tatra",
+   "cents": null,
+   "orilla_dB": [
+    -22.7,
+    -4.3
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 69.8
+  },
+  "ts": {
+   "inicio": 956631,
+   "largo": 2729,
+   "izq": 330,
+   "der": 2398,
+   "modo": "CC",
+   "palabra": "tatsa",
+   "cents": null,
+   "orilla_dB": [
+    -34.2,
+    -22.1
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 93.8
+  },
+  "tt": {
+   "inicio": 960242,
+   "largo": 1981,
+   "izq": 330,
+   "der": 1650,
+   "modo": "CC",
+   "palabra": "tatta",
+   "cents": null,
+   "orilla_dB": [
+    -22.8,
+    -36.8
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 59.9
+  },
+  "tu": {
+   "inicio": 963105,
+   "largo": 2949,
+   "izq": 330,
+   "der": 2618,
+   "modo": "CV",
+   "palabra": "tututa",
+   "cents": -28.6,
+   "orilla_dB": [
+    -35.4,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 103.8
+  },
+  "u#": {
+   "inicio": 966936,
+   "largo": 3634,
+   "izq": 330,
+   "der": 3303,
+   "modo": "fin",
+   "palabra": "tatu",
+   "cents": 0.5,
+   "orilla_dB": [
+    -0.0,
+    -50.1
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 134.8
+  },
+  "uC": {
+   "inicio": 971452,
+   "largo": 2069,
+   "izq": 330,
+   "der": 1738,
+   "modo": "VC",
+   "palabra": "tuchuta",
+   "cents": 22.9,
+   "orilla_dB": [
+    -0.0,
+    -34.2
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 63.9
+  },
+  "uN": {
+   "inicio": 974403,
+   "largo": 2245,
+   "izq": 330,
+   "der": 1914,
+   "modo": "VC",
+   "palabra": "tuñuta",
+   "cents": -4.9,
+   "orilla_dB": [
+    -0.0,
+    -2.6
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 71.8
+  },
+  "uR": {
+   "inicio": 977530,
+   "largo": 1717,
+   "izq": 330,
+   "der": 1386,
+   "modo": "VC",
+   "palabra": "turruta",
+   "cents": 5.1,
+   "orilla_dB": [
+    -0.0,
+    -10.6
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 47.9
+  },
+  "ua": {
+   "inicio": 980129,
+   "largo": 1629,
+   "izq": 330,
+   "der": 1298,
+   "modo": "VV",
+   "palabra": "tuata",
+   "cents": 8.8,
+   "orilla_dB": [
+    0.1,
+    -0.1
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 43.9
+  },
+  "ub": {
+   "inicio": 982640,
+   "largo": 1893,
+   "izq": 330,
+   "der": 1562,
+   "modo": "VC",
+   "palabra": "tubuta",
+   "cents": -4.3,
+   "orilla_dB": [
+    -0.0,
+    -18.0
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 55.9
+  },
+  "ud": {
+   "inicio": 985415,
+   "largo": 1805,
+   "izq": 330,
+   "der": 1474,
+   "modo": "VC",
+   "palabra": "tuduta",
+   "cents": -11.4,
+   "orilla_dB": [
+    -0.0,
+    -16.6
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 51.9
+  },
+  "ue": {
+   "inicio": 988102,
+   "largo": 1717,
+   "izq": 330,
+   "der": 1386,
+   "modo": "VV",
+   "palabra": "tueta",
+   "cents": 3.5,
+   "orilla_dB": [
+    0.2,
+    -0.1
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 47.9
+  },
+  "uf": {
+   "inicio": 990701,
+   "largo": 2509,
+   "izq": 330,
+   "der": 2178,
+   "modo": "VC",
+   "palabra": "tufuta",
+   "cents": 4.6,
+   "orilla_dB": [
+    -0.0,
+    -30.4
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 83.8
+  },
+  "ug": {
+   "inicio": 994092,
+   "largo": 1981,
+   "izq": 330,
+   "der": 1650,
+   "modo": "VC",
+   "palabra": "tuguta",
+   "cents": -3.0,
+   "orilla_dB": [
+    -0.0,
+    -12.5
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 59.9
+  },
+  "ui": {
+   "inicio": 996955,
+   "largo": 1453,
+   "izq": 330,
+   "der": 1122,
+   "modo": "VV",
+   "palabra": "tuita",
+   "cents": 2.1,
+   "orilla_dB": [
+    -0.0,
+    0.0
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 35.9
+  },
+  "uk": {
+   "inicio": 999290,
+   "largo": 2685,
+   "izq": 330,
+   "der": 2354,
+   "modo": "VC",
+   "palabra": "tucuta",
+   "cents": -7.9,
+   "orilla_dB": [
+    -0.0,
+    -40.1
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 91.8
+  },
+  "ul": {
+   "inicio": 1002857,
+   "largo": 2157,
+   "izq": 330,
+   "der": 1826,
+   "modo": "VC",
+   "palabra": "tuluta",
+   "cents": -10.7,
+   "orilla_dB": [
+    -0.0,
+    -2.8
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 67.8
+  },
+  "um": {
+   "inicio": 1005896,
+   "largo": 2333,
+   "izq": 330,
+   "der": 2002,
+   "modo": "VC",
+   "palabra": "tumuta",
+   "cents": -3.0,
+   "orilla_dB": [
+    -0.0,
+    -2.7
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 75.8
+  },
+  "un": {
+   "inicio": 1009111,
+   "largo": 2421,
+   "izq": 330,
+   "der": 2090,
+   "modo": "VC",
+   "palabra": "tunuta",
+   "cents": -6.7,
+   "orilla_dB": [
+    -0.0,
+    -0.7
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 79.8
+  },
+  "uo": {
+   "inicio": 1012414,
+   "largo": 1717,
+   "izq": 330,
+   "der": 1386,
+   "modo": "VV",
+   "palabra": "tuota",
+   "cents": 10.2,
+   "orilla_dB": [
+    0.2,
+    -0.1
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 47.9
+  },
+  "up": {
+   "inicio": 1015013,
+   "largo": 2685,
+   "izq": 330,
+   "der": 2354,
+   "modo": "VC",
+   "palabra": "tuputa",
+   "cents": -0.1,
+   "orilla_dB": [
+    -0.0,
+    -34.6
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 91.8
+  },
+  "ur": {
+   "inicio": 1018580,
+   "largo": 1277,
+   "izq": 330,
+   "der": 946,
+   "modo": "VC",
+   "palabra": "turuta",
+   "cents": 8.0,
+   "orilla_dB": [
+    -0.0,
+    -8.1
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 27.9
+  },
+  "us": {
+   "inicio": 1020739,
+   "largo": 2861,
+   "izq": 330,
+   "der": 2530,
+   "modo": "VC",
+   "palabra": "tusuta",
+   "cents": -15.8,
+   "orilla_dB": [
+    -0.0,
+    -10.4
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 99.8
+  },
+  "ut": {
+   "inicio": 1024482,
+   "largo": 2773,
+   "izq": 330,
+   "der": 2442,
+   "modo": "VC",
+   "palabra": "tututa",
+   "cents": 0.1,
+   "orilla_dB": [
+    -0.0,
+    -36.2
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 95.8
+  },
+  "uu": {
+   "inicio": 1028137,
+   "largo": 3213,
+   "izq": 330,
+   "der": 2882,
+   "modo": "VV",
+   "palabra": "tuuta",
+   "cents": 0.6,
+   "orilla_dB": [
+    0.0,
+    -0.0
+   ],
+   "orilla_vocal": [
+    true,
+    true
+   ],
+   "dur_ms": 115.7
+  },
+  "ux": {
+   "inicio": 1032232,
+   "largo": 2685,
+   "izq": 330,
+   "der": 2354,
+   "modo": "VC",
+   "palabra": "tujuta",
+   "cents": -1.9,
+   "orilla_dB": [
+    -0.0,
+    -34.6
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 91.8
+  },
+  "uy": {
+   "inicio": 1035799,
+   "largo": 2421,
+   "izq": 330,
+   "der": 2090,
+   "modo": "VC",
+   "palabra": "tuyuta",
+   "cents": -7.2,
+   "orilla_dB": [
+    -0.0,
+    -14.7
+   ],
+   "orilla_vocal": [
+    true,
+    false
+   ],
+   "dur_ms": 79.8
+  },
+  "x#": {
+   "inicio": 1039102,
+   "largo": 3913,
+   "izq": 330,
+   "der": 3582,
+   "modo": "finC",
+   "palabra": "taj",
+   "cents": null,
+   "orilla_dB": [
+    -25.5,
+    -46.7
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 147.5
+  },
+  "xa": {
+   "inicio": 1043897,
+   "largo": 3037,
+   "izq": 330,
+   "der": 2706,
+   "modo": "CV",
+   "palabra": "tajata",
+   "cents": 6.0,
+   "orilla_dB": [
+    -25.9,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 107.8
+  },
+  "xe": {
+   "inicio": 1047816,
+   "largo": 3389,
+   "izq": 330,
+   "der": 3058,
+   "modo": "CV",
+   "palabra": "tejeta",
+   "cents": 4.0,
+   "orilla_dB": [
+    -20.0,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 123.7
+  },
+  "xi": {
+   "inicio": 1052087,
+   "largo": 3213,
+   "izq": 330,
+   "der": 2882,
+   "modo": "CV",
+   "palabra": "tijita",
+   "cents": -1.4,
+   "orilla_dB": [
+    -23.8,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 115.7
+  },
+  "xo": {
+   "inicio": 1056182,
+   "largo": 3301,
+   "izq": 330,
+   "der": 2970,
+   "modo": "CV",
+   "palabra": "tojota",
+   "cents": 35.7,
+   "orilla_dB": [
+    -27.3,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 119.7
+  },
+  "xu": {
+   "inicio": 1060365,
+   "largo": 2773,
+   "izq": 330,
+   "der": 2442,
+   "modo": "CV",
+   "palabra": "tujuta",
+   "cents": 19.2,
+   "orilla_dB": [
+    -36.1,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 95.8
+  },
+  "xx": {
+   "inicio": 1064020,
+   "largo": 3345,
+   "izq": 330,
+   "der": 3014,
+   "modo": "CC",
+   "palabra": "tajja",
+   "cents": -457.3,
+   "orilla_dB": [
+    -25.7,
+    -25.1
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 121.7
+  },
+  "y#": {
+   "inicio": 1068247,
+   "largo": 2650,
+   "izq": 330,
+   "der": 2319,
+   "modo": "finC",
+   "palabra": "tall",
+   "cents": -9.5,
+   "orilla_dB": [
+    -14.1,
+    -50.6
+   ],
+   "orilla_vocal": [
+    false,
+    false
+   ],
+   "dur_ms": 90.2
+  },
+  "ya": {
+   "inicio": 1071779,
+   "largo": 2245,
+   "izq": 330,
+   "der": 1914,
+   "modo": "CV",
+   "palabra": "tayata",
+   "cents": 9.0,
+   "orilla_dB": [
+    -15.9,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 71.8
+  },
+  "ye": {
+   "inicio": 1074906,
+   "largo": 3037,
+   "izq": 330,
+   "der": 2706,
+   "modo": "CV",
+   "palabra": "teyeta",
+   "cents": 3.6,
+   "orilla_dB": [
+    -15.8,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 107.8
+  },
+  "yi": {
+   "inicio": 1078825,
+   "largo": 2157,
+   "izq": 330,
+   "der": 1826,
+   "modo": "CV",
+   "palabra": "tiyita",
+   "cents": 4.7,
+   "orilla_dB": [
+    -18.8,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 67.8
+  },
+  "yo": {
+   "inicio": 1081864,
+   "largo": 1805,
+   "izq": 330,
+   "der": 1474,
+   "modo": "CV",
+   "palabra": "toyota",
+   "cents": 7.3,
+   "orilla_dB": [
+    -14.2,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 51.9
+  },
+  "yu": {
+   "inicio": 1084551,
+   "largo": 2245,
+   "izq": 330,
+   "der": 1914,
+   "modo": "CV",
+   "palabra": "tuyuta",
+   "cents": 8.6,
+   "orilla_dB": [
+    -13.8,
+    -0.0
+   ],
+   "orilla_vocal": [
+    false,
+    true
+   ],
+   "dur_ms": 71.8
+  }
+ },
+ "fallas": [],
+ "faltan_del_inventario": [],
+ "audio_sha256": {
+  "banco.flac": "25ecb718db783db87178f6977d0fcac452a55ef702145cad53e8558f9fecf284",
+  "banco.wav": "fb8e7a40191f03e2967a0360800962b2ac396ac390295fa882c603c693086f42"
+ },
+ "fabrica_sha256": {
+  "fabrica.py": "9ff952b754bcf6650096c07543a1cb7f46ac0fff4dbc7ec85a8b2d590011b688",
+  "g2p.py": "8e2a1fbd45b1e4fbb048f4dec1d1519b0f5280e47c92cfaa6fb11abad03480d2",
+  "inventario.json": "13b0dc64de7c0b195bd931ca422255aad7ee161a3a390a86cd771a7aed316d37"
+ }
+}

@@ -1,0 +1,26 @@
+{
+  "motor_propio": "duna-guitarra",
+  "config": {
+    "dur": 4,
+    "tipo": "guitarra",
+    "notas": [
+      {
+        "t": 0.1,
+        "dur": 0.8,
+        "m": 57,
+        "v": 0.75,
+        "c": 0
+      },
+      {
+        "t": 0.9,
+        "dur": 1.2,
+        "m": 64,
+        "v": 0.6,
+        "c": 0,
+        "liga": true,
+        "desliz": 0.2
+      }
+    ],
+    "semilla": 3
+  }
+}

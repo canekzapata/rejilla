@@ -1,0 +1,22 @@
+{
+  "motor_propio": "tambura-rio",
+  "config": {
+    "dur": 4,
+    "semilla": 20261020,
+    "argumentos": {
+      "eventos": [
+        {
+          "t": 0.1,
+          "dur": 3,
+          "m": 50,
+          "patron": [
+            4,
+            3,
+            4,
+            2
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+"""Corrige sólo la cola después de la lectura Rejilla. Conserva el primer máster."""
+from comun import *
+import re
+out=ultimo();src=out/(out.name+'.wav');sr,y=wavfile.read(src);before=float(abs(y[-round(sr*.05):]).max());n=round(.25*sr);fade=np.concatenate([np.linspace(1,0,n-round(.06*sr)),np.zeros(round(.06*sr))]);y[-n:]*=fade[:,None];final=out/(out.name+'-final.wav');wav(final,y,sr);aac(final.with_suffix('.m4a'),final)
+r=subprocess.run(['ffmpeg','-hide_banner','-i',str(final.with_suffix('.m4a')),'-af','loudnorm=I=-12.5:TP=-2.5:LRA=10:print_format=json','-f','null','-'],capture_output=True,text=True,check=True);met=json.loads(re.findall(r'\{[^{}]+\}',r.stderr)[-1]);guardar(out/'MASTER.txt',final.name.encode('utf-8'));jsave(out/'master-final.json',{'master':final.name,'AAC':met,'revision_de':src.name,'cambio':'fade de los últimos 250 ms, últimos 60 ms en cero, después de spectrumsynth','resto_anterior_50ms':before,'resto_final_50ms':float(abs(y[-round(sr*.05):]).max()),'fragmentos':'las tres muestras de secciones anteriores a la cola conservan exactamente el mismo PCM de origen','video_renderizado':False});print(final,met)

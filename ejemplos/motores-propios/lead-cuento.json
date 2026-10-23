@@ -1,0 +1,24 @@
+{
+  "motor_propio": "lead-cuento",
+  "config": {
+    "dur": 4,
+    "semilla": 20261020,
+    "argumentos": {
+      "notas": [
+        {
+          "t": 0.15,
+          "m": 57,
+          "dur": 0.6,
+          "v": 0.7
+        },
+        {
+          "t": 0.9,
+          "m": 64,
+          "dur": 0.8,
+          "v": 0.6,
+          "glis": true
+        }
+      ]
+    }
+  }
+}

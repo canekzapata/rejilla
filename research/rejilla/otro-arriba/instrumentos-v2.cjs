@@ -1,0 +1,3 @@
+const fs=require('fs'),path=require('path');const out=path.resolve(process.argv[2]),P=JSON.parse(fs.readFileSync(path.join(out,'partitura.json'),'utf8')),base=path.resolve(__dirname,'../objetos/motor');
+for(const [name,engine,config] of [['trompeta',require(base+'/metal.js'),{dur:P.duracion,voz:'trompeta',sordina:'cup',notas:P.trompeta,semilla:P.semilla}],['piano',require(base+'/piano.js'),{dur:P.duracion,eventos:P.piano,prepara:()=>require(base+'/piano.js').PREP.goma,semilla:P.semilla}]]){
+ const y=engine.render(config,48000);for(const n of y)if(!Number.isFinite(n))throw Error(name+' no finito');fs.writeFileSync(path.join(out,'render',name+'.f32'),Buffer.from(y.buffer),{flag:'wx'});console.log(name,'v2 renderizado');}

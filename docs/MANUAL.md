@@ -1,3 +1,5 @@
+> Manual editorial conservado. Para abrir esta edición usa [README](../README.md). Las muestras se calculan localmente; las carpetas históricas de audio no se incluyen. El PDF original está en [manual.pdf](../manual.pdf).
+
 # Rejilla: componer imágenes, diseñar sonidos
 
 Canek Zapata · Taller para músicos · Edición del 20 de octubre de 2026

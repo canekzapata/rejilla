@@ -1,0 +1,7 @@
+"""Revisión real: menor volumen y coordenadas de captura coherentes con el raster."""
+from modelos import *
+out=ultimo();T=leer(out/'datos/terreno-22.json');G=leer(out/'datos/geometria-abanico.json')['geometria'];H=np.fromfile(out/'datos/h-22.f32',np.float32).reshape(T['G'],T['G']);S=sedimentos(H,T,G,masa=600);S['revision']='r2: paquete de 600 m3, no 9000; mismo algoritmo, máximo ~29 m; sigue magnificado'
+jsave(out/'depositos-r2.json',S);guardar(out/'DEPOSITOS.txt',b'depositos-r2.json');tag=out.name.split('-')[-1];f,ax=figura('Los caminos vuelven a la misma salida','Revisión: depósito hasta 29 m · coordenadas de mapa corregidas · misma ley de reparto',2);U=np.array(S['u']);V=np.array(S['v']);ax[0].contour(np.arange(T['G']),np.arange(T['G']),H,levels=30,colors=T['plumas'][0],linewidths=.4)
+for k in [0,32,80,144,224,304]:
+ j=np.array(S['caminos'][k]);ax[0].plot(U[np.arange(len(j)),j]*(T['G']-1),V[np.arange(len(j)),j]*(T['G']-1),lw=.8,color=T['plumas'][-1],alpha=.55)
+ax[0].invert_yaxis();ax[0].set_aspect('equal');ax[0].set_axis_off();d=np.array(S['depositos_m'][-1]);im=ax[1].imshow(d.T,origin='lower',aspect='auto',cmap='cividis');f.colorbar(im,ax=ax[1],label='depósito, metros amplificados');ax[1].set_xlabel('corona radial');ax[1].set_ylabel('ramal');salva(f,out/'proceso'/f'02b-deposito-y-coordenadas-s{SEED}-{tag}.png');print('máximo',d.max(),'caminos únicos',len(np.unique(np.array(S['caminos']),axis=0)),'salida',np.unique(np.array(S['caminos'])[:,-1]))

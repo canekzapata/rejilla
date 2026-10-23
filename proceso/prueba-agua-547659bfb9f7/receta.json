@@ -1,0 +1,13 @@
+{
+  "ejecucion": "547659bfb9f7fb2fa5c9f92c9a4fc18b2e8159f0b086a1efdfa2976835010f24",
+  "nonce": "a5887a4d95d3448a98b8400ab5163cde",
+  "semilla": 67,
+  "version": "15baa8e70f9ef1b3eb72369c0f8ed59623f2d07a75e9ea1ef8638b0a59bb9c0e",
+  "sha256": {
+    "01-eventos-de-voz-s67-547659bfb9f7.png": "6e11cde8aaab6eed207a371629cea7bfde940840e4e4ebe488bcc89cd6ecb92f",
+    "02-hidrograma-s67-547659bfb9f7.png": "2b4e9f10ff0f3d49a844601e29b1a643625da3d9f936a95237567da8d6c562c0",
+    "03-mezcla-final-s67-547659bfb9f7.png": "1a11fe1ef930cdcc5cee79d3cbdae635a95fc86d0109b17be9df85ea8a16ad5a",
+    "proceso-agua-s67-547659bfb9f7.gif": "749ba28dd64d8a0c08dbeaa0a7ca9665b5d4d5c1e58fe0430f79228742656774",
+    "README.md": "cf2103dfc9a2ccea12b12ee7ed68be0f22f95d412079f2fc15ee6b2df8d46933"
+  }
+}

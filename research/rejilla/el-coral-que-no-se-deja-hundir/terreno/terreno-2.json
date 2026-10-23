@@ -1,0 +1,69 @@
+{
+ "semilla": "2",
+ "arq": "atolon",
+ "nombre": "ATOLÓN",
+ "G": 360,
+ "relieve": 10,
+ "anchoKm": 10,
+ "umbralMar": 0.0001,
+ "nivelMar": null,
+ "umbralMarFondo": 0.8072382171186182,
+ "relieveFondo": 51.872315406799316,
+ "historia": [
+  "VOLCÁN",
+  "HUNDIMIENTO",
+  "ARRECIFE",
+  "ATOLÓN"
+ ],
+ "especiales": [],
+ "nombres": [
+  {
+   "nombre": "EL BANCO DE LAS FRAGATAS",
+   "clase": "atolon",
+   "u": 0.5909935004642524,
+   "v": 0.5072732900030951
+  },
+  {
+   "nombre": "EL CAYO PONIENTE",
+   "clase": "cumbre",
+   "u": 0.32590529247910865,
+   "v": 0.7493036211699164
+  },
+  {
+   "nombre": "EL CAYO DE LOS LOBOS",
+   "clase": "cumbre",
+   "u": 0.8022284122562674,
+   "v": 0.7019498607242339
+  },
+  {
+   "nombre": "EL CAYO SUR",
+   "clase": "cumbre",
+   "u": 0.4373259052924791,
+   "v": 0.807799442896936
+  },
+  {
+   "nombre": "EL CAYO SUR CHICO",
+   "clase": "cumbre",
+   "u": 0.5682451253481894,
+   "v": 0.8245125348189415
+  },
+  {
+   "nombre": "EL CAYO SUR CHICO",
+   "clase": "cumbre",
+   "u": 0.7158774373259053,
+   "v": 0.7743732590529248
+  },
+  {
+   "nombre": "LA LAGUNA ARRECIFAL",
+   "clase": "laguna",
+   "u": 0.549318216694519,
+   "v": 0.6968723646734132
+  },
+  {
+   "nombre": "LA BOCA GRANDE",
+   "clase": "boca",
+   "u": 0.26896085373042866,
+   "v": 0.39680904379693965
+  }
+ ]
+}

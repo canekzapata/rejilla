@@ -28,5 +28,19 @@ salidas/
 *.zip
 *.7z
 usos.jsonl
-# Datos de voz opcionales
+# Otros bancos de voz (el banco de funcionamiento se permite abajo)
 difonos/bancos/
+
+# Banco de voz de funcionamiento, único y pequeño (no muestras de canciones)
+!difonos/bancos/
+difonos/bancos/*
+!difonos/bancos/sabina-1-b44e7fab5cee/
+difonos/bancos/sabina-1-b44e7fab5cee/*
+!difonos/bancos/sabina-1-b44e7fab5cee/manifiesto.json
+!difonos/bancos/sabina-1-b44e7fab5cee/banco.wav
+!difonos/bancos/sabina-1-b44e7fab5cee/banco.flac
+
+# Herramientas y fuentes descargadas para recompilar eSpeak
+difonos/emsdk/
+difonos/build/
+difonos/vendor/espeak-ng/

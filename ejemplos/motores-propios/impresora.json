@@ -1,0 +1,21 @@
+{
+  "motor_propio": "impresora",
+  "config": {
+    "dur": 4,
+    "semilla": 20261020,
+    "argumentos": {
+      "lineas": [
+        {
+          "t": 0.15,
+          "chars": 18,
+          "v": 0.7
+        },
+        {
+          "t": 1.2,
+          "chars": 12,
+          "v": 0.6
+        }
+      ]
+    }
+  }
+}

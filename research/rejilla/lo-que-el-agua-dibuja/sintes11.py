@@ -115,7 +115,8 @@ def hidrograma(lluvia, fr, k=3.0, theta=2.2):
 def crecida(Q, fr, N, semilla=0, Qc=.22):
     """Q a fr Hz (0–1) → (rugido estéreo, pedregones estéreo, tasa de pedregones a fr Hz). El rugido se calcula a 16 kHz."""
     rng = np.random.default_rng(semilla); n = N // 3 + 1; tb = np.arange(n, dtype=np.float32) / SRB; q = np.interp(tb, np.arange(len(Q)) / fr, Q).astype(np.float32)
-    lento = np.interp(tb, np.arange(0, tb[-1] + 2, .25), rng.uniform(.6, 1.4, int(tb[-1] / .25) + 9)).astype(np.float32)
+    nudos = np.arange(0, tb[-1] + 2, .25)
+    lento = np.interp(tb, nudos, rng.uniform(.6, 1.4, len(nudos))).astype(np.float32)
     ruge = np.zeros((n, 2), np.float32)
     for k in range(2):
         pardo = _f(np.cumsum(rng.standard_normal(n).astype(np.float32) * .02), 'high', 30, 1)                 # ruido pardo, sin deriva
@@ -215,11 +216,13 @@ def ocho_ocho(notas, N, fr=1000):
 def viento(curva, N, semilla=0, d=.004):
     """curva: [[t, m/s]] → (estéreo, v a 16 kHz). Ráfagas lentas; el pasto seco (tallos de d m) silba a f = 0.2 v / d."""
     rng = np.random.default_rng(semilla); n = N // 3 + 1; t = np.arange(n) / SRB; v0 = np.interp(t, *zip(*curva))
-    raf = np.interp(t, np.arange(0, t[-1] + 4, .7), rng.normal(0, 1, int(t[-1] / .7) + 7)); raf = sosfiltfilt(butter(1, .5, fs=SRB, output='sos'), raf)
+    nudos = np.arange(0, t[-1] + 4, .7)
+    raf = np.interp(t, nudos, rng.normal(0, 1, len(nudos))); raf = sosfiltfilt(butter(1, .5, fs=SRB, output='sos'), raf)
     v = np.clip(v0 * (1 + .35 * raf / (np.abs(raf).max() + 1e-9)), 0, None).astype(np.float32); del raf, v0
     y = np.zeros((n, 2), np.float32)
     for k in range(2): y[:, k] += _f(rng.standard_normal(n).astype(np.float32), 'band', [180, 1400], 1) * (v / 10) ** 2
-    f = .2 * v / d * (1 + .01 * np.interp(t, np.arange(0, t[-1] + 2, .05), rng.normal(0, 1, int(t[-1] / .05) + 41)))
+    nudos_silbo = np.arange(0, t[-1] + 2, .05)
+    f = .2 * v / d * (1 + .01 * np.interp(t, nudos_silbo, rng.normal(0, 1, len(nudos_silbo))))
     silbo = (np.sin(2 * np.pi * np.cumsum(f) / SRB) * np.clip(v - 5, 0, None) / 6 * .25).astype(np.float32)
     y += _pan(silbo, .4).astype(np.float32); y = _sube(y, N)
     return y / (np.abs(y).max() + 1e-12), v

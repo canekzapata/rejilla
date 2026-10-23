@@ -1,0 +1,25 @@
+{
+  "motor_propio": "cinta-meandro",
+  "config": {
+    "dur": 6,
+    "velocidad": [
+      [
+        0,
+        0.9
+      ],
+      [
+        2,
+        0.64
+      ],
+      [
+        4,
+        0.8
+      ],
+      [
+        6,
+        0.55
+      ]
+    ],
+    "semilla": 26
+  }
+}

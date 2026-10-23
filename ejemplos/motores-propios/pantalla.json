@@ -1,0 +1,14 @@
+{
+  "motor_propio": "pantalla",
+  "config": {
+    "dur": 4,
+    "semilla": 20261020,
+    "argumentos": {
+      "tiempos": [
+        0.1,
+        1.5
+      ],
+      "f": 60.235
+    }
+  }
+}

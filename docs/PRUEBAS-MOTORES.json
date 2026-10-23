@@ -1,0 +1,252 @@
+[
+  {
+    "pedido": "ejemplos/doce/androide.json",
+    "ok": true,
+    "segundos": 15.58
+  },
+  {
+    "pedido": "ejemplos/doce/arpa.json",
+    "ok": true,
+    "segundos": 17.12
+  },
+  {
+    "pedido": "ejemplos/doce/boca.json",
+    "ok": true,
+    "segundos": 8.66
+  },
+  {
+    "pedido": "ejemplos/doce/cristal.json",
+    "ok": true,
+    "segundos": 9.09
+  },
+  {
+    "pedido": "ejemplos/doce/cuerda.json",
+    "ok": true,
+    "segundos": 14.82
+  },
+  {
+    "pedido": "ejemplos/doce/estacion.json",
+    "ok": true,
+    "segundos": 24.06
+  },
+  {
+    "pedido": "ejemplos/doce/fotones.json",
+    "ok": true,
+    "segundos": 10.94
+  },
+  {
+    "pedido": "ejemplos/doce/organo.json",
+    "ok": true,
+    "segundos": 9.07
+  },
+  {
+    "pedido": "ejemplos/doce/piano.json",
+    "ok": true,
+    "segundos": 11.46
+  },
+  {
+    "pedido": "ejemplos/doce/plasma.json",
+    "ok": true,
+    "segundos": 10.09
+  },
+  {
+    "pedido": "ejemplos/doce/sala.json",
+    "ok": true,
+    "segundos": 9.98
+  },
+  {
+    "pedido": "ejemplos/doce/terminal.json",
+    "ok": true,
+    "segundos": 10.7
+  },
+  {
+    "pedido": "ejemplos/motores-propios/armonio-rio.json",
+    "ok": true,
+    "segundos": 7.43
+  },
+  {
+    "pedido": "ejemplos/motores-propios/arpa-rio.json",
+    "ok": true,
+    "segundos": 7.43
+  },
+  {
+    "pedido": "ejemplos/motores-propios/avalancha.json",
+    "ok": true,
+    "segundos": 6.65
+  },
+  {
+    "pedido": "ejemplos/motores-propios/bajo-dub.json",
+    "ok": true,
+    "segundos": 7.58
+  },
+  {
+    "pedido": "ejemplos/motores-propios/campana-anden.json",
+    "ok": true,
+    "segundos": 6.61
+  },
+  {
+    "pedido": "ejemplos/motores-propios/cinta-meandro.json",
+    "ok": true,
+    "segundos": 8.35
+  },
+  {
+    "pedido": "ejemplos/motores-propios/cobre-vocal.json",
+    "ok": true,
+    "segundos": 12.86
+  },
+  {
+    "pedido": "ejemplos/motores-propios/convoy.json",
+    "ok": true,
+    "segundos": 28.08
+  },
+  {
+    "pedido": "ejemplos/motores-propios/coro-cuento.json",
+    "ok": true,
+    "segundos": 24.26
+  },
+  {
+    "pedido": "ejemplos/motores-propios/crater-complejo.json",
+    "ok": true,
+    "segundos": 9.13
+  },
+  {
+    "pedido": "ejemplos/motores-propios/crater-joven.json",
+    "ok": true,
+    "segundos": 7.72
+  },
+  {
+    "pedido": "ejemplos/motores-propios/crater-viejo.json",
+    "ok": true,
+    "segundos": 6.33
+  },
+  {
+    "pedido": "ejemplos/motores-propios/duna-guembri.json",
+    "ok": true,
+    "segundos": 8.06
+  },
+  {
+    "pedido": "ejemplos/motores-propios/duna-guitarra.json",
+    "ok": true,
+    "segundos": 7.67
+  },
+  {
+    "pedido": "ejemplos/motores-propios/estratos.json",
+    "ok": true,
+    "segundos": 7.14
+  },
+  {
+    "pedido": "ejemplos/motores-propios/fretless-traspuesta.json",
+    "ok": true,
+    "segundos": 7.47
+  },
+  {
+    "pedido": "ejemplos/motores-propios/garganta-montana.json",
+    "ok": true,
+    "segundos": 10.04
+  },
+  {
+    "pedido": "ejemplos/motores-propios/garganta-rio.json",
+    "ok": true,
+    "segundos": 8.73
+  },
+  {
+    "pedido": "ejemplos/motores-propios/garganta-volcan.json",
+    "ok": true,
+    "segundos": 6.58
+  },
+  {
+    "pedido": "ejemplos/motores-propios/halo-fase.json",
+    "ok": true,
+    "segundos": 6.45
+  },
+  {
+    "pedido": "ejemplos/motores-propios/impresora.json",
+    "ok": true,
+    "segundos": 6.59
+  },
+  {
+    "pedido": "ejemplos/motores-propios/lago-herradura.json",
+    "ok": true,
+    "segundos": 8.39
+  },
+  {
+    "pedido": "ejemplos/motores-propios/lead-cuento.json",
+    "ok": true,
+    "segundos": 8.04
+  },
+  {
+    "pedido": "ejemplos/motores-propios/lluvia-lamina.json",
+    "ok": true,
+    "segundos": 6.97
+  },
+  {
+    "pedido": "ejemplos/motores-propios/luciernagas.json",
+    "ok": true,
+    "segundos": 7.2
+  },
+  {
+    "pedido": "ejemplos/motores-propios/magma.json",
+    "ok": true,
+    "segundos": 9.34
+  },
+  {
+    "pedido": "ejemplos/motores-propios/mar-voces.json",
+    "ok": true,
+    "segundos": 9.61
+  },
+  {
+    "pedido": "ejemplos/motores-propios/pantalla.json",
+    "ok": true,
+    "segundos": 10.51
+  },
+  {
+    "pedido": "ejemplos/motores-propios/qraqeb.json",
+    "ok": true,
+    "segundos": 8.01
+  },
+  {
+    "pedido": "ejemplos/motores-propios/siringua-vocoder.json",
+    "ok": true,
+    "segundos": 8.8
+  },
+  {
+    "pedido": "ejemplos/motores-propios/siringua.json",
+    "ok": true,
+    "segundos": 10.43
+  },
+  {
+    "pedido": "ejemplos/motores-propios/sub808-cuento.json",
+    "ok": true,
+    "segundos": 6.9
+  },
+  {
+    "pedido": "ejemplos/motores-propios/tambura-rio.json",
+    "ok": true,
+    "segundos": 8.16
+  },
+  {
+    "pedido": "ejemplos/motores-propios/torniquete.json",
+    "ok": true,
+    "segundos": 6.33
+  },
+  {
+    "pedido": "ejemplos/motores-propios/traductor.json",
+    "ok": true,
+    "segundos": 8.39
+  },
+  {
+    "pedido": "ejemplos/motores-propios/viento-estriado.json",
+    "ok": true,
+    "segundos": 7.55
+  },
+  {
+    "pedido": "ejemplos/motores-propios/viento-liso.json",
+    "ok": true,
+    "segundos": 6.71
+  },
+  {
+    "pedido": "ejemplos/motores-propios/zawinul-traspuesta.json",
+    "ok": true,
+    "segundos": 7.22
+  }
+]

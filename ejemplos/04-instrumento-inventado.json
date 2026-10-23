@@ -1,0 +1,61 @@
+{
+  "titulo": "Placa que recuerda una cuerda",
+  "bpm": 100,
+  "compases": 4,
+  "semilla": 20261020,
+  "pistas": [
+    {
+      "nombre": "Placa",
+      "parciales": [
+        [
+          1,
+          1,
+          1.5
+        ],
+        [
+          2.76,
+          0.35,
+          0.675
+        ],
+        [
+          5.4,
+          0.16,
+          0.3
+        ]
+      ],
+      "ataque": 0.003,
+      "notas": [
+        {
+          "pulso": 0,
+          "midi": 62,
+          "dur": 1.4,
+          "vel": 0.7
+        },
+        {
+          "pulso": 2,
+          "midi": 69,
+          "dur": 1.4,
+          "vel": 0.7
+        },
+        {
+          "pulso": 4,
+          "midi": 65,
+          "dur": 1.4,
+          "vel": 0.7
+        },
+        {
+          "pulso": 7,
+          "midi": 64,
+          "dur": 1.4,
+          "vel": 0.7
+        },
+        {
+          "pulso": 10,
+          "midi": 62,
+          "dur": 1.4,
+          "vel": 0.7
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "motor_propio": "duna-guembri",
+  "config": {
+    "dur": 4,
+    "tipo": "guembri",
+    "notas": [
+      {
+        "t": 0.1,
+        "dur": 0.8,
+        "m": 45,
+        "v": 0.75,
+        "c": 0
+      },
+      {
+        "t": 0.9,
+        "dur": 1.2,
+        "m": 52,
+        "v": 0.6,
+        "c": 0,
+        "liga": true,
+        "desliz": 0.2
+      }
+    ],
+    "semilla": 3
+  }
+}

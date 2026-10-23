@@ -1,1 +1,10 @@
 * -text
+
+# Recursos binarios: conservar bytes y evitar diffs de texto
+*.pdf binary
+*.png binary
+*.gif binary
+*.wav binary
+*.flac binary
+*.wasm binary
+*.data binary

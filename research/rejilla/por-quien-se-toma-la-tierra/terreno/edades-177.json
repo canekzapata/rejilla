@@ -1,0 +1,159 @@
+[
+ {
+  "edad": 0.03,
+  "arq": "estrato",
+  "nombre": "ESTRATOVOLCÁN JOVEN",
+  "historia": [
+   "LEVANTAMIENTO",
+   "CORDILLERA CRUZADA",
+   "EROSIÓN"
+  ],
+  "relieve": 4100,
+  "base": 740,
+  "cumbre": [
+   198,
+   115
+  ],
+  "picos": 5,
+  "especiales": [
+   "CRÁTER",
+   "COLADA",
+   "LAGO"
+  ],
+  "lagos": 1,
+  "rios": 133
+ },
+ {
+  "edad": 0.25,
+  "arq": "estrato",
+  "nombre": "ESTRATOVOLCÁN JOVEN",
+  "historia": [
+   "LEVANTAMIENTO",
+   "CORDILLERA CRUZADA",
+   "EROSIÓN"
+  ],
+  "relieve": 4100,
+  "base": 740,
+  "cumbre": [
+   198,
+   115
+  ],
+  "picos": 5,
+  "especiales": [
+   "CRÁTER",
+   "COLADA",
+   "LAGO"
+  ],
+  "lagos": 1,
+  "rios": 168
+ },
+ {
+  "edad": 0.5,
+  "arq": "estrato",
+  "nombre": "ESTRATOVOLCÁN DISECTADO",
+  "historia": [
+   "LEVANTAMIENTO",
+   "CORDILLERA CRUZADA",
+   "EROSIÓN"
+  ],
+  "relieve": 4030,
+  "base": 740,
+  "cumbre": [
+   200,
+   115
+  ],
+  "picos": 11,
+  "especiales": [
+   "CRÁTER",
+   "COLADA",
+   "LAGO"
+  ],
+  "lagos": 1,
+  "rios": 235
+ },
+ {
+  "edad": 0.62,
+  "arq": "estrato",
+  "nombre": "CALDERA ABIERTA",
+  "historia": [
+   "LEVANTAMIENTO",
+   "CONO",
+   "CORDILLERA CRUZADA",
+   "EROSIÓN",
+   "COLAPSO DE FLANCO",
+   "CONO INTERIOR",
+   "CRÁTER ANIDADO"
+  ],
+  "relieve": 3860,
+  "base": 740,
+  "cumbre": [
+   214,
+   178
+  ],
+  "picos": 41,
+  "especiales": [
+   "CALDERA",
+   "AVALANCHA",
+   "CONO INTERIOR",
+   "LAGO",
+   "LAGO",
+   "LAGO"
+  ],
+  "lagos": 3,
+  "rios": 198
+ },
+ {
+  "edad": 0.8,
+  "arq": "estrato",
+  "nombre": "CALDERA ABIERTA",
+  "historia": [
+   "LEVANTAMIENTO",
+   "CONO",
+   "CORDILLERA CRUZADA",
+   "EROSIÓN",
+   "COLAPSO DE FLANCO",
+   "CONO INTERIOR",
+   "CRÁTER ANIDADO"
+  ],
+  "relieve": 3600,
+  "base": 740,
+  "cumbre": [
+   145,
+   120
+  ],
+  "picos": 25,
+  "especiales": [
+   "CALDERA",
+   "AVALANCHA",
+   "CONO INTERIOR",
+   "LAGO",
+   "LAGO",
+   "LAGO"
+  ],
+  "lagos": 3,
+  "rios": 296
+ },
+ {
+  "edad": 0.97,
+  "arq": "estrato",
+  "nombre": "CUELLO VOLCÁNICO",
+  "historia": [
+   "LEVANTAMIENTO",
+   "CORDILLERA CRUZADA",
+   "EROSIÓN"
+  ],
+  "relieve": 1230,
+  "base": 740,
+  "cumbre": [
+   179,
+   121
+  ],
+  "picos": 15,
+  "especiales": [
+   "CUELLO",
+   "LAGO"
+  ],
+  "lagos": 1,
+  "rios": 253
+ }
+]

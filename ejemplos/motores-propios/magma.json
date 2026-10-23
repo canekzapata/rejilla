@@ -1,0 +1,19 @@
+{
+  "motor_propio": "magma",
+  "config": {
+    "dur": 4,
+    "semilla": 20261020,
+    "argumentos": {
+      "tramos": [
+        {
+          "t": 0,
+          "f": 60
+        },
+        {
+          "t": 2,
+          "f": 64
+        }
+      ]
+    }
+  }
+}

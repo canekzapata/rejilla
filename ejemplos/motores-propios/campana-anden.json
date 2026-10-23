@@ -1,0 +1,21 @@
+{
+  "motor_propio": "campana-anden",
+  "config": {
+    "dur": 4,
+    "semilla": 20261020,
+    "argumentos": {
+      "notas": [
+        {
+          "t": 0.1,
+          "m": 62,
+          "v": 0.7
+        },
+        {
+          "t": 1.3,
+          "m": 69,
+          "v": 0.6
+        }
+      ]
+    }
+  }
+}

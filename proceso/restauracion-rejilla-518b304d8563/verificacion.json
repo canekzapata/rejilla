@@ -1,0 +1,775 @@
+{
+  "ejecucion": "518b304d85638969bc108ea4d0b9b8cbe6ccd2071f18e4af8bd03b866eea9c2b",
+  "nonce": "79590fe13ee3f85000ae038b39afc3c7",
+  "version": "64bc18f5c196d9aa3b261fc79f52b14648c6b160bf0b5bfc317efb3a5e3bb766",
+  "errores": [],
+  "resultados": [
+    {
+      "id": "arpaboca",
+      "ok": true,
+      "peak": 0.12502633035182953
+    },
+    {
+      "id": "balafon",
+      "ok": true,
+      "peak": 0.34192338585853577
+    },
+    {
+      "id": "bateria-acustico",
+      "ok": true,
+      "peak": 0.38305139541625977
+    },
+    {
+      "id": "bateria-frito",
+      "ok": true,
+      "peak": 0.3499999940395355
+    },
+    {
+      "id": "bateria-tr808",
+      "ok": true,
+      "peak": 0.36018452048301697
+    },
+    {
+      "id": "bateria-tr909",
+      "ok": true,
+      "peak": 0.3735466003417969
+    },
+    {
+      "id": "berimbau",
+      "ok": true,
+      "peak": 0.3747427463531494
+    },
+    {
+      "id": "consola-bass",
+      "ok": true,
+      "peak": 0.15516731142997742
+    },
+    {
+      "id": "consola-bell",
+      "ok": true,
+      "peak": 0.08718881756067276
+    },
+    {
+      "id": "consola-drone",
+      "ok": true,
+      "peak": 0.06614671647548676
+    },
+    {
+      "id": "consola-glass",
+      "ok": true,
+      "peak": 0.0813852846622467
+    },
+    {
+      "id": "consola-kalimba",
+      "ok": true,
+      "peak": 0.12293536961078644
+    },
+    {
+      "id": "consola-pad",
+      "ok": true,
+      "peak": 0.022538580000400543
+    },
+    {
+      "id": "consola-pluck",
+      "ok": true,
+      "peak": 0.08819455653429031
+    },
+    {
+      "id": "gender",
+      "ok": true,
+      "peak": 0.18177206814289093
+    },
+    {
+      "id": "gyil",
+      "ok": true,
+      "peak": 0.4342561662197113
+    },
+    {
+      "id": "kalimbacaja",
+      "ok": true,
+      "peak": 0.13564670085906982
+    },
+    {
+      "id": "marimba",
+      "ok": true,
+      "peak": 0.1713840812444687
+    },
+    {
+      "id": "mbira",
+      "ok": true,
+      "peak": 0.1769254058599472
+    },
+    {
+      "id": "meleeviewer-1-bass",
+      "ok": true,
+      "peak": 0.1981428563594818
+    },
+    {
+      "id": "meleeviewer-1-brass",
+      "ok": true,
+      "peak": 0.028978539630770683
+    },
+    {
+      "id": "meleeviewer-1-clap",
+      "ok": true,
+      "peak": 0.041476186364889145
+    },
+    {
+      "id": "meleeviewer-1-coin",
+      "ok": true,
+      "peak": 0.013406177051365376
+    },
+    {
+      "id": "meleeviewer-1-crash",
+      "ok": true,
+      "peak": 0.09533190727233887
+    },
+    {
+      "id": "meleeviewer-1-ep",
+      "ok": true,
+      "peak": 0.03758725896477699
+    },
+    {
+      "id": "meleeviewer-1-glock",
+      "ok": true,
+      "peak": 0.026711275801062584
+    },
+    {
+      "id": "meleeviewer-1-hat",
+      "ok": true,
+      "peak": 0.044551316648721695
+    },
+    {
+      "id": "meleeviewer-1-kick",
+      "ok": true,
+      "peak": 0.3928569555282593
+    },
+    {
+      "id": "meleeviewer-1-riser",
+      "ok": true,
+      "peak": 0.19181685149669647
+    },
+    {
+      "id": "meleeviewer-1-shaker",
+      "ok": true,
+      "peak": 0.018118103966116905
+    },
+    {
+      "id": "meleeviewer-1-snare",
+      "ok": true,
+      "peak": 0.10363725572824478
+    },
+    {
+      "id": "meleeviewer-10-bajo",
+      "ok": true,
+      "peak": 0.08523433655500412
+    },
+    {
+      "id": "meleeviewer-10-cuerda",
+      "ok": true,
+      "peak": 0.015650324523448944
+    },
+    {
+      "id": "meleeviewer-10-cuerdas",
+      "ok": true,
+      "peak": 0.013415872119367123
+    },
+    {
+      "id": "meleeviewer-10-ep",
+      "ok": true,
+      "peak": 0.01628291979432106
+    },
+    {
+      "id": "meleeviewer-10-glock",
+      "ok": true,
+      "peak": 0.00949755497276783
+    },
+    {
+      "id": "meleeviewer-10-metal",
+      "ok": true,
+      "peak": 0.03651512786746025
+    },
+    {
+      "id": "meleeviewer-10-pluck",
+      "ok": true,
+      "peak": 0.006575108505785465
+    },
+    {
+      "id": "meleeviewer-10-rasgueo",
+      "ok": true,
+      "peak": 0.03713562339544296
+    },
+    {
+      "id": "meleeviewer-10-riser",
+      "ok": true,
+      "peak": 0.019258053973317146
+    },
+    {
+      "id": "meleeviewer-11-arpa",
+      "ok": true,
+      "peak": 0.009812834672629833
+    },
+    {
+      "id": "meleeviewer-11-bajo",
+      "ok": true,
+      "peak": 0.12410356104373932
+    },
+    {
+      "id": "meleeviewer-11-campana",
+      "ok": true,
+      "peak": 0.0062225391156971455
+    },
+    {
+      "id": "meleeviewer-11-colchon",
+      "ok": true,
+      "peak": 0.009993749670684338
+    },
+    {
+      "id": "meleeviewer-11-cuerdas",
+      "ok": true,
+      "peak": 0.013441585004329681
+    },
+    {
+      "id": "meleeviewer-11-piano",
+      "ok": true,
+      "peak": 0.011666741222143173
+    },
+    {
+      "id": "meleeviewer-11-soplo",
+      "ok": true,
+      "peak": 0.01720277965068817
+    },
+    {
+      "id": "meleeviewer-12-bajo",
+      "ok": true,
+      "peak": 0.13369522988796234
+    },
+    {
+      "id": "meleeviewer-12-colchon",
+      "ok": true,
+      "peak": 0.00979527272284031
+    },
+    {
+      "id": "meleeviewer-12-hielo",
+      "ok": true,
+      "peak": 0.00596948666498065
+    },
+    {
+      "id": "meleeviewer-12-marimba",
+      "ok": true,
+      "peak": 0.011645439080893993
+    },
+    {
+      "id": "meleeviewer-13-acordeon",
+      "ok": true,
+      "peak": 0.005235882941633463
+    },
+    {
+      "id": "meleeviewer-13-bajo",
+      "ok": true,
+      "peak": 0.14353391528129578
+    },
+    {
+      "id": "meleeviewer-13-campana",
+      "ok": true,
+      "peak": 0.0048468997702002525
+    },
+    {
+      "id": "meleeviewer-13-conga",
+      "ok": true,
+      "peak": 0.04087022691965103
+    },
+    {
+      "id": "meleeviewer-13-guiro",
+      "ok": true,
+      "peak": 0.014919178560376167
+    },
+    {
+      "id": "meleeviewer-13-riser",
+      "ok": true,
+      "peak": 0.016583295539021492
+    },
+    {
+      "id": "meleeviewer-13-sirena",
+      "ok": true,
+      "peak": 0.019655700773000717
+    },
+    {
+      "id": "meleeviewer-14-arpa",
+      "ok": true,
+      "peak": 0.006271750666201115
+    },
+    {
+      "id": "meleeviewer-14-bajo",
+      "ok": true,
+      "peak": 0.06268211454153061
+    },
+    {
+      "id": "meleeviewer-14-cajita",
+      "ok": true,
+      "peak": 0.00876652728766203
+    },
+    {
+      "id": "meleeviewer-14-celesta",
+      "ok": true,
+      "peak": 0.00691715395078063
+    },
+    {
+      "id": "meleeviewer-14-cuerdas",
+      "ok": true,
+      "peak": 0.010689751245081425
+    },
+    {
+      "id": "meleeviewer-14-plumon",
+      "ok": true,
+      "peak": 0.013163888826966286
+    },
+    {
+      "id": "meleeviewer-15-bajo",
+      "ok": true,
+      "peak": 0.07150261849164963
+    },
+    {
+      "id": "meleeviewer-15-campanita",
+      "ok": true,
+      "peak": 0.010668962262570858
+    },
+    {
+      "id": "meleeviewer-15-cuadrada",
+      "ok": true,
+      "peak": 0.010741577483713627
+    },
+    {
+      "id": "meleeviewer-15-cuerda",
+      "ok": true,
+      "peak": 0.015121156349778175
+    },
+    {
+      "id": "meleeviewer-15-cuerdas",
+      "ok": true,
+      "peak": 0.011498279869556427
+    },
+    {
+      "id": "meleeviewer-15-ep",
+      "ok": true,
+      "peak": 0.012836605310440063
+    },
+    {
+      "id": "meleeviewer-15-metal",
+      "ok": true,
+      "peak": 0.03846832364797592
+    },
+    {
+      "id": "meleeviewer-15-riser",
+      "ok": true,
+      "peak": 0.015698835253715515
+    },
+    {
+      "id": "meleeviewer-16-bajo",
+      "ok": true,
+      "peak": 0.08439107984304428
+    },
+    {
+      "id": "meleeviewer-16-cuerda",
+      "ok": true,
+      "peak": 0.013228443451225758
+    },
+    {
+      "id": "meleeviewer-16-cuerdas",
+      "ok": true,
+      "peak": 0.008295525796711445
+    },
+    {
+      "id": "meleeviewer-16-glock",
+      "ok": true,
+      "peak": 0.008094757795333862
+    },
+    {
+      "id": "meleeviewer-16-piano",
+      "ok": true,
+      "peak": 0.009877494536340237
+    },
+    {
+      "id": "meleeviewer-16-rasgueo",
+      "ok": true,
+      "peak": 0.026260215789079666
+    },
+    {
+      "id": "meleeviewer-16-riser",
+      "ok": true,
+      "peak": 0.015601384453475475
+    },
+    {
+      "id": "meleeviewer-16-sinte",
+      "ok": true,
+      "peak": 0.0074823410250246525
+    },
+    {
+      "id": "meleeviewer-2-bass",
+      "ok": true,
+      "peak": 0.1981428563594818
+    },
+    {
+      "id": "meleeviewer-2-brass",
+      "ok": true,
+      "peak": 0.028978539630770683
+    },
+    {
+      "id": "meleeviewer-2-clap",
+      "ok": true,
+      "peak": 0.03090708889067173
+    },
+    {
+      "id": "meleeviewer-2-coin",
+      "ok": true,
+      "peak": 0.013406177051365376
+    },
+    {
+      "id": "meleeviewer-2-crash",
+      "ok": true,
+      "peak": 0.10039950162172318
+    },
+    {
+      "id": "meleeviewer-2-dormir",
+      "ok": true,
+      "peak": 0.03853931650519371
+    },
+    {
+      "id": "meleeviewer-2-ep",
+      "ok": true,
+      "peak": 0.03758725896477699
+    },
+    {
+      "id": "meleeviewer-2-glock",
+      "ok": true,
+      "peak": 0.026711275801062584
+    },
+    {
+      "id": "meleeviewer-2-hat",
+      "ok": true,
+      "peak": 0.039079856127500534
+    },
+    {
+      "id": "meleeviewer-2-kick",
+      "ok": true,
+      "peak": 0.3941159248352051
+    },
+    {
+      "id": "meleeviewer-2-rim",
+      "ok": true,
+      "peak": 0.07874654978513718
+    },
+    {
+      "id": "meleeviewer-2-riser",
+      "ok": true,
+      "peak": 0.18262091279029846
+    },
+    {
+      "id": "meleeviewer-2-shaker",
+      "ok": true,
+      "peak": 0.012278486043214798
+    },
+    {
+      "id": "meleeviewer-2-snare",
+      "ok": true,
+      "peak": 0.11022669821977615
+    },
+    {
+      "id": "meleeviewer-3-bass",
+      "ok": true,
+      "peak": 0.1981428563594818
+    },
+    {
+      "id": "meleeviewer-3-bite",
+      "ok": true,
+      "peak": 0.3162889778614044
+    },
+    {
+      "id": "meleeviewer-3-boom",
+      "ok": true,
+      "peak": 0.19030258059501648
+    },
+    {
+      "id": "meleeviewer-3-brass",
+      "ok": true,
+      "peak": 0.028978539630770683
+    },
+    {
+      "id": "meleeviewer-3-clap",
+      "ok": true,
+      "peak": 0.044896531850099564
+    },
+    {
+      "id": "meleeviewer-3-coin",
+      "ok": true,
+      "peak": 0.013406177051365376
+    },
+    {
+      "id": "meleeviewer-3-crash",
+      "ok": true,
+      "peak": 0.09152017533779144
+    },
+    {
+      "id": "meleeviewer-3-ep",
+      "ok": true,
+      "peak": 0.03758725896477699
+    },
+    {
+      "id": "meleeviewer-3-glock",
+      "ok": true,
+      "peak": 0.026711275801062584
+    },
+    {
+      "id": "meleeviewer-3-hat",
+      "ok": true,
+      "peak": 0.045023489743471146
+    },
+    {
+      "id": "meleeviewer-3-kick",
+      "ok": true,
+      "peak": 0.3858622908592224
+    },
+    {
+      "id": "meleeviewer-3-krar",
+      "ok": true,
+      "peak": 0.06456447392702103
+    },
+    {
+      "id": "meleeviewer-3-masenqo",
+      "ok": true,
+      "peak": 0.03817152604460716
+    },
+    {
+      "id": "meleeviewer-3-pad",
+      "ok": true,
+      "peak": 0.015682730823755264
+    },
+    {
+      "id": "meleeviewer-3-riser",
+      "ok": true,
+      "peak": 0.22563061118125916
+    },
+    {
+      "id": "meleeviewer-3-shaker",
+      "ok": true,
+      "peak": 0.013052510097622871
+    },
+    {
+      "id": "meleeviewer-3-snare",
+      "ok": true,
+      "peak": 0.13900317251682281
+    },
+    {
+      "id": "meleeviewer-3-vibes",
+      "ok": true,
+      "peak": 0.016770226880908012
+    },
+    {
+      "id": "meleeviewer-3-washint",
+      "ok": true,
+      "peak": 0.029646767303347588
+    },
+    {
+      "id": "meleeviewer-4-bass",
+      "ok": true,
+      "peak": 0.20104846358299255
+    },
+    {
+      "id": "meleeviewer-4-cajita",
+      "ok": true,
+      "peak": 0.01672779954969883
+    },
+    {
+      "id": "meleeviewer-4-ep",
+      "ok": true,
+      "peak": 0.03290741890668869
+    },
+    {
+      "id": "meleeviewer-4-flauta",
+      "ok": true,
+      "peak": 0.017319949343800545
+    },
+    {
+      "id": "meleeviewer-4-pad",
+      "ok": true,
+      "peak": 0.010497568175196648
+    },
+    {
+      "id": "meleeviewer-4-vibes",
+      "ok": true,
+      "peak": 0.015222521498799324
+    },
+    {
+      "id": "meleeviewer-5-bass",
+      "ok": true,
+      "peak": 0.18392658233642578
+    },
+    {
+      "id": "meleeviewer-5-ep",
+      "ok": true,
+      "peak": 0.03231267258524895
+    },
+    {
+      "id": "meleeviewer-5-pad",
+      "ok": true,
+      "peak": 0.009802445769309998
+    },
+    {
+      "id": "meleeviewer-5-vibes",
+      "ok": true,
+      "peak": 0.014099097810685635
+    },
+    {
+      "id": "meleeviewer-7-explota",
+      "ok": true,
+      "peak": 0.312758207321167
+    },
+    {
+      "id": "meleeviewer-7-pokebola",
+      "ok": true,
+      "peak": 0.09518425166606903
+    },
+    {
+      "id": "meleeviewer-8-arp",
+      "ok": true,
+      "peak": 0.008067063055932522
+    },
+    {
+      "id": "meleeviewer-8-basso",
+      "ok": true,
+      "peak": 0.15171709656715393
+    },
+    {
+      "id": "meleeviewer-8-derrape",
+      "ok": true,
+      "peak": 0.03205070272088051
+    },
+    {
+      "id": "meleeviewer-8-impact",
+      "ok": true,
+      "peak": 0.26117655634880066
+    },
+    {
+      "id": "meleeviewer-8-pad",
+      "ok": true,
+      "peak": 0.018272824585437775
+    },
+    {
+      "id": "meleeviewer-8-riser",
+      "ok": true,
+      "peak": 0.025320762768387794
+    },
+    {
+      "id": "meleeviewer-8-saw7",
+      "ok": true,
+      "peak": 0.22718170285224915
+    },
+    {
+      "id": "meleeviewer-8-stab",
+      "ok": true,
+      "peak": 0.04636802151799202
+    },
+    {
+      "id": "meleeviewer-8-sub",
+      "ok": true,
+      "peak": 0.12598152458667755
+    },
+    {
+      "id": "meleeviewer-9-arp",
+      "ok": true,
+      "peak": 0.007864732295274734
+    },
+    {
+      "id": "meleeviewer-9-impact",
+      "ok": true,
+      "peak": 0.20778553187847137
+    },
+    {
+      "id": "meleeviewer-9-pad",
+      "ok": true,
+      "peak": 0.008414911106228828
+    },
+    {
+      "id": "meleeviewer-9-reverso",
+      "ok": true,
+      "peak": 0.11993912607431412
+    },
+    {
+      "id": "meleeviewer-9-riser",
+      "ok": true,
+      "peak": 0.024708347395062447
+    },
+    {
+      "id": "meleeviewer-9-saw7",
+      "ok": true,
+      "peak": 0.12958775460720062
+    },
+    {
+      "id": "meleeviewer-9-sub",
+      "ok": true,
+      "peak": 0.09708025306463242
+    },
+    {
+      "id": "receta-cuerda-frotada",
+      "ok": true,
+      "peak": 0.10766809433698654
+    },
+    {
+      "id": "receta-gong-de-agua",
+      "ok": true,
+      "peak": 0.08015189319849014
+    },
+    {
+      "id": "receta-organo-roto",
+      "ok": true,
+      "peak": 0.059146810322999954
+    },
+    {
+      "id": "receta-soplo",
+      "ok": true,
+      "peak": 0.0074659427627921104
+    },
+    {
+      "id": "receta-violin-de-vidrio",
+      "ok": true,
+      "peak": 0.029423896223306656
+    },
+    {
+      "id": "saron",
+      "ok": true,
+      "peak": 0.18507155776023865
+    },
+    {
+      "id": "steelpan",
+      "ok": true,
+      "peak": 0.14286412298679352
+    },
+    {
+      "id": "teponaztli",
+      "ok": true,
+      "peak": 0.3044168949127197
+    },
+    {
+      "id": "vibrafono",
+      "ok": true,
+      "peak": 0.1171506717801094
+    },
+    {
+      "id": "xiloelec",
+      "ok": true,
+      "peak": 0.058800000697374344
+    },
+    {
+      "id": "xilofono",
+      "ok": true,
+      "peak": 0.35567042231559753
+    }
+  ],
+  "sha256": {
+    "01-catalogo-518b304d8563.png": "765e5ec86240ddd2009cfbcd373f7aaec19ab3b33f7ab6e47e3510c8db71a94e",
+    "02-secuencia-y-onda-518b304d8563.png": "dd7d4312b1c6aa80ea1e4ab75d76df05bd355b1521aea4fa964610861106f1ea",
+    "03-diseno-y-espectro-518b304d8563.png": "c6f06a850064843fc8dc4e3a97bf9638fc58f254bad7b12bc411ec6f622aed4b",
+    "proceso-taller-rejilla-518b304d8563.gif": "72224874f3c0eae1ec246b9a3b564c3cb9fdadd081bd1a4906852dc5014ac575",
+    "README.md": "9de9b3a284a905cc655453f2fe067d62ac26bdb3ad82f7781ee35a6f4d72bf42"
+  }
+}

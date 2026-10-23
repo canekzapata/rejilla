@@ -1,0 +1,83 @@
+{
+ "semilla": "2572",
+ "arq": "tepuyes",
+ "nombre": "TEPUYES",
+ "G": 360,
+ "relieve": 1160,
+ "anchoKm": 24.5,
+ "umbralMar": 0.0001,
+ "nivelMar": null,
+ "umbralMarFondo": 0.0001,
+ "relieveFondo": 1160,
+ "historia": [
+  "ARENISCA",
+  "LEVANTAMIENTO",
+  "EROSIÓN",
+  "TEPUYES",
+  "IMPACTO GRANDE",
+  "FALLA"
+ ],
+ "especiales": [],
+ "nombres": [
+  {
+   "nombre": "EL PICO GRANDE",
+   "clase": "cumbre",
+   "u": 0.47075208913649025,
+   "v": 0.7855153203342619
+  },
+  {
+   "nombre": "EL CERRO",
+   "clase": "cumbre",
+   "u": 0.871866295264624,
+   "v": 0.3398328690807799
+  },
+  {
+   "nombre": "EL CERRO DE LOS HELECHOS",
+   "clase": "cumbre",
+   "u": 0.233983286908078,
+   "v": 0.8245125348189415
+  },
+  {
+   "nombre": "EL BOQUERÓN",
+   "clase": "paso",
+   "u": 0.9331476323119777,
+   "v": 0.5181058495821727
+  },
+  {
+   "nombre": "EL PORTICHUELO",
+   "clase": "paso",
+   "u": 0.2841225626740947,
+   "v": 0.8189415041782729
+  },
+  {
+   "nombre": "LA HOYA DEL MUSGO",
+   "clase": "hondonada",
+   "u": 0.4986072423398329,
+   "v": 0.24233983286908078
+  },
+  {
+   "nombre": "LA LAGUNA COLORADA",
+   "clase": "lago",
+   "u": 0.5376044568245125,
+   "v": 0.2562674094707521
+  },
+  {
+   "nombre": "EL RÍO GRANDE",
+   "clase": "rio",
+   "u": 0.6179491643454038,
+   "v": 0.18897980501392755
+  },
+  {
+   "nombre": "EL RÍO COLORADO",
+   "clase": "rio",
+   "u": 0.3396587743732591,
+   "v": 0.1392757660167131
+  },
+  {
+   "nombre": "LA FALLA DEL PICO",
+   "clase": "especial",
+   "u": 0.4876674147678689,
+   "v": 0.6309899083278596
+  }
+ ]
+}

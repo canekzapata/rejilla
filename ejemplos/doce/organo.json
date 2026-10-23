@@ -1,0 +1,72 @@
+{
+  "prototipo": "organo",
+  "duracion": 24.0,
+  "semilla": 19103423,
+  "partitura": {
+    "notas": [
+      {
+        "t": 0.3,
+        "midi": 86,
+        "dur": 22,
+        "vel": 0.9,
+        "pan": 0,
+        "ataque": 0.25,
+        "soltar": 0.9
+      }
+    ],
+    "controles": {
+      "presion": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0.1
+        ],
+        [
+          9,
+          0.98
+        ],
+        [
+          11,
+          0.5
+        ],
+        [
+          13,
+          0.5
+        ],
+        [
+          18,
+          0.08
+        ],
+        [
+          20,
+          0.5
+        ],
+        [
+          22,
+          0.5
+        ],
+        [
+          24,
+          0
+        ]
+      ]
+    },
+    "secciones": [
+      [
+        0,
+        "Gesto expuesto"
+      ],
+      [
+        10,
+        "Desarrollo"
+      ],
+      [
+        19,
+        "Salida"
+      ]
+    ]
+  }
+}

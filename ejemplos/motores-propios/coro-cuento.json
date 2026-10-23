@@ -1,0 +1,32 @@
+{
+  "motor_propio": "coro-cuento",
+  "config": {
+    "dur": 4,
+    "semilla": 20261020,
+    "argumentos": {
+      "voces": {
+        "S": [
+          {
+            "t": 0.1,
+            "dur": 1.8,
+            "nota": 69
+          }
+        ],
+        "A": [
+          {
+            "t": 0.2,
+            "dur": 1.7,
+            "nota": 64
+          }
+        ],
+        "B": [
+          {
+            "t": 0.1,
+            "dur": 1.8,
+            "nota": 45
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "motor_propio": "cobre-vocal",
+  "config": {
+    "dur": 4,
+    "semilla": 20261020,
+    "eventos": [
+      {
+        "t": 0.2,
+        "dur": 1.2,
+        "nota": 57,
+        "vocal": "a"
+      },
+      {
+        "t": 1.8,
+        "dur": 1.2,
+        "nota": 64,
+        "vocal": "u"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1423 @@
+{
+ "bpm": 132,
+ "t0": 0.35,
+ "compases": 38,
+ "len": 73.44,
+ "secciones": [
+  [
+   "intro",
+   0,
+   4
+  ],
+  [
+   "verso",
+   4,
+   12
+  ],
+  [
+   "pre",
+   12,
+   16
+  ],
+  [
+   "coro",
+   16,
+   24
+  ],
+  [
+   "hook",
+   24,
+   28
+  ],
+  [
+   "coro2",
+   28,
+   36
+  ],
+  [
+   "final",
+   36,
+   38
+  ]
+ ],
+ "acordes": [
+  "Amaj7",
+  "B7",
+  "G#m7",
+  "C#m",
+  "E",
+  "B",
+  "C#m",
+  "G#m",
+  "Amaj7",
+  "E",
+  "F#m7",
+  "B7",
+  "Amaj7",
+  "B7",
+  "G#m7",
+  "C#m",
+  "Amaj7",
+  "B7",
+  "G#m7",
+  "C#m",
+  "Amaj7",
+  "B7",
+  "E",
+  "E",
+  "Amaj7",
+  "B7",
+  "G#m7",
+  "C#m",
+  "Bbmaj7",
+  "C7",
+  "Am7",
+  "Dm",
+  "Bbmaj7",
+  "C7",
+  "F",
+  "F",
+  "F",
+  "F"
+ ],
+ "renglones": [
+  {
+   "bar": 4,
+   "texto": "la tarde se pinta de azul"
+  },
+  {
+   "bar": 6,
+   "texto": "y tu control brilla en mi mano"
+  },
+  {
+   "bar": 8,
+   "texto": "elegimos el mismo personaje"
+  },
+  {
+   "bar": 10,
+   "texto": "y nos reímos sin parar"
+  },
+  {
+   "bar": 12,
+   "texto": "el mundo se queda en pausa"
+  },
+  {
+   "bar": 14,
+   "texto": "cuando tú presionas start"
+  },
+  {
+   "bar": 16,
+   "texto": "doki doki mi corazón"
+  },
+  {
+   "bar": 18,
+   "texto": "salta como Kirby al viento"
+  },
+  {
+   "bar": 20,
+   "texto": "kira kira eres mi jugador dos"
+  },
+  {
+   "bar": 22,
+   "texto": "juntos hasta el final"
+  },
+  {
+   "bar": 24,
+   "texto": "na na na una más"
+  },
+  {
+   "bar": 26,
+   "texto": "na na na una más"
+  },
+  {
+   "bar": 28,
+   "texto": "doki doki mi corazón"
+  },
+  {
+   "bar": 30,
+   "texto": "salta como Kirby al viento"
+  },
+  {
+   "bar": 32,
+   "texto": "kira kira eres mi jugador dos"
+  },
+  {
+   "bar": 34,
+   "texto": "juntos hasta el final"
+  },
+  {
+   "bar": 36,
+   "texto": "presiona start"
+  }
+ ],
+ "silabas": [
+  {
+   "bar": 4,
+   "renglon": "la tarde se pinta de azul",
+   "t": 7.85,
+   "dur": 0.2159,
+   "txt": "la",
+   "nota": 59,
+   "tonica": false
+  },
+  {
+   "bar": 4,
+   "renglon": "la tarde se pinta de azul",
+   "t": 8.0773,
+   "dur": 0.4318,
+   "txt": "tar",
+   "nota": 64,
+   "tonica": true
+  },
+  {
+   "bar": 4,
+   "renglon": "la tarde se pinta de azul",
+   "t": 8.5318,
+   "dur": 0.2159,
+   "txt": "de",
+   "nota": 63,
+   "tonica": false
+  },
+  {
+   "bar": 4,
+   "renglon": "la tarde se pinta de azul",
+   "t": 8.7591,
+   "dur": 0.2159,
+   "txt": "se",
+   "nota": 61,
+   "tonica": false
+  },
+  {
+   "bar": 4,
+   "renglon": "la tarde se pinta de azul",
+   "t": 8.9864,
+   "dur": 0.4318,
+   "txt": "pin",
+   "nota": 59,
+   "tonica": true
+  },
+  {
+   "bar": 4,
+   "renglon": "la tarde se pinta de azul",
+   "t": 9.4409,
+   "dur": 0.4318,
+   "txt": "ta",
+   "nota": 56,
+   "tonica": false
+  },
+  {
+   "bar": 4,
+   "renglon": "la tarde se pinta de azul",
+   "t": 9.8955,
+   "dur": 0.2159,
+   "txt": "de",
+   "nota": 57,
+   "tonica": false
+  },
+  {
+   "bar": 4,
+   "renglon": "la tarde se pinta de azul",
+   "t": 10.1227,
+   "dur": 0.2159,
+   "txt": "a",
+   "nota": 59,
+   "tonica": false
+  },
+  {
+   "bar": 4,
+   "renglon": "la tarde se pinta de azul",
+   "t": 10.35,
+   "dur": 0.6477,
+   "txt": "zul",
+   "nota": 63,
+   "tonica": true
+  },
+  {
+   "bar": 6,
+   "renglon": "y tu control brilla en mi mano",
+   "t": 11.4864,
+   "dur": 0.2159,
+   "txt": "y",
+   "nota": 61,
+   "tonica": false
+  },
+  {
+   "bar": 6,
+   "renglon": "y tu control brilla en mi mano",
+   "t": 11.7136,
+   "dur": 0.2159,
+   "txt": "tu",
+   "nota": 64,
+   "tonica": false
+  },
+  {
+   "bar": 6,
+   "renglon": "y tu control brilla en mi mano",
+   "t": 11.9409,
+   "dur": 0.2159,
+   "txt": "con",
+   "nota": 64,
+   "tonica": false
+  },
+  {
+   "bar": 6,
+   "renglon": "y tu control brilla en mi mano",
+   "t": 12.1682,
+   "dur": 0.4318,
+   "txt": "trol",
+   "nota": 68,
+   "tonica": true
+  },
+  {
+   "bar": 6,
+   "renglon": "y tu control brilla en mi mano",
+   "t": 12.6227,
+   "dur": 0.2159,
+   "txt": "bri",
+   "nota": 66,
+   "tonica": true
+  },
+  {
+   "bar": 6,
+   "renglon": "y tu control brilla en mi mano",
+   "t": 12.85,
+   "dur": 0.2159,
+   "txt": "lla",
+   "nota": 64,
+   "tonica": false
+  },
+  {
+   "bar": 6,
+   "renglon": "y tu control brilla en mi mano",
+   "t": 13.0773,
+   "dur": 0.2159,
+   "txt": "en",
+   "nota": 63,
+   "tonica": false
+  },
+  {
+   "bar": 6,
+   "renglon": "y tu control brilla en mi mano",
+   "t": 13.3045,
+   "dur": 0.2159,
+   "txt": "mi",
+   "nota": 64,
+   "tonica": false
+  },
+  {
+   "bar": 6,
+   "renglon": "y tu control brilla en mi mano",
+   "t": 13.5318,
+   "dur": 0.4318,
+   "txt": "ma",
+   "nota": 61,
+   "tonica": true
+  },
+  {
+   "bar": 6,
+   "renglon": "y tu control brilla en mi mano",
+   "t": 13.9864,
+   "dur": 0.6477,
+   "txt": "no",
+   "nota": 59,
+   "tonica": false
+  },
+  {
+   "bar": 8,
+   "renglon": "elegimos el mismo personaje",
+   "t": 14.8955,
+   "dur": 0.2159,
+   "txt": "e",
+   "nota": 57,
+   "tonica": false
+  },
+  {
+   "bar": 8,
+   "renglon": "elegimos el mismo personaje",
+   "t": 15.1227,
+   "dur": 0.2159,
+   "txt": "le",
+   "nota": 59,
+   "tonica": false
+  },
+  {
+   "bar": 8,
+   "renglon": "elegimos el mismo personaje",
+   "t": 15.35,
+   "dur": 0.4318,
+   "txt": "gi",
+   "nota": 61,
+   "tonica": true
+  },
+  {
+   "bar": 8,
+   "renglon": "elegimos el mismo personaje",
+   "t": 15.8045,
+   "dur": 0.2159,
+   "txt": "mos",
+   "nota": 59,
+   "tonica": false
+  },
+  {
+   "bar": 8,
+   "renglon": "elegimos el mismo personaje",
+   "t": 16.0318,
+   "dur": 0.2159,
+   "txt": "el",
+   "nota": 61,
+   "tonica": false
+  },
+  {
+   "bar": 8,
+   "renglon": "elegimos el mismo personaje",
+   "t": 16.2591,
+   "dur": 0.4318,
+   "txt": "mis",
+   "nota": 64,
+   "tonica": true
+  },
+  {
+   "bar": 8,
+   "renglon": "elegimos el mismo personaje",
+   "t": 16.7136,
+   "dur": 0.4318,
+   "txt": "mo",
+   "nota": 61,
+   "tonica": false
+  },
+  {
+   "bar": 8,
+   "renglon": "elegimos el mismo personaje",
+   "t": 17.1682,
+   "dur": 0.2159,
+   "txt": "per",
+   "nota": 59,
+   "tonica": false
+  },
+  {
+   "bar": 8,
+   "renglon": "elegimos el mismo personaje",
+   "t": 17.3955,
+   "dur": 0.2159,
+   "txt": "so",
+   "nota": 61,
+   "tonica": false
+  },
+  {
+   "bar": 8,
+   "renglon": "elegimos el mismo personaje",
+   "t": 17.6227,
+   "dur": 0.4318,
+   "txt": "na",
+   "nota": 64,
+   "tonica": true
+  },
+  {
+   "bar": 8,
+   "renglon": "elegimos el mismo personaje",
+   "t": 18.0773,
+   "dur": 0.4318,
+   "txt": "je",
+   "nota": 66,
+   "tonica": false
+  },
+  {
+   "bar": 10,
+   "renglon": "y nos reímos sin parar",
+   "t": 18.7591,
+   "dur": 0.2159,
+   "txt": "y",
+   "nota": 66,
+   "tonica": false
+  },
+  {
+   "bar": 10,
+   "renglon": "y nos reímos sin parar",
+   "t": 18.9864,
+   "dur": 0.2159,
+   "txt": "nos",
+   "nota": 68,
+   "tonica": false
+  },
+  {
+   "bar": 10,
+   "renglon": "y nos reímos sin parar",
+   "t": 19.2136,
+   "dur": 0.2159,
+   "txt": "re",
+   "nota": 66,
+   "tonica": false
+  },
+  {
+   "bar": 10,
+   "renglon": "y nos reímos sin parar",
+   "t": 19.4409,
+   "dur": 0.4318,
+   "txt": "í",
+   "nota": 69,
+   "tonica": true
+  },
+  {
+   "bar": 10,
+   "renglon": "y nos reímos sin parar",
+   "t": 19.8955,
+   "dur": 0.2159,
+   "txt": "mos",
+   "nota": 68,
+   "tonica": false
+  },
+  {
+   "bar": 10,
+   "renglon": "y nos reímos sin parar",
+   "t": 20.1227,
+   "dur": 0.2159,
+   "txt": "sin",
+   "nota": 66,
+   "tonica": false
+  },
+  {
+   "bar": 10,
+   "renglon": "y nos reímos sin parar",
+   "t": 20.8045,
+   "dur": 0.4318,
+   "txt": "pa",
+   "nota": 64,
+   "tonica": false
+  },
+  {
+   "bar": 10,
+   "renglon": "y nos reímos sin parar",
+   "t": 21.2591,
+   "dur": 0.6477,
+   "txt": "rar",
+   "nota": 63,
+   "tonica": true
+  },
+  {
+   "bar": 12,
+   "renglon": "el mundo se queda en pausa",
+   "t": 22.3955,
+   "dur": 0.2159,
+   "txt": "el",
+   "nota": 61,
+   "tonica": false
+  },
+  {
+   "bar": 12,
+   "renglon": "el mundo se queda en pausa",
+   "t": 22.6227,
+   "dur": 0.4318,
+   "txt": "mun",
+   "nota": 64,
+   "tonica": true
+  },
+  {
+   "bar": 12,
+   "renglon": "el mundo se queda en pausa",
+   "t": 23.0773,
+   "dur": 0.2159,
+   "txt": "do",
+   "nota": 63,
+   "tonica": false
+  },
+  {
+   "bar": 12,
+   "renglon": "el mundo se queda en pausa",
+   "t": 23.3045,
+   "dur": 0.2159,
+   "txt": "se",
+   "nota": 64,
+   "tonica": false
+  },
+  {
+   "bar": 12,
+   "renglon": "el mundo se queda en pausa",
+   "t": 23.5318,
+   "dur": 0.4318,
+   "txt": "que",
+   "nota": 68,
+   "tonica": true
+  },
+  {
+   "bar": 12,
+   "renglon": "el mundo se queda en pausa",
+   "t": 23.9864,
+   "dur": 0.2159,
+   "txt": "da",
+   "nota": 66,
+   "tonica": false
+  },
+  {
+   "bar": 12,
+   "renglon": "el mundo se queda en pausa",
+   "t": 24.2136,
+   "dur": 0.2159,
+   "txt": "en",
+   "nota": 64,
+   "tonica": false
+  },
+  {
+   "bar": 12,
+   "renglon": "el mundo se queda en pausa",
+   "t": 24.4409,
+   "dur": 0.4318,
+   "txt": "pau",
+   "nota": 66,
+   "tonica": true
+  },
+  {
+   "bar": 12,
+   "renglon": "el mundo se queda en pausa",
+   "t": 24.8955,
+   "dur": 0.4318,
+   "txt": "sa",
+   "nota": 68,
+   "tonica": false
+  },
+  {
+   "bar": 14,
+   "renglon": "cuando tú presionas start",
+   "t": 25.8045,
+   "dur": 0.4318,
+   "txt": "cuan",
+   "nota": 56,
+   "tonica": true
+  },
+  {
+   "bar": 14,
+   "renglon": "cuando tú presionas start",
+   "t": 26.2591,
+   "dur": 0.4318,
+   "txt": "do",
+   "nota": 57,
+   "tonica": false
+  },
+  {
+   "bar": 14,
+   "renglon": "cuando tú presionas start",
+   "t": 26.7136,
+   "dur": 0.4318,
+   "txt": "tú",
+   "nota": 59,
+   "tonica": true
+  },
+  {
+   "bar": 14,
+   "renglon": "cuando tú presionas start",
+   "t": 27.3955,
+   "dur": 0.2159,
+   "txt": "pre",
+   "nota": 61,
+   "tonica": false
+  },
+  {
+   "bar": 14,
+   "renglon": "cuando tú presionas start",
+   "t": 27.6227,
+   "dur": 0.4318,
+   "txt": "sio",
+   "nota": 63,
+   "tonica": true
+  },
+  {
+   "bar": 14,
+   "renglon": "cuando tú presionas start",
+   "t": 28.0773,
+   "dur": 0.4318,
+   "txt": "nas",
+   "nota": 64,
+   "tonica": false
+  },
+  {
+   "bar": 14,
+   "renglon": "cuando tú presionas start",
+   "t": 28.5318,
+   "dur": 0.8636,
+   "txt": "start",
+   "nota": 68,
+   "tonica": true
+  },
+  {
+   "bar": 16,
+   "renglon": "doki doki mi corazón",
+   "t": 29.4409,
+   "dur": 0.2159,
+   "txt": "do",
+   "nota": 73,
+   "tonica": true
+  },
+  {
+   "bar": 16,
+   "renglon": "doki doki mi corazón",
+   "t": 29.6682,
+   "dur": 0.2159,
+   "txt": "ki",
+   "nota": 71,
+   "tonica": false
+  },
+  {
+   "bar": 16,
+   "renglon": "doki doki mi corazón",
+   "t": 29.8955,
+   "dur": 0.2159,
+   "txt": "do",
+   "nota": 73,
+   "tonica": true
+  },
+  {
+   "bar": 16,
+   "renglon": "doki doki mi corazón",
+   "t": 30.1227,
+   "dur": 0.2159,
+   "txt": "ki",
+   "nota": 71,
+   "tonica": false
+  },
+  {
+   "bar": 16,
+   "renglon": "doki doki mi corazón",
+   "t": 30.5773,
+   "dur": 0.2159,
+   "txt": "mi",
+   "nota": 68,
+   "tonica": false
+  },
+  {
+   "bar": 16,
+   "renglon": "doki doki mi corazón",
+   "t": 30.8045,
+   "dur": 0.2159,
+   "txt": "co",
+   "nota": 69,
+   "tonica": false
+  },
+  {
+   "bar": 16,
+   "renglon": "doki doki mi corazón",
+   "t": 31.0318,
+   "dur": 0.2159,
+   "txt": "ra",
+   "nota": 71,
+   "tonica": false
+  },
+  {
+   "bar": 16,
+   "renglon": "doki doki mi corazón",
+   "t": 31.2591,
+   "dur": 1.2955,
+   "txt": "zón",
+   "nota": 71,
+   "tonica": true
+  },
+  {
+   "bar": 18,
+   "renglon": "salta como Kirby al viento",
+   "t": 33.0773,
+   "dur": 0.4318,
+   "txt": "sal",
+   "nota": 71,
+   "tonica": true
+  },
+  {
+   "bar": 18,
+   "renglon": "salta como Kirby al viento",
+   "t": 33.5318,
+   "dur": 0.4318,
+   "txt": "ta",
+   "nota": 69,
+   "tonica": false
+  },
+  {
+   "bar": 18,
+   "renglon": "salta como Kirby al viento",
+   "t": 33.9864,
+   "dur": 0.2159,
+   "txt": "co",
+   "nota": 68,
+   "tonica": true
+  },
+  {
+   "bar": 18,
+   "renglon": "salta como Kirby al viento",
+   "t": 34.2136,
+   "dur": 0.2159,
+   "txt": "mo",
+   "nota": 66,
+   "tonica": false
+  },
+  {
+   "bar": 18,
+   "renglon": "salta como Kirby al viento",
+   "t": 34.4409,
+   "dur": 0.4318,
+   "txt": "kir",
+   "nota": 68,
+   "tonica": true
+  },
+  {
+   "bar": 18,
+   "renglon": "salta como Kirby al viento",
+   "t": 34.8955,
+   "dur": 0.2159,
+   "txt": "by",
+   "nota": 64,
+   "tonica": false
+  },
+  {
+   "bar": 18,
+   "renglon": "salta como Kirby al viento",
+   "t": 35.1227,
+   "dur": 0.2159,
+   "txt": "al",
+   "nota": 66,
+   "tonica": false
+  },
+  {
+   "bar": 18,
+   "renglon": "salta como Kirby al viento",
+   "t": 35.35,
+   "dur": 0.4318,
+   "txt": "vien",
+   "nota": 68,
+   "tonica": true
+  },
+  {
+   "bar": 18,
+   "renglon": "salta como Kirby al viento",
+   "t": 35.8045,
+   "dur": 0.6477,
+   "txt": "to",
+   "nota": 64,
+   "tonica": false
+  },
+  {
+   "bar": 20,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 36.7136,
+   "dur": 0.2159,
+   "txt": "ki",
+   "nota": 76,
+   "tonica": true
+  },
+  {
+   "bar": 20,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 36.9409,
+   "dur": 0.2159,
+   "txt": "ra",
+   "nota": 73,
+   "tonica": false
+  },
+  {
+   "bar": 20,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 37.1682,
+   "dur": 0.2159,
+   "txt": "ki",
+   "nota": 76,
+   "tonica": true
+  },
+  {
+   "bar": 20,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 37.3955,
+   "dur": 0.2159,
+   "txt": "ra",
+   "nota": 73,
+   "tonica": false
+  },
+  {
+   "bar": 20,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 37.6227,
+   "dur": 0.4318,
+   "txt": "e",
+   "nota": 71,
+   "tonica": true
+  },
+  {
+   "bar": 20,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 38.0773,
+   "dur": 0.2159,
+   "txt": "res",
+   "nota": 69,
+   "tonica": false
+  },
+  {
+   "bar": 20,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 38.3045,
+   "dur": 0.2159,
+   "txt": "mi",
+   "nota": 68,
+   "tonica": false
+  },
+  {
+   "bar": 20,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 38.5318,
+   "dur": 0.2159,
+   "txt": "ju",
+   "nota": 66,
+   "tonica": false
+  },
+  {
+   "bar": 20,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 38.7591,
+   "dur": 0.2159,
+   "txt": "ga",
+   "nota": 68,
+   "tonica": false
+  },
+  {
+   "bar": 20,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 38.9864,
+   "dur": 0.4318,
+   "txt": "dor",
+   "nota": 69,
+   "tonica": true
+  },
+  {
+   "bar": 20,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 39.4409,
+   "dur": 0.8636,
+   "txt": "dos",
+   "nota": 71,
+   "tonica": true
+  },
+  {
+   "bar": 22,
+   "renglon": "juntos hasta el final",
+   "t": 40.35,
+   "dur": 0.4318,
+   "txt": "jun",
+   "nota": 68,
+   "tonica": true
+  },
+  {
+   "bar": 22,
+   "renglon": "juntos hasta el final",
+   "t": 40.8045,
+   "dur": 0.4318,
+   "txt": "tos",
+   "nota": 66,
+   "tonica": false
+  },
+  {
+   "bar": 22,
+   "renglon": "juntos hasta el final",
+   "t": 41.2591,
+   "dur": 0.2159,
+   "txt": "has",
+   "nota": 64,
+   "tonica": false
+  },
+  {
+   "bar": 22,
+   "renglon": "juntos hasta el final",
+   "t": 41.4864,
+   "dur": 0.2159,
+   "txt": "ta",
+   "nota": 66,
+   "tonica": false
+  },
+  {
+   "bar": 22,
+   "renglon": "juntos hasta el final",
+   "t": 41.7136,
+   "dur": 0.2159,
+   "txt": "el",
+   "nota": 68,
+   "tonica": false
+  },
+  {
+   "bar": 22,
+   "renglon": "juntos hasta el final",
+   "t": 41.9409,
+   "dur": 0.2159,
+   "txt": "fi",
+   "nota": 66,
+   "tonica": false
+  },
+  {
+   "bar": 22,
+   "renglon": "juntos hasta el final",
+   "t": 42.1682,
+   "dur": 1.2955,
+   "txt": "nal",
+   "nota": 64,
+   "tonica": true
+  },
+  {
+   "bar": 24,
+   "renglon": "na na na una más",
+   "t": 43.9864,
+   "dur": 0.2159,
+   "txt": "na",
+   "nota": 68,
+   "tonica": false
+  },
+  {
+   "bar": 24,
+   "renglon": "na na na una más",
+   "t": 44.2136,
+   "dur": 0.2159,
+   "txt": "na",
+   "nota": 68,
+   "tonica": false
+  },
+  {
+   "bar": 24,
+   "renglon": "na na na una más",
+   "t": 44.4409,
+   "dur": 0.2159,
+   "txt": "na",
+   "nota": 71,
+   "tonica": false
+  },
+  {
+   "bar": 24,
+   "renglon": "na na na una más",
+   "t": 44.8955,
+   "dur": 0.2159,
+   "txt": "u",
+   "nota": 73,
+   "tonica": false
+  },
+  {
+   "bar": 24,
+   "renglon": "na na na una más",
+   "t": 45.1227,
+   "dur": 0.2159,
+   "txt": "na",
+   "nota": 71,
+   "tonica": false
+  },
+  {
+   "bar": 24,
+   "renglon": "na na na una más",
+   "t": 45.35,
+   "dur": 0.6477,
+   "txt": "más",
+   "nota": 68,
+   "tonica": true
+  },
+  {
+   "bar": 26,
+   "renglon": "na na na una más",
+   "t": 47.6227,
+   "dur": 0.2159,
+   "txt": "na",
+   "nota": 68,
+   "tonica": false
+  },
+  {
+   "bar": 26,
+   "renglon": "na na na una más",
+   "t": 47.85,
+   "dur": 0.2159,
+   "txt": "na",
+   "nota": 68,
+   "tonica": false
+  },
+  {
+   "bar": 26,
+   "renglon": "na na na una más",
+   "t": 48.0773,
+   "dur": 0.2159,
+   "txt": "na",
+   "nota": 71,
+   "tonica": false
+  },
+  {
+   "bar": 26,
+   "renglon": "na na na una más",
+   "t": 48.5318,
+   "dur": 0.2159,
+   "txt": "u",
+   "nota": 73,
+   "tonica": false
+  },
+  {
+   "bar": 26,
+   "renglon": "na na na una más",
+   "t": 48.7591,
+   "dur": 0.2159,
+   "txt": "na",
+   "nota": 76,
+   "tonica": false
+  },
+  {
+   "bar": 26,
+   "renglon": "na na na una más",
+   "t": 48.9864,
+   "dur": 0.6477,
+   "txt": "más",
+   "nota": 75,
+   "tonica": true
+  },
+  {
+   "bar": 28,
+   "renglon": "doki doki mi corazón",
+   "t": 51.2591,
+   "dur": 0.2159,
+   "txt": "do",
+   "nota": 74,
+   "tonica": true
+  },
+  {
+   "bar": 28,
+   "renglon": "doki doki mi corazón",
+   "t": 51.4864,
+   "dur": 0.2159,
+   "txt": "ki",
+   "nota": 72,
+   "tonica": false
+  },
+  {
+   "bar": 28,
+   "renglon": "doki doki mi corazón",
+   "t": 51.7136,
+   "dur": 0.2159,
+   "txt": "do",
+   "nota": 74,
+   "tonica": true
+  },
+  {
+   "bar": 28,
+   "renglon": "doki doki mi corazón",
+   "t": 51.9409,
+   "dur": 0.2159,
+   "txt": "ki",
+   "nota": 72,
+   "tonica": false
+  },
+  {
+   "bar": 28,
+   "renglon": "doki doki mi corazón",
+   "t": 52.3955,
+   "dur": 0.2159,
+   "txt": "mi",
+   "nota": 69,
+   "tonica": false
+  },
+  {
+   "bar": 28,
+   "renglon": "doki doki mi corazón",
+   "t": 52.6227,
+   "dur": 0.2159,
+   "txt": "co",
+   "nota": 70,
+   "tonica": false
+  },
+  {
+   "bar": 28,
+   "renglon": "doki doki mi corazón",
+   "t": 52.85,
+   "dur": 0.2159,
+   "txt": "ra",
+   "nota": 72,
+   "tonica": false
+  },
+  {
+   "bar": 28,
+   "renglon": "doki doki mi corazón",
+   "t": 53.0773,
+   "dur": 1.2955,
+   "txt": "zón",
+   "nota": 72,
+   "tonica": true
+  },
+  {
+   "bar": 30,
+   "renglon": "salta como Kirby al viento",
+   "t": 54.8955,
+   "dur": 0.4318,
+   "txt": "sal",
+   "nota": 72,
+   "tonica": true
+  },
+  {
+   "bar": 30,
+   "renglon": "salta como Kirby al viento",
+   "t": 55.35,
+   "dur": 0.4318,
+   "txt": "ta",
+   "nota": 70,
+   "tonica": false
+  },
+  {
+   "bar": 30,
+   "renglon": "salta como Kirby al viento",
+   "t": 55.8045,
+   "dur": 0.2159,
+   "txt": "co",
+   "nota": 69,
+   "tonica": true
+  },
+  {
+   "bar": 30,
+   "renglon": "salta como Kirby al viento",
+   "t": 56.0318,
+   "dur": 0.2159,
+   "txt": "mo",
+   "nota": 67,
+   "tonica": false
+  },
+  {
+   "bar": 30,
+   "renglon": "salta como Kirby al viento",
+   "t": 56.2591,
+   "dur": 0.4318,
+   "txt": "kir",
+   "nota": 69,
+   "tonica": true
+  },
+  {
+   "bar": 30,
+   "renglon": "salta como Kirby al viento",
+   "t": 56.7136,
+   "dur": 0.2159,
+   "txt": "by",
+   "nota": 65,
+   "tonica": false
+  },
+  {
+   "bar": 30,
+   "renglon": "salta como Kirby al viento",
+   "t": 56.9409,
+   "dur": 0.2159,
+   "txt": "al",
+   "nota": 67,
+   "tonica": false
+  },
+  {
+   "bar": 30,
+   "renglon": "salta como Kirby al viento",
+   "t": 57.1682,
+   "dur": 0.4318,
+   "txt": "vien",
+   "nota": 69,
+   "tonica": true
+  },
+  {
+   "bar": 30,
+   "renglon": "salta como Kirby al viento",
+   "t": 57.6227,
+   "dur": 0.6477,
+   "txt": "to",
+   "nota": 65,
+   "tonica": false
+  },
+  {
+   "bar": 32,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 58.5318,
+   "dur": 0.2159,
+   "txt": "ki",
+   "nota": 77,
+   "tonica": true
+  },
+  {
+   "bar": 32,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 58.7591,
+   "dur": 0.2159,
+   "txt": "ra",
+   "nota": 74,
+   "tonica": false
+  },
+  {
+   "bar": 32,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 58.9864,
+   "dur": 0.2159,
+   "txt": "ki",
+   "nota": 77,
+   "tonica": true
+  },
+  {
+   "bar": 32,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 59.2136,
+   "dur": 0.2159,
+   "txt": "ra",
+   "nota": 74,
+   "tonica": false
+  },
+  {
+   "bar": 32,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 59.4409,
+   "dur": 0.4318,
+   "txt": "e",
+   "nota": 72,
+   "tonica": true
+  },
+  {
+   "bar": 32,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 59.8955,
+   "dur": 0.2159,
+   "txt": "res",
+   "nota": 70,
+   "tonica": false
+  },
+  {
+   "bar": 32,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 60.1227,
+   "dur": 0.2159,
+   "txt": "mi",
+   "nota": 69,
+   "tonica": false
+  },
+  {
+   "bar": 32,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 60.35,
+   "dur": 0.2159,
+   "txt": "ju",
+   "nota": 67,
+   "tonica": false
+  },
+  {
+   "bar": 32,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 60.5773,
+   "dur": 0.2159,
+   "txt": "ga",
+   "nota": 69,
+   "tonica": false
+  },
+  {
+   "bar": 32,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 60.8045,
+   "dur": 0.4318,
+   "txt": "dor",
+   "nota": 70,
+   "tonica": true
+  },
+  {
+   "bar": 32,
+   "renglon": "kira kira eres mi jugador dos",
+   "t": 61.2591,
+   "dur": 0.8636,
+   "txt": "dos",
+   "nota": 72,
+   "tonica": true
+  },
+  {
+   "bar": 34,
+   "renglon": "juntos hasta el final",
+   "t": 62.1682,
+   "dur": 0.4318,
+   "txt": "jun",
+   "nota": 69,
+   "tonica": true
+  },
+  {
+   "bar": 34,
+   "renglon": "juntos hasta el final",
+   "t": 62.6227,
+   "dur": 0.4318,
+   "txt": "tos",
+   "nota": 67,
+   "tonica": false
+  },
+  {
+   "bar": 34,
+   "renglon": "juntos hasta el final",
+   "t": 63.0773,
+   "dur": 0.2159,
+   "txt": "has",
+   "nota": 65,
+   "tonica": false
+  },
+  {
+   "bar": 34,
+   "renglon": "juntos hasta el final",
+   "t": 63.3045,
+   "dur": 0.2159,
+   "txt": "ta",
+   "nota": 67,
+   "tonica": false
+  },
+  {
+   "bar": 34,
+   "renglon": "juntos hasta el final",
+   "t": 63.5318,
+   "dur": 0.2159,
+   "txt": "el",
+   "nota": 69,
+   "tonica": false
+  },
+  {
+   "bar": 34,
+   "renglon": "juntos hasta el final",
+   "t": 63.7591,
+   "dur": 0.2159,
+   "txt": "fi",
+   "nota": 67,
+   "tonica": false
+  },
+  {
+   "bar": 34,
+   "renglon": "juntos hasta el final",
+   "t": 63.9864,
+   "dur": 1.2955,
+   "txt": "nal",
+   "nota": 65,
+   "tonica": true
+  },
+  {
+   "bar": 36,
+   "renglon": "presiona start",
+   "t": 66.0318,
+   "dur": 0.2159,
+   "txt": "pre",
+   "nota": 65,
+   "tonica": false
+  },
+  {
+   "bar": 36,
+   "renglon": "presiona start",
+   "t": 66.2591,
+   "dur": 0.4318,
+   "txt": "sio",
+   "nota": 67,
+   "tonica": true
+  },
+  {
+   "bar": 36,
+   "renglon": "presiona start",
+   "t": 66.7136,
+   "dur": 0.4318,
+   "txt": "na",
+   "nota": 69,
+   "tonica": false
+  },
+  {
+   "bar": 36,
+   "renglon": "presiona start",
+   "t": 67.1682,
+   "dur": 0.8636,
+   "txt": "start",
+   "nota": 72,
+   "tonica": true
+  }
+ ],
+ "prosodia": {
+  "renglones": 17,
+  "silabas": 140,
+  "tonicas": 50,
+  "tonicas_en_tiempo_fuerte": 50,
+  "prosodia_%": 100.0,
+  "fuera": []
+ }
+}

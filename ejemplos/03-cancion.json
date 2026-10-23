@@ -1,0 +1,386 @@
+{
+  "titulo": "Pregunta, respuesta y retirada",
+  "bpm": 100,
+  "compases": 8,
+  "semilla": 20261020,
+  "pistas": [
+    {
+      "nombre": "Bajo",
+      "instrumento": "rejilla-musica-bajo",
+      "notas": [
+        {
+          "pulso": 0,
+          "midi": 38,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 1.5,
+          "midi": 38,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 3,
+          "midi": 38,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 4,
+          "midi": 38,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 5.5,
+          "midi": 38,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 7,
+          "midi": 38,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 8,
+          "midi": 41,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 9.5,
+          "midi": 41,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 11,
+          "midi": 41,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 12,
+          "midi": 43,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 13.5,
+          "midi": 43,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 15,
+          "midi": 43,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 16,
+          "midi": 38,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 17.5,
+          "midi": 38,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 19,
+          "midi": 38,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 20,
+          "midi": 41,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 21.5,
+          "midi": 41,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 23,
+          "midi": 41,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 24,
+          "midi": 43,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 25.5,
+          "midi": 43,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 27,
+          "midi": 43,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 28,
+          "midi": 38,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 29.5,
+          "midi": 38,
+          "dur": 0.6,
+          "vel": 0.55
+        },
+        {
+          "pulso": 31,
+          "midi": 38,
+          "dur": 0.6,
+          "vel": 0.55
+        }
+      ]
+    },
+    {
+      "nombre": "Melodía",
+      "instrumento": "rejilla-musica-campana",
+      "notas": [
+        {
+          "pulso": 0.5,
+          "midi": 62,
+          "dur": 0.6,
+          "vel": 0.5
+        },
+        {
+          "pulso": 2,
+          "midi": 65,
+          "dur": 0.6,
+          "vel": 0.5
+        },
+        {
+          "pulso": 3,
+          "midi": 69,
+          "dur": 0.6,
+          "vel": 0.5
+        },
+        {
+          "pulso": 5,
+          "midi": 67,
+          "dur": 0.6,
+          "vel": 0.5
+        },
+        {
+          "pulso": 6.5,
+          "midi": 65,
+          "dur": 0.6,
+          "vel": 0.5
+        },
+        {
+          "pulso": 8.5,
+          "midi": 62,
+          "dur": 0.6,
+          "vel": 0.5
+        },
+        {
+          "pulso": 10,
+          "midi": 65,
+          "dur": 0.6,
+          "vel": 0.5
+        },
+        {
+          "pulso": 11,
+          "midi": 69,
+          "dur": 0.6,
+          "vel": 0.5
+        },
+        {
+          "pulso": 13,
+          "midi": 67,
+          "dur": 0.6,
+          "vel": 0.5
+        },
+        {
+          "pulso": 14.5,
+          "midi": 65,
+          "dur": 0.6,
+          "vel": 0.5
+        },
+        {
+          "pulso": 16.5,
+          "midi": 62,
+          "dur": 0.6,
+          "vel": 0.5
+        },
+        {
+          "pulso": 18,
+          "midi": 65,
+          "dur": 0.6,
+          "vel": 0.5
+        },
+        {
+          "pulso": 19,
+          "midi": 69,
+          "dur": 0.6,
+          "vel": 0.5
+        },
+        {
+          "pulso": 21,
+          "midi": 67,
+          "dur": 0.6,
+          "vel": 0.5
+        },
+        {
+          "pulso": 22.5,
+          "midi": 65,
+          "dur": 0.6,
+          "vel": 0.5
+        },
+        {
+          "pulso": 24.5,
+          "midi": 62,
+          "dur": 0.6,
+          "vel": 0.5
+        },
+        {
+          "pulso": 26,
+          "midi": 65,
+          "dur": 0.6,
+          "vel": 0.5
+        },
+        {
+          "pulso": 27,
+          "midi": 69,
+          "dur": 0.6,
+          "vel": 0.5
+        },
+        {
+          "pulso": 29,
+          "midi": 67,
+          "dur": 0.6,
+          "vel": 0.5
+        },
+        {
+          "pulso": 30.5,
+          "midi": 62,
+          "dur": 0.6,
+          "vel": 0.5
+        }
+      ]
+    },
+    {
+      "nombre": "Armonía",
+      "instrumento": "rejilla-musica-rhodes",
+      "notas": [
+        {
+          "pulso": 0,
+          "midi": 50,
+          "dur": 2,
+          "vel": 0.35
+        },
+        {
+          "pulso": 0,
+          "midi": 57,
+          "dur": 2,
+          "vel": 0.35
+        },
+        {
+          "pulso": 0,
+          "midi": 60,
+          "dur": 2,
+          "vel": 0.35
+        },
+        {
+          "pulso": 0,
+          "midi": 64,
+          "dur": 2,
+          "vel": 0.35
+        },
+        {
+          "pulso": 8,
+          "midi": 53,
+          "dur": 2,
+          "vel": 0.35
+        },
+        {
+          "pulso": 8,
+          "midi": 60,
+          "dur": 2,
+          "vel": 0.35
+        },
+        {
+          "pulso": 8,
+          "midi": 64,
+          "dur": 2,
+          "vel": 0.35
+        },
+        {
+          "pulso": 8,
+          "midi": 67,
+          "dur": 2,
+          "vel": 0.35
+        },
+        {
+          "pulso": 16,
+          "midi": 53,
+          "dur": 2,
+          "vel": 0.35
+        },
+        {
+          "pulso": 16,
+          "midi": 60,
+          "dur": 2,
+          "vel": 0.35
+        },
+        {
+          "pulso": 16,
+          "midi": 64,
+          "dur": 2,
+          "vel": 0.35
+        },
+        {
+          "pulso": 16,
+          "midi": 67,
+          "dur": 2,
+          "vel": 0.35
+        },
+        {
+          "pulso": 28,
+          "midi": 50,
+          "dur": 2,
+          "vel": 0.35
+        },
+        {
+          "pulso": 28,
+          "midi": 57,
+          "dur": 2,
+          "vel": 0.35
+        },
+        {
+          "pulso": 28,
+          "midi": 60,
+          "dur": 2,
+          "vel": 0.35
+        },
+        {
+          "pulso": 28,
+          "midi": 64,
+          "dur": 2,
+          "vel": 0.35
+        }
+      ]
+    }
+  ]
+}

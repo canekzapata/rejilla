@@ -1,0 +1,110 @@
+{
+ "semilla": "769",
+ "arq": "conos",
+ "nombre": "CAMPO DE CONOS",
+ "G": 360,
+ "relieve": 220,
+ "anchoKm": 11.5,
+ "umbralMar": 0.0001,
+ "nivelMar": null,
+ "umbralMarFondo": 0.0001,
+ "relieveFondo": 220,
+ "historia": [
+  "LEVANTAMIENTO",
+  "DESLAVE",
+  "EROSIÓN"
+ ],
+ "especiales": [],
+ "nombres": [
+  {
+   "nombre": "EL PICO DEL TECOLOTE",
+   "clase": "cumbre",
+   "u": 0.7966573816155988,
+   "v": 0.5376044568245125
+  },
+  {
+   "nombre": "EL CERRO REDONDO",
+   "clase": "cumbre",
+   "u": 0.6657381615598886,
+   "v": 0.49303621169916434
+  },
+  {
+   "nombre": "EL CERRO DE LOS LAGOS",
+   "clase": "cumbre",
+   "u": 0.5376044568245125,
+   "v": 0.4763231197771588
+  },
+  {
+   "nombre": "JUATARHU",
+   "clase": "cumbre",
+   "u": 0.807799442896936,
+   "v": 0.08913649025069638
+  },
+  {
+   "nombre": "EL ALCOR",
+   "clase": "cumbre",
+   "u": 0.116991643454039,
+   "v": 0.19498607242339833
+  },
+  {
+   "nombre": "EL BOQUERÓN",
+   "clase": "paso",
+   "u": 0.7270194986072424,
+   "v": 0.48746518105849584
+  },
+  {
+   "nombre": "EL PORTICHUELO",
+   "clase": "paso",
+   "u": 0.5682451253481894,
+   "v": 0.45403899721448465
+  },
+  {
+   "nombre": "LA HOYADA",
+   "clase": "hondonada",
+   "u": 0.233983286908078,
+   "v": 0.43175487465181056
+  },
+  {
+   "nombre": "LA HOYA PRIETA",
+   "clase": "hondonada",
+   "u": 0.48467966573816157,
+   "v": 0.7688022284122563
+  },
+  {
+   "nombre": "JAPONDA",
+   "clase": "lago",
+   "u": 0.5543175487465181,
+   "v": 0.7298050139275766
+  },
+  {
+   "nombre": "LA LAGUNA DEL CERRO",
+   "clase": "lago",
+   "u": 0.3064066852367688,
+   "v": 0.3816155988857939
+  },
+  {
+   "nombre": "IÓRHEKUA",
+   "clase": "rio",
+   "u": 0.533600278551532,
+   "v": 0.8022284122562674
+  },
+  {
+   "nombre": "EL RÍO CHICO",
+   "clase": "rio",
+   "u": 0.6680013927576602,
+   "v": 0.23067548746518107
+  },
+  {
+   "nombre": "EL PEDREGAL DEL NORESTE",
+   "clase": "especial",
+   "u": 1.0429128547818172,
+   "v": 0.08056388186432228
+  },
+  {
+   "nombre": "EL DERRUMBE DEL CERRO",
+   "clase": "especial",
+   "u": 0.655201380437884,
+   "v": 0.5115628268061307
+  }
+ ]
+}

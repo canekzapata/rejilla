@@ -1,10 +1,10 @@
-# Voz opcional
+# Voz incluida
 
-El repositorio conserva el motor español `runtime/g2p.js` y `runtime/difonos.js`.
-No incluye grabaciones ni el motor inglés eSpeak/WASM.
+Se incluye el banco de Sabina en `bancos/sabina-1-b44e7fab5cee/`:
+manifiesto, WAV y FLAC, aproximadamente 3.17 MB. Es un recurso del motor, no una
+carpeta de ejemplos. Permite usar jardín-voz y la cadena completa del Agua.
 
-Para usar `jardin-voz` coloca el banco original en
-`difonos/bancos/sabina-1-b44e7fab5cee/`, conservando `manifiesto.json`,
-`banco.flac` y `banco.wav`. Ese directorio está ignorado por Git. Los demás
-instrumentos no necesitan ese banco. Obtén el banco del autor o del paquete
-compartible; no hay una URL pública de descarga configurada.
+`runtime/` conserva Difonos, el conversor español y el fonetizador inglés WASM.
+Los avisos GPL y las instrucciones de reconstrucción de eSpeak están en
+`vendor/espeak-ng-wasm/README.md`; el puente está en `wasm/`.
+Las salidas generadas van a `renders/` o `salidas/`, fuera de Git.

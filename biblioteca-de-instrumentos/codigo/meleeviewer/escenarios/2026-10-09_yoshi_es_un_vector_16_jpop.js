@@ -2,7 +2,7 @@
    sacadas de meleeviewer/output/Arte/2026-10-09_yoshi_es_un_vector_16_jpop/cancion.js (sha256 5fd813de871d) por herramientas/escenarios_meleeviewer.cjs.
    Cambios: ctx → el que se dé; master → la salida que se dé (seco). Nombres que no se encontraron: r, ty. */
 (function(){'use strict';return async function(__ctx,__salida,opts){opts=opts||{};
-const DIR='/meleeviewer/output/Arte/2026-10-09_yoshi_es_un_vector_16_jpop/';
+const DIR='/biblioteca-de-instrumentos/codigo/meleeviewer/datos/2026-10-09_yoshi_es_un_vector_16_jpop/';
 const P=await (await fetch(DIR+'partitura.json')).json();
 const SEED='yoshi-es-un-vector-16-jpop';
 const BPM=P.bpm;

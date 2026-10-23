@@ -2,7 +2,7 @@
    sacadas de meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_9_coro_de_gritos/cancion.js (sha256 a9629f3e34b4) por herramientas/escenarios_meleeviewer.cjs.
    Cambios: ctx → el que se dé; master → la salida que se dé (seco). Nombres que no se encontraron: cut. */
 (function(){'use strict';return async function(__ctx,__salida,opts){opts=opts||{};
-const DIR='/meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_9_coro_de_gritos/';
+const DIR='/biblioteca-de-instrumentos/codigo/meleeviewer/datos/2026-09-29_yoshi_es_un_vector_9_coro_de_gritos/';
 const P=await (await fetch(DIR+'partitura.json')).json();
 const SEED=P.seed;
 const SR=44100;

@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "estado": "prototipos offline, sin alta en el catálogo compartido",
+  "motor": "motores.py:render(id, partitura, duracion, sr=32000, semilla=19103419)",
+  "dependencias": ["numpy", "scipy"],
+  "audio": "float32 estéreo, 32 kHz comprobados; nivel sin normalizar en la API",
+  "comunes": {"notas": "t y dur en segundos; midi; vel 0..1; pan -1..1", "controles": "puntos [segundos, valor], interpolación lineal", "limite": "validar registro, duración, señal y nivel en cada nueva pieza"},
+  "instrumentos": [
+    {"id":"boca", "nombre":"Boca de tres tiempos", "tipo":"fuente armónica y cuatro resonadores variables", "gestos":["notas","vocales [t,a/e/i/o/u]","consonantes [t,m/t/k/s,intensidad]","vibrato 0..1"], "limite":"no comprueba habla inteligible; sin PSOLA ni muestras humanas"},
+    {"id":"cuerda", "nombre":"Cuerda de cuerpos incompatibles", "tipo":"tres regiones, siete modos cada una, conversión activa de envolventes", "gestos":["notas","base_midi","presion 0..1","arco 0..1"], "limite":"modelo abstracto, no simulación física conservativa de una cuerda natural"},
+    {"id":"piano", "nombre":"Piano de tres presentes", "tipo":"ataque FM futuro, cuerpo actual y caída anterior", "gestos":["notas en orden temporal"], "limite":"necesita partitura conocida; sin predicción de gestos humanos futuros"},
+    {"id":"arpa", "nombre":"Arpa que presta su vibración", "tipo":"cinco cuerdas de siete modos y enlaces variables", "gestos":["cuerdas_midi (cinco alturas)","notas con indice cuerda 0..4","enlaces [t,origen,destino,angulo_radianes]"], "limite":"giro de envolventes durante 0.45 s; conversión entre alturas activa, no transferencia pasiva de julios"},
+    {"id":"organo", "nombre":"Órgano de divisores con memoria", "tipo":"osciladores f/n, Schmitt por divisor", "gestos":["notas MIDI definen frecuencia de referencia","presion 0..1"], "limite":"divisores 1,2,3,5,7,9; sin segundo pedal de múltiplos en este prototipo"},
+    {"id":"sala", "nombre":"Sala plegada que se toca", "tipo":"dos redes independientes de cuatro retardos fijos y conexiones rotatorias", "gestos":["notas excitan impulso tonal y ruido","pliegue_0 0..1","pliegue_1 0..1"], "limite":"arquitectura digital, no recinto físico medido"},
+    {"id":"cristal", "nombre":"Cristal orbital", "tipo":"FM de índice decreciente, render interno 4x", "gestos":["notas","vel controla también brillo"], "limite":"preset original; no emulación de hardware concreto"},
+    {"id":"estacion", "nombre":"Cuerdas de estación", "tipo":"tres osciladores aditivos desafinados y brillo móvil", "gestos":["notas y acordes con entradas independientes","pan por nota"], "limite":"ataque 0.42 s y salida 0.65 s; notas cortas reducen su amplitud"},
+    {"id":"terminal", "nombre":"Terminal vectorial", "tipo":"mezcla bilineal de metal FM, vocal, pulsación y aire; render 4x", "gestos":["notas","vector_x 0..1","vector_y 0..1"], "limite":"interpolación de cuatro fuentes, sin emulación de sintetizador comercial"},
+    {"id":"plasma", "nombre":"Plumón de plasma", "tipo":"pulso por suma armónica, entrada deslizada y ráfaga de ruido", "gestos":["notas","vel controla apertura espectral"], "limite":"scoop al inicio de cada nota; todavía sin portamento legato desde la nota anterior"},
+    {"id":"androide", "nombre":"Bajo de androide", "tipo":"fundamental separada, medios formánticos saturados", "gestos":["notas","duración y acento"], "limite":"recorrido u/e prefijado; la fusión completa con los tres recorridos de Boca queda fuera de esta versión"},
+    {"id":"fotones", "nombre":"Batería de fotones", "tipo":"caída rápida de altura, producto de osciladores y ruido; render 4x", "gestos":["midi como altura de referencia del golpe","duración","vel","pan"], "limite":"percusión sintetizada; no muestras de batería o película"}
+  ]
+}

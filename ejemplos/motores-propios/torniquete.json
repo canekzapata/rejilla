@@ -1,0 +1,19 @@
+{
+  "motor_propio": "torniquete",
+  "config": {
+    "dur": 4,
+    "semilla": 20261020,
+    "argumentos": {
+      "golpes": [
+        {
+          "t": 0.1,
+          "v": 0.7
+        },
+        {
+          "t": 1.3,
+          "v": 0.65
+        }
+      ]
+    }
+  }
+}

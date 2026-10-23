@@ -1,0 +1,397 @@
+{
+  "titulo": "Prueba técnica de 23 capas (no es la obra completa)",
+  "semilla": 67,
+  "terreno": "traspuesta 67, TIERRAS MALAS, 6 km, 220 m",
+  "ejecucion": "9402355f92181fb63bdd0f41a5141e55a23cf391e6922a39181c5b32a7a66b91",
+  "nonce": "6ae77619588716a56bd206197976dd62",
+  "fecha": "2026-10-23",
+  "instrumentos": "../../../biblioteca-de-instrumentos",
+  "niveles": {
+    "guitarra": 2,
+    "pulgar": -8,
+    "lluvia": -3,
+    "arco": -6,
+    "col-legno": -7,
+    "trueno": -2,
+    "viento": -14,
+    "crecida": -6,
+    "pedregones": -11,
+    "rio": -2,
+    "hats": -12,
+    "bateria808": -4,
+    "bateria-frito": -11,
+    "bajo808": -3,
+    "sub": -9,
+    "lead": 4,
+    "doble": -5,
+    "respuesta": 1,
+    "respuesta3": -3,
+    "respuesta8": -4,
+    "rap": 6,
+    "chops": -4,
+    "pad": -15
+  },
+  "automata": {
+    "guitarra": {
+      "t1": -7,
+      "t2": -7,
+      "t3": -8
+    }
+  },
+  "sala": {
+    "guitarra": 0.22,
+    "lead": 0.25,
+    "doble": 0.2,
+    "respuesta": 0.35,
+    "respuesta3": 0.35,
+    "respuesta8": 0.3,
+    "arco": 0.4,
+    "lluvia": 0.3,
+    "col-legno": 0.3,
+    "trueno": 0.45,
+    "chops": 0.25,
+    "rio": 0.35,
+    "pad": 0.3,
+    "rap": 0.08
+  },
+  "filtros": {
+    "sub": [
+      "lowpass",
+      110
+    ],
+    "lead": [
+      "highpass",
+      140
+    ],
+    "doble": [
+      "highpass",
+      110
+    ],
+    "respuesta": [
+      "highpass",
+      160
+    ],
+    "respuesta3": [
+      "highpass",
+      150
+    ],
+    "respuesta8": [
+      "highpass",
+      120
+    ],
+    "rap": [
+      "highpass",
+      130
+    ],
+    "chops": [
+      "highpass",
+      300
+    ],
+    "pad": [
+      "lowpass",
+      2500
+    ],
+    "viento": [
+      "highpass",
+      150
+    ],
+    "pulgar": [
+      "lowpass",
+      1800
+    ]
+  },
+  "rio": {
+    "tramo_s": [
+      34.1,
+      40
+    ]
+  },
+  "secciones_rms_db": {
+    "I": -19.6,
+    "t1": -24.6,
+    "II": -21.4,
+    "t2": -22.5,
+    "IIIr": -20.7,
+    "III": -21.5,
+    "t3": -21.8,
+    "IV": -19.4,
+    "V": -20.5
+  },
+  "lufs_integrado": -18.8,
+  "bandas_hz": [
+    [
+      20,
+      60
+    ],
+    [
+      60,
+      120
+    ],
+    [
+      120,
+      250
+    ],
+    [
+      250,
+      500
+    ],
+    [
+      500,
+      1000
+    ],
+    [
+      1000,
+      2000
+    ],
+    [
+      2000,
+      4000
+    ],
+    [
+      4000,
+      8000
+    ],
+    [
+      8000,
+      16000
+    ]
+  ],
+  "bandas_por_seccion_db": {
+    "I": [
+      -13.5,
+      -18.2,
+      -7.8,
+      -6.5,
+      -4.0,
+      -9.0,
+      -16.5,
+      -26.5,
+      -31.6
+    ],
+    "t1": [
+      -3.0,
+      -9.7,
+      -7.2,
+      -11.9,
+      -11.9,
+      -15.4,
+      -15.4,
+      -21.9,
+      -21.1
+    ],
+    "II": [
+      -6.5,
+      -11.9,
+      -3.8,
+      -9.1,
+      -11.2,
+      -13.1,
+      -14.1,
+      -23.4,
+      -24.8
+    ],
+    "t2": [
+      -3.4,
+      -8.7,
+      -6.8,
+      -10.7,
+      -13.7,
+      -14.3,
+      -16.3,
+      -22.7,
+      -21.8
+    ],
+    "IIIr": [
+      -5.8,
+      -11.2,
+      -3.7,
+      -9.5,
+      -13.4,
+      -13.5,
+      -15.8,
+      -23.2,
+      -24.8
+    ],
+    "III": [
+      -5.2,
+      -11.3,
+      -4.2,
+      -10.2,
+      -11.6,
+      -14.3,
+      -15.3,
+      -23.1,
+      -24.4
+    ],
+    "t3": [
+      -3.1,
+      -9.8,
+      -6.1,
+      -12.4,
+      -13.5,
+      -15.9,
+      -16.8,
+      -23.6,
+      -23.5
+    ],
+    "IV": [
+      -5.3,
+      -12.3,
+      -4.2,
+      -8.0,
+      -14.7,
+      -14.7,
+      -15.6,
+      -23.9,
+      -25.0
+    ],
+    "V": [
+      -5.4,
+      -9.2,
+      -5.3,
+      -9.2,
+      -10.0,
+      -13.7,
+      -17.5,
+      -19.9,
+      -26.8
+    ]
+  },
+  "grupos_contra_resto_db": {
+    "I": {
+      "guitarra": -9.7,
+      "lluvia": -14.5,
+      "crecida": -25.4,
+      "drill": -15.9,
+      "voces": 6.8
+    },
+    "t1": {
+      "guitarra": -4.2,
+      "lluvia": -13.1,
+      "crecida": -6.5,
+      "drill": -0.0
+    },
+    "II": {
+      "guitarra": 1.8,
+      "lluvia": -15.5,
+      "crecida": -7.4,
+      "drill": -5.8
+    },
+    "t2": {
+      "guitarra": -5.5,
+      "lluvia": -13.2,
+      "crecida": -3.1,
+      "drill": -1.9
+    },
+    "IIIr": {
+      "guitarra": 1.3,
+      "lluvia": -17.1,
+      "crecida": -6.3,
+      "drill": -5.8
+    },
+    "III": {
+      "guitarra": 0.0,
+      "lluvia": -16.9,
+      "crecida": -6.3,
+      "drill": -4.0
+    },
+    "t3": {
+      "guitarra": -5.3,
+      "lluvia": -12.1,
+      "crecida": -3.4,
+      "drill": -2.0
+    },
+    "IV": {
+      "guitarra": 0.4,
+      "lluvia": -16.7,
+      "crecida": -6.5,
+      "drill": -4.3
+    },
+    "V": {
+      "guitarra": -3.9,
+      "lluvia": -17.5,
+      "crecida": -1.3,
+      "drill": -4.5
+    },
+    "final": {
+      "guitarra": -2.0,
+      "lluvia": -17.2,
+      "crecida": -3.2,
+      "drill": -4.4
+    }
+  },
+  "capas": {
+    "guitarra": {
+      "activo_db": -17.0
+    },
+    "pulgar": {
+      "activo_db": -18.0
+    },
+    "lluvia": {
+      "activo_db": -16.9
+    },
+    "arco": {
+      "activo_db": -8.4
+    },
+    "col-legno": {
+      "activo_db": -18.0
+    },
+    "trueno": {
+      "activo_db": -19.0
+    },
+    "viento": {
+      "activo_db": -16.2
+    },
+    "crecida": {
+      "activo_db": -15.9
+    },
+    "pedregones": {
+      "activo_db": -19.3
+    },
+    "rio": {
+      "activo_db": -17.6
+    },
+    "hats": {
+      "activo_db": -24.4
+    },
+    "bateria808": {
+      "activo_db": -16.3
+    },
+    "bateria-frito": {
+      "activo_db": -21.8
+    },
+    "bajo808": {
+      "activo_db": -5.7
+    },
+    "sub": {
+      "activo_db": -5.4
+    },
+    "lead": {
+      "activo_db": -21.5
+    },
+    "doble": {
+      "activo_db": -22.5
+    },
+    "respuesta": {
+      "activo_db": -22.0
+    },
+    "respuesta3": {
+      "activo_db": -25.5
+    },
+    "respuesta8": {
+      "activo_db": -25.5
+    },
+    "rap": {
+      "activo_db": -21.0
+    },
+    "chops": {
+      "activo_db": -22.0
+    },
+    "pad": {
+      "activo_db": -14.7
+    }
+  },
+  "m4a_sha256": "0ad318774efffdd52c3b4604ac50c514fa13188b561e6583d83705dc58e3226a",
+  "wav_sha256": "4719be450f0575c189e020d8cd6dbb28afc7c02db1ce4166de0846f9a671328a",
+  "render": "../../../renders/prueba-agua-11a536e6c5f1/agua-s67-08c7e082876a"
+}

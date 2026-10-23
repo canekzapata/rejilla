@@ -1,0 +1,23 @@
+{
+  "motor_propio": "qraqeb",
+  "config": {
+    "dur": 4,
+    "semilla": 20261020,
+    "argumentos": {
+      "golpes": [
+        {
+          "t": 0.1,
+          "v": 0.8
+        },
+        {
+          "t": 0.7,
+          "v": 0.5
+        },
+        {
+          "t": 1.4,
+          "v": 0.7
+        }
+      ]
+    }
+  }
+}

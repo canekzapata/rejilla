@@ -1,0 +1,32 @@
+{
+  "motor_propio": "estratos",
+  "config": {
+    "dur": 4,
+    "semilla": 20261020,
+    "argumentos": {
+      "ev": [
+        {
+          "t": 0.1,
+          "notas": [
+            50,
+            57,
+            60
+          ],
+          "v": 0.7,
+          "capa": "A"
+        },
+        {
+          "t": 1.2,
+          "notas": [
+            53,
+            60,
+            64
+          ],
+          "v": 0.6,
+          "capa": "B"
+        }
+      ],
+      "compas": 2.4
+    }
+  }
+}

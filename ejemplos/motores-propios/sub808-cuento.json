@@ -1,0 +1,23 @@
+{
+  "motor_propio": "sub808-cuento",
+  "config": {
+    "dur": 4,
+    "semilla": 20261020,
+    "argumentos": {
+      "eventos": [
+        {
+          "t": 0.1,
+          "dur": 0.6,
+          "midi": 38,
+          "vel": 0.75
+        },
+        {
+          "t": 1,
+          "dur": 0.7,
+          "midi": 41,
+          "vel": 0.6
+        }
+      ]
+    }
+  }
+}

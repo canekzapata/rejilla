@@ -1,0 +1,11 @@
+{
+  "motor_propio": "avalancha",
+  "config": {
+    "dur": 4,
+    "semilla": 20261020,
+    "argumentos": {
+      "t0": 0.1,
+      "t1": 2.8
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "motor_propio": "crater-complejo",
+  "config": {
+    "dur": 4,
+    "tambores": {
+      "a": {
+        "D": 1800,
+        "complejo": true,
+        "edad": 0.7
+      }
+    },
+    "golpes": [
+      {
+        "t": 0.1,
+        "id": "a",
+        "v": 0.8,
+        "r": 0.1,
+        "pan": -0.4,
+        "choque": 0
+      },
+      {
+        "t": 1.5,
+        "id": "a",
+        "v": 0.65,
+        "r": 0.7,
+        "pan": 0.4,
+        "choque": 0.2
+      }
+    ],
+    "K": 81000,
+    "semilla": 18
+  }
+}
