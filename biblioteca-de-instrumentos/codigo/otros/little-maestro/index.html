@@ -1,0 +1,1287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Little Maestro — Canek Zapata</title>
+<meta name="description" content="Conduct an orchestra with your arms, then write your own melody with your hand and conduct it. The tablet camera follows you: bring your hand down and the orchestra plays, stop and it waits for you.">
+<meta name="author" content="Canek Zapata">
+<meta name="date" content="2026">
+<meta name="keywords" content="conducting, music education, kids, orchestra, pose detection, camera, web audio">
+<!-- TODO: confirmar ruta de publicación -->
+<link rel="canonical" href="https://canekzapata.net/little-maestro/">
+<link rel="icon" href="favicon.png">
+
+<!-- Open Graph: Facebook, Instagram (al compartir links), WhatsApp, LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Canek Zapata">
+<meta property="og:title" content="Little Maestro">
+<meta property="og:description" content="Conduct an orchestra with your arms. Bring your hand down and the orchestra plays; stop and it waits for you.">
+<meta property="og:url" content="https://canekzapata.net/little-maestro/">
+<meta property="og:image" content="https://canekzapata.net/little-maestro/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A glowing stick-figure conductor drawing a 4/4 beat pattern, with colored rings where each beat lands.">
+<meta property="og:locale" content="en_US">
+
+<!-- X / Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Little Maestro">
+<meta name="twitter:description" content="Conduct an orchestra with your arms. Bring your hand down and the orchestra plays; stop and it waits for you.">
+<meta name="twitter:image" content="https://canekzapata.net/little-maestro/og.png">
+<meta name="twitter:image:alt" content="A glowing stick-figure conductor drawing a 4/4 beat pattern, with colored rings where each beat lands.">
+
+<style>
+  :root { --bg:#07070b; --ink:#f2efe8; --dim:rgba(242,239,232,.55); }
+  html, body { margin:0; height:100%; background:var(--bg); color:var(--ink);
+    font-family: ui-rounded, "SF Pro Rounded", "Nunito", system-ui, sans-serif;
+    overflow:hidden; touch-action:none; -webkit-user-select:none; user-select:none; }
+  #stage { position:fixed; inset:0; width:100vw; height:100vh; display:block; }
+  video { position:fixed; width:1px; height:1px; opacity:0; pointer-events:none; }
+  .hud { position:fixed; pointer-events:none; }
+  #tempo { top:max(16px, env(safe-area-inset-top)); left:22px; }
+  #tempoWord { font-size:clamp(30px, 5.5vw, 60px); font-weight:800; line-height:1; }
+  #tempoHint { font-size:clamp(14px, 2vw, 20px); color:var(--dim); margin-top:6px; }
+  #steady { font-size:clamp(14px, 2vw, 20px); margin-top:6px; opacity:0; transition:opacity .3s; }
+  #dyn { top:max(10px, env(safe-area-inset-top)); right:22px; text-align:right; }
+  #dynMark { font-family:"Times New Roman", Georgia, serif; font-style:italic; font-weight:700;
+    font-size:clamp(44px, 8vw, 88px); line-height:1; }
+  #dynHint { font-size:clamp(14px, 2vw, 20px); color:var(--dim); }
+  #msg { left:0; right:0; top:40%; text-align:center; font-size:clamp(22px, 4vw, 42px);
+    font-weight:800; text-shadow:0 2px 18px #000; padding:0 16px; }
+  #overlay { position:fixed; inset:0; display:flex; align-items:center; justify-content:center;
+    background:rgba(7,7,11,.86); z-index:5; }
+  .card { max-width:600px; padding:24px; text-align:center; }
+  h1 { font-size:clamp(44px, 9vw, 84px); margin:0 0 10px; letter-spacing:-.01em; }
+  .card p { font-size:clamp(17px, 2.6vw, 23px); line-height:1.4; color:var(--dim); margin:10px 0; }
+  .card p b { color:var(--ink); }
+  button { font:inherit; font-weight:800; border:0; border-radius:999px; cursor:pointer; }
+  .big { font-size:24px; padding:16px 30px; margin:8px; }
+  .primary { background:var(--ink); color:var(--bg); }
+  .line { background:transparent; color:var(--ink); border:2px solid var(--dim); }
+  #tools { position:fixed; left:16px; bottom:max(14px, env(safe-area-inset-bottom)); display:flex; gap:8px; z-index:3; }
+  #tools button { font-size:16px; padding:10px 16px; background:rgba(242,239,232,.12); color:var(--ink); }
+  #tools button.on { background:var(--ink); color:var(--bg); }
+  #status { font-size:15px; color:var(--dim); min-height:1.4em; }
+  #panel { position:fixed; left:50%; top:30%; transform:translateX(-50%); display:none; flex-direction:column;
+    align-items:center; gap:6px; z-index:4; background:rgba(7,7,11,.82); padding:18px 22px; border-radius:24px;
+    max-width:min(640px, calc(100vw - 32px)); text-align:center; }
+  #panelMsg { font-size:clamp(17px, 2.4vw, 22px); font-weight:700; margin-bottom:6px; }
+  #panel .line:not(.big) { font-size:16px; padding:10px 16px; margin:4px; }
+  #pieces { position:fixed; left:50%; bottom:76px; transform:translateX(-50%); display:none; flex-direction:column;
+    gap:10px; z-index:4; background:rgba(7,7,11,.92); padding:18px; border-radius:24px; width:min(560px, calc(100vw - 32px)); }
+  #piecesTitle { font-size:22px; font-weight:800; text-align:center; }
+  #pieceList { display:flex; flex-direction:column; gap:8px; }
+  .piece { display:flex; flex-direction:column; align-items:flex-start; text-align:left; padding:12px 18px;
+    border-radius:18px; background:rgba(242,239,232,.1); color:var(--ink); }
+  .piece b { font-size:21px; } .piece small { font-size:15px; color:var(--dim); font-weight:600; }
+  #meterPick { position:fixed; left:50%; bottom:76px; transform:translateX(-50%); display:none; flex-direction:column;
+    gap:10px; z-index:4; background:rgba(7,7,11,.92); padding:18px; border-radius:24px; width:min(440px, calc(100vw - 32px)); }
+  #meterTitle { font-size:22px; font-weight:800; text-align:center; }
+  #pieceList { max-height:min(60vh, 520px); overflow-y:auto; }
+  .piece { position:relative; }
+  .forget { position:absolute; right:14px; top:50%; transform:translateY(-50%); font-size:18px; color:var(--dim); padding:8px; }
+  .listHead { font-size:15px; font-weight:800; color:var(--dim); margin:8px 4px 0; text-transform:uppercase; letter-spacing:.08em; }
+  .famBox { color:var(--dim); font-size:15px; padding:2px 6px; display:flex; flex-direction:column; gap:8px; }
+  .famFoot { display:flex; gap:6px; margin-top:8px; }
+  .famFoot input { flex:1; font:inherit; font-size:16px; padding:10px 14px; border-radius:999px; border:2px solid var(--dim);
+    background:transparent; color:var(--ink); -webkit-user-select:text; user-select:text; min-width:0; }
+  .famFoot button { font-size:16px; padding:10px 16px; }
+  .keep { display:flex; flex-wrap:wrap; gap:6px; justify-content:center; margin:6px 0; }
+  .keep input { font:inherit; font-size:17px; padding:10px 14px; border-radius:999px; border:2px solid var(--dim);
+    background:transparent; color:var(--ink); width:11em; -webkit-user-select:text; user-select:text; }
+  body.capture #tools, body.capture #overlay, body.capture #panel, body.capture #pieces, body.capture #meterPick { display:none !important; }
+</style>
+</head>
+<body>
+<canvas id="stage"></canvas>
+<video id="cam" playsinline muted></video>
+
+<div class="hud" id="tempo">
+  <div id="tempoWord">—</div>
+  <div id="tempoHint">your speed</div>
+  <div id="steady">● steady!</div>
+</div>
+<div class="hud" id="dyn">
+  <div id="dynMark">mf</div>
+  <div id="dynHint">other hand: up = loud</div>
+</div>
+<div class="hud" id="msg"></div>
+
+<div id="tools">
+  <button id="bShow">Show me</button>
+  <button id="bLefty">Lefty</button>
+  <button id="bAgain">Start over</button>
+  <button id="bPieces">♪ Pieces</button>
+  <button id="bCompose">✎ Compose</button>
+</div>
+
+<div id="pieces">
+  <div id="piecesTitle">Pick a piece</div>
+  <div id="pieceList"></div>
+</div>
+
+<div id="panel">
+  <div id="panelMsg"></div>
+  <div>
+    <button class="big line" id="bListen">▶ Listen</button>
+    <button class="big primary" id="bConduct">Conduct it!</button>
+  </div>
+  <div class="keep">
+    <input id="inName" placeholder="Melody name" maxlength="30" autocomplete="off">
+    <input id="inBy" placeholder="Your name" maxlength="20" autocomplete="off">
+    <button class="line" id="bKeep">💾 Save</button>
+  </div>
+  <div>
+    <button class="line" id="bWrite">Write again</button>
+    <button class="line" id="bSave">Save picture</button>
+  </div>
+</div>
+
+<div id="meterPick">
+  <div id="meterTitle">Write a melody</div>
+  <button class="piece" id="bIn4"><b>In 4</b><small>4 beats a bar · like a march or a song</small></button>
+  <button class="piece" id="bIn3"><b>In 3</b><small>3 beats a bar · like a waltz or a minuet</small></button>
+</div>
+
+<div id="overlay">
+  <div class="card">
+    <h1>Little Maestro</h1>
+    <p>Stand where the tablet can see your arms.</p>
+    <p><b>Bring your hand down</b> and the orchestra plays one beat.<br>
+       <b>Stop</b>, and the orchestra waits for you.</p>
+    <p>Your other hand is the volume: <b>up is loud, down is soft.</b></p>
+    <div>
+      <button class="big primary" id="bStart">Start with camera</button>
+      <button class="big line" id="bTouch">Use my finger</button>
+    </div>
+    <div id="status"></div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/soundfont-player@0.12.0/dist/soundfont-player.min.js"></script>
+<script type="module">
+// ─────────────────────────────────────────────────────────────
+//  Little Maestro
+//  loop 01: cámara → pose → ictus (el golpe del director) → la orquesta avanza un tiempo
+//  loop 02: señalar una sección la hace entrar · brazos quietos = calderón
+//  loop 03: componer con la mano (altura = nota, quieto = nota larga) → partitura → dirigir lo tuyo
+//  loop 04: repertorio en 2, 3 y 4 (cada compás, su patrón) · la sorpresa de Haydn
+//  loop 05: componer en 3 o en 4 · guardar melodías con nombre y autor (en esta tableta)
+//  loop 06: el corte: un circulito con la batuta termina lo sostenido (calderón o la última nota)
+//  loop 07: el estante en línea (api/melodias.php): con código de familia, todas las tabletas ven lo de todos
+//           (sin botón de compartir: que la app no abra WhatsApp ni nada fuera de ella)
+// ─────────────────────────────────────────────────────────────
+const params = new URLSearchParams(location.search);
+const CAPTURE = params.has('capture');
+let vclock = 0;                                  // en captura el tiempo es virtual: cuadros parejos
+const clock = () => CAPTURE ? vclock : performance.now() / 1000;
+if (CAPTURE) document.body.classList.add('capture');
+
+const cv = document.getElementById('stage'), g = cv.getContext('2d');
+const video = document.getElementById('cam');
+const $ = id => document.getElementById(id);
+let W = 0, H = 0, DPR = 1;
+function resize() {
+  DPR = Math.min(2, devicePixelRatio || 1);
+  W = innerWidth; H = innerHeight;
+  cv.width = W * DPR; cv.height = H * DPR;
+  g.setTransform(DPR, 0, 0, DPR, 0, 0);
+}
+addEventListener('resize', resize); resize();
+
+// ── el repertorio: notas como 'Fs4/.5' (nombre/duración en tiempos, sin duración = 1), 'r' = silencio,
+//    '|' separa compases (se revisa que cada uno sume lo que pide el compás) · armonía: un acorde cada harmEvery
+const PC = { C:0, D:2, E:4, F:5, G:7, A:9, B:11 };
+const nm = n => 12 * (+n.at(-1) + 1) + PC[n[0]] + (n.includes('s') ? 1 : 0);
+const N = { A1:33, D2:38, Cs3:49, D3:50, E3:52, Fs3:54, A3:57 };
+const PIECES = {
+  ode:{ title:'Ode to Joy', by:'Beethoven · Symphony 9', meter:4, harmEvery:2, ghostHold:31,
+    entries:[{ sec:3, beat:16 }, { sec:2, beat:32 }, { sec:1, beat:48 }],
+    notes:`Fs4 Fs4 G4 A4 | A4 G4 Fs4 E4 | D4 D4 E4 Fs4 | Fs4/1.5 E4/.5 E4/2 |
+           Fs4 Fs4 G4 A4 | A4 G4 Fs4 E4 | D4 D4 E4 Fs4 | E4/1.5 D4/.5 D4/2 |
+           E4 E4 Fs4 D4 | E4 Fs4/.5 G4/.5 Fs4 D4 | E4 Fs4/.5 G4/.5 Fs4 E4 | D4 E4 A3/2 |
+           Fs4 Fs4 G4 A4 | A4 G4 Fs4 E4 | D4 D4 E4 Fs4 | E4/1.5 D4/.5 D4/2`,
+    harm:'DDAADDAA DDAADDAD ADADADDA DDAADDAD' },
+  minuet:{ title:'Minuet in G', by:'Petzold (long thought Bach)', meter:3, harmEvery:3, ghostHold:22, timp:false,
+    entries:[{ sec:3, beat:3 }, { sec:2, beat:24 }, { sec:1, beat:36 }],
+    notes:`D5 G4/.5 A4/.5 B4/.5 C5/.5 | D5 G4 G4 | E5 C5/.5 D5/.5 E5/.5 Fs5/.5 | G5 G4 G4 |
+           C5 D5/.5 C5/.5 B4/.5 A4/.5 | B4 C5/.5 B4/.5 A4/.5 G4/.5 | Fs4 G4/.5 A4/.5 B4/.5 G4/.5 | A4/3 |
+           D5 G4/.5 A4/.5 B4/.5 C5/.5 | D5 G4 G4 | E5 C5/.5 D5/.5 E5/.5 Fs5/.5 | G5 G4 G4 |
+           C5 D5/.5 C5/.5 B4/.5 A4/.5 | B4 C5/.5 B4/.5 A4/.5 G4/.5 | A4 B4/.5 A4/.5 G4/.5 Fs4/.5 | G4/3`,
+    harm:'GGCGCGDD GGCGCGDG' },
+  twinkle:{ title:'Twinkle, Twinkle', by:'French tune · Mozart wrote variations', meter:4, harmEvery:2, ghostHold:15,
+    entries:[{ sec:3, beat:8 }, { sec:2, beat:16 }, { sec:1, beat:32 }],
+    notes:`D4 D4 A4 A4 | B4 B4 A4/2 | G4 G4 Fs4 Fs4 | E4 E4 D4/2 |
+           A4 A4 G4 G4 | Fs4 Fs4 E4/2 | A4 A4 G4 G4 | Fs4 Fs4 E4/2 |
+           D4 D4 A4 A4 | B4 B4 A4/2 | G4 G4 Fs4 Fs4 | E4 E4 D4/2`,
+    harm:'DDGDGDAD DGDADGDA DDGDGDAD' },
+  surprise:{ title:'Surprise!', by:'Haydn · Symphony 94', meter:2, harmEvery:2, timp:false,
+    awake:[true, false, false, true], entries:[], softUntil:31,
+    hint:b => b < 16 ? 'Soft, on tiptoes 🤫 · other hand low' : b < 31 ? 'Again… even softer… shhh…' : '',
+    notes:`D4/.5 D4/.5 Fs4/.5 Fs4/.5 | A4/.5 A4/.5 Fs4 | G4/.5 G4/.5 E4/.5 E4/.5 | Cs4/.5 Cs4/.5 A3 |
+           D4/.5 D4/.5 Fs4/.5 Fs4/.5 | A4/.5 A4/.5 D5 | B4/.5 B4/.5 Gs4/.5 Gs4/.5 | A4 r |
+           D4/.5 D4/.5 Fs4/.5 Fs4/.5 | A4/.5 A4/.5 Fs4 | G4/.5 G4/.5 E4/.5 E4/.5 | Cs4/.5 Cs4/.5 A3 |
+           D4/.5 D4/.5 Fs4/.5 Fs4/.5 | A4/.5 A4/.5 D5 | B4/.5 B4/.5 Gs4/.5 Gs4/.5 | A4 r`,
+    harm:'DDAADDEA DDAADDEA',
+    // ¡el acorde! fortísimo, todas las secciones, en el silencio del último compás
+    extra:[['violins', 'A4 Cs5'], ['flutes', 'A5'], ['horns', 'A3 Cs4 E4'], ['basses', 'A1 A2'], ['timpani', 'A1']]
+      .flatMap(([inst, ns]) => ns.split(' ').map(n => ({ inst, midi:nm(n), on:31, dur:1, vel:1.2, surprise:true }))) },
+};
+const PATTERN_WORDS = { 2:'down · up', 3:'down · out · up', 4:'down · in · out · up' };
+// los peldaños para componer: Re mayor de D4 a D5
+const SCALE = [62, 64, 66, 67, 69, 71, 73, 74];
+const NAMES = ['D', 'E', 'F♯', 'G', 'A', 'B', 'C♯', 'D'];
+const VFKEYS = ['d/4', 'e/4', 'f/4', 'g/4', 'a/4', 'b/4', 'c/5', 'd/5'];   // la armadura pone los sostenidos
+const CHORDS = {
+  D:{ horns:[N.D3, N.Fs3, N.A3], root:N.D2, timp:N.D2 },
+  G:{ horns:[N.D3, 55, 59], root:43, timp:43 },
+  A:{ horns:[N.Cs3, N.E3, N.A3], root:N.A1, timp:N.A1 },
+  C:{ horns:[52, 55, 60], root:36, timp:null },
+  E:{ horns:[52, 56, 59], root:40, timp:null },
+};
+let events, byBeat, melody, TOTAL, ENTRIES, PIECE, METER = 4, P = null;
+function parseMel(str, meter, title) {
+  const mel = []; let t = 0;
+  str.split('|').forEach((bar, b) => {
+    const t0 = t, toks = bar.trim().split(/\s+/).filter(Boolean);
+    for (const tok of toks) {
+      const [n, d = '1'] = tok.split('/');
+      if (n !== 'r') mel.push({ midi:nm(n), on:t, dur:+d });
+      t += +d;
+    }
+    if (toks.length && Math.abs(t - t0 - meter) > 1e-6) console.warn(`${title}: bar ${b + 1} has ${t - t0} beats`);
+  });
+  return { mel, total:t };
+}
+// cfg: una pieza de PIECES, o la melodía del niño ({ mel, total } ya hechos)
+function buildScore(cfg) {
+  const { mel, total } = cfg.mel ? cfg : parseMel(cfg.notes, cfg.meter, cfg.title);
+  events = [];
+  for (const m of mel) {
+    events.push({ inst:'violins', midi:m.midi, on:m.on, dur:m.dur, vel:1 });
+    events.push({ inst:'flutes', midi:m.midi + 12, on:m.on, dur:m.dur, vel:.5 });   // la flauta dobla a la octava
+  }
+  const every = cfg.harmEvery ?? 2;
+  [...cfg.harm.replace(/\s/g, '')].forEach((c, i) => {
+    const on = i * every, ch = CHORDS[c];
+    for (const m of ch.horns) events.push({ inst:'horns', midi:m, on, dur:every, vel:.38 });
+    events.push({ inst:'basses', midi:ch.root, on, dur:every, vel:.8 });
+    if (cfg.timp !== false && ch.timp && on % cfg.meter === 0) events.push({ inst:'timpani', midi:ch.timp, on, dur:1, vel:.7 });
+  });
+  for (const e of cfg.extra ?? []) events.push(e);
+  P = cfg; PIECE = cfg.title; METER = cfg.meter; TOTAL = total; ENTRIES = cfg.entries ?? [];
+  byBeat = Array.from({ length:TOTAL }, () => []);
+  for (const e of events) byBeat[Math.floor(e.on)].push(e);
+  melody = events.filter(e => e.inst === 'violins');
+}
+buildScore(PIECES.ode);
+function kidPiece() {
+  const m = C.meter, mel = melodyFromComp(C.notes), every = m === 3 ? 3 : 2;
+  return { title:C.name || 'My Melody', by:C.by || 'you!', meter:m, mel, total:C.beats, harmEvery:every,
+    harm:harmonize(mel, C.beats, every), entries:[{ sec:3, beat:m }, { sec:2, beat:2 * m }, { sec:1, beat:3 * m }] };
+}
+
+// la melodía compuesta: un peldaño por tiempo (-1 = silencio); tie = la nota sigue sonando
+function melodyFromComp(notes) {
+  const mel = [];
+  notes.forEach((n, k) => {
+    if (n.rung < 0) return;
+    if (n.tie && mel.length) mel[mel.length - 1].dur += 1;
+    else mel.push({ midi:SCALE[n.rung], on:k, dur:1 });
+  });
+  return mel;
+}
+// armonía sencilla: I, IV o V según la nota que suena al empezar cada medio compás; el final, en casa
+function harmonize(mel, total, every = 2) {
+  let out = '', prev = 'D';
+  for (let h = 0; h < total / every; h++) {
+    const m = mel.find(x => x.on < (h + 1) * every && x.on + x.dur > h * every);
+    let c = prev;
+    if (m) { const pc = m.midi % 12; c = [2, 6, 9].includes(pc) ? 'D' : [7, 11].includes(pc) ? 'G' : 'A'; }
+    if (h === total / every - 1) c = 'D';
+    out += c; prev = c;
+  }
+  return out;
+}
+
+// las secciones, sentadas como en una orquesta vista desde el podio (ángulo: 0 = derecha, 180 = izquierda)
+const SECTIONS = [
+  { name:'Violins', icon:'🎻', ang:165, insts:['violins'] },
+  { name:'Flutes',  icon:'🐦', ang:128, insts:['flutes'] },
+  { name:'Horns',   icon:'📯', ang:52,  insts:['horns'] },
+  { name:'Basses & drums', icon:'🥁', ang:15, insts:['basses', 'timpani'] },
+];
+const SEC_OF = {};
+SECTIONS.forEach((sec, i) => sec.insts.forEach(k => SEC_OF[k] = i));
+const HOLD = .45;   // segundos señalando para que la sección entre
+
+// ── la orquesta ──
+const INSTR = { violins:'violin', flutes:'flute', horns:'french_horn', basses:'contrabass', timpani:'timpani' };
+let ac = null, master = null, orch = {}, synthOnly = false;
+async function tuneOrchestra(say) {
+  ac = new (window.AudioContext || window.webkitAudioContext)();
+  await ac.resume();
+  master = ac.createGain(); master.gain.value = .9; master.connect(ac.destination);
+  say('Tuning the orchestra…');
+  try {
+    const names = Object.keys(INSTR);
+    const loaded = await Promise.all(names.map(k =>
+      Soundfont.instrument(ac, INSTR[k], { soundfont:'FluidR3_GM', format:'mp3', destination:master })));
+    names.forEach((k, i) => orch[k] = loaded[i]);
+  } catch (err) { console.warn('soundfonts failed, using synth', err); synthOnly = true; }
+}
+function synth(midi, when, gain) {   // por si no bajan los instrumentos
+  const o = ac.createOscillator(), f = ac.createBiquadFilter(), a = ac.createGain();
+  o.type = 'sawtooth'; o.frequency.value = 440 * 2 ** ((midi - 69) / 12);
+  f.type = 'lowpass'; f.frequency.value = 1400;
+  a.gain.setValueAtTime(0, when); a.gain.linearRampToValueAtTime(.12 * gain, when + .04);
+  o.connect(f).connect(a).connect(master); o.start(when);
+  return { stop(t) { a.gain.cancelScheduledValues(t); a.gain.setTargetAtTime(0, t, .1); o.stop(t + .8); } };
+}
+// las notas no llevan duración fija: se apagan a su hora desde serviceNotes, y un calderón las sostiene
+const ringing = [];
+function play(e, when, beatDur, dyn) {
+  if (!ac) return;
+  const sec = SEC_OF[e.inst];
+  const spot = e.surprise ? 1.6 : S.spot[sec] > S.beat ? 1.35 : 1;
+  const dur = Math.max(.12, e.dur * beatDur * .96), gain = e.vel * dyn * spot;
+  const node = synthOnly || !orch[e.inst] ? synth(e.midi, when, gain)
+    : orch[e.inst].play(e.midi, when, { gain:gain * 2.2 });
+  const r = { node, end:when + dur };
+  ringing.push(r);
+  return r;
+}
+function click(when, accent) {   // el metrónomo de componer
+  if (!ac) return;
+  const o = ac.createOscillator(), a = ac.createGain();
+  o.frequency.value = accent ? 1568 : 1046;
+  a.gain.setValueAtTime(.0001, when); a.gain.exponentialRampToValueAtTime(.22, when + .005);
+  a.gain.exponentialRampToValueAtTime(.0001, when + .08);
+  o.connect(a).connect(master); o.start(when); o.stop(when + .1);
+}
+function serviceNotes() {
+  if (!ac || S.fermata) return;
+  const now = ac.currentTime;
+  for (const r of ringing) if (r.end < now + .08) { try { r.node.stop(Math.max(now, r.end)); } catch {} r.done = true; }
+  for (let i = ringing.length - 1; i >= 0; i--) if (ringing[i].done) ringing.splice(i, 1);
+}
+function releaseAll() {
+  const when = ac ? ac.currentTime + .02 : 0;
+  for (const r of ringing) { try { r.node.stop(when); } catch {} }
+  ringing.length = 0;
+}
+
+// ── el ictus: el punto más bajo del golpe, donde la mano rebota ──
+// todo en "anchos de hombro" para que no importe si el niño está cerca o lejos
+class Ictus {
+  constructor() { this.reset(); }
+  reset() { this.y = null; this.vy = 0; this.top = null; this.down = false; this.last = -1; }
+  push(y, t) {
+    if (this.y === null) { this.y = y; this.t = t; this.top = y; return false; }
+    const dt = Math.max(1e-3, t - this.t);
+    const ys = this.y + .7 * (y - this.y);            // suavizado ligero: la latencia manda
+    this.vy = .5 * this.vy + .5 * (ys - this.y) / dt;
+    this.y = ys; this.t = t;
+    if (ys < this.top) this.top = ys;                 // lo más alto desde el último golpe
+    if (this.vy > .9) this.down = true;
+    if (this.down && this.vy <= 0) {
+      this.down = false;
+      if (ys - this.top > .22 && t - this.last > .22) { this.last = t; this.top = ys; return true; }
+    }
+    return false;
+  }
+}
+const ictus = new Ictus();
+
+// ── estado de la función ──
+const S = {
+  mode:'idle',            // idle | camera | touch | ghost
+  lefty:false, beat:0, beatDur:.62, intervals:[], lastHit:0,
+  dyn:.6, dynSmooth:.6, steady:false, finishedAt:0,
+  trail:[], bursts:[], pose:null, hue:Math.random() * 360, t0:clock(),
+  awake:[true, false, false, false], spot:[0, 0, 0, 0], pulse:[-9, -9, -9, -9],
+  point:{}, prev:{}, spd:{}, fermata:false, fermataAt:0, still:0, flash:null, lastT:clock(),
+  task:'conduct',         // conduct | compose
+};
+
+// ── componer: 4 compases (en 3 o en 4) a 72, un tiempo = una nota a la altura de la mano ──
+const C = { start:0, bd:60 / 72, next:0, notes:[], maxSpd:0, ver:0, done:false, doneAt:0, meter:4, beats:16,
+  ring:null, rung:-1, pressed:false, lifted:true, fx:[], hue0:0, name:'', by:'' };
+const rungHue = r => (C.hue0 + r * 40) % 360;
+function startCompose(t, meter = C.meter) {
+  S.task = 'compose'; releaseAll(); showPanel(false); showPieces(false); showMeterPick(false); loadVexFlow();
+  Object.assign(C, { meter, beats:4 * meter, start:t + meter * C.bd + .6, next:0, notes:[], maxSpd:0,
+    ver:C.ver + 1, done:false, ring:null, lifted:true, fx:[], hue0:S.hue, name:'', savedId:null, serverId:null });
+  if (ac) {                                            // la cuenta (1-2-3 o 1-2-3-4) y luego un clic por tiempo
+    const off = ac.currentTime - t;
+    for (let k = -meter; k < C.beats; k++) click(C.start + k * C.bd + off, (k % meter + meter) % meter === 0);
+  }
+  S.trail = [];
+}
+// dónde cae cada peldaño en la pantalla: con cuerpo, de la cadera a arriba de la cabeza
+function bands(pose, sw) {
+  if (S.mode === 'touch') return { base:H * .66, h:H * .6 / 8 };
+  const sy = pose ? (pose.ls.y + pose.rs.y) / 2 : H * .36;
+  return { base:sy + 1.6 * sw, h:3 * sw / 8 };
+}
+function rungAt(y, B) { const u = (B.base - y) / B.h; return u < 0 ? -1 : Math.min(7, Math.floor(u)); }
+function composeStep(t, baton, bSpd, B) {
+  const y = S.mode === 'touch' ? (C.pressed && touch ? touch.y : null) : baton ? baton.y : null;
+  const rung = y === null ? -1 : rungAt(y, B);
+  C.rung = rung;
+  C.maxSpd = Math.max(C.maxSpd, bSpd);
+  if (S.mode === 'touch' && !C.pressed) C.lifted = true;
+  if (C.done || t < C.start + C.next * C.bd + .08) return;
+  const k = C.next++, prev = C.notes[k - 1];
+  // quieto = la nota sigue (ligadura); rebotar o levantar el dedo = nota nueva; nunca de un compás a otro
+  const held = S.mode === 'touch' ? !C.lifted : C.maxSpd < 1;
+  const tie = rung >= 0 && prev && prev.rung === rung && k % C.meter !== 0 && held;
+  C.notes.push({ rung, tie }); C.ver++;
+  C.maxSpd = 0; C.lifted = !C.pressed;
+  if (rung >= 0) {
+    if (tie && C.ring) C.ring.end += C.bd;
+    else {
+      C.ring = play({ inst:'violins', midi:SCALE[rung], dur:1, vel:1 }, ac ? ac.currentTime + .005 : 0, C.bd, .75);
+      const at = baton || touch || { x:W / 2, y:B.base - (rung + .5) * B.h };
+      C.fx.push({ x:at.x, y:at.y, t, r:rung });
+    }
+  }
+  if (C.next >= C.beats) { C.done = true; C.doneAt = t; showPanel(true); }
+}
+// ── las melodías guardadas viven en esta tableta (localStorage); si el navegador no deja, no pasa nada ──
+const store = {
+  get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); return true; } catch { return false; } },
+};
+const localDate = (d = new Date()) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+function savedMelodies() { return store.get('lm-melodies', []); }
+// ── el estante en línea: api/melodias.php en el hosting. Si no contesta (sin PHP, sin red), todo sigue local ──
+const API = 'api/melodias.php';
+async function api(method, query = '', body) {
+  const r = await fetch(API + query, { method, headers:body ? { 'Content-Type':'application/json' } : {},
+    body:body ? JSON.stringify(body) : undefined });
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(j.error || `HTTP ${r.status}`);
+  return j;
+}
+const familyCode = () => store.get('lm-family', '');
+
+async function keepMelody() {
+  const list = savedMelodies();
+  C.name = $('inName').value.trim() || `Melody ${list.length + 1}`;
+  C.by = $('inBy').value.trim();
+  store.set('lm-by', C.by);
+  const m = { id:Date.now().toString(36), name:C.name, by:C.by, meter:C.meter, notes:C.notes, date:localDate() };
+  const ok = store.set('lm-melodies', [m, ...list].slice(0, 60));
+  if (ok) C.savedId = m.id;
+  $('inName').value = C.name; C.ver++;
+  $('panelMsg').textContent = ok ? `Saved “${C.name}”! Find it in ♪ Pieces.` : 'This browser would not let me save it. Try “Save picture”.';
+  const fam = familyCode();
+  if (!fam) return;                                    // sin código de familia, sólo se queda en esta tableta
+  $('bKeep').disabled = true;
+  try {
+    const { id } = await api('POST', '', { name:C.name, by:C.by, meter:C.meter, notes:C.notes, date:m.date, family:fam });
+    m.serverId = C.serverId = id;
+    store.set('lm-melodies', [m, ...list].slice(0, 60));
+    $('panelMsg').textContent = `Saved “${C.name}” here and for your family! Find it in ♪ Pieces.`;
+  } catch (err) {
+    console.warn('online shelf:', err);
+    if (ok) $('panelMsg').textContent += ' (Only on this tablet: the online shelf did not answer.)';
+  } finally { $('bKeep').disabled = false; }
+}
+async function forgetOnline(id) {
+  try { await api('POST', `?delete=${id}`, { family:familyCode() }); }
+  catch (err) { alert(`Could not delete it: ${err.message}`); }
+  showPieces(true);
+}
+function loadMelody(m) {
+  Object.assign(C, { meter:m.meter, beats:4 * m.meter, notes:m.notes, name:m.name, by:m.by, done:true, ver:C.ver + 1,
+    savedId:m.id, serverId:m.serverId || null });
+  conductIt();
+}
+function forgetMelody(id) {
+  store.set('lm-melodies', savedMelodies().filter(m => m.id !== id));
+  showPieces(true);
+}
+
+function endingWords() {
+  const last = [...C.notes].reverse().find(n => n.rung >= 0);
+  if (!last) return 'No notes yet. Put your hand on a color and try again!';
+  if (SCALE[last.rung] % 12 === 2) return 'It ends on D, the home note. It sounds finished! ✨';
+  return `It ends on ${NAMES[last.rung]}. Try ending on D, the home note, to make it sound finished.`;
+}
+function conductIt() {
+  buildScore(kidPiece());
+  S.task = 'conduct'; showPanel(false); showPieces(false); restart(); setPiece();
+}
+function listen() {
+  if (!ac) return;
+  buildScore(kidPiece());
+  const bd = 60 / 90, t0 = ac.currentTime + .2;
+  for (const e of events) play(e, t0 + e.on * bd, bd, .7);
+}
+
+// ── la hoja: VexFlow dibuja la partitura de verdad, en clave de sol y Re mayor ──
+let vfLoading = false;
+function loadVexFlow() {
+  if (window.Vex || vfLoading) return;
+  vfLoading = true;
+  const sc = document.createElement('script');
+  sc.src = 'https://cdn.jsdelivr.net/npm/vexflow@4.2.3/build/cjs/vexflow.js';
+  sc.onload = () => C.ver++;
+  document.head.appendChild(sc);
+}
+const paper = document.createElement('canvas');
+let paperKey = '', paperBars = [];
+function paperRect() {
+  const w = Math.min(W - 32, 1100), h = Math.min(230, H * .27);
+  return { x:(W - w) / 2, y:H - h - 12, w, h };
+}
+function barNotes(VF, b) {
+  const out = [];
+  const m = C.meter;
+  for (let k = b * m; k < Math.min(C.notes.length, b * m + m); k++) {
+    const n = C.notes[k], last = out[out.length - 1];
+    if (last && (n.rung < 0 ? last.rest : n.tie)) last.beats++;
+    else out.push({ rest:n.rung < 0, rung:n.rung, beats:1 });
+  }
+  return out.map(o => {
+    const dur = { 1:'q', 2:'h', 3:'h', 4:'w' }[o.beats] + (o.rest ? 'r' : '');
+    const sn = new VF.StaveNote({ keys:[o.rest ? 'b/4' : VFKEYS[o.rung]], duration:dur, auto_stem:true });
+    if (o.beats === 3) VF.Dot.buildAndAttach([sn], { all:true });
+    if (!o.rest) { const col = `oklch(0.48 0.16 ${rungHue(o.rung)})`; sn.setStyle({ fillStyle:col, strokeStyle:col }); }
+    return sn;
+  });
+}
+function renderPaper() {
+  const P = paperRect(), key = `${C.ver}:${P.w}x${P.h}:${!!window.Vex}`;
+  if (key === paperKey) return;
+  paperKey = key;
+  const VF = window.Vex && Vex.Flow;
+  let R = null;
+  if (VF) { R = new VF.Renderer(paper, VF.Renderer.Backends.CANVAS); R.resize(P.w, P.h); }
+  else { paper.width = P.w * DPR; paper.height = P.h * DPR; paper.getContext('2d').setTransform(DPR, 0, 0, DPR, 0, 0); }
+  const c2 = paper.getContext('2d');
+  c2.fillStyle = '#f4efe4'; c2.fillRect(0, 0, P.w, P.h);
+  c2.fillStyle = '#3a3630'; c2.font = 'italic 700 18px Georgia, serif'; c2.textAlign = 'left';
+  c2.fillText(C.name || 'My Melody', 16, 26);
+  c2.font = '13px Georgia, serif'; c2.textAlign = 'right';
+  c2.fillText(C.by ? `by ${C.by} · Little Maestro` : 'Little Maestro', P.w - 16, 24);
+  if (!R) return;
+  const ctx = R.getContext(), sc = Math.min(1.3, P.h / 150);
+  ctx.scale(sc, sc);
+  const uw = P.w / sc - 20, bw0 = uw / 4 + 55, bw = (uw - bw0) / 3;
+  paperBars = [];
+  let x = 10;
+  for (let b = 0; b < 4; b++) {
+    const st = new VF.Stave(x, 22, b ? bw : bw0);
+    if (b === 0) st.addClef('treble').addKeySignature('D').addTimeSignature(`${C.meter}/4`);
+    if (b === 3) st.setEndBarType(VF.Barline.type.END);
+    st.setContext(ctx).draw();
+    const notes = barNotes(VF, b);
+    if (notes.length) VF.Formatter.FormatAndDraw(ctx, st, notes);
+    paperBars.push({ x0:st.getNoteStartX() * sc, x1:st.getNoteEndX() * sc, y0:st.getYForLine(0) * sc, y1:st.getYForLine(4) * sc });
+    x += b ? bw : bw0;
+  }
+}
+function drawPaper(t) {
+  renderPaper();
+  const P = paperRect();
+  g.drawImage(paper, P.x, P.y, P.w, P.h);
+  if (!C.done && C.next < C.beats && paperBars.length) {      // dónde se va a escribir el siguiente tiempo
+    const m = C.meter, k = C.next, B = paperBars[Math.floor(k / m)], w = (B.x1 - B.x0) / m;
+    const live = t >= C.start - C.bd;
+    g.fillStyle = C.rung >= 0 ? `oklch(0.7 0.15 ${rungHue(C.rung)} / ${live ? .35 : .15})` : 'rgba(60,54,48,.12)';
+    g.beginPath(); g.roundRect(P.x + B.x0 + (k % m) * w + 2, P.y + B.y0 - 26, w - 4, B.y1 - B.y0 + 52, 8); g.fill();
+  }
+}
+// los ocho peldaños de color: la mano encima de uno = esa nota
+function drawBands(t, B) {
+  for (let r = 0; r < 8; r++) {
+    const y1 = B.base - r * B.h, y0 = y1 - B.h, hue = rungHue(r), on = r === C.rung;
+    g.fillStyle = `oklch(0.7 0.13 ${hue} / ${on ? .34 : .1})`; g.fillRect(0, y0 + 1, W, B.h - 2);
+    g.fillStyle = `oklch(0.86 0.13 ${hue} / ${on ? 1 : .55})`;
+    g.font = `800 ${Math.round(B.h * (on ? .62 : .45))}px ui-rounded, system-ui`; g.textBaseline = 'middle';
+    g.textAlign = 'left'; g.fillText(NAMES[r], 16, (y0 + y1) / 2);
+    g.textAlign = 'right'; g.fillText(NAMES[r], W - 16, (y0 + y1) / 2);
+  }
+  g.fillStyle = `rgba(242,239,232,${C.rung < 0 ? .7 : .3})`; g.font = `700 ${Math.round(B.h * .38)}px ui-rounded, system-ui`;
+  g.textAlign = 'left';                                   // abajo del último peldaño es silencio
+  g.fillText('↓ below = rest', 16, Math.min(B.base + B.h * .55, paperRect().y - 10));
+  g.textBaseline = 'alphabetic';
+  if (t < C.start) {                                    // la cuenta
+    const n = Math.floor((t - (C.start - C.meter * C.bd)) / C.bd) + 1;
+    if (n >= 1 && n <= C.meter) {
+      g.fillStyle = '#f2efe8'; g.textAlign = 'center'; g.font = `800 ${Math.round(Math.min(W, H) * .16)}px ui-rounded, system-ui`;
+      g.fillText(n, W / 2, H * .3);
+    }
+  }
+  C.fx = C.fx.filter(f => t - f.t < .9);
+  for (const f of C.fx) {
+    const k = (t - f.t) / .9, hue = rungHue(f.r);
+    g.strokeStyle = `oklch(0.86 0.15 ${hue} / ${1 - k})`; g.lineWidth = 5 * (1 - k) + 1;
+    g.beginPath(); g.arc(f.x, f.y, 12 + k * B.h * 2.2, 0, 7); g.stroke();
+    g.fillStyle = `oklch(0.9 0.14 ${hue} / ${1 - k})`; g.textAlign = 'center';
+    g.font = `800 ${Math.round(B.h * .8)}px ui-rounded, system-ui`; g.fillText(NAMES[f.r], f.x, f.y - B.h * (.9 + k));
+  }
+}
+window.maestro = S;   // para inspeccionar desde la consola
+const BEATCOL = i => `oklch(0.82 0.16 ${(S.hue + i * 83) % 360})`;
+
+// se acaba lo sostenido: por un corte, por un golpe o porque ya pasó mucho
+function endHold(t) {
+  S.fermata = false; S.still = 0; releaseAll();
+  if (S.beat >= TOTAL) S.finishedAt = t;
+}
+// el corte: durante un calderón o la última nota, la batuta dibuja un círculo (≥ 300°) y todo calla
+const CUT = { buf:[], progress:0 };
+window.maestroCut = CUT;   // para inspeccionar desde la consola
+function detectCircle(x, y, t, sw) {
+  const b = CUT.buf;
+  b.push({ x:x / sw, y:y / sw, t });
+  while (b.length && t - b[0].t > 1.1) b.shift();
+  CUT.progress = 0;
+  if (b.length < 10) return false;
+  let cx = 0, cy = 0;
+  for (const q of b) { cx += q.x; cy += q.y; }
+  cx /= b.length; cy /= b.length;
+  let sum = 0, rmin = 1e9, rs = 0;
+  for (let i = 0; i < b.length; i++) {
+    const r = Math.hypot(b[i].x - cx, b[i].y - cy);
+    rmin = Math.min(rmin, r); rs += r;
+    if (i) {
+      let d = Math.atan2(b[i].y - cy, b[i].x - cx) - Math.atan2(b[i - 1].y - cy, b[i - 1].x - cx);
+      if (d > Math.PI) d -= 2 * Math.PI; if (d < -Math.PI) d += 2 * Math.PI;
+      sum += d;
+    }
+  }
+  const rm = rs / b.length;
+  if (rm < .15) return false;                          // un temblor no es un círculo
+  CUT.progress = Math.min(1, Math.abs(sum) / (1.7 * Math.PI));
+  return CUT.progress >= 1 && rmin > rm * .25;
+}
+function cutOff(t, x, y) {
+  const wasFinal = S.beat >= TOTAL;
+  S.pendingHit = null; CUT.buf = []; CUT.progress = 0;
+  endHold(t);
+  S.afterCut = !wasFinal;
+  S.cutFx = { t, x, y };
+  (S.cuts ??= []).push({ beat:S.beat, final:wasFinal });   // para revisar desde la consola
+  flash(wasFinal ? 'Beautiful cut-off! ✂️' : 'Cut! ✂️ Now beat to go on.', t);
+}
+
+function onIctus(t, x, y) {
+  const afterFermata = S.fermata || S.afterCut;
+  S.afterCut = false;
+  if (S.fermata) endHold(t);                           // el golpe suelta el calderón
+  if (S.beat >= TOTAL) return;
+  const gap = t - S.lastHit;
+  if (afterFermata) { /* el calderón no cuenta como tempo */ }
+  else if (S.lastHit && gap < S.beatDur * 2.6) {           // tras una espera larga no se cuenta como tempo
+    S.intervals.push(gap); if (S.intervals.length > 4) S.intervals.shift();
+    const m = [...S.intervals].sort((a, b) => a - b)[Math.floor(S.intervals.length / 2)];
+    S.beatDur = Math.min(1.6, Math.max(.28, m));
+    if (S.intervals.length >= 3) {
+      const mean = S.intervals.reduce((a, b) => a + b) / S.intervals.length;
+      const sd = Math.sqrt(S.intervals.reduce((a, b) => a + (b - mean) ** 2, 0) / S.intervals.length);
+      S.steady = sd / mean < .09;
+    }
+  } else { S.intervals = []; S.steady = false; }
+  S.lastHit = t;
+  const when = ac ? ac.currentTime + .005 : 0;
+  for (const e of byBeat[S.beat]) {
+    const sec = SEC_OF[e.inst];
+    if (e.surprise && !S.awake[sec]) S.awake[sec] = true;      // la sorpresa despierta a todos
+    if (!S.awake[sec]) continue;                       // las secciones dormidas no tocan
+    play(e, when + (e.on - S.beat) * S.beatDur, S.beatDur, e.surprise ? 1 : S.dynSmooth);
+    S.pulse[sec] = t + (e.on - S.beat) * S.beatDur;
+  }
+  if (byBeat[S.beat].some(e => e.surprise)) { S.surpriseAt = t; flash('SURPRISE! 😲', t); }
+  S.bursts.push({ x, y, t, n:S.beat % METER, r0:12 });
+  S.beat++;
+  if (S.beat >= TOTAL) { S.fermata = true; S.fermataAt = t; CUT.buf = []; }   // la última nota se sostiene hasta el corte
+}
+
+const TEMPI = [
+  [60, 'Largo', 'very slow and wide'], [76, 'Adagio', 'slow'], [108, 'Andante', 'walking speed'],
+  [120, 'Moderato', 'medium'], [156, 'Allegro', 'fast and happy'], [176, 'Vivace', 'lively!'], [999, 'Presto', 'super fast!'],
+];
+const DYNS = [['pp', 'very soft'], ['p', 'soft'], ['mp', 'medium soft'], ['mf', 'medium loud'], ['f', 'loud'], ['ff', 'very loud!']];
+let lastHud = '';
+function hud(t) {
+  const bpm = Math.round(60 / S.beatDur);
+  const [, word, hint] = TEMPI.find(([lim]) => bpm < lim);
+  const di = Math.min(5, Math.floor(S.dynSmooth * 6));
+  let msg = '';
+  const en = nextEntry(), comp = S.task === 'compose';
+  $('tempo').style.display = $('dyn').style.display = comp ? 'none' : '';
+  if (comp) {
+    if (!C.done && t < C.start) msg = 'Put your hand on a color. Every beat writes a note!';
+    else if (!C.done && C.next < 5) msg = 'Hold still = long note · Bounce = repeat · Low = rest';
+    const key = 'c|' + msg;
+    if (key !== lastHud) { lastHud = key; $('msg').textContent = msg; }
+    return;
+  }
+  if (S.mode === 'idle') msg = '';
+  else if (S.fermata) msg = S.beat >= TOTAL ? 'Hold the last note… then a little circle ⭕ to finish'
+    : 'Fermata! Hold it… ⭕ circle = stop · beat = go on';
+  else if (S.flash && t - S.flash.t < 1.4) msg = S.flash.text;
+  else if (S.beat === 0) msg = `${PIECE} is in ${METER}: ${PATTERN_WORDS[METER]}. Bring your hand down to start!`;
+  else if (S.beat >= TOTAL) msg = 'Bravo, Maestro! 👏';
+  else if (t - S.lastHit > Math.max(2.2, S.beatDur * 3)) msg = 'The orchestra is waiting for you…';
+  else if (en && S.beat >= en.beat - 6)
+    msg = `Wake up the ${SECTIONS[en.sec].name}! Point at them ${SECTIONS[en.sec].ang > 90 ? '👈' : '👉'}`;
+  else if (P.hint) msg = P.hint(S.beat);
+  const key = [S.beat > 0 ? word : '', bpm, di, S.steady, msg].join('|');
+  if (key === lastHud) return; lastHud = key;
+  $('tempoWord').textContent = S.beat > 1 ? word : '—';
+  $('tempoHint').textContent = S.beat > 1 ? `${hint} · ${bpm} beats a minute` : 'your speed';
+  $('steady').style.opacity = S.steady ? 1 : 0;
+  $('steady').style.color = BEATCOL(1);
+  $('dynMark').textContent = DYNS[di][0];
+  $('dynHint').textContent = DYNS[di][1];
+  $('msg').textContent = msg;
+}
+
+// ── señalar: brazo estirado hacia una sección, sostenido un momento ──
+function sectionPos(i) {
+  const a = SECTIONS[i].ang * Math.PI / 180;
+  return { x:W / 2 + Math.cos(a) * W * .42, y:H * .62 - Math.sin(a) * H * .42 };
+}
+function nextEntry() { return ENTRIES.find(en => !S.awake[en.sec]); }
+function flash(text, t) { S.flash = { text, t }; }
+function cue(i, t) {
+  const en = nextEntry();
+  if (!S.awake[i]) {
+    S.awake[i] = true;
+    flash(en && en.sec === i && S.beat >= en.beat - 6 ? 'Great cue! 🌟' : `${SECTIONS[i].name}, join in!`, t);
+  } else { S.spot[i] = S.beat + 4; flash(`Louder, ${SECTIONS[i].name}!`, t); }
+  S.cueFx = { i, t };
+}
+// a qué sección apunta un brazo (o -1): estirado, con la mano a la altura del hombro o más arriba
+function pointing(sh, wr, sw) {
+  const dx = wr.x - sh.x, dy = wr.y - sh.y;
+  if (Math.hypot(dx, dy) / sw < 1.15 || dy / sw > .55) return -1;
+  let a = Math.atan2(-dy, dx) * 180 / Math.PI;
+  if (a < -90) a += 360;
+  if (a > 72 && a < 108) return -1;                  // derecho hacia arriba es volumen, no señal
+  let best = -1, bd = 99;
+  SECTIONS.forEach((sec, i) => { const d = Math.abs(a - sec.ang); if (d < bd) { bd = d; best = i; } });
+  return bd < 40 ? best : -1;
+}
+function handSpeed(key, p, t, sw) {
+  const pr = S.prev[key]; S.prev[key] = { x:p.x, y:p.y, t };
+  if (!pr || t <= pr.t) return S.spd[key] ?? 0;
+  const v = Math.hypot(p.x - pr.x, p.y - pr.y) / sw / (t - pr.t);
+  return S.spd[key] = (S.spd[key] ?? v) * .6 + v * .4;
+}
+function updatePointing(key, sh, wr, sw, t, spd) {
+  const sec = pointing(sh, wr, sw);
+  if (sec < 0) { delete S.point[key]; return false; }
+  let P = S.point[key];
+  if (!P || P.sec !== sec) P = S.point[key] = { sec, since:t, fired:false };
+  if (spd > 1.6) P.since = t;                        // pasar volando no cuenta: hay que sostener
+  P.wr = wr;
+  if (!P.fired && t - P.since >= HOLD) { P.fired = true; cue(sec, t); }
+  return true;
+}
+
+// ── entradas: cámara, dedo o el fantasma que enseña ──
+let landmarker = null;
+async function startCamera(say) {
+  say('Opening the camera…');
+  const stream = await navigator.mediaDevices.getUserMedia({
+    video:{ facingMode:'user', width:{ ideal:640 }, height:{ ideal:480 } }, audio:false });
+  video.srcObject = stream; await video.play();
+  say('Learning to see arms…');
+  const { PoseLandmarker, FilesetResolver } =
+    await import('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14/vision_bundle.mjs');
+  const fs = await FilesetResolver.forVisionTasks('https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.14/wasm');
+  const opts = d => ({
+    baseOptions:{ modelAssetPath:'https://storage.googleapis.com/mediapipe-models/pose_landmarker/pose_landmarker_lite/float16/1/pose_landmarker_lite.task', delegate:d },
+    runningMode:'VIDEO', numPoses:1, minPoseDetectionConfidence:.5, minTrackingConfidence:.5 });
+  try { landmarker = await PoseLandmarker.createFromOptions(fs, opts('GPU')); }
+  catch { landmarker = await PoseLandmarker.createFromOptions(fs, opts('CPU')); }
+}
+
+// del cuadro del video (normalizado) a la pantalla: cover + espejo
+function toScreen(p) {
+  const vw = video.videoWidth || 640, vh = video.videoHeight || 480;
+  const s = Math.max(W / vw, H / vh), ox = (W - vw * s) / 2, oy = (H - vh * s) / 2;
+  return { x:ox + (1 - p.x) * vw * s, y:oy + p.y * vh * s, v:p.visibility ?? 1 };
+}
+
+// esqueleto: hombros, codos, muñecas, cadera, cabeza
+function poseFromCamera(t) {
+  if (!landmarker || video.readyState < 2) return null;
+  const r = landmarker.detectForVideo(video, t * 1000);
+  const L = r.landmarks && r.landmarks[0];
+  if (!L) return null;
+  const P = i => toScreen(L[i]);
+  // MediaPipe: 11/12 hombros, 13/14 codos, 15/16 muñecas (izquierda/derecha de la persona)
+  return { head:P(0), ls:P(11), rs:P(12), le:P(13), re:P(14), lw:P(15), rw:P(16), lh:P(23), rh:P(24) };
+}
+
+// el fantasma dibuja el patrón de 4/4: abajo, adentro, afuera, arriba
+function poseFromGhost(t) {
+  const sw = Math.min(W, H) * .2, cx = W / 2, cy = H * .36;
+  const dt = t - (S.ghostT ?? t); S.ghostT = t;
+  if (P.ghostHold && S.beat === P.ghostHold && !S.ghostHeld) {      // calderón: sostiene, corta con un círculo, sigue
+    S.ghostHeld = true; S.ghostHold = t + 2.4; S.ghostCircle = { t0:t + 1.1, dur:.8 };
+  }
+  if (S.task === 'conduct' && S.beat >= TOTAL && !S.ghostEnd) {      // la última nota: sostiene y corta
+    S.ghostEnd = true; S.ghostHold = t + 99; S.ghostCircle = { t0:t + 1.6, dur:.8 };
+  }
+  if (!(S.ghostHold > t)) {
+    S.gt = (S.gt ?? 0) + dt;
+    const bpm = 92 + 26 * Math.sin(S.gt * .21);              // acelera y frena para que se vea el tempo
+    S.ghostPhase = (S.ghostPhase ?? 0) + dt * bpm / 60;
+  }
+  const gt = S.gt ?? 0;
+  const k = Math.floor(S.ghostPhase), u = S.ghostPhase - k;
+  const PTS = PATTERNS[S.task === 'compose' ? 4 : METER];
+  const a = PTS[k % PTS.length], b = PTS[(k + 1) % PTS.length];
+  const ease = u * u * (3 - 2 * u);
+  const bx = a[0] + (b[0] - a[0]) * ease;
+  const by = a[1] + (b[1] - a[1]) * u - .6 * Math.sin(Math.PI * u);
+  const rs = { x:cx + sw * .5, y:cy }, ls = { x:cx - sw * .5, y:cy };
+  let rw = { x:cx + bx * sw, y:cy + by * sw };
+  if (S.task === 'compose') rw = ghostComposeHand(t, cx, cy, sw);
+  else if (S.ghostCircle && t > S.ghostCircle.t0) {           // el corte: un circulito que empieza y acaba donde está la mano
+    const th = 2 * Math.PI * Math.min(1, (t - S.ghostCircle.t0) / S.ghostCircle.dur), r = sw * .32;
+    rw = { x:rw.x + r * Math.sin(th), y:rw.y + r * Math.cos(th) - r };
+  }
+  let lift = .5 + .5 * Math.sin(gt * .45);                 // la otra mano sube y baja: volumen
+  if (P.softUntil && S.beat < P.softUntil) lift *= .25;     // y obedece cuando la pieza pide suave
+  let target = { x:cx - sw * 1.05, y:cy + sw * (1.3 - 2.2 * lift) };
+  const en = nextEntry();
+  if (S.task === 'compose') target = { x:cx - sw * .75, y:cy + sw * 1.75 };   // la otra mano descansa
+  else if (en && S.beat >= en.beat - 3) {                  // y señala la siguiente entrada
+    const a = SECTIONS[en.sec].ang * Math.PI / 180;
+    target = { x:ls.x + Math.cos(a) * sw * 1.6, y:ls.y - Math.sin(a) * sw * 1.6 };
+  }
+  const holding = S.task === 'conduct' && S.ghostHold > t;   // en el calderón las dos manos se quedan quietas
+  if (!holding) S.glw = S.glw ? { x:S.glw.x + (target.x - S.glw.x) * .2, y:S.glw.y + (target.y - S.glw.y) * .2 } : target;
+  const lw = S.glw;
+  const elbow = (s, w, side) => ({ x:(s.x + w.x) / 2 + side * sw * .32, y:(s.y + w.y) / 2 + sw * .38 });
+  const p = S.lefty
+    ? { rs:ls, ls:rs, rw:{ x:2 * cx - rw.x, y:rw.y }, lw:{ x:2 * cx - lw.x, y:lw.y } }
+    : { rs, ls, rw, lw };
+  return { head:{ x:cx, y:cy - sw * .75 }, ls:p.ls, rs:p.rs,
+    re:elbow(p.rs, p.rw, S.lefty ? -1 : 1), le:elbow(p.ls, p.lw, S.lefty ? 1 : -1),
+    rw:p.rw, lw:p.lw, lh:{ x:cx - sw * .38, y:cy + sw * 1.9 }, rh:{ x:cx + sw * .38, y:cy + sw * 1.9 } };
+}
+
+// dónde cae cada tiempo del patrón (en anchos de hombro desde el centro y desde los hombros)
+const PATTERNS = {
+  2:[[.6, 1.2], [.95, .8]],                                // abajo · arriba
+  3:[[.6, 1.2], [1.55, 1.0], [.85, .75]],                  // abajo · afuera · arriba
+  4:[[.6, 1.2], [-.15, 1.0], [1.55, 1.0], [.8, .75]],      // abajo · adentro · afuera · arriba
+};
+// las melodías del fantasma · en 4: D E F# G | A— A 𝄽 | B A G F# | E E D— · en 3: D F# A | A— G | F# E D | D——
+const DEMOS = {
+  4:{ n:[0, 1, 2, 3, 4, 4, 4, -1, 5, 4, 3, 2, 1, 1, 0, 0], tie:[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1] },
+  3:{ n:[0, 2, 4, 4, 4, 3, 2, 1, 0, 0, 0, 0], tie:[0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 1] },
+};
+function ghostComposeHand(t, cx, cy, sw) {
+  const B = { base:cy + 1.6 * sw, h:3 * sw / 8 };
+  const { n:DEMO, tie:DEMO_TIE } = DEMOS[C.meter];
+  const k = Math.min(C.beats - 1, C.next), until = C.start + k * C.bd + .08 - t;
+  const r = until < .4 * C.bd ? DEMO[k] : DEMO[Math.max(0, k - 1)];
+  let y = r < 0 ? B.base + B.h * 1.2 : B.base - (r + .5) * B.h;
+  // la misma nota otra vez: un rebote a medio tiempo
+  if (C.next > 0 && C.next < C.beats && DEMO[k] === DEMO[k - 1] && !DEMO_TIE[k] && DEMO[k] >= 0) {
+    const u = 1 - until / C.bd;
+    if (u > .2 && u < .85) y -= Math.sin((u - .2) / .65 * Math.PI) * B.h * 1.4;
+  }
+  S.gry = S.gry === undefined ? y : S.gry + (y - S.gry) * .28;
+  return { x:cx + sw * 1.15, y:S.gry };
+}
+
+let touch = null;
+cv.addEventListener('pointermove', e => { if (S.mode === 'touch') touch = { x:e.clientX, y:e.clientY }; });
+cv.addEventListener('pointerdown', e => {        // tocar una sección también la despierta
+  const r = Math.min(W, H) * .062 * 1.4;
+  const i = SECTIONS.findIndex((_, k) => { const p = sectionPos(k); return Math.hypot(e.clientX - p.x, e.clientY - p.y) < r; });
+  if (S.task === 'conduct' && i >= 0) return cue(i, clock());
+  if (S.mode === 'touch') { touch = { x:e.clientX, y:e.clientY }; C.pressed = true; }
+});
+addEventListener('pointerup', () => { C.pressed = false; });
+addEventListener('pointercancel', () => { C.pressed = false; });
+
+// ── dibujo ──
+function line(a, b) { if (a && b) { g.beginPath(); g.moveTo(a.x, a.y); g.lineTo(b.x, b.y); g.stroke(); } }
+
+function frame() {
+  const t = clock();
+  S.hue = (S.hue + .03) % 360;
+  g.fillStyle = '#07070b'; g.fillRect(0, 0, W, H);
+
+  // cámara al fondo, apagada para que brille el gesto
+  if (S.mode === 'camera' && video.readyState >= 2) {
+    const vw = video.videoWidth, vh = video.videoHeight, s = Math.max(W / vw, H / vh);
+    g.save(); g.globalAlpha = .28; g.translate(W, 0); g.scale(-1, 1);
+    g.drawImage(video, (W - vw * s) / 2, (H - vh * s) / 2, vw * s, vh * s); g.restore();
+  }
+
+  if (t - (S.surpriseAt ?? -9) < .7) {                  // ¡la sorpresa! un destello
+    g.fillStyle = `rgba(255,248,230,${.55 * (1 - (t - S.surpriseAt) / .7)})`; g.fillRect(0, 0, W, H);
+  }
+  const dt = Math.min(.1, t - S.lastT); S.lastT = t;
+  let pose = null, baton = null, sw = Math.min(W, H) * .2, otherSpd = 0;
+  if (S.mode === 'camera') pose = poseFromCamera(t);
+  else if (S.mode === 'ghost') pose = poseFromGhost(t);
+  if (pose) {
+    sw = Math.max(20, Math.hypot(pose.ls.x - pose.rs.x, pose.ls.y - pose.rs.y));
+    baton = S.lefty ? pose.lw : pose.rw;
+    const other = S.lefty ? pose.rw : pose.lw;
+    const sy = (pose.ls.y + pose.rs.y) / 2;
+    const spL = handSpeed('l', pose.lw, t, sw), spR = handSpeed('r', pose.rw, t, sw);
+    otherSpd = S.lefty ? spR : spL;
+    const conducting = S.task === 'conduct';
+    const ptL = conducting && (!pose.lw.v || pose.lw.v > .4) && updatePointing('l', pose.ls, pose.lw, sw, t, spL);
+    const ptR = conducting && (!pose.rw.v || pose.rw.v > .4) && updatePointing('r', pose.rs, pose.rw, sw, t, spR);
+    const otherPointing = S.lefty ? ptR : ptL;            // mientras señala, el volumen no se mueve
+    if (!otherPointing && (!other.v || other.v > .4)) {
+      const lift = (sy - other.y) / sw;                   // -1.5 (cadera) … +1.5 (arriba de la cabeza)
+      S.dyn = Math.min(1, Math.max(0, (lift + 1.4) / 2.8));
+    }
+  } else if (S.mode === 'touch' && touch) { baton = touch; sw = H / 6; }
+  S.dynSmooth += (S.dyn - S.dynSmooth) * .08;
+
+  const B = bands(pose, sw);
+  const seen = baton && (!baton.v || baton.v > .3);
+  if (S.task === 'compose') {
+    composeStep(t, seen ? baton : null, seen ? handSpeed('b', baton, t, sw) : 0, B);
+    if (C.done && S.mode === 'ghost' && t - C.doneAt > 3) conductIt();   // el fantasma dirige lo que escribió
+  }
+  if (seen && S.task === 'compose') {
+    S.trail.push({ x:baton.x, y:baton.y, n:0, r:C.rung });
+    if (S.trail.length > 46) S.trail.shift();
+  } else if (seen) {
+    if (ictus.push(baton.y / sw, t)) {
+      if (S.fermata) S.pendingHit = { t, x:baton.x, y:baton.y };   // ¿golpe o el principio de un círculo?
+      else onIctus(t, baton.x, baton.y);
+    }
+    if (S.fermata && detectCircle(baton.x, baton.y, t, sw)) cutOff(t, baton.x, baton.y);
+    if (S.pendingHit && t - S.pendingHit.t > .3 && CUT.progress < .35) {   // si va dibujando un círculo, no era golpe
+      const h = S.pendingHit; S.pendingHit = null;
+      if (S.fermata) onIctus(t, h.x, h.y);
+    }
+    // calderón: justo después de un golpe, las dos manos se quedan quietas
+    const bSpd = handSpeed('b', baton, t, sw);
+    if (!S.fermata && S.beat > 0 && t - S.lastHit < S.beatDur * 1.1 && Math.max(bSpd, otherSpd) < .7) {
+      S.still += dt; if (S.still > .22) { S.fermata = true; S.fermataAt = t; CUT.buf = []; }
+    } else if (!S.fermata) S.still = 0;
+    S.trail.push({ x:baton.x, y:baton.y, n:S.beat % METER });
+    if (S.trail.length > 46) S.trail.shift();
+  }
+
+  if (S.fermata && t - S.fermataAt > 6) endHold(t);   // nadie sostiene tanto
+  serviceNotes();
+  if (S.task === 'compose') drawBands(t, B); else drawSections(t);
+
+  // estela de la batuta, del color del tiempo que va a sonar
+  for (let i = 1; i < S.trail.length; i++) {
+    const a = S.trail[i - 1], b = S.trail[i], k = i / S.trail.length;
+    g.strokeStyle = b.r === undefined ? BEATCOL(b.n) : b.r < 0 ? 'rgba(242,239,232,.5)' : `oklch(0.84 0.15 ${rungHue(b.r)})`;
+    g.globalAlpha = k * .9; g.lineWidth = 2 + k * 10; g.lineCap = 'round';
+    line(a, b);
+  }
+  g.globalAlpha = 1;
+
+  // esqueleto
+  if (pose) {
+    g.strokeStyle = 'rgba(242,239,232,.55)'; g.lineWidth = 4; g.lineCap = 'round';
+    line(pose.ls, pose.rs); line(pose.ls, pose.le); line(pose.le, pose.lw); line(pose.rs, pose.re); line(pose.re, pose.rw);
+    line(pose.ls, pose.lh); line(pose.rs, pose.rh); line(pose.lh, pose.rh);
+    g.beginPath(); g.arc(pose.head.x, pose.head.y, sw * .32, 0, 7); g.stroke();
+    const other = S.lefty ? pose.rw : pose.lw;
+    g.fillStyle = `oklch(0.75 0.12 ${(S.hue + 200) % 360} / .8)`;
+    g.beginPath(); g.arc(other.x, other.y, sw * (.08 + .22 * S.dynSmooth), 0, 7); g.fill();
+  }
+  if (baton) {
+    g.fillStyle = S.task === 'compose' ? (C.rung < 0 ? '#f2efe8' : `oklch(0.84 0.15 ${rungHue(C.rung)})`) : BEATCOL(S.beat % METER);
+    g.beginPath(); g.arc(baton.x, baton.y, Math.max(10, sw * .12), 0, 7); g.fill();
+  }
+
+  // donde cayó cada golpe: un anillo con su número
+  S.bursts = S.bursts.filter(b => t - b.t < 1.1);
+  for (const b of S.bursts) {
+    const k = (t - b.t) / 1.1;
+    g.strokeStyle = BEATCOL(b.n); g.globalAlpha = 1 - k; g.lineWidth = 6 * (1 - k) + 1;
+    g.beginPath(); g.arc(b.x, b.y, b.r0 + k * sw * 1.1, 0, 7); g.stroke();
+    g.fillStyle = BEATCOL(b.n); g.font = `800 ${Math.round(sw * .38)}px ui-rounded, system-ui`;
+    g.textAlign = 'center'; g.fillText(b.n + 1, b.x, b.y - sw * .35 - k * sw * .4);
+  }
+  g.globalAlpha = 1;
+
+  if (S.fermata) drawFermata(t);
+  if (S.fermata && baton && CUT.progress > .15) {            // el círculo se va cerrando
+    g.strokeStyle = BEATCOL(2); g.lineWidth = 6; g.lineCap = 'round';
+    g.beginPath(); g.arc(baton.x, baton.y, sw * .42, -Math.PI / 2, -Math.PI / 2 + CUT.progress * Math.PI * 2); g.stroke();
+  }
+  if (S.cutFx && t - S.cutFx.t < .8) {                       // ✂ el sonido se cierra en un punto
+    const k = (t - S.cutFx.t) / .8, f = S.cutFx;
+    g.strokeStyle = BEATCOL(2); g.globalAlpha = 1 - k; g.lineWidth = 8 * (1 - k) + 1;
+    g.beginPath(); g.arc(f.x, f.y, sw * .9 * (1 - k) + 4, 0, 7); g.stroke();
+    g.font = `${Math.round(sw * .5)}px system-ui`; g.textAlign = 'center'; g.fillStyle = '#f2efe8';
+    g.fillText('✂️', f.x, f.y - sw * .6); g.globalAlpha = 1;
+  }
+  if (S.task === 'compose') drawPaper(t); else drawScore(t);
+  hud(t);
+
+  if (S.task === 'conduct' && S.beat >= TOTAL && !S.fermata && t - S.finishedAt > 5) restart();
+  if (CAPTURE && params.has('debug')) (S.dbg ??= []).push([+t.toFixed(2), S.beat, S.fermata ? 1 : 0, +CUT.progress.toFixed(2), +(S.still || 0).toFixed(2), S.pendingHit ? 1 : 0]);
+  if (!CAPTURE) requestAnimationFrame(frame);
+  else if (params.get('hud') !== '0') drawHudOnCanvas();
+}
+
+// la orquesta en arco: dormidas con z z z, despiertas laten cuando tocan
+function drawSections(t) {
+  const r = Math.min(W, H) * .062, en = nextEntry();
+  g.textAlign = 'center';
+  SECTIONS.forEach((sec, i) => {
+    const p = sectionPos(i), awake = S.awake[i], hue = (S.hue + 30 + i * 90) % 360;
+    const since = t - S.pulse[i], beat = awake && since >= 0 && since < .6 ? Math.exp(-since * 6) : 0;
+    const R = r * (1 + .22 * beat);
+    if (en && en.sec === i && S.beat >= en.beat - 6) {        // te toca: un aro que llama
+      const k = (t * 1.4) % 1;
+      g.strokeStyle = `oklch(0.85 0.17 ${hue} / ${1 - k})`; g.lineWidth = 4;
+      g.beginPath(); g.arc(p.x, p.y, R * (1.1 + k), 0, 7); g.stroke();
+    }
+    g.fillStyle = awake ? `oklch(0.62 0.15 ${hue} / ${.5 + .5 * beat})` : 'rgba(242,239,232,.07)';
+    g.beginPath(); g.arc(p.x, p.y, R, 0, 7); g.fill();
+    g.strokeStyle = awake ? `oklch(0.85 0.15 ${hue})` : 'rgba(242,239,232,.25)'; g.lineWidth = 2; g.stroke();
+    g.globalAlpha = awake ? 1 : .4; g.textBaseline = 'middle';
+    g.font = `${Math.round(r * .95)}px system-ui`; g.fillText(sec.icon, p.x, p.y + r * .05);
+    g.globalAlpha = 1; g.textBaseline = 'alphabetic';
+    g.fillStyle = awake ? '#f2efe8' : 'rgba(242,239,232,.45)';
+    g.font = `700 ${Math.round(r * .38)}px ui-rounded, system-ui`; g.fillText(sec.name, p.x, p.y + R + r * .42);
+    if (!awake) {
+      const z = (t * .5 + i * .27) % 1;
+      g.globalAlpha = 1 - z; g.fillStyle = 'rgba(242,239,232,.7)';
+      g.fillText('z z z', p.x + r * .95, p.y - r * .75 - z * r * .7); g.globalAlpha = 1;
+    }
+  });
+  // la señal: rayo de la mano a la sección y un aro que se llena
+  for (const key in S.point) {
+    const P = S.point[key]; if (!P.wr) continue;
+    const p = sectionPos(P.sec), hue = (S.hue + 30 + P.sec * 90) % 360, k = Math.min(1, (t - P.since) / HOLD);
+    g.strokeStyle = `oklch(0.85 0.15 ${hue} / .55)`; g.lineWidth = 3; g.setLineDash([8, 10]);
+    line(P.wr, p); g.setLineDash([]);
+    if (!P.fired) {
+      g.strokeStyle = `oklch(0.9 0.15 ${hue})`; g.lineWidth = 6;
+      g.beginPath(); g.arc(p.x, p.y, r * 1.3, -Math.PI / 2, -Math.PI / 2 + k * Math.PI * 2); g.stroke();
+    }
+  }
+  if (S.cueFx && t - S.cueFx.t < .9) {                        // estrellitas de la entrada
+    const p = sectionPos(S.cueFx.i), k = (t - S.cueFx.t) / .9, hue = (S.hue + 30 + S.cueFx.i * 90) % 360;
+    g.fillStyle = `oklch(0.9 0.16 ${hue} / ${1 - k})`;
+    for (let j = 0; j < 10; j++) {
+      const a = j / 10 * Math.PI * 2, d = r * (1.2 + k * 1.6);
+      g.beginPath(); g.arc(p.x + Math.cos(a) * d, p.y + Math.sin(a) * d, r * .1 * (1 - k) + 1, 0, 7); g.fill();
+    }
+  }
+}
+
+// el calderón: el arco con su punto, mientras la orquesta sostiene
+function drawFermata(t) {
+  const s = Math.min(W, H) * .06, x = W / 2, y = H * .09 + Math.sin(t * 3) * 3;
+  g.strokeStyle = BEATCOL(2); g.fillStyle = BEATCOL(2); g.lineWidth = s * .2; g.lineCap = 'round';
+  g.beginPath(); g.arc(x, y, s, Math.PI, 0); g.stroke();
+  g.beginPath(); g.arc(x, y - s * .12, s * .2, 0, 7); g.fill();
+}
+
+// la cinta de la partitura: lo que ya sonó brilla, lo que viene espera
+function drawScore(t) {
+  const bandH = Math.min(120, H * .16), y0 = H - bandH - Math.max(56, H * .07), px = Math.min(70, W / 13);
+  const playX = W * .3;
+  const k = S.lastHit ? Math.min(1, (t - S.lastHit) / S.beatDur) : 0;
+  const cursor = S.beat - 1 + (S.beat ? k : 1);
+  const lo = Math.min(...melody.map(e => e.midi)) - 1, hi = Math.max(...melody.map(e => e.midi)) + 1;
+  const yOf = m => y0 + bandH * .9 - (m - lo) / Math.max(8, hi - lo) * bandH * .8;
+  g.fillStyle = 'rgba(242,239,232,.6)'; g.textAlign = 'left'; g.font = `700 ${Math.round(Math.min(18, W * .018))}px ui-rounded, system-ui`;
+  g.fillText(`♪ ${PIECE} · ${P.by} · in ${METER}`, 16, y0 - 8);
+  g.strokeStyle = 'rgba(242,239,232,.12)'; g.lineWidth = 1;
+  for (let l = 0; l < 5; l++) { const y = y0 + bandH * (.15 + l * .175); line({ x:0, y }, { x:W, y }); }
+  for (let bar = 0; bar <= TOTAL / METER; bar++) {
+    const x = playX + (bar * METER - cursor) * px;
+    if (x > -10 && x < W + 10) line({ x, y:y0 + bandH * .1 }, { x, y:y0 + bandH * .9 });
+  }
+  for (const e of melody) {
+    const x = playX + (e.on - cursor) * px;
+    if (x + e.dur * px < 0 || x > W) continue;
+    const played = e.on < S.beat;
+    g.fillStyle = played ? BEATCOL(Math.floor(e.on) % METER) : 'rgba(242,239,232,.38)';
+    g.globalAlpha = played ? .95 : 1;
+    const y = yOf(e.midi), w = Math.max(6, e.dur * px - 6);
+    g.beginPath(); g.roundRect(x + 3, y - 7, w, 14, 7); g.fill();
+  }
+  g.globalAlpha = 1;
+  g.strokeStyle = 'rgba(242,239,232,.8)'; g.lineWidth = 2;
+  line({ x:playX, y:y0 }, { x:playX, y:y0 + bandH });
+
+  // los tiempos del compás
+  const r = Math.min(16, W / 50), cx = W - 24 - (METER - .5) * r * 3.2 / 2 - r, cy = H - Math.max(30, H * .04);
+  for (let i = 0; i < METER; i++) {
+    const on = S.beat > 0 && (S.beat - 1) % METER === i;
+    g.fillStyle = on ? BEATCOL(i) : 'rgba(242,239,232,.18)';
+    g.beginPath(); g.arc(cx + (i - (METER - 1) / 2) * r * 3.2, cy, on ? r * 1.25 : r, 0, 7); g.fill();
+  }
+}
+
+function restart() {
+  S.beat = 0; S.intervals = []; S.lastHit = 0; S.steady = false; S.bursts = []; S.beatDur = .62;
+  S.awake = (P.awake ?? [true, false, false, false]).slice(); S.spot = [0, 0, 0, 0]; S.point = {}; S.flash = null;
+  S.fermata = false; S.still = 0; S.ghostHeld = false; S.ghostHold = 0; S.surpriseAt = -9; releaseAll();
+  S.pendingHit = null; S.afterCut = false; S.ghostEnd = false; S.ghostCircle = null; S.cutFx = null;
+  CUT.buf = []; CUT.progress = 0;
+  S.ghostPhase = METER - .6;                           // el primer golpe del fantasma cae en el tiempo 1
+  ictus.reset();
+}
+
+// ── captura de cuadros para el GIF del proceso (sólo con tools/captura.py) ──
+// ?capture=<tag>&frames=150&every=3&skip=0 · si hay ?hue= la paleta arranca ahí
+function drawHudOnCanvas() {       // el HUD es DOM; en la captura se copia al lienzo
+  if (S.task === 'compose') {
+    const m = C.done ? endingWords() : $('msg').textContent;
+    if (m) { g.fillStyle = '#f2efe8'; g.textAlign = 'center'; g.font = `800 ${Math.round(Math.min(30, W * .03))}px ui-rounded, system-ui`;
+      g.fillText(m, W / 2, C.done ? H * .5 : H * .42); }
+    return;
+  }
+  g.fillStyle = '#f2efe8'; g.textAlign = 'left';
+  g.font = `800 ${Math.round(Math.min(60, W * .055))}px ui-rounded, system-ui`;
+  g.fillText($('tempoWord').textContent, 22, 70);
+  g.globalAlpha = .55; g.font = `${Math.round(Math.min(20, W * .02))}px ui-rounded, system-ui`;
+  g.fillText($('tempoHint').textContent, 22, 100); g.globalAlpha = 1;
+  if (S.steady) { g.fillStyle = BEATCOL(1); g.fillText('● steady!', 22, 128); }
+  g.fillStyle = '#f2efe8'; g.textAlign = 'right';
+  g.font = `italic 700 ${Math.round(Math.min(88, W * .08))}px "Times New Roman", serif`;
+  g.fillText($('dynMark').textContent, W - 22, 86);
+  const m = $('msg').textContent;
+  if (m) { g.textAlign = 'center'; g.font = `800 ${Math.round(Math.min(42, W * .04))}px ui-rounded, system-ui`;
+    g.fillText(m, W / 2, H * .42); }
+}
+async function captureLoop() {
+  const every = +(params.get('every') || 3), max = +(params.get('frames') || 150), skip = +(params.get('skip') || 0);
+  const tag = params.get('capture') || 'demo';
+  for (let i = 0; i < skip; i++) { vclock += 1 / 30; frame(); }
+  for (let n = 0; n < max; n++) {
+    for (let i = 0; i < every; i++) { vclock += 1 / 30; frame(); }
+    const b = await new Promise(r => cv.toBlob(r, 'image/png'));
+    await fetch(`/frame?i=${n}&tag=${tag}`, { method:'POST', body:b });
+  }
+  document.title = 'capture done';
+}
+
+// ── botones ──
+const say = s => $('status').textContent = s;
+function go(mode) { S.mode = mode; $('overlay').style.display = 'none'; restart(); }
+$('bStart').onclick = async () => {
+  try { await tuneOrchestra(say); await startCamera(say); go('camera'); }
+  catch (err) { console.error(err); say('The camera did not open. Try “Use my finger”, or open this page over https.'); }
+};
+$('bTouch').onclick = async () => { if (!ac) await tuneOrchestra(say); go('touch'); };
+$('bShow').onclick = async () => {
+  if (!ac) await tuneOrchestra(() => {});
+  if (S.mode === 'ghost') { S.mode = S.prevMode || 'touch'; $('bShow').classList.remove('on'); }
+  else { S.prevMode = S.mode; S.mode = 'ghost'; $('overlay').style.display = 'none'; $('bShow').classList.add('on'); }
+  again();
+};
+$('bLefty').onclick = () => { S.lefty = !S.lefty; $('bLefty').classList.toggle('on', S.lefty); ictus.reset(); };
+$('bAgain').onclick = () => again();
+function again() { if (S.task === 'compose') startCompose(clock()); else restart(); }
+function setPiece() {
+  $('bCompose').classList.toggle('on', S.task === 'compose');
+  $('bPieces').textContent = S.task === 'compose' ? '♪ Pieces' : `♪ ${PIECE}`;
+}
+function showPanel(on) {
+  $('panel').style.display = on ? 'flex' : 'none';
+  if (!on) return;
+  $('panelMsg').textContent = endingWords();
+  $('inName').value = C.name; $('inBy').value = C.by || store.get('lm-by', '');
+}
+function showMeterPick(on) { $('meterPick').style.display = on ? 'flex' : 'none'; }
+$('bCompose').onclick = async () => {
+  if (!ac) await tuneOrchestra(() => {});
+  showPieces(false); showMeterPick($('meterPick').style.display !== 'flex');
+};
+$('bIn4').onclick = () => { startCompose(clock(), 4); setPiece(); };
+$('bIn3').onclick = () => { startCompose(clock(), 3); setPiece(); };
+$('bKeep').onclick = keepMelody;
+for (const id of ['inName', 'inBy']) $(id).addEventListener('input', () => {   // la hoja se titula mientras escribes
+  C.name = $('inName').value.trim(); C.by = $('inBy').value.trim(); C.ver++;
+});
+function showPieces(on) {
+  $('pieces').style.display = on ? 'flex' : 'none';
+  if (!on) return;
+  const list = $('pieceList'); list.innerHTML = '';
+  showMeterPick(false);
+  const add = (title, by, meter, fn, forget, where = list) => {
+    const b = document.createElement('button'); b.className = 'piece';
+    const tt = document.createElement('b'), sm = document.createElement('small');
+    tt.textContent = title; sm.textContent = `${by} · in ${meter}: ${PATTERN_WORDS[meter]}`;
+    b.append(tt, sm); b.onclick = fn;
+    if (forget) {                                       // borrar una melodía guardada
+      const x = document.createElement('span'); x.className = 'forget'; x.textContent = '✕';
+      x.onclick = ev => { ev.stopPropagation(); if (confirm(`Delete “${title}”?`)) forget(); };
+      b.appendChild(x);
+    }
+    where.appendChild(b);
+  };
+  const head = text => { const h = document.createElement('div'); h.className = 'listHead'; h.textContent = text; list.appendChild(h); };
+  for (const [id, pc] of Object.entries(PIECES)) add(pc.title, pc.by, pc.meter, () => choosePiece(id));
+  const mine = savedMelodies();
+  if (mine.length) head('Your melodies');
+  for (const m of mine) add(m.name, `${m.by ? 'by ' + m.by : 'yours'} · ${m.date}`, m.meter, () => loadMelody(m), () => forgetMelody(m.id));
+  if (C.notes.length === C.beats && !C.savedId) add(C.name || 'My Melody (not saved)', 'just now', C.meter, conductIt);
+  // las de la familia, en el estante en línea (las que ya están en esta tableta no se repiten)
+  const fam = familyCode();
+  if (fam) {
+    head('Family melodies · online');
+    const box = document.createElement('div'); box.className = 'famBox'; box.textContent = 'Looking…'; list.appendChild(box);
+    api('GET', `?family=${encodeURIComponent(fam)}`).then(({ melodies }) => {
+      box.textContent = '';
+      const here = new Set(mine.map(m => m.serverId).filter(Boolean));
+      const theirs = melodies.filter(m => !here.has(m.id));
+      if (!theirs.length) box.textContent = 'Nothing new from your family yet.';
+      for (const m of theirs) add(m.name, `${m.by ? 'by ' + m.by : 'family'} · ${m.date}`, m.meter,
+        () => loadMelody({ ...m, serverId:m.id }), () => forgetOnline(m.id), box);
+    }).catch(() => { box.textContent = 'The online shelf did not answer.'; });
+  }
+  const foot = document.createElement('div'); foot.className = 'famFoot';
+  const inp = document.createElement('input'); inp.placeholder = 'Family code (6+ letters)'; inp.value = fam;
+  inp.maxLength = 40; inp.autocomplete = 'off';
+  const ok = document.createElement('button'); ok.className = 'line'; ok.textContent = fam ? 'Change' : 'Join';
+  ok.onclick = () => {
+    const v = inp.value.trim();
+    if (v && v.length < 6) { inp.value = ''; inp.placeholder = 'Use 6 or more letters'; return; }
+    store.set('lm-family', v); showPieces(true);
+  };
+  foot.append(inp, ok); list.appendChild(foot);
+}
+function choosePiece(id) {
+  buildScore(PIECES[id]); S.task = 'conduct'; showPanel(false); showPieces(false); restart(); setPiece();
+}
+$('bPieces').onclick = () => showPieces($('pieces').style.display !== 'flex');
+$('bListen').onclick = listen;
+$('bConduct').onclick = conductIt;
+$('bWrite').onclick = () => startCompose(clock());   // mismo compás que la vez pasada
+$('bSave').onclick = () => paper.toBlob(b => {
+  const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = `${(C.name || 'my-melody').replace(/[^\w-]+/g, '-').toLowerCase()}.png`; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+});
+
+if (CAPTURE) {
+  S.mode = 'ghost'; $('overlay').style.display = 'none';
+  if (params.has('hue')) S.hue = +params.get('hue');
+  if (params.get('task') === 'compose') startCompose(clock(), +(params.get('meter') || 4));
+  else if (PIECES[params.get('piece')]) choosePiece(params.get('piece'));
+  captureLoop();
+} else requestAnimationFrame(frame);
+setPiece();
+</script>
+</body>
+</html>

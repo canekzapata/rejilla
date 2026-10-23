@@ -1,0 +1,3221 @@
+{
+ "suenan": [
+  {
+   "id": "arpaboca",
+   "nombre": "Arpa de boca",
+   "familia": "bocas · lengüeta + boca (idiófono punteado)",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "boca",
+   "vias": "web · rejilla (modos) · gemelo",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "balafon",
+   "nombre": "Balafón",
+   "familia": "idiófono · barras de madera con bule",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "golpe",
+   "vias": "web · rejilla (modos) · gemelo",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "bateria-acustico",
+   "nombre": "Batería acústica",
+   "familia": "membranófono · batería (13 piezas)",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "bateria",
+   "vias": "web",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "bateria-frito",
+   "nombre": "Batería frita",
+   "familia": "membranófono · batería (13 piezas)",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "bateria",
+   "vias": "web",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "bateria-tr808",
+   "nombre": "Batería TR-808",
+   "familia": "membranófono · batería (13 piezas)",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "bateria",
+   "vias": "web",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "bateria-tr909",
+   "nombre": "Batería TR-909",
+   "familia": "membranófono · batería (13 piezas)",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "bateria",
+   "vias": "web",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "berimbau",
+   "nombre": "Berimbau",
+   "familia": "cordófono · arco musical con bule",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "arco",
+   "vias": "web · rejilla (modos) · gemelo",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "consola-bass",
+   "nombre": "Bajo",
+   "familia": "electrófono · bajo",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "voz",
+   "vias": "web",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "consola-bell",
+   "nombre": "Campana FM",
+   "familia": "idiófono · campana (FM)",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "voz",
+   "vias": "web",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "consola-drone",
+   "nombre": "Zumbido",
+   "familia": "electrófono · bordón",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "voz",
+   "vias": "web",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "consola-glass",
+   "nombre": "Vidrio",
+   "familia": "idiófono · vidrio",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "voz",
+   "vias": "web",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "consola-kalimba",
+   "nombre": "Kalimba (la de siempre)",
+   "familia": "idiófono · lengüetas (sintética)",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "voz",
+   "vias": "web",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "consola-pad",
+   "nombre": "Colchón",
+   "familia": "electrófono · colchón",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "voz",
+   "vias": "web",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "consola-pluck",
+   "nombre": "Cuerda pulsada",
+   "familia": "cordófono · cuerda pulsada (sintética)",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "voz",
+   "vias": "web",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "gender",
+   "nombre": "Gendér",
+   "familia": "idiófono · láminas de bronce (gamelán)",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "golpe",
+   "vias": "web · rejilla (modos) · gemelo",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "gyil",
+   "nombre": "Gyil",
+   "familia": "idiófono · barras de madera con bule",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "golpe",
+   "vias": "web · rejilla (modos) · gemelo",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "imposible-garganta-bifonia",
+   "nombre": "Garganta de montaña: dos voces",
+   "familia": "imposible · siringe en un tubo con forma de terreno",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/lo-que-tapa-la-traspuesta/motor/garganta.js",
+   "funcion": null
+  },
+  {
+   "id": "imposible-garganta-canta",
+   "nombre": "Garganta de montaña: canta",
+   "familia": "imposible · siringe en un tubo con forma de terreno",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/lo-que-tapa-la-traspuesta/motor/garganta.js",
+   "funcion": null
+  },
+  {
+   "id": "imposible-garganta-montana",
+   "nombre": "Garganta de montaña: la montaña respira",
+   "familia": "imposible · siringe en un tubo con forma de terreno",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/lo-que-tapa-la-traspuesta/motor/garganta.js",
+   "funcion": null
+  },
+  {
+   "id": "imposible-viento-estriado",
+   "nombre": "Viento que lee el terreno: afinado",
+   "familia": "imposible · viento sobre un perfil del terreno",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/lo-que-tapa-la-traspuesta/motor/viento.js",
+   "funcion": null
+  },
+  {
+   "id": "imposible-viento-liso",
+   "nombre": "Viento que lee el terreno: liso",
+   "familia": "imposible · viento sobre un perfil del terreno",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/lo-que-tapa-la-traspuesta/motor/viento.js",
+   "funcion": null
+  },
+  {
+   "id": "jardin-ave-gorjeo",
+   "nombre": "Ave: gorjeo",
+   "familia": "aves · gesto",
+   "proyecto": "jardín",
+   "estado": "suena",
+   "motor": "python",
+   "vias": "python (copia del código)",
+   "origen": "netart/jardin-camara/musica/temas/aves.py",
+   "funcion": "g_gorjeo"
+  },
+  {
+   "id": "jardin-ave-llamado",
+   "nombre": "Ave: llamado",
+   "familia": "aves · gesto",
+   "proyecto": "jardín",
+   "estado": "suena",
+   "motor": "python",
+   "vias": "python (copia del código)",
+   "origen": "netart/jardin-camara/musica/temas/aves.py",
+   "funcion": "g_llamado"
+  },
+  {
+   "id": "jardin-ave-silbido",
+   "nombre": "Ave: silbido",
+   "familia": "aves · gesto",
+   "proyecto": "jardín",
+   "estado": "suena",
+   "motor": "python",
+   "vias": "python (copia del código)",
+   "origen": "netart/jardin-camara/musica/temas/aves.py",
+   "funcion": "g_silbido"
+  },
+  {
+   "id": "jardin-ave-trino",
+   "nombre": "Ave: trino",
+   "familia": "aves · gesto",
+   "proyecto": "jardín",
+   "estado": "suena",
+   "motor": "python",
+   "vias": "python (copia del código)",
+   "origen": "netart/jardin-camara/musica/temas/aves.py",
+   "funcion": "g_trino"
+  },
+  {
+   "id": "jardin-cuerda",
+   "nombre": "Cuerda frotada (jardín)",
+   "familia": "cordófono · frotado",
+   "proyecto": "jardín",
+   "estado": "suena",
+   "motor": "python",
+   "vias": "python (copia del código)",
+   "origen": "netart/jardin-camara/musica/temas/instrumentos.py",
+   "funcion": "cuerda"
+  },
+  {
+   "id": "jardin-farfisa",
+   "nombre": "Farfisa",
+   "familia": "electrófono · órgano de combo",
+   "proyecto": "jardín",
+   "estado": "suena",
+   "motor": "python",
+   "vias": "python (copia del código)",
+   "origen": "netart/jardin-camara/musica/temas/instrumentos.py",
+   "funcion": "farfisa"
+  },
+  {
+   "id": "jardin-flauta",
+   "nombre": "Flauta (jardín)",
+   "familia": "aerófono · flauta",
+   "proyecto": "jardín",
+   "estado": "suena",
+   "motor": "python",
+   "vias": "python (copia del código)",
+   "origen": "netart/jardin-camara/musica/temas/instrumentos.py",
+   "funcion": "flauta"
+  },
+  {
+   "id": "jardin-hammond",
+   "nombre": "Hammond con Leslie",
+   "familia": "electrófono · órgano de ruedas",
+   "proyecto": "jardín",
+   "estado": "suena",
+   "motor": "python",
+   "vias": "python (copia del código)",
+   "origen": "netart/jardin-camara/musica/temas/instrumentos.py",
+   "funcion": "hammond"
+  },
+  {
+   "id": "jardin-ondas",
+   "nombre": "Ondas Martenot",
+   "familia": "electrófono · ondas",
+   "proyecto": "jardín",
+   "estado": "suena",
+   "motor": "python",
+   "vias": "python (copia del código)",
+   "origen": "netart/jardin-camara/musica/temas/instrumentos.py",
+   "funcion": "ondas"
+  },
+  {
+   "id": "jardin-tambor-parlante",
+   "nombre": "Tambor parlante (dùndún)",
+   "familia": "membranófono · tambor parlante",
+   "proyecto": "jardín",
+   "estado": "suena",
+   "motor": "python",
+   "vias": "python (copia del código)",
+   "origen": "netart/jardin-camara/musica/temas/parlante.py",
+   "funcion": "golpe"
+  },
+  {
+   "id": "jardin-theremin",
+   "nombre": "Theremin",
+   "familia": "electrófono · theremin",
+   "proyecto": "jardín",
+   "estado": "suena",
+   "motor": "python",
+   "vias": "python (copia del código)",
+   "origen": "netart/jardin-camara/musica/temas/instrumentos.py",
+   "funcion": "theremin"
+  },
+  {
+   "id": "jardin-trautonium",
+   "nombre": "Trautonium (mixtur)",
+   "familia": "electrófono · trautonium",
+   "proyecto": "jardín",
+   "estado": "suena",
+   "motor": "python",
+   "vias": "python (copia del código)",
+   "origen": "netart/jardin-camara/musica/temas/instrumentos.py",
+   "funcion": "trautonium"
+  },
+  {
+   "id": "jardin-voz",
+   "nombre": "Voz sin palabras (jardín)",
+   "familia": "bocas · voz",
+   "proyecto": "jardín",
+   "estado": "suena",
+   "motor": "python",
+   "vias": "python (copia del código)",
+   "origen": "netart/jardin-camara/musica/temas/instrumentos.py",
+   "funcion": "voz"
+  },
+  {
+   "id": "kalimbacaja",
+   "nombre": "Kalimba de caja",
+   "familia": "idiófono · lengüetas",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "golpe",
+   "vias": "web · rejilla (modos) · gemelo",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "marimba",
+   "nombre": "Marimba",
+   "familia": "idiófono · barras de madera",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "golpe",
+   "vias": "web · rejilla (modos) · gemelo",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "mbira",
+   "nombre": "Mbira",
+   "familia": "idiófono · lengüetas con chapitas",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "golpe",
+   "vias": "web · rejilla (modos) · gemelo",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "meleeviewer-1-bass",
+   "nombre": "Bajo · yoshi 1",
+   "familia": "electrófono · bajo",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-27_yoshi_es_un_vector/cancion/cancion.js",
+   "funcion": "bass"
+  },
+  {
+   "id": "meleeviewer-1-brass",
+   "nombre": "Metales · yoshi 1",
+   "familia": "aerófono · metales",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-27_yoshi_es_un_vector/cancion/cancion.js",
+   "funcion": "brass"
+  },
+  {
+   "id": "meleeviewer-1-clap",
+   "nombre": "Palmas · yoshi 1",
+   "familia": "idiófono · palmas",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-27_yoshi_es_un_vector/cancion/cancion.js",
+   "funcion": "clap"
+  },
+  {
+   "id": "meleeviewer-1-coin",
+   "nombre": "Moneda (coin) · yoshi 1",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-27_yoshi_es_un_vector/cancion/cancion.js",
+   "funcion": "coin"
+  },
+  {
+   "id": "meleeviewer-1-crash",
+   "nombre": "Crash · yoshi 1",
+   "familia": "idiófono · platillos",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-27_yoshi_es_un_vector/cancion/cancion.js",
+   "funcion": "crash"
+  },
+  {
+   "id": "meleeviewer-1-ep",
+   "nombre": "Piano eléctrico · yoshi 1",
+   "familia": "electrófono · piano eléctrico",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-27_yoshi_es_un_vector/cancion/cancion.js",
+   "funcion": "ep"
+  },
+  {
+   "id": "meleeviewer-1-glock",
+   "nombre": "Glockenspiel · yoshi 1",
+   "familia": "idiófono · láminas",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-27_yoshi_es_un_vector/cancion/cancion.js",
+   "funcion": "glock"
+  },
+  {
+   "id": "meleeviewer-1-hat",
+   "nombre": "Hat · yoshi 1",
+   "familia": "idiófono · platillos",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-27_yoshi_es_un_vector/cancion/cancion.js",
+   "funcion": "hat"
+  },
+  {
+   "id": "meleeviewer-1-kick",
+   "nombre": "Bombo · yoshi 1",
+   "familia": "membranófono · batería",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-27_yoshi_es_un_vector/cancion/cancion.js",
+   "funcion": "kick"
+  },
+  {
+   "id": "meleeviewer-1-riser",
+   "nombre": "Riser · yoshi 1",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-27_yoshi_es_un_vector/cancion/cancion.js",
+   "funcion": "riser"
+  },
+  {
+   "id": "meleeviewer-1-shaker",
+   "nombre": "Shaker · yoshi 1",
+   "familia": "idiófono · sacudido",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-27_yoshi_es_un_vector/cancion/cancion.js",
+   "funcion": "shaker"
+  },
+  {
+   "id": "meleeviewer-1-snare",
+   "nombre": "Caja · yoshi 1",
+   "familia": "membranófono · batería",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-27_yoshi_es_un_vector/cancion/cancion.js",
+   "funcion": "snare"
+  },
+  {
+   "id": "meleeviewer-10-bajo",
+   "nombre": "Bajo · yoshi 10 la mitocondria es un pokemon",
+   "familia": "electrófono · bajo",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_10_la_mitocondria_es_un_pokemon/cancion.js",
+   "funcion": "bajo"
+  },
+  {
+   "id": "meleeviewer-10-cuerda",
+   "nombre": "Cuerda · yoshi 10 la mitocondria es un pokemon",
+   "familia": "cordófono",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_10_la_mitocondria_es_un_pokemon/cancion.js",
+   "funcion": "cuerda"
+  },
+  {
+   "id": "meleeviewer-10-cuerdas",
+   "nombre": "Cuerdas · yoshi 10 la mitocondria es un pokemon",
+   "familia": "cordófono · frotado",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_10_la_mitocondria_es_un_pokemon/cancion.js",
+   "funcion": "cuerdas"
+  },
+  {
+   "id": "meleeviewer-10-ep",
+   "nombre": "Piano eléctrico · yoshi 10 la mitocondria es un pokemon",
+   "familia": "electrófono · piano eléctrico",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_10_la_mitocondria_es_un_pokemon/cancion.js",
+   "funcion": "ep"
+  },
+  {
+   "id": "meleeviewer-10-glock",
+   "nombre": "Glockenspiel · yoshi 10 la mitocondria es un pokemon",
+   "familia": "idiófono · láminas",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_10_la_mitocondria_es_un_pokemon/cancion.js",
+   "funcion": "glock"
+  },
+  {
+   "id": "meleeviewer-10-metal",
+   "nombre": "Metal · yoshi 10 la mitocondria es un pokemon",
+   "familia": "idiófono · metal",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_10_la_mitocondria_es_un_pokemon/cancion.js",
+   "funcion": "metal"
+  },
+  {
+   "id": "meleeviewer-10-pluck",
+   "nombre": "Pluck · yoshi 10 la mitocondria es un pokemon",
+   "familia": "cordófono · pulsado",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_10_la_mitocondria_es_un_pokemon/cancion.js",
+   "funcion": "pluck"
+  },
+  {
+   "id": "meleeviewer-10-rasgueo",
+   "nombre": "Rasgueo · yoshi 10 la mitocondria es un pokemon",
+   "familia": "cordófono · rasgueado",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_10_la_mitocondria_es_un_pokemon/cancion.js",
+   "funcion": "rasgueo"
+  },
+  {
+   "id": "meleeviewer-10-riser",
+   "nombre": "Riser · yoshi 10 la mitocondria es un pokemon",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_10_la_mitocondria_es_un_pokemon/cancion.js",
+   "funcion": "riser"
+  },
+  {
+   "id": "meleeviewer-11-arpa",
+   "nombre": "Arpa · yoshi 11 que dice el zorro",
+   "familia": "cordófono · arpa",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_11_que_dice_el_zorro/cancion.js",
+   "funcion": "arpa"
+  },
+  {
+   "id": "meleeviewer-11-bajo",
+   "nombre": "Bajo · yoshi 11 que dice el zorro",
+   "familia": "electrófono · bajo",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_11_que_dice_el_zorro/cancion.js",
+   "funcion": "bajo"
+  },
+  {
+   "id": "meleeviewer-11-campana",
+   "nombre": "Campana · yoshi 11 que dice el zorro",
+   "familia": "idiófono · campana",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_11_que_dice_el_zorro/cancion.js",
+   "funcion": "campana"
+  },
+  {
+   "id": "meleeviewer-11-colchon",
+   "nombre": "Colchón · yoshi 11 que dice el zorro",
+   "familia": "electrófono · colchón",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_11_que_dice_el_zorro/cancion.js",
+   "funcion": "colchon"
+  },
+  {
+   "id": "meleeviewer-11-cuerdas",
+   "nombre": "Cuerdas · yoshi 11 que dice el zorro",
+   "familia": "cordófono · frotado",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_11_que_dice_el_zorro/cancion.js",
+   "funcion": "cuerdas"
+  },
+  {
+   "id": "meleeviewer-11-piano",
+   "nombre": "Piano · yoshi 11 que dice el zorro",
+   "familia": "cordófono · piano",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_11_que_dice_el_zorro/cancion.js",
+   "funcion": "piano"
+  },
+  {
+   "id": "meleeviewer-11-soplo",
+   "nombre": "Soplo · yoshi 11 que dice el zorro",
+   "familia": "aerófono · soplo",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_11_que_dice_el_zorro/cancion.js",
+   "funcion": "soplo"
+  },
+  {
+   "id": "meleeviewer-12-bajo",
+   "nombre": "Bajo · yoshi 12 popo esta solo",
+   "familia": "electrófono · bajo",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-30_yoshi_es_un_vector_12_popo_esta_solo/cancion.js",
+   "funcion": "bajo"
+  },
+  {
+   "id": "meleeviewer-12-colchon",
+   "nombre": "Colchón · yoshi 12 popo esta solo",
+   "familia": "electrófono · colchón",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-30_yoshi_es_un_vector_12_popo_esta_solo/cancion.js",
+   "funcion": "colchon"
+  },
+  {
+   "id": "meleeviewer-12-hielo",
+   "nombre": "Hielo · yoshi 12 popo esta solo",
+   "familia": "idiófono · campana",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-30_yoshi_es_un_vector_12_popo_esta_solo/cancion.js",
+   "funcion": "hielo"
+  },
+  {
+   "id": "meleeviewer-12-marimba",
+   "nombre": "Marimba · yoshi 12 popo esta solo",
+   "familia": "idiófono · barras de madera",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-30_yoshi_es_un_vector_12_popo_esta_solo/cancion.js",
+   "funcion": "marimba"
+  },
+  {
+   "id": "meleeviewer-13-acordeon",
+   "nombre": "Acordeón musette · yoshi 13 sonidero",
+   "familia": "aerófono · lengüetas libres",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-30_yoshi_es_un_vector_13_sonidero/cancion.js",
+   "funcion": "acordeon"
+  },
+  {
+   "id": "meleeviewer-13-bajo",
+   "nombre": "Bajo · yoshi 13 sonidero",
+   "familia": "electrófono · bajo",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-30_yoshi_es_un_vector_13_sonidero/cancion.js",
+   "funcion": "bajo"
+  },
+  {
+   "id": "meleeviewer-13-campana",
+   "nombre": "Campana · yoshi 13 sonidero",
+   "familia": "idiófono · campana",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-30_yoshi_es_un_vector_13_sonidero/cancion.js",
+   "funcion": "campana"
+  },
+  {
+   "id": "meleeviewer-13-conga",
+   "nombre": "Conga · yoshi 13 sonidero",
+   "familia": "membranófono · conga",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-30_yoshi_es_un_vector_13_sonidero/cancion.js",
+   "funcion": "conga"
+  },
+  {
+   "id": "meleeviewer-13-guiro",
+   "nombre": "Güiro · yoshi 13 sonidero",
+   "familia": "idiófono · raspado",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-30_yoshi_es_un_vector_13_sonidero/cancion.js",
+   "funcion": "guiro"
+  },
+  {
+   "id": "meleeviewer-13-riser",
+   "nombre": "Riser · yoshi 13 sonidero",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-30_yoshi_es_un_vector_13_sonidero/cancion.js",
+   "funcion": "riser"
+  },
+  {
+   "id": "meleeviewer-13-sirena",
+   "nombre": "Sirena · yoshi 13 sonidero",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-30_yoshi_es_un_vector_13_sonidero/cancion.js",
+   "funcion": "sirena"
+  },
+  {
+   "id": "meleeviewer-14-arpa",
+   "nombre": "Arpa · yoshi 14 buenas noches",
+   "familia": "cordófono · arpa",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_14_buenas_noches/cancion.js",
+   "funcion": "arpa"
+  },
+  {
+   "id": "meleeviewer-14-bajo",
+   "nombre": "Bajo · yoshi 14 buenas noches",
+   "familia": "electrófono · bajo",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_14_buenas_noches/cancion.js",
+   "funcion": "bajo"
+  },
+  {
+   "id": "meleeviewer-14-cajita",
+   "nombre": "Cajita de música · yoshi 14 buenas noches",
+   "familia": "idiófono · lengüetas",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_14_buenas_noches/cancion.js",
+   "funcion": "cajita"
+  },
+  {
+   "id": "meleeviewer-14-celesta",
+   "nombre": "Celesta · yoshi 14 buenas noches",
+   "familia": "idiófono · láminas",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_14_buenas_noches/cancion.js",
+   "funcion": "celesta"
+  },
+  {
+   "id": "meleeviewer-14-cuerdas",
+   "nombre": "Cuerdas · yoshi 14 buenas noches",
+   "familia": "cordófono · frotado",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_14_buenas_noches/cancion.js",
+   "funcion": "cuerdas"
+  },
+  {
+   "id": "meleeviewer-14-plumon",
+   "nombre": "Plumón · yoshi 14 buenas noches",
+   "familia": "electrófono · colchón",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_14_buenas_noches/cancion.js",
+   "funcion": "plumon"
+  },
+  {
+   "id": "meleeviewer-15-bajo",
+   "nombre": "Bajo · yoshi 15 una mas",
+   "familia": "electrófono · bajo",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_15_una_mas/cancion.js",
+   "funcion": "bajo"
+  },
+  {
+   "id": "meleeviewer-15-campanita",
+   "nombre": "Campanita · yoshi 15 una mas",
+   "familia": "idiófono · campana",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_15_una_mas/cancion.js",
+   "funcion": "campanita"
+  },
+  {
+   "id": "meleeviewer-15-cuadrada",
+   "nombre": "Cuadrada · yoshi 15 una mas",
+   "familia": "electrófono · sinte",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_15_una_mas/cancion.js",
+   "funcion": "cuadrada"
+  },
+  {
+   "id": "meleeviewer-15-cuerda",
+   "nombre": "Cuerda · yoshi 15 una mas",
+   "familia": "cordófono",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_15_una_mas/cancion.js",
+   "funcion": "cuerda"
+  },
+  {
+   "id": "meleeviewer-15-cuerdas",
+   "nombre": "Cuerdas · yoshi 15 una mas",
+   "familia": "cordófono · frotado",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_15_una_mas/cancion.js",
+   "funcion": "cuerdas"
+  },
+  {
+   "id": "meleeviewer-15-ep",
+   "nombre": "Piano eléctrico · yoshi 15 una mas",
+   "familia": "electrófono · piano eléctrico",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_15_una_mas/cancion.js",
+   "funcion": "ep"
+  },
+  {
+   "id": "meleeviewer-15-metal",
+   "nombre": "Metal · yoshi 15 una mas",
+   "familia": "idiófono · metal",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_15_una_mas/cancion.js",
+   "funcion": "metal"
+  },
+  {
+   "id": "meleeviewer-15-riser",
+   "nombre": "Riser · yoshi 15 una mas",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_15_una_mas/cancion.js",
+   "funcion": "riser"
+  },
+  {
+   "id": "meleeviewer-16-bajo",
+   "nombre": "Bajo · yoshi 16 jpop",
+   "familia": "electrófono · bajo",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-09_yoshi_es_un_vector_16_jpop/cancion.js",
+   "funcion": "bajo"
+  },
+  {
+   "id": "meleeviewer-16-cuerda",
+   "nombre": "Cuerda · yoshi 16 jpop",
+   "familia": "cordófono",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-09_yoshi_es_un_vector_16_jpop/cancion.js",
+   "funcion": "cuerda"
+  },
+  {
+   "id": "meleeviewer-16-cuerdas",
+   "nombre": "Cuerdas · yoshi 16 jpop",
+   "familia": "cordófono · frotado",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-09_yoshi_es_un_vector_16_jpop/cancion.js",
+   "funcion": "cuerdas"
+  },
+  {
+   "id": "meleeviewer-16-glock",
+   "nombre": "Glockenspiel · yoshi 16 jpop",
+   "familia": "idiófono · láminas",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-09_yoshi_es_un_vector_16_jpop/cancion.js",
+   "funcion": "glock"
+  },
+  {
+   "id": "meleeviewer-16-piano",
+   "nombre": "Piano · yoshi 16 jpop",
+   "familia": "cordófono · piano",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-09_yoshi_es_un_vector_16_jpop/cancion.js",
+   "funcion": "piano"
+  },
+  {
+   "id": "meleeviewer-16-rasgueo",
+   "nombre": "Rasgueo · yoshi 16 jpop",
+   "familia": "cordófono · rasgueado",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-09_yoshi_es_un_vector_16_jpop/cancion.js",
+   "funcion": "rasgueo"
+  },
+  {
+   "id": "meleeviewer-16-riser",
+   "nombre": "Riser · yoshi 16 jpop",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-09_yoshi_es_un_vector_16_jpop/cancion.js",
+   "funcion": "riser"
+  },
+  {
+   "id": "meleeviewer-16-sinte",
+   "nombre": "Sinte · yoshi 16 jpop",
+   "familia": "electrófono · sinte",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-10-09_yoshi_es_un_vector_16_jpop/cancion.js",
+   "funcion": "sinte"
+  },
+  {
+   "id": "meleeviewer-2-bass",
+   "nombre": "Bajo · yoshi 2 modo suspension",
+   "familia": "electrófono · bajo",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_2_modo_suspension/cancion.js",
+   "funcion": "bass"
+  },
+  {
+   "id": "meleeviewer-2-brass",
+   "nombre": "Metales · yoshi 2 modo suspension",
+   "familia": "aerófono · metales",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_2_modo_suspension/cancion.js",
+   "funcion": "brass"
+  },
+  {
+   "id": "meleeviewer-2-clap",
+   "nombre": "Palmas · yoshi 2 modo suspension",
+   "familia": "idiófono · palmas",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_2_modo_suspension/cancion.js",
+   "funcion": "clap"
+  },
+  {
+   "id": "meleeviewer-2-coin",
+   "nombre": "Moneda (coin) · yoshi 2 modo suspension",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_2_modo_suspension/cancion.js",
+   "funcion": "coin"
+  },
+  {
+   "id": "meleeviewer-2-crash",
+   "nombre": "Crash · yoshi 2 modo suspension",
+   "familia": "idiófono · platillos",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_2_modo_suspension/cancion.js",
+   "funcion": "crash"
+  },
+  {
+   "id": "meleeviewer-2-dormir",
+   "nombre": "Dormir · yoshi 2 modo suspension",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_2_modo_suspension/cancion.js",
+   "funcion": "dormir"
+  },
+  {
+   "id": "meleeviewer-2-ep",
+   "nombre": "Piano eléctrico · yoshi 2 modo suspension",
+   "familia": "electrófono · piano eléctrico",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_2_modo_suspension/cancion.js",
+   "funcion": "ep"
+  },
+  {
+   "id": "meleeviewer-2-glock",
+   "nombre": "Glockenspiel · yoshi 2 modo suspension",
+   "familia": "idiófono · láminas",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_2_modo_suspension/cancion.js",
+   "funcion": "glock"
+  },
+  {
+   "id": "meleeviewer-2-hat",
+   "nombre": "Hat · yoshi 2 modo suspension",
+   "familia": "idiófono · platillos",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_2_modo_suspension/cancion.js",
+   "funcion": "hat"
+  },
+  {
+   "id": "meleeviewer-2-kick",
+   "nombre": "Bombo · yoshi 2 modo suspension",
+   "familia": "membranófono · batería",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_2_modo_suspension/cancion.js",
+   "funcion": "kick"
+  },
+  {
+   "id": "meleeviewer-2-rim",
+   "nombre": "Aro · yoshi 2 modo suspension",
+   "familia": "membranófono · batería",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_2_modo_suspension/cancion.js",
+   "funcion": "rim"
+  },
+  {
+   "id": "meleeviewer-2-riser",
+   "nombre": "Riser · yoshi 2 modo suspension",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_2_modo_suspension/cancion.js",
+   "funcion": "riser"
+  },
+  {
+   "id": "meleeviewer-2-shaker",
+   "nombre": "Shaker · yoshi 2 modo suspension",
+   "familia": "idiófono · sacudido",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_2_modo_suspension/cancion.js",
+   "funcion": "shaker"
+  },
+  {
+   "id": "meleeviewer-2-snare",
+   "nombre": "Caja · yoshi 2 modo suspension",
+   "familia": "membranófono · batería",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_2_modo_suspension/cancion.js",
+   "funcion": "snare"
+  },
+  {
+   "id": "meleeviewer-3-bass",
+   "nombre": "Bajo · yoshi 3 kirby",
+   "familia": "electrófono · bajo",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+   "funcion": "bass"
+  },
+  {
+   "id": "meleeviewer-3-bite",
+   "nombre": "Mordida · yoshi 3 kirby",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+   "funcion": "bite"
+  },
+  {
+   "id": "meleeviewer-3-boom",
+   "nombre": "Boom · yoshi 3 kirby",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+   "funcion": "boom"
+  },
+  {
+   "id": "meleeviewer-3-brass",
+   "nombre": "Metales · yoshi 3 kirby",
+   "familia": "aerófono · metales",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+   "funcion": "brass"
+  },
+  {
+   "id": "meleeviewer-3-clap",
+   "nombre": "Palmas · yoshi 3 kirby",
+   "familia": "idiófono · palmas",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+   "funcion": "clap"
+  },
+  {
+   "id": "meleeviewer-3-coin",
+   "nombre": "Moneda (coin) · yoshi 3 kirby",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+   "funcion": "coin"
+  },
+  {
+   "id": "meleeviewer-3-crash",
+   "nombre": "Crash · yoshi 3 kirby",
+   "familia": "idiófono · platillos",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+   "funcion": "crash"
+  },
+  {
+   "id": "meleeviewer-3-ep",
+   "nombre": "Piano eléctrico · yoshi 3 kirby",
+   "familia": "electrófono · piano eléctrico",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+   "funcion": "ep"
+  },
+  {
+   "id": "meleeviewer-3-glock",
+   "nombre": "Glockenspiel · yoshi 3 kirby",
+   "familia": "idiófono · láminas",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+   "funcion": "glock"
+  },
+  {
+   "id": "meleeviewer-3-hat",
+   "nombre": "Hat · yoshi 3 kirby",
+   "familia": "idiófono · platillos",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+   "funcion": "hat"
+  },
+  {
+   "id": "meleeviewer-3-kick",
+   "nombre": "Bombo · yoshi 3 kirby",
+   "familia": "membranófono · batería",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+   "funcion": "kick"
+  },
+  {
+   "id": "meleeviewer-3-krar",
+   "nombre": "Krar · yoshi 3 kirby",
+   "familia": "cordófono · lira (Etiopía)",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+   "funcion": "krar"
+  },
+  {
+   "id": "meleeviewer-3-masenqo",
+   "nombre": "Masenqo · yoshi 3 kirby",
+   "familia": "cordófono · frotado (Etiopía)",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+   "funcion": "masenqo"
+  },
+  {
+   "id": "meleeviewer-3-pad",
+   "nombre": "Pad · yoshi 3 kirby",
+   "familia": "electrófono · colchón",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+   "funcion": "pad"
+  },
+  {
+   "id": "meleeviewer-3-riser",
+   "nombre": "Riser · yoshi 3 kirby",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+   "funcion": "riser"
+  },
+  {
+   "id": "meleeviewer-3-shaker",
+   "nombre": "Shaker · yoshi 3 kirby",
+   "familia": "idiófono · sacudido",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+   "funcion": "shaker"
+  },
+  {
+   "id": "meleeviewer-3-snare",
+   "nombre": "Caja · yoshi 3 kirby",
+   "familia": "membranófono · batería",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+   "funcion": "snare"
+  },
+  {
+   "id": "meleeviewer-3-vibes",
+   "nombre": "Vibráfono · yoshi 3 kirby",
+   "familia": "idiófono · láminas",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+   "funcion": "vibes"
+  },
+  {
+   "id": "meleeviewer-3-washint",
+   "nombre": "Washint · yoshi 3 kirby",
+   "familia": "aerófono · flauta (Etiopía)",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+   "funcion": "washint"
+  },
+  {
+   "id": "meleeviewer-4-bass",
+   "nombre": "Bajo · yoshi 4 cuaternion",
+   "familia": "electrófono · bajo",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_4_cuaternion/cancion.js",
+   "funcion": "bass"
+  },
+  {
+   "id": "meleeviewer-4-cajita",
+   "nombre": "Cajita de música · yoshi 4 cuaternion",
+   "familia": "idiófono · lengüetas",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_4_cuaternion/cancion.js",
+   "funcion": "cajita"
+  },
+  {
+   "id": "meleeviewer-4-ep",
+   "nombre": "Piano eléctrico · yoshi 4 cuaternion",
+   "familia": "electrófono · piano eléctrico",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_4_cuaternion/cancion.js",
+   "funcion": "ep"
+  },
+  {
+   "id": "meleeviewer-4-flauta",
+   "nombre": "Flauta · yoshi 4 cuaternion",
+   "familia": "aerófono · flauta",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_4_cuaternion/cancion.js",
+   "funcion": "flauta"
+  },
+  {
+   "id": "meleeviewer-4-pad",
+   "nombre": "Pad · yoshi 4 cuaternion",
+   "familia": "electrófono · colchón",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_4_cuaternion/cancion.js",
+   "funcion": "pad"
+  },
+  {
+   "id": "meleeviewer-4-vibes",
+   "nombre": "Vibráfono · yoshi 4 cuaternion",
+   "familia": "idiófono · láminas",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_4_cuaternion/cancion.js",
+   "funcion": "vibes"
+  },
+  {
+   "id": "meleeviewer-5-bass",
+   "nombre": "Bajo · yoshi 5 la ley canta",
+   "familia": "electrófono · bajo",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_5_la_ley_canta/cancion.js",
+   "funcion": "bass"
+  },
+  {
+   "id": "meleeviewer-5-ep",
+   "nombre": "Piano eléctrico · yoshi 5 la ley canta",
+   "familia": "electrófono · piano eléctrico",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_5_la_ley_canta/cancion.js",
+   "funcion": "ep"
+  },
+  {
+   "id": "meleeviewer-5-pad",
+   "nombre": "Pad · yoshi 5 la ley canta",
+   "familia": "electrófono · colchón",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_5_la_ley_canta/cancion.js",
+   "funcion": "pad"
+  },
+  {
+   "id": "meleeviewer-5-vibes",
+   "nombre": "Vibráfono · yoshi 5 la ley canta",
+   "familia": "idiófono · láminas",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_5_la_ley_canta/cancion.js",
+   "funcion": "vibes"
+  },
+  {
+   "id": "meleeviewer-7-explota",
+   "nombre": "Explosión · yoshi 7 nadie canta",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_7_nadie_canta/cancion.js",
+   "funcion": "explota"
+  },
+  {
+   "id": "meleeviewer-7-pokebola",
+   "nombre": "Pokébola · yoshi 7 nadie canta",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_7_nadie_canta/cancion.js",
+   "funcion": "pokebola"
+  },
+  {
+   "id": "meleeviewer-8-arp",
+   "nombre": "Arpegiador · yoshi 8 falcon drift",
+   "familia": "electrófono · sinte",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_8_falcon_drift/cancion.js",
+   "funcion": "arp"
+  },
+  {
+   "id": "meleeviewer-8-basso",
+   "nombre": "Bajo · yoshi 8 falcon drift",
+   "familia": "electrófono · bajo",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_8_falcon_drift/cancion.js",
+   "funcion": "bassO"
+  },
+  {
+   "id": "meleeviewer-8-derrape",
+   "nombre": "Derrape · yoshi 8 falcon drift",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_8_falcon_drift/cancion.js",
+   "funcion": "derrape"
+  },
+  {
+   "id": "meleeviewer-8-impact",
+   "nombre": "Impacto · yoshi 8 falcon drift",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_8_falcon_drift/cancion.js",
+   "funcion": "impact"
+  },
+  {
+   "id": "meleeviewer-8-pad",
+   "nombre": "Pad · yoshi 8 falcon drift",
+   "familia": "electrófono · colchón",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_8_falcon_drift/cancion.js",
+   "funcion": "pad"
+  },
+  {
+   "id": "meleeviewer-8-riser",
+   "nombre": "Riser · yoshi 8 falcon drift",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_8_falcon_drift/cancion.js",
+   "funcion": "riser"
+  },
+  {
+   "id": "meleeviewer-8-saw7",
+   "nombre": "Sierra (séptima) · yoshi 8 falcon drift",
+   "familia": "electrófono · sinte",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_8_falcon_drift/cancion.js",
+   "funcion": "saw7"
+  },
+  {
+   "id": "meleeviewer-8-stab",
+   "nombre": "Stab · yoshi 8 falcon drift",
+   "familia": "electrófono · sinte",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_8_falcon_drift/cancion.js",
+   "funcion": "stab"
+  },
+  {
+   "id": "meleeviewer-8-sub",
+   "nombre": "Sub · yoshi 8 falcon drift",
+   "familia": "electrófono · bajo",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_8_falcon_drift/cancion.js",
+   "funcion": "sub"
+  },
+  {
+   "id": "meleeviewer-9-arp",
+   "nombre": "Arpegiador · yoshi 9 coro de gritos",
+   "familia": "electrófono · sinte",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_9_coro_de_gritos/cancion.js",
+   "funcion": "arp"
+  },
+  {
+   "id": "meleeviewer-9-impact",
+   "nombre": "Impacto · yoshi 9 coro de gritos",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_9_coro_de_gritos/cancion.js",
+   "funcion": "impact"
+  },
+  {
+   "id": "meleeviewer-9-pad",
+   "nombre": "Pad · yoshi 9 coro de gritos",
+   "familia": "electrófono · colchón",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_9_coro_de_gritos/cancion.js",
+   "funcion": "pad"
+  },
+  {
+   "id": "meleeviewer-9-reverso",
+   "nombre": "Reverso · yoshi 9 coro de gritos",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_9_coro_de_gritos/cancion.js",
+   "funcion": "reverso"
+  },
+  {
+   "id": "meleeviewer-9-riser",
+   "nombre": "Riser · yoshi 9 coro de gritos",
+   "familia": "efecto",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_9_coro_de_gritos/cancion.js",
+   "funcion": "riser"
+  },
+  {
+   "id": "meleeviewer-9-saw7",
+   "nombre": "Sierra (séptima) · yoshi 9 coro de gritos",
+   "familia": "electrófono · sinte",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_9_coro_de_gritos/cancion.js",
+   "funcion": "saw7"
+  },
+  {
+   "id": "meleeviewer-9-sub",
+   "nombre": "Sub · yoshi 9 coro de gritos",
+   "familia": "electrófono · bajo",
+   "proyecto": "meleeviewer",
+   "estado": "suena",
+   "motor": "meleeviewer",
+   "vias": "navegador (escenario de la canción)",
+   "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_9_coro_de_gritos/cancion.js",
+   "funcion": "sub"
+  },
+  {
+   "id": "objeto-agua-burbujeo",
+   "nombre": "Agua: burbujeo",
+   "familia": "agua (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/agua.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-barra",
+   "nombre": "Barra (objeto)",
+   "familia": "idiófono · barra (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/objeto.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-chelo",
+   "nombre": "Chelo (objeto)",
+   "familia": "cordófono · frotado (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/cuerda.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-clarinete",
+   "nombre": "Clarinete",
+   "familia": "aerófono · caña (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/clarinete.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-contrabajo",
+   "nombre": "Contrabajo (objeto)",
+   "familia": "cordófono · frotado (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/cuerda.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-flauta",
+   "nombre": "Flauta (objeto)",
+   "familia": "aerófono · chorro (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/objeto.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-gong-dos-alturas",
+   "nombre": "Gong de dos alturas",
+   "familia": "idiófono · gong (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/gong.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-pajaro-silbido",
+   "nombre": "Pájaro: silbido (objeto)",
+   "familia": "aves · siringe (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/pajaro.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-pajaro-trino",
+   "nombre": "Pájaro: trino (objeto)",
+   "familia": "aves · siringe (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/pajaro.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-piano-goma",
+   "nombre": "Piano preparado: goma",
+   "familia": "cordófono · piano (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/piano.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-piano-moneda",
+   "nombre": "Piano preparado: moneda",
+   "familia": "cordófono · piano (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/piano.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-piano-papel",
+   "nombre": "Piano preparado: papel",
+   "familia": "cordófono · piano (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/piano.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-piano-tornillo",
+   "nombre": "Piano preparado: tornillo",
+   "familia": "cordófono · piano (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/piano.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-piano",
+   "nombre": "Piano (objeto)",
+   "familia": "cordófono · piano (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/piano.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-saxofon",
+   "nombre": "Saxofón",
+   "familia": "aerófono · caña (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/objeto.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-tambor-que-habla",
+   "nombre": "Tambor que habla",
+   "familia": "membranófono · tambor parlante (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/tambor.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-tamtam",
+   "nombre": "Tam-tam",
+   "familia": "idiófono · gong (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/gong.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-trombon-plunger",
+   "nombre": "Trombón con plunger",
+   "familia": "aerófono · metal con sordina (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/metal.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-trombon",
+   "nombre": "Trombón",
+   "familia": "aerófono · metal (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/metal.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-trompeta",
+   "nombre": "Trompeta",
+   "familia": "aerófono · metal (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/metal.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-viola",
+   "nombre": "Viola (objeto)",
+   "familia": "cordófono · frotado (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/cuerda.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-violin",
+   "nombre": "Violín (objeto)",
+   "familia": "cordófono · frotado (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/cuerda.js",
+   "funcion": null
+  },
+  {
+   "id": "objeto-waterphone",
+   "nombre": "Waterphone",
+   "familia": "idiófono · varas con agua (modelado físico)",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "objeto",
+   "vias": "node · navegador (copia del código)",
+   "origen": "research/rejilla/objetos/motor/waterphone.js",
+   "funcion": null
+  },
+  {
+   "id": "receta-cuerda-frotada",
+   "nombre": "Cuerda frotada",
+   "familia": "cordófono · frotado (receta)",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "receta",
+   "vias": "web",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "receta-gong-de-agua",
+   "nombre": "Gong de agua",
+   "familia": "idiófono · gong (receta)",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "receta",
+   "vias": "web",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "receta-organo-roto",
+   "nombre": "Órgano roto",
+   "familia": "aerófono · órgano (receta)",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "receta",
+   "vias": "web",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "receta-soplo",
+   "nombre": "Soplo",
+   "familia": "aerófono · soplo (receta)",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "receta",
+   "vias": "web",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "receta-violin-de-vidrio",
+   "nombre": "Violín de vidrio",
+   "familia": "cordófono · frotado (receta)",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "receta",
+   "vias": "web",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "rejilla-aurora-helecho-oscuro",
+   "nombre": "helecho oscuro (aurora)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/aurora/instrumentos.py",
+   "funcion": "helecho_oscuro"
+  },
+  {
+   "id": "rejilla-aurora-helecho",
+   "nombre": "helecho (aurora)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/aurora/instrumentos.py",
+   "funcion": "helecho"
+  },
+  {
+   "id": "rejilla-aurora-kalimba",
+   "nombre": "kalimba (aurora)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/aurora/instrumentos.py",
+   "funcion": "kalimba"
+  },
+  {
+   "id": "rejilla-aurora-organo",
+   "nombre": "organo (aurora)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/aurora/instrumentos.py",
+   "funcion": "organo"
+  },
+  {
+   "id": "rejilla-aurora-pared-espectral",
+   "nombre": "pared espectral (aurora)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/aurora/instrumentos.py",
+   "funcion": "pared_espectral"
+  },
+  {
+   "id": "rejilla-aurora-placa",
+   "nombre": "placa (aurora)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/aurora/instrumentos.py",
+   "funcion": "placa"
+  },
+  {
+   "id": "rejilla-aurora-polvo",
+   "nombre": "polvo (aurora)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/aurora/instrumentos.py",
+   "funcion": "polvo"
+  },
+  {
+   "id": "rejilla-aurora-preparado",
+   "nombre": "preparado (aurora)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/aurora/instrumentos.py",
+   "funcion": "preparado"
+  },
+  {
+   "id": "rejilla-aurora-subbombo",
+   "nombre": "subbombo (aurora)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/aurora/instrumentos.py",
+   "funcion": "subbombo"
+  },
+  {
+   "id": "rejilla-aurora-vidrio",
+   "nombre": "vidrio (aurora)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/aurora/instrumentos.py",
+   "funcion": "vidrio"
+  },
+  {
+   "id": "rejilla-esquinas-bombo",
+   "nombre": "bombo (esquinas)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/esquinas.py",
+   "funcion": "bombo"
+  },
+  {
+   "id": "rejilla-esquinas-campana",
+   "nombre": "campana (esquinas)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/esquinas.py",
+   "funcion": "campana"
+  },
+  {
+   "id": "rejilla-esquinas-clap",
+   "nombre": "clap (esquinas)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/esquinas.py",
+   "funcion": "clap"
+  },
+  {
+   "id": "rejilla-esquinas-fretless",
+   "nombre": "fretless (esquinas)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/esquinas.py",
+   "funcion": "fretless"
+  },
+  {
+   "id": "rejilla-esquinas-hat",
+   "nombre": "hat (esquinas)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/esquinas.py",
+   "funcion": "hat"
+  },
+  {
+   "id": "rejilla-esquinas-lenio",
+   "nombre": "lenio (esquinas)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/esquinas.py",
+   "funcion": "lenio"
+  },
+  {
+   "id": "rejilla-esquinas-pad-azucar",
+   "nombre": "pad azucar (esquinas)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/esquinas.py",
+   "funcion": "pad_azucar"
+  },
+  {
+   "id": "rejilla-esquinas-piano",
+   "nombre": "piano (esquinas)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/esquinas.py",
+   "funcion": "piano"
+  },
+  {
+   "id": "rejilla-esquinas-sub808",
+   "nombre": "sub808 (esquinas)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/esquinas.py",
+   "funcion": "sub808"
+  },
+  {
+   "id": "rejilla-esquinas-tin",
+   "nombre": "tin (esquinas)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/esquinas.py",
+   "funcion": "tin"
+  },
+  {
+   "id": "rejilla-esquinas-zawinul",
+   "nombre": "zawinul (esquinas)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/esquinas.py",
+   "funcion": "zawinul"
+  },
+  {
+   "id": "rejilla-musica-bajo",
+   "nombre": "bajo (musica)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/musica.py",
+   "funcion": "bajo"
+  },
+  {
+   "id": "rejilla-musica-bombo",
+   "nombre": "bombo (musica)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/musica.py",
+   "funcion": "bombo"
+  },
+  {
+   "id": "rejilla-musica-caja",
+   "nombre": "caja (musica)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/musica.py",
+   "funcion": "caja"
+  },
+  {
+   "id": "rejilla-musica-campana",
+   "nombre": "campana (musica)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/musica.py",
+   "funcion": "campana"
+  },
+  {
+   "id": "rejilla-musica-hat",
+   "nombre": "hat (musica)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/musica.py",
+   "funcion": "hat"
+  },
+  {
+   "id": "rejilla-musica-pad",
+   "nombre": "pad (musica)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/musica.py",
+   "funcion": "pad"
+  },
+  {
+   "id": "rejilla-musica-rhodes",
+   "nombre": "rhodes (musica)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/musica.py",
+   "funcion": "rhodes"
+  },
+  {
+   "id": "rejilla-musica-voz",
+   "nombre": "voz (musica)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/musica.py",
+   "funcion": "voz"
+  },
+  {
+   "id": "rejilla-pixeles-bajo-dedos",
+   "nombre": "bajo dedos (pixeles)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/pixeles/instrumentos.py",
+   "funcion": "bajo_dedos"
+  },
+  {
+   "id": "rejilla-pixeles-bombo80",
+   "nombre": "bombo80 (pixeles)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/pixeles/instrumentos.py",
+   "funcion": "bombo80"
+  },
+  {
+   "id": "rejilla-pixeles-caja80",
+   "nombre": "caja80 (pixeles)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/pixeles/instrumentos.py",
+   "funcion": "caja80"
+  },
+  {
+   "id": "rejilla-pixeles-guitarra-cortada",
+   "nombre": "guitarra cortada (pixeles)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/pixeles/instrumentos.py",
+   "funcion": "guitarra_cortada"
+  },
+  {
+   "id": "rejilla-pixeles-hat80",
+   "nombre": "hat80 (pixeles)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/pixeles/instrumentos.py",
+   "funcion": "hat80"
+  },
+  {
+   "id": "rejilla-pixeles-organo",
+   "nombre": "organo (pixeles)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/pixeles/instrumentos.py",
+   "funcion": "organo"
+  },
+  {
+   "id": "rejilla-pixeles-pared-espectral",
+   "nombre": "pared espectral (pixeles)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/pixeles/instrumentos.py",
+   "funcion": "pared_espectral"
+  },
+  {
+   "id": "rejilla-pixeles-placa",
+   "nombre": "placa (pixeles)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/pixeles/instrumentos.py",
+   "funcion": "placa"
+  },
+  {
+   "id": "rejilla-pixeles-rhodes",
+   "nombre": "rhodes (pixeles)",
+   "familia": "rejilla · modos capturados",
+   "proyecto": "rejilla",
+   "estado": "suena",
+   "motor": "modal",
+   "vias": "rejilla (modos) · numpy",
+   "origen": "research/rejilla/pixeles/instrumentos.py",
+   "funcion": "rhodes"
+  },
+  {
+   "id": "saron",
+   "nombre": "Saron",
+   "familia": "idiófono · barras de bronce (gamelán)",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "golpe",
+   "vias": "web · rejilla (modos) · gemelo",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "steelpan",
+   "nombre": "Steel pan",
+   "familia": "idiófono · tambor de acero",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "golpe",
+   "vias": "web · rejilla (modos) · gemelo",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "teponaztli",
+   "nombre": "Teponaztli",
+   "familia": "idiófono · tambor de hendidura",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "golpe",
+   "vias": "web · rejilla (modos) · gemelo",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "vibrafono",
+   "nombre": "Vibráfono",
+   "familia": "idiófono · barras de metal",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "golpe",
+   "vias": "web · rejilla (modos) · gemelo",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "xiloelec",
+   "nombre": "Xilófono eléctrico",
+   "familia": "idiófono · barras + amplificador",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "golpe",
+   "vias": "web · rejilla (modos) · gemelo",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  },
+  {
+   "id": "xilofono",
+   "nombre": "Xilófono",
+   "familia": "idiófono · barras de madera",
+   "proyecto": "consola",
+   "estado": "suena",
+   "motor": "golpe",
+   "vias": "web · rejilla (modos) · gemelo",
+   "origen": "consola/consola/static/lectura/musica.js",
+   "funcion": null
+  }
+ ],
+ "copiados": [
+  {
+   "proyecto": "difonos",
+   "nombre": "Voz de Sabina (difonos, PSOLA)",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "*",
+     "copia": "codigo/difonos/difonos/runtime/difonos.js",
+     "por": "banco de voz grabado (no se copia el banco)"
+    }
+   ]
+  },
+  {
+   "proyecto": "jardín",
+   "nombre": "Agua: salpicar, burbuja, canto, arpa",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "salpicar · burbuja · arpa",
+     "copia": "codigo/jardin/netart/jardin-camara/musica/temas/agua.py",
+     "por": "responden a una escala del choque"
+    }
+   ]
+  },
+  {
+   "proyecto": "jardín",
+   "nombre": "Aves (especies: clarín jilguero, cenzontle, primavera, colibrí)",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "Ave",
+     "copia": "codigo/jardin/netart/jardin-camara/musica/temas/aves.py",
+     "por": "cantan solas con su nicho"
+    }
+   ]
+  },
+  {
+   "proyecto": "jardín",
+   "nombre": "Principal (flauta hecha pájaro)",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "*",
+     "copia": "codigo/jardin/netart/jardin-camara/musica/temas/principal.py",
+     "por": "canto en grados con memoria"
+    }
+   ]
+  },
+  {
+   "proyecto": "jardín",
+   "nombre": "Voces en vivo (gemelo JS: farfisa, flauta, aves, burbujas)",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "*",
+     "copia": "codigo/jardin/netart/jardin-camara/musica/vivo/voces.js",
+     "por": "gemelo JS del Python, para el navegador"
+    }
+   ]
+  },
+  {
+   "proyecto": "jardín",
+   "nombre": "Épode: 15 aves bitonales",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "*",
+     "copia": "codigo/jardin/netart/jardin-camara/musica/epode/epode.js",
+     "por": "autómata excitable sobre una planta 3D"
+    }
+   ]
+  },
+  {
+   "proyecto": "meleeviewer",
+   "nombre": "Aves",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "cancion": "17 buenos días (banda.py)",
+     "funcion": "aves",
+     "copia": "codigo/meleeviewer/meleeviewer/output/Arte/2026-10-18_yoshi_es_un_vector_17_buenos_dias/banda.py"
+    }
+   ]
+  },
+  {
+   "proyecto": "meleeviewer",
+   "nombre": "Bajo",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "cancion": "17 buenos días (banda.py)",
+     "funcion": "bajo",
+     "copia": "codigo/meleeviewer/meleeviewer/output/Arte/2026-10-18_yoshi_es_un_vector_17_buenos_dias/banda.py"
+    }
+   ]
+  },
+  {
+   "proyecto": "meleeviewer",
+   "nombre": "Escobilla",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "cancion": "17 buenos días (banda.py)",
+     "funcion": "escobilla",
+     "copia": "codigo/meleeviewer/meleeviewer/output/Arte/2026-10-18_yoshi_es_un_vector_17_buenos_dias/banda.py"
+    }
+   ]
+  },
+  {
+   "proyecto": "meleeviewer",
+   "nombre": "Granitos",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "cancion": "17 buenos días (banda.py)",
+     "funcion": "granitos",
+     "copia": "codigo/meleeviewer/meleeviewer/output/Arte/2026-10-18_yoshi_es_un_vector_17_buenos_dias/banda.py"
+    }
+   ]
+  },
+  {
+   "proyecto": "meleeviewer",
+   "nombre": "Hammond",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "cancion": "17 buenos días (banda.py)",
+     "funcion": "hammond",
+     "copia": "codigo/meleeviewer/meleeviewer/output/Arte/2026-10-18_yoshi_es_un_vector_17_buenos_dias/banda.py"
+    }
+   ]
+  },
+  {
+   "proyecto": "meleeviewer",
+   "nombre": "Luz",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "cancion": "17 buenos días (banda.py)",
+     "funcion": "luz",
+     "copia": "codigo/meleeviewer/meleeviewer/output/Arte/2026-10-18_yoshi_es_un_vector_17_buenos_dias/banda.py"
+    }
+   ]
+  },
+  {
+   "proyecto": "meleeviewer",
+   "nombre": "Olla",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "cancion": "17 buenos días (banda.py)",
+     "funcion": "olla",
+     "copia": "codigo/meleeviewer/meleeviewer/output/Arte/2026-10-18_yoshi_es_un_vector_17_buenos_dias/banda.py"
+    }
+   ]
+  },
+  {
+   "proyecto": "meleeviewer",
+   "nombre": "Pitido (muestras del juego)",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "cancion": "2026-10-03_yoshi_es_un_vector_15_una_mas",
+     "funcion": "pitido",
+     "copia": "codigo/meleeviewer/meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_15_una_mas/cancion.js",
+     "por": "toca muestras grabadas de Melee que la canción carga aparte"
+    }
+   ]
+  },
+  {
+   "proyecto": "meleeviewer",
+   "nombre": "Ruido de Planck",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "cancion": "17 buenos días (banda.py)",
+     "funcion": "ruido_planck",
+     "copia": "codigo/meleeviewer/meleeviewer/output/Arte/2026-10-18_yoshi_es_un_vector_17_buenos_dias/banda.py"
+    }
+   ]
+  },
+  {
+   "proyecto": "meleeviewer",
+   "nombre": "Taza",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "cancion": "17 buenos días (banda.py)",
+     "funcion": "taza",
+     "copia": "codigo/meleeviewer/meleeviewer/output/Arte/2026-10-18_yoshi_es_un_vector_17_buenos_dias/banda.py"
+    }
+   ]
+  },
+  {
+   "proyecto": "otro",
+   "nombre": "atlas: kick, caja, hat, bajo, lead, pad, arpegio, campana",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "*",
+     "copia": "codigo/otros/netart/atlas/atlas.js",
+     "por": ""
+    }
+   ]
+  },
+  {
+   "proyecto": "otro",
+   "nombre": "el-clave-bien-tenido: clave (cuerpo de Faust)",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "*",
+     "copia": "codigo/otros/netart/el-clave-bien-tenido/js/cuerpo.js",
+     "por": "usa Tone.js"
+    }
+   ]
+  },
+  {
+   "proyecto": "otro",
+   "nombre": "front nuevo: canto, bajo 80, bombo, chasquido, sonido etíope",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "*",
+     "copia": "codigo/otros/output/front-nuevo/matfront2026/sonido-front.js",
+     "por": ""
+    }
+   ]
+  },
+  {
+   "proyecto": "otro",
+   "nombre": "herbario celular: una voz por planta",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "*",
+     "copia": "codigo/otros/netart/herbario-celular/loop-12/music.js",
+     "por": ""
+    }
+   ]
+  },
+  {
+   "proyecto": "otro",
+   "nombre": "la portadora: bancos sonoros",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "*",
+     "copia": "codigo/otros/netart/portadora/motor/sonido.js",
+     "por": "sembrados por el poema"
+    }
+   ]
+  },
+  {
+   "proyecto": "otro",
+   "nombre": "little-maestro: orquesta (violines, cornos, flautas, timbales)",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "synth",
+     "copia": "codigo/otros/little-maestro/index.html",
+     "por": "dentro de la app"
+    }
+   ]
+  },
+  {
+   "proyecto": "rejilla",
+   "nombre": "Cantar (difonos)",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "cantar",
+     "copia": "codigo/rejilla/research/rejilla/aurora/instrumentos.py",
+     "por": "canta un texto con la voz de difonos"
+    }
+   ]
+  },
+  {
+   "proyecto": "rejilla",
+   "nombre": "Cantar (pixeles)",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "cantar",
+     "copia": "codigo/rejilla/research/rejilla/pixeles/instrumentos.py",
+     "por": "canta un texto"
+    }
+   ]
+  },
+  {
+   "proyecto": "rejilla",
+   "nombre": "Ceros y unos",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "ceros_y_unos",
+     "copia": "codigo/rejilla/research/rejilla/pixeles/instrumentos.py",
+     "por": "deletrea una palabra en bits"
+    }
+   ]
+  },
+  {
+   "proyecto": "rejilla",
+   "nombre": "Chisporroteo",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "chisporroteo",
+     "copia": "codigo/rejilla/research/rejilla/aurora/instrumentos.py",
+     "por": "escribe muestras sueltas, no modos"
+    }
+   ]
+  },
+  {
+   "proyecto": "rejilla",
+   "nombre": "Coro (vocal)",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "coro",
+     "copia": "codigo/rejilla/research/rejilla/aurora/instrumentos.py",
+     "por": "necesita la envolvente de una sílaba"
+    }
+   ]
+  },
+  {
+   "proyecto": "rejilla",
+   "nombre": "Coro vocal (esquinas)",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "coro_vocal",
+     "copia": "codigo/rejilla/research/rejilla/esquinas.py",
+     "por": "necesita la envolvente de una sílaba"
+    }
+   ]
+  },
+  {
+   "proyecto": "rejilla",
+   "nombre": "Estática",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "estatica",
+     "copia": "codigo/rejilla/research/rejilla/aurora/instrumentos.py",
+     "por": "escribe columnas de la rejilla"
+    }
+   ]
+  },
+  {
+   "proyecto": "rejilla",
+   "nombre": "Instrumentos de las piezas: planeta9, línea, inferencia, garganta, epístrofe",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "*",
+     "copia": "codigo/rejilla/research/rejilla/planeta9/mezcla.py",
+     "por": "cada pieza mezcla los suyos (hielo, muro, módem, cuerdas…)"
+    }
+   ]
+  },
+  {
+   "proyecto": "rejilla",
+   "nombre": "Nave: portadora, chispa, bajo elástico, morse, ruido afinado, voz portadora, sala afinada, teléfono",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "*",
+     "copia": "codigo/rejilla/research/rejilla/maquina/nave.py",
+     "por": "transformaciones en el tiempo sobre una voz"
+    }
+   ]
+  },
+  {
+   "proyecto": "rejilla",
+   "nombre": "Robot",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "robot",
+     "copia": "codigo/rejilla/research/rejilla/aurora/instrumentos.py",
+     "por": "dice un texto"
+    }
+   ]
+  },
+  {
+   "proyecto": "rejilla",
+   "nombre": "Telemetría",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "telemetria",
+     "copia": "codigo/rejilla/research/rejilla/aurora/instrumentos.py",
+     "por": "dice un texto en clave"
+    }
+   ]
+  },
+  {
+   "proyecto": "rejilla",
+   "nombre": "Voz de agua",
+   "estado": "copiado",
+   "versiones": [
+    {
+     "funcion": "VozAgua.render",
+     "copia": "codigo/rejilla/research/rejilla/objetos/motor/vozagua.js",
+     "por": "canta un texto con formantes de agua"
+    }
+   ]
+  }
+ ],
+ "referenciados": [
+  {
+   "id": "boveda-fano",
+   "nombre": "La Bóveda Resonante de Fano–BIC (Estados Ligados en el Continuo)",
+   "proyecto": "importación externa",
+   "estado": "paquete",
+   "carpeta": "paquetes/boveda-fano",
+   "codigo": "paquetes/boveda-fano/boveda_fano_bic.py",
+   "receta": "paquetes/boveda-fano/receta-boveda-fano-bic-s20261021.json",
+   "semilla": 20261021,
+   "nota": "Código y muestras recibidos; sin adaptador común ni ejecución local comprobada."
+  },
+  {
+   "id": "cascada-navier-stokes",
+   "nombre": "La Cascada de Enstrofía de Navier–Stokes (Leray–BKM)",
+   "proyecto": "importación externa",
+   "estado": "paquete",
+   "carpeta": "paquetes/cascada-navier-stokes",
+   "codigo": "paquetes/cascada-navier-stokes/cascada_navier_stokes_bkm.py",
+   "receta": "paquetes/cascada-navier-stokes/receta-cascada-navier-stokes-s20261021.json",
+   "semilla": 20261021,
+   "nota": "Código y muestras recibidos; sin adaptador común ni ejecución local comprobada."
+  },
+  {
+   "id": "condensado-gross-pitaevskii",
+   "nombre": "El Condensado de Gross–Pitaevskii (Bogoliubov–Abrikosov–Feshbach)",
+   "proyecto": "importación externa",
+   "estado": "paquete",
+   "carpeta": "paquetes/condensado-gross-pitaevskii",
+   "codigo": "paquetes/condensado-gross-pitaevskii/condensado_gross_pitaevskii.py",
+   "receta": "paquetes/condensado-gross-pitaevskii/receta-condensado-gross-pitaevskii-s20261021.json",
+   "semilla": 20261021,
+   "nota": "Código y muestras recibidos; sin adaptador común ni ejecución local comprobada."
+  },
+  {
+   "id": "mariposa-hofstadter-chern",
+   "nombre": "La Mariposa Magnética de Hofstadter–Thouless (Harper–Chern–Aubry–André)",
+   "proyecto": "importación externa",
+   "estado": "paquete",
+   "carpeta": "paquetes/mariposa-hofstadter-chern",
+   "codigo": "paquetes/mariposa-hofstadter-chern/mariposa_hofstadter_chern.py",
+   "receta": "paquetes/mariposa-hofstadter-chern/receta-mariposa-hofstadter-chern-s20261021.json",
+   "semilla": 20261021,
+   "nota": "Código y muestras recibidos; sin adaptador común ni ejecución local comprobada."
+  },
+  {
+   "id": "astrolabio-metaplectico",
+   "nombre": "Astrolabio Metapléctico",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/astrolabio-metaplectico",
+   "codigo": "../research/rejilla/astrolabio-metaplectico/astrolabio_metaplectico.py",
+   "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+   "id": "braid-organ",
+   "nombre": "Braid Organ",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/braid-organ",
+   "codigo": "../research/rejilla/braid-organ/dist/audio.mjs",
+   "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+   "id": "campana-padica",
+   "nombre": "Campana de distancias imposibles",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/campana-padica",
+   "codigo": "../research/rejilla/campana-padica/motor.mjs",
+   "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+   "id": "campana-3d-pop",
+   "nombre": "P-adic Bell (escultura, variante espacial)",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/campana-3d-pop",
+   "codigo": "../research/rejilla/campana-3d-pop/dist/audio/motor.mjs",
+   "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+   "id": "ceros-que-tocan-primos",
+   "nombre": "Los ceros que tocan a los primos",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/ceros-que-tocan-primos",
+   "codigo": "../research/rejilla/ceros-que-tocan-primos/ceros_primos.py",
+   "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+   "id": "criba-mobius-grisey",
+   "nombre": "Candelabro de Möbius–Grisey",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/criba-mobius-grisey",
+   "codigo": "../research/rejilla/criba-mobius-grisey/criba_mobius_grisey.py",
+   "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+   "id": "monodromia-berry-ep2",
+   "nombre": "Monodromía de Berry EP2",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/monodromia-berry-ep2",
+   "codigo": "../research/rejilla/monodromia-berry-ep2/monodromia_berry_ep2.py",
+   "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+   "id": "soliton-toda-kdv",
+   "nombre": "Solitón subarmónico de Toda–KdV",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/soliton-toda-kdv",
+   "codigo": "../research/rejilla/soliton-toda-kdv/soliton_toda_kdv.py",
+   "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+   "id": "tapete-de-talbot",
+   "nombre": "Tapete de Talbot",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/tapete-de-talbot",
+   "codigo": "../research/rejilla/tapete-de-talbot/tapete.py",
+   "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+   "id": "telar-de-fase",
+   "nombre": "Telar de fase",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/telar-de-fase",
+   "codigo": "../research/rejilla/telar-de-fase/motor.mjs",
+   "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+   "id": "aves-que-aprenden",
+   "nombre": "Siringua: aves que aprenden palabras",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/aves-que-aprenden",
+   "codigo": "../research/rejilla/aves-que-aprenden/adaptador-siringua.js",
+   "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+   "id": "tres-tiempos-boca",
+   "nombre": "Boca de tres tiempos",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+   "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+   "funcion": "render(boca, partitura, duracion, ...)",
+   "nota": "fuente armónica y cuatro resonadores variables. Límite documentado: no comprueba habla inteligible; sin PSOLA ni muestras humanas"
+  },
+  {
+   "id": "tres-tiempos-cuerda",
+   "nombre": "Cuerda de cuerpos incompatibles",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+   "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+   "funcion": "render(cuerda, partitura, duracion, ...)",
+   "nota": "tres regiones, siete modos cada una, conversión activa de envolventes. Límite documentado: modelo abstracto, no simulación física conservativa de una cuerda natural"
+  },
+  {
+   "id": "tres-tiempos-piano",
+   "nombre": "Piano de tres presentes",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+   "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+   "funcion": "render(piano, partitura, duracion, ...)",
+   "nota": "ataque FM futuro, cuerpo actual y caída anterior. Límite documentado: necesita partitura conocida; sin predicción de gestos humanos futuros"
+  },
+  {
+   "id": "tres-tiempos-arpa",
+   "nombre": "Arpa que presta su vibración",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+   "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+   "funcion": "render(arpa, partitura, duracion, ...)",
+   "nota": "cinco cuerdas de siete modos y enlaces variables. Límite documentado: giro de envolventes durante 0.45 s; conversión entre alturas activa, no transferencia pasiva de julios"
+  },
+  {
+   "id": "tres-tiempos-organo",
+   "nombre": "Órgano de divisores con memoria",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+   "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+   "funcion": "render(organo, partitura, duracion, ...)",
+   "nota": "osciladores f/n, Schmitt por divisor. Límite documentado: divisores 1,2,3,5,7,9; sin segundo pedal de múltiplos en este prototipo"
+  },
+  {
+   "id": "tres-tiempos-sala",
+   "nombre": "Sala plegada que se toca",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+   "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+   "funcion": "render(sala, partitura, duracion, ...)",
+   "nota": "dos redes independientes de cuatro retardos fijos y conexiones rotatorias. Límite documentado: arquitectura digital, no recinto físico medido"
+  },
+  {
+   "id": "tres-tiempos-cristal",
+   "nombre": "Cristal orbital",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+   "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+   "funcion": "render(cristal, partitura, duracion, ...)",
+   "nota": "FM de índice decreciente, render interno 4x. Límite documentado: preset original; no emulación de hardware concreto"
+  },
+  {
+   "id": "tres-tiempos-estacion",
+   "nombre": "Cuerdas de estación",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+   "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+   "funcion": "render(estacion, partitura, duracion, ...)",
+   "nota": "tres osciladores aditivos desafinados y brillo móvil. Límite documentado: ataque 0.42 s y salida 0.65 s; notas cortas reducen su amplitud"
+  },
+  {
+   "id": "tres-tiempos-terminal",
+   "nombre": "Terminal vectorial",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+   "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+   "funcion": "render(terminal, partitura, duracion, ...)",
+   "nota": "mezcla bilineal de metal FM, vocal, pulsación y aire; render 4x. Límite documentado: interpolación de cuatro fuentes, sin emulación de sintetizador comercial"
+  },
+  {
+   "id": "tres-tiempos-plasma",
+   "nombre": "Plumón de plasma",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+   "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+   "funcion": "render(plasma, partitura, duracion, ...)",
+   "nota": "pulso por suma armónica, entrada deslizada y ráfaga de ruido. Límite documentado: scoop al inicio de cada nota; todavía sin portamento legato desde la nota anterior"
+  },
+  {
+   "id": "tres-tiempos-androide",
+   "nombre": "Bajo de androide",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+   "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+   "funcion": "render(androide, partitura, duracion, ...)",
+   "nota": "fundamental separada, medios formánticos saturados. Límite documentado: recorrido u/e prefijado; la fusión completa con los tres recorridos de Boca queda fuera de esta versión"
+  },
+  {
+   "id": "tres-tiempos-fotones",
+   "nombre": "Batería de fotones",
+   "proyecto": "rejilla",
+   "estado": "referenciado",
+   "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+   "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+   "funcion": "render(fotones, partitura, duracion, ...)",
+   "nota": "caída rápida de altura, producto de osciladores y ruido; render 4x. Límite documentado: percusión sintetizada; no muestras de batería o película"
+  }
+ ]
+}

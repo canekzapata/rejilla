@@ -1,0 +1,15 @@
+{
+ "id": "consola-bell",
+ "nombre": "Campana FM",
+ "familia": "idiófono · campana (FM)",
+ "motor": "voz",
+ "fisica": {
+  "tipo": "bell"
+ },
+ "notas": "Modulación de frecuencia 3.5:1 que se apaga: campana metálica.",
+ "procedencia": {
+  "nace": "consola · visor de lectura §27 (motor musical v1)",
+  "archivo": "consola/consola/static/lectura/musica.js",
+  "sha256": "0c9b5438248a37ab353559861535a15a841c719448dd4c865b6a005acf168621"
+ }
+}

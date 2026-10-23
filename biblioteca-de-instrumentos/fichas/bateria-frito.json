@@ -1,0 +1,33 @@
+{
+ "id": "bateria-frito",
+ "nombre": "Batería frita",
+ "familia": "membranófono · batería (13 piezas)",
+ "motor": "bateria",
+ "fisica": {
+  "kit": "frito",
+  "tune": 0,
+  "decay": 1,
+  "drive": 0,
+  "piezas": [
+   "kick",
+   "snare",
+   "rim",
+   "clap",
+   "hat",
+   "openhat",
+   "crash",
+   "ride",
+   "spray",
+   "tomhi",
+   "tommid",
+   "tomlo",
+   "cowbell"
+  ]
+ },
+ "notas": "La 808 pasada por saturación. Piezas: kick, snare, rim, clap, hat, openhat, crash, ride, spray, tomhi, tommid, tomlo, cowbell (spray = platillo ochentero).",
+ "procedencia": {
+  "nace": "consola · visor de lectura §27.42 (batería)",
+  "archivo": "consola/consola/static/lectura/musica.js",
+  "sha256": "0c9b5438248a37ab353559861535a15a841c719448dd4c865b6a005acf168621"
+ }
+}

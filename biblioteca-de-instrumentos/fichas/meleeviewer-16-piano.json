@@ -1,0 +1,26 @@
+{
+ "id": "meleeviewer-16-piano",
+ "nombre": "Piano · yoshi 16 jpop",
+ "familia": "cordófono · piano",
+ "motor": "meleeviewer",
+ "fisica": {
+  "escenario": "codigo/meleeviewer/escenarios/2026-10-09_yoshi_es_un_vector_16_jpop.js",
+  "funcion": "piano",
+  "params": [
+   "t",
+   "n",
+   "dur",
+   "vel",
+   "p"
+  ],
+  "escenario_sha256": "c8d74ee10c32621c541f9fabad14662beb669320c9b034bef529cc3b7b12e835"
+ },
+ "notas": "La función piano(t, n, dur, vel, p) de la canción 16 jpop de «yoshi es un vector», tal cual, en su escenario seco.",
+ "procedencia": {
+  "nace": "meleeviewer · yoshi es un vector 16 jpop",
+  "archivo": "meleeviewer/output/Arte/2026-10-09_yoshi_es_un_vector_16_jpop/cancion.js",
+  "funcion": "piano",
+  "sha256": "5fd813de871d4b3eb5ed42795ac90eb4fe109d15e38ab2a3f53b6d299ea2dd96",
+  "variante_de": "Piano"
+ }
+}

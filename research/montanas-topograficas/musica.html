@@ -1,0 +1,864 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Traspuesta suena — Canek Zapata</title>
+<meta name="description" content="La montaña de Traspuesta se levanta con una semilla y el audio la mueve: los graves la estiran, los agudos le cambian el tono, cada golpe la sacude. La letra de un trazo escribe lo que oye.">
+<meta name="author" content="Canek Zapata">
+<meta name="date" content="2026">
+<meta name="keywords" content="net art, generativo, audio reactivo, topografía, livecoding, Hydra">
+<link rel="canonical" href="https://canekzapata.net/traspuesta/musica.html"><!-- TODO: confirmar ruta de publicación -->
+<link rel="icon" href="favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Canek Zapata">
+<meta property="og:title" content="Traspuesta suena">
+<meta property="og:description" content="La montaña de Traspuesta se levanta con una semilla y el audio la mueve.">
+<meta property="og:url" content="https://canekzapata.net/traspuesta/musica.html">
+<meta property="og:image" content="https://canekzapata.net/traspuesta/og.png"><!-- TODO: og.png propio de musica.html -->
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Crestas de una montaña en neón sobre fondo oscuro.">
+<meta property="og:locale" content="es_MX">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Traspuesta suena">
+<meta name="twitter:description" content="La montaña de Traspuesta se levanta con una semilla y el audio la mueve.">
+<meta name="twitter:image" content="https://canekzapata.net/traspuesta/og.png">
+<meta name="twitter:image:alt" content="Crestas de una montaña en neón sobre fondo oscuro.">
+<meta name="copyright" content="© 2026 Canek Zapata">
+<style>
+  html, body { margin: 0; height: 100%; background: #0a0a0f; overflow: hidden; }
+  body { font: 12px/1.5 ui-monospace, Menlo, Consolas, monospace; color: #d8d8e0; }
+  canvas { display: block; }
+  #c { position: fixed; left: 0; top: 0; }
+  #fx { position: fixed; left: 0; top: 0; pointer-events: none; opacity: 0; }
+  #ed { position: fixed; right: 14px; top: 14px; width: min(46vw, 560px); padding: 8px 10px; background: rgba(8,8,14,.62);
+        border: 1px solid rgba(255,255,255,.18); transition: opacity .4s; }
+  #ed.oculto { opacity: 0; pointer-events: none; }
+  #edbar { display: flex; gap: 10px; align-items: center; margin-bottom: 6px; }
+  #edbar input { width: 120px; vertical-align: middle; }
+  #codigo { width: 100%; box-sizing: border-box; background: rgba(0,0,0,.35); color: #eee; border: 1px solid rgba(255,255,255,.14); font: 13px/1.45 ui-monospace, Menlo, Consolas, monospace; resize: vertical; padding: 6px; }
+  #ederr { color: #ff8a98; min-height: 1.4em; }
+  #edhelp { opacity: .6; font-size: 11px; }
+  #hud { position: fixed; left: 14px; top: 14px; max-width: 340px; padding: 10px 12px; background: rgba(10,10,15,.72);
+         border: 1px solid rgba(255,255,255,.14); transition: opacity .6s; }
+  #hud.dormido { opacity: 0; pointer-events: none; }
+  #hud b { font-weight: 600; letter-spacing: .08em; }
+  #hud select, #hud button, #hud input { font: inherit; color: inherit; background: #15151c; border: 1px solid rgba(255,255,255,.25);
+         padding: 2px 6px; margin: 2px 4px 2px 0; }
+  #hud button { cursor: pointer; }
+  #hud kbd { opacity: .7; }
+  #niv { height: 4px; background: rgba(255,255,255,.15); margin: 6px 0 2px; }
+  #niv i { display: block; height: 100%; width: 0; background: #7ff; }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<canvas id="fx"></canvas>
+<div id="ed">
+  <div id="edbar"><b>HYDRA</b> <select id="preset"></select> <label>mezcla <input type="range" id="mezcla" min="0" max="1" step="0.01" value="0"></label></div>
+  <textarea id="codigo" spellcheck="false" rows="7"></textarea>
+  <div id="ederr"></div>
+  <div id="edhelp"><kbd>Ctrl</kbd>+<kbd>Enter</kbd> evalúa · <kbd>[</kbd><kbd>]</kbd> mezcla · <kbd>1</kbd>–<kbd>5</kbd> preset · <kbd>A</kbd> mezcla sigue la actividad · <kbd>E</kbd> esconder</div>
+</div>
+<div id="hud">
+  <b>TRASPUESTA SUENA</b> <span id="est"></span>
+  <div id="niv"><i></i></div>
+  <div>
+    <button id="bMic">micro / línea</button>
+    <button id="bArchivo">archivo…</button>
+    <button id="bDemo">sin audio</button>
+    <input type="file" id="archivo" accept="audio/*" hidden>
+  </div>
+  <div><select id="dispositivo" hidden></select></div>
+  <div style="margin-top:6px;opacity:.75">
+    <kbd>N</kbd> cambiar ya &middot; <kbd>B</kbd> cambio por golpe s&iacute;/no &middot; <kbd>C</kbd> cascada de espectro &middot; <kbd>V</kbd> terreno + espectro &middot; <kbd>R</kbd> otra semilla · <kbd>S</kbd> escribir semilla · <kbd>L</kbd> claro/oscuro<br>
+    <kbd>↑↓</kbd> ganancia · <kbd>P</kbd> guardar PNG · <kbd>H</kbd> esconder esto
+  </div>
+</div>
+
+<script src="vendor/hydra-synth.js"></script>
+<script src="nucleo.js?v=45"></script>
+<script src="letra.js?v=45"></script>
+<script>
+(function () {
+  'use strict';
+  const MT = window.MT;
+  const Q = new URLSearchParams(location.search);
+  const VERSION = 'musica-loop01';
+  const $ = (id) => document.getElementById(id);
+  const cv = $('c'), cx = cv.getContext('2d');
+  const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+  const prom = () => clamp((S.act - 0.15) / 0.6); // 0 calma … 1 pieza en su punto más alto
+  const sst = (a, b, x) => { const u = clamp((x - a) / (b - a)); return u * u * (3 - 2 * u); };
+  const MANUAL = Q.get('reloj') === 'manual';
+
+  // ── lienzo ────────────────────────────────────────────────────────────────
+  let W = 0, H = 0, DPR = 1;
+  function ajusta() {
+    DPR = Math.min(2, window.devicePixelRatio || 1);
+    W = +Q.get('w') || innerWidth; H = +Q.get('h') || innerHeight;
+    if (Q.get('w')) DPR = 1;
+    cv.width = Math.round(W * DPR); cv.height = Math.round(H * DPR);
+    cv.style.width = W + 'px'; cv.style.height = H + 'px';
+    try { fxResize(); } catch (e) {} // aún sin Hydra la primera vez
+  }
+  ajusta(); window.addEventListener('resize', ajusta);
+
+  // ── estado ────────────────────────────────────────────────────────────────
+  const S = {
+    t: 0, terr: null, semilla: '', rows: null, pluma: 0, oscuro: Q.get('oscuro') !== '0',
+    hue: 200, giro: 140, exag0: 1,
+    b: 0, m: 0, a: 0, flash: 0, shift: 0, act: 0, // bandas ya suavizadas, golpe, "actividad"
+    exag: 1, levanto: 0, banco: [], pidiendo: false, mensaje: '', prev: null, penDur: 7, cambios: [], ultimoCambio: 0, auto: true,
+    mezcla: 0, mezclaAuto: false, codigo: '', presetN: 0, hydraError: '', editorEnCaptura: false,
+    vista: Q.get('vista') || 'completa', // datos | filas | completa: las etapas de la pieza, para el proceso
+  };
+
+  // ── el terreno: lo levanta el motor en un worker (no se toca) ─────────────────
+  const N_ROWS = 112, N_COLS = 260;
+  let obrero = null, idPeticion = 0;
+  const pendientes = new Map();
+  function pideTerreno(semilla) {
+    return new Promise((res, rej) => {
+      if (!obrero) {
+        obrero = new Worker('obrero.js');
+        obrero.onmessage = (e) => {
+          const p = pendientes.get(e.data.id); if (!p) return; pendientes.delete(e.data.id);
+          if (e.data.error) p.rej(new Error(e.data.error)); else p.res(e.data);
+        };
+      }
+      const id = ++idPeticion, t0 = performance.now();
+      pendientes.set(id, { res: (d) => res({ ...d, ms: performance.now() - t0 }), rej });
+      obrero.postMessage({ s: String(semilla), tipo: 'terreno', id });
+    });
+  }
+  // el mapa de alturas visto desde arriba, en gris (alto = claro): entra a Hydra como s1 (HYDRA.md §5.1, 20 oct 2026)
+  const mapaCv = document.createElement('canvas'); mapaCv.width = mapaCv.height = 360;
+  function pintaMapa(T) {
+    const G = T.G, k = mapaCv.getContext('2d'), im = k.createImageData(G, G);
+    for (let i = 0; i < G * G; i++) { const v = Math.round(255 * clamp(T.h[i])); im.data[4 * i] = im.data[4 * i + 1] = im.data[4 * i + 2] = v; im.data[4 * i + 3] = 255; }
+    if (mapaCv.width !== G) mapaCv.width = mapaCv.height = G;
+    k.putImageData(im, 0, 0);
+  }
+  function filas(T) { // el relieve ya muestreado en N_ROWS × (N_COLS+1): lo que se dibuja cada cuadro
+    const G = T.G, h = T.h, out = new Float32Array(N_ROWS * (N_COLS + 1));
+    for (let r = 0; r < N_ROWS; r++) {
+      const v = 1 - r / (N_ROWS - 1); // r = 0 es la fila de atrás
+      const y = clamp(v) * (G - 1), yi = Math.min(G - 2, Math.floor(y)), fy = y - yi;
+      for (let c = 0; c <= N_COLS; c++) {
+        const x = (c / N_COLS) * (G - 1), xi = Math.min(G - 2, Math.floor(x)), fx = x - xi, k = yi * G + xi;
+        out[r * (N_COLS + 1) + c] = h[k] * (1 - fx) * (1 - fy) + h[k + 1] * fx * (1 - fy) + h[k + G] * (1 - fx) * fy + h[k + G + 1] * fx * fy;
+      }
+    }
+    return out;
+  }
+  const semillaAzar = () => String(1 + Math.floor(Math.random() * 999999));
+  // El banco: BANCO_N montañas ya levantadas esperando turno (el worker las calienta de una en una).
+  // Un cambio es instantáneo; lo que tarda (1–4 s por lámina) pasa mientras suena lo anterior.
+  const BANCO_N = 3;
+  async function levanta(semilla, usar, o = {}) {
+    S.mensaje = 'levantando ' + semilla + '…';
+    const d = usar || await pideTerreno(semilla);
+    if (o.barrido && S.rows) { S.prev = { rows: S.rows, hue: S.hue, giro: S.giro }; S.penDur = o.dur || 1.2; }
+    else { S.prev = null; S.penDur = PLUMA_SEG; }
+    S.terr = d.terreno; S.rows = filas(d.terreno); S.semilla = String(semilla); S.levanto = d.ms;
+    pintaMapa(d.terreno);
+    const az = MT.rng(S.semilla + ':musica-color');
+    S.hue = az() * 360; S.giro = az.range(90, 200); S.exag0 = az.range(0.85, 1.25);
+    S.pluma = 0; S.mensaje = ''; S.ultimoCambio = S.t;
+    if (X.rng) nuevaFrase(true); // el texto empieza otra frase con la montaña nueva
+    rellena();
+  }
+  function rellena() {
+    if (S.pidiendo || S.banco.length >= BANCO_N) return;
+    S.pidiendo = true;
+    const s = semillaAzar();
+    pideTerreno(s).then((d) => { S.banco.push({ semilla: s, d }); S.pidiendo = false; rellena(); })
+      .catch(() => { S.pidiendo = false; });
+  }
+  // cambio de montaña: la pluma barre de atrás hacia adelante y lo que deja atrás ya es la nueva
+  function cambia(motivo) {
+    if (!S.banco.length || !S.rows) return false;
+    const b = S.banco.shift(), p = prom();
+    S.cambios.push({ t: +S.t.toFixed(2), de: S.semilla, a: b.semilla, motivo, espera: +(S.t - S.ultimoCambio).toFixed(2), banco: S.banco.length });
+    if (S.cambios.length > 200) S.cambios.shift();
+    levanta(b.semilla, b.d, { barrido: true, dur: 0.7 + 1.1 * (1 - p) }); // más activo, barrido más rápido
+    return true;
+  }
+  // ¿toca cambiar? un golpe fuerte con actividad, pero no antes de un mínimo que se acorta si la pieza está viva
+  function cambioAuto(golpe) {
+    if (!S.auto || !S.rows || S.pluma < 1 || !S.banco.length) return;
+    const espera = S.t - S.ultimoCambio, p = prom(), minimo = 14 - 8 * p;
+    if (golpe && S.flash > 0.8 && p > 0.2 && espera > minimo) cambia('golpe');
+    else if (espera > 40) cambia('tiempo');
+  }
+  async function otra(semilla) {
+    if (semilla != null) return levanta(semilla);
+    if (S.banco.length && S.rows) return cambia('tecla');
+    return levanta(semillaAzar());
+  }
+
+  // ── audio ─────────────────────────────────────────────────────────────────
+  const A = { ctx: null, an: null, bytes: null, fuente: null, modo: 'demo', ganancia: 1, pico: [0.12, 0.12, 0.12],
+              prev: null, fm: 0, fv: 0, ultimo: -9, audioEl: null, nm: 0.3 };
+  function aseguraCtx() {
+    if (A.ctx) { if (A.ctx.state === 'suspended') A.ctx.resume(); return; }
+    A.ctx = new (window.AudioContext || window.webkitAudioContext)();
+    A.an = A.ctx.createAnalyser(); A.an.fftSize = 2048; A.an.smoothingTimeConstant = 0.3;
+    A.bytes = new Uint8Array(A.an.frequencyBinCount); A.prev = new Uint8Array(A.an.frequencyBinCount);
+  }
+  function desconecta() { try { if (A.fuente) A.fuente.disconnect(); } catch (e) {} A.fuente = null; if (A.audioEl) { A.audioEl.pause(); } }
+  async function usaMicro(deviceId) {
+    aseguraCtx(); desconecta();
+    try {
+      const st = await navigator.mediaDevices.getUserMedia({ audio: {
+        deviceId: deviceId ? { exact: deviceId } : undefined,
+        echoCancellation: false, noiseSuppression: false, autoGainControl: false } });
+      A.fuente = A.ctx.createMediaStreamSource(st); A.fuente.connect(A.an); A.modo = 'micro';
+      const ds = (await navigator.mediaDevices.enumerateDevices()).filter((d) => d.kind === 'audioinput');
+      const sel = $('dispositivo'); sel.hidden = false; sel.innerHTML = '';
+      for (const d of ds) { const o = document.createElement('option'); o.value = d.deviceId; o.textContent = d.label || 'entrada'; sel.appendChild(o); }
+      const act = st.getAudioTracks()[0].getSettings().deviceId; if (act) sel.value = act;
+      S.mensaje = '';
+    } catch (e) { S.mensaje = 'sin micro: ' + e.name; A.modo = 'demo'; }
+  }
+  function usaArchivo(file) {
+    aseguraCtx(); desconecta();
+    if (!A.audioEl) { A.audioEl = new Audio(); A.audioEl.loop = true; A.audioEl.crossOrigin = 'anonymous'; }
+    A.audioEl.src = URL.createObjectURL(file);
+    if (!A.srcEl) { A.srcEl = A.ctx.createMediaElementSource(A.audioEl); A.srcEl.connect(A.ctx.destination); }
+    A.fuente = A.srcEl; A.srcEl.connect(A.an); A.audioEl.play(); A.modo = 'archivo';
+  }
+  // Pista de audio real decodificada: se analiza con la misma lógica de bytes que el AnalyserNode
+  // (ventana de Hann, dB entre -100 y -30, suavizado 0.3) y marca el tiempo con el reloj de la pieza,
+  // así sirve igual con el reloj manual (capturas reproducibles) y en vivo.
+  function fft(re, im) {
+    const n = re.length;
+    for (let i = 1, j = 0; i < n; i++) { let bit = n >> 1; for (; j & bit; bit >>= 1) j ^= bit; j ^= bit; if (i < j) { let t = re[i]; re[i] = re[j]; re[j] = t; t = im[i]; im[i] = im[j]; im[j] = t; } }
+    for (let len = 2; len <= n; len <<= 1) {
+      const ang = -2 * Math.PI / len, wr = Math.cos(ang), wi = Math.sin(ang);
+      for (let i = 0; i < n; i += len) {
+        let cr = 1, ci = 0;
+        for (let k = 0; k < len / 2; k++) {
+          const a = i + k, b = a + len / 2, tr = re[b] * cr - im[b] * ci, ti = re[b] * ci + im[b] * cr;
+          re[b] = re[a] - tr; im[b] = im[a] - ti; re[a] += tr; im[a] += ti;
+          const nr = cr * wr - ci * wi; ci = cr * wi + ci * wr; cr = nr;
+        }
+      }
+    }
+  }
+  const FN = 2048, VENT = new Float32Array(FN).map((_, i) => 0.5 - 0.5 * Math.cos(2 * Math.PI * i / (FN - 1)));
+  const FR = new Float32Array(FN), FI = new Float32Array(FN);
+  function bytesDePista() {
+    const b = A.buf, c0 = b.getChannelData(0), c1 = b.numberOfChannels > 1 ? b.getChannelData(1) : c0, sr = b.sampleRate;
+    const pos = (S.t - A.t0) % b.duration, fin = Math.floor(pos * sr), ini = fin - FN;
+    for (let i = 0; i < FN; i++) { const k = ini + i, v = k >= 0 && k < c0.length ? 0.5 * (c0[k] + c1[k]) : 0; FR[i] = v * VENT[i]; FI[i] = 0; }
+    fft(FR, FI);
+    for (let k = 0; k < FN / 2; k++) {
+      const mag = Math.hypot(FR[k], FI[k]) / FN;
+      A.sm[k] = 0.3 * A.sm[k] + 0.7 * mag;
+      const db = 20 * Math.log10(Math.max(A.sm[k], 1e-10));
+      A.bytes[k] = clamp(Math.round((db + 100) / 70 * 255), 0, 255);
+    }
+  }
+  async function usaPista(url) {
+    try {
+      const ctx = A.ctx || (A.ctx = new (window.AudioContext || window.webkitAudioContext)());
+      const ab = await (await fetch(url)).arrayBuffer();
+      A.buf = await ctx.decodeAudioData(ab);
+      A.bytes = new Uint8Array(FN / 2); A.prev = new Uint8Array(FN / 2); A.sm = new Float32Array(FN / 2);
+      A.t0 = S.t; BB = null; A.modo = 'pista'; A.pico = [0.12, 0.12, 0.12];
+      if (!MANUAL) { // sonar de verdad, si el navegador deja
+        try { const src = ctx.createBufferSource(); src.buffer = A.buf; src.loop = true; src.connect(ctx.destination); await ctx.resume(); src.start(); } catch (e) {}
+      }
+      return { ok: true, dur: A.buf.duration, sr: A.buf.sampleRate };
+    } catch (e) { S.mensaje = 'sin pista: ' + e.name; return { ok: false, e: String(e) }; }
+  }
+  const banda = (hz0, hz1) => { const f = (A.buf && A.modo === 'pista' ? A.buf.sampleRate : A.ctx.sampleRate) / 2048; return [Math.max(1, Math.round(hz0 / f)), Math.round(hz1 / f)]; };
+  let BB = null;
+  // devuelve [grave, medio, agudo, flujo] crudos en 0..1
+  function lee() {
+    if (!BB) BB = [banda(30, 160), banda(160, 2000), banda(2000, 9000)];
+    if (A.modo === 'pista') bytesDePista(); else A.an.getByteFrequencyData(A.bytes);
+    const v = BB.map(([i0, i1]) => { let s = 0; for (let i = i0; i < i1; i++) s += A.bytes[i]; return s / Math.max(1, i1 - i0) / 255; });
+    let fl = 0; const [i0, i1] = [BB[0][0], BB[1][1]];
+    for (let i = i0; i < i1; i++) fl += Math.max(0, A.bytes[i] - A.prev[i]);
+    A.prev.set(A.bytes);
+    return [v[0], v[1], v[2], fl / Math.max(1, i1 - i0) / 255];
+  }
+  // el "sin audio": un 4x4 a 124 bpm con secciones, para probar y para respaldo en el escenario
+  function demo(t) {
+    const bpm = 124, fase = t * bpm / 60, f = fase % 1, beat = Math.floor(fase) % 4, comp = Math.floor(fase / 16);
+    const seccion = [0.55, 0.8, 1, 1, 0.35, 0.9][((comp % 6) + 6) % 6];
+    const kick = Math.exp(-f * 6.5), hat = Math.exp(-((fase * 2) % 1) * 9) * (0.6 + 0.4 * Math.sin(t * 0.9));
+    const clap = (beat === 1 || beat === 3) ? Math.exp(-f * 8) : 0;
+    const g = (0.12 + 0.88 * kick) * seccion;
+    const m = clamp(0.28 + 0.3 * Math.sin(t * 0.6) * seccion + 0.55 * clap * seccion);
+    const a = clamp(0.2 + 0.7 * hat * seccion + 0.1 * Math.sin(t * 7.3));
+    const disparo = f < 0.04 ? 1 : 0;
+    return [g, m, a, disparo ? 0.5 : 0.02];
+  }
+  function actualiza(dt) {
+    let g, m, a, fl;
+    if (A.modo === 'demo' || !A.ctx) [g, m, a, fl] = demo(S.t);
+    else {
+      [g, m, a, fl] = lee();
+      // control automático de ganancia: el pico decae lento, así el ajuste no depende del mixer
+      const v = [g, m, a], d = Math.pow(0.5, dt / 6);
+      for (let i = 0; i < 3; i++) { A.pico[i] = Math.max(0.1, A.pico[i] * d, v[i]); v[i] = Math.pow(clamp(v[i] * A.ganancia / A.pico[i]), 1.4); }
+      [g, m, a] = v;
+    }
+    if (!Number.isFinite(g)) g = 0; if (!Number.isFinite(m)) m = 0; if (!Number.isFinite(a)) a = 0; if (!Number.isFinite(fl)) fl = 0; // un NaN se queda para siempre en el suavizado
+    // suavizado con ataque rápido y caída lenta
+    const sube = 1 - Math.pow(0.001, dt * 6), baja = 1 - Math.pow(0.001, dt * 1.6);
+    S.b += (g - S.b) * (g > S.b ? sube : baja);
+    S.m += (m - S.m) * (m > S.m ? sube : baja);
+    S.a += (a - S.a) * (a > S.a ? sube : baja);
+    // golpe: el flujo espectral por encima de su propia media + dos desviaciones
+    A.fm += (fl - A.fm) * Math.min(1, dt * 1.5); A.fv += (Math.abs(fl - A.fm) - A.fv) * Math.min(1, dt * 1.5);
+    const golpe = fl > A.fm + 2.2 * A.fv + 0.012 && S.t - A.ultimo > 0.14;
+    if (golpe) { A.ultimo = S.t; S.flash = 1; S.shift += 38; }
+    S.flash *= Math.pow(0.02, dt); S.shift *= Math.pow(0.35, dt);
+    S.golpes = (S.golpes || 0) + (golpe ? 1 : 0);
+    // actividad = nivel + cuánto sube sobre su propio promedio lento (~9 s): una pieza que se queda
+    // arriba no se queda en 1 para siempre; los crescendos pesan más que el volumen parejo
+    const nivel = (S.b + S.m + S.a) / 3 + S.flash * 0.3;
+    A.nm += (nivel - A.nm) * Math.min(1, dt / 9);
+    const rel = clamp(0.5 + (nivel - A.nm) * 2.4);
+    S.act += ((0.25 * Math.min(1, nivel) + 0.75 * rel) - S.act) * Math.min(1, dt * 1.2);
+    S.exag += ((S.exag0 * (0.7 + 0.9 * S.b)) - S.exag) * Math.min(1, dt * 14);
+    cambioAuto(golpe);
+    $('niv').firstElementChild.style.width = Math.round(100 * S.b) + '%';
+  }
+
+  // ── color: nada fijo, todo sale de la semilla y del sonido, en OKLCh ─────────
+  const memoNeon = new Map();
+  const neon = (h) => { h = Math.round(((h % 360) + 360) % 360); let c = memoNeon.get(h); if (!c) { c = MT.neon(h); memoNeon.set(h, c); } return c; };
+  const papel = () => S.oscuro ? MT.oklch(0.14 + 0.04 * S.flash, 0.025, S.hue + 200) : MT.oklch(0.95, 0.02, S.hue + 40);
+  const tinta = (h, t) => S.oscuro ? neon(h) : MT.oklch(0.42 - 0.12 * t, 0.15, h);
+
+  // ── el cuadro ──────────────────────────────────────────────────────────────
+  function dibuja() {
+    const w = cv.width, h = cv.height; cx.setTransform(DPR, 0, 0, DPR, 0, 0);
+    cx.fillStyle = papel(); cx.fillRect(0, 0, W, H);
+    cx.lineJoin = 'round'; cx.lineCap = 'round';
+    const rows = S.cascada ? (S.mixto && S.rows ? S.mixRows : S.casRows) : S.rows;
+    if (S.vista === 'datos' && S.terr) { datos(); cartela(); return; }
+    if (rows) {
+      const yF = H * 0.97, yB = H * 0.3, hasta = ((S.cascada && !S.mixto) ? 1 : S.pluma) * N_ROWS, M = N_COLS + 1;
+      const hueBase = S.hue + S.shift + S.a * 70 + S.t * 3;
+      const P = S.prev && (!S.cascada || S.mixto) && S.pluma < 1 ? S.prev : null, hueBaseP = P ? P.hue + S.shift + S.a * 70 + S.t * 3 : 0;
+      for (let r = 0; r < N_ROWS; r++) {
+        const viejo = r > hasta; if (viejo && !P) break;
+        const R = viejo ? (S.mixto ? S.prevMix : P.rows) : rows, hb = viejo ? hueBaseP : hueBase, gi = viejo ? P.giro : S.giro;
+        const t = r / (N_ROWS - 1), parcial = viejo ? 1 : (r + 1 > hasta ? hasta - r : 1);
+        const y0 = yB + (yF - yB) * Math.pow(t, 1.35);
+        const amp = H * 0.34 * (0.32 + 0.95 * t) * (S.cascada ? 1.1 : S.exag);
+        const ancho = W * (1.08 + 0.5 * t), x0 = W / 2 - ancho / 2;
+        const onda = (S.m * 9 * t + S.b * 3) * (S.cascada ? 0.25 : 1);
+        const nC = Math.max(2, Math.round(M * parcial));
+        cx.beginPath();
+        for (let c = 0; c < nC; c++) {
+          const u = c / (M - 1);
+          const x = x0 + u * ancho;
+          const y = y0 - R[r * M + c] * amp + Math.sin(u * 11 + S.t * 2.2 + r * 0.33) * onda;
+          if (c) cx.lineTo(x, y); else cx.moveTo(x, y);
+        }
+        // la fila tapa a las de atrás: se cierra hacia abajo y se rellena con el papel
+        const xe = x0 + ((nC - 1) / (M - 1)) * ancho;
+        cx.lineTo(xe, H + 4); cx.lineTo(x0, H + 4); cx.closePath();
+        if (S.vista !== 'filas') { cx.fillStyle = papel(); cx.fill(); }
+        // la línea sin el cierre
+        cx.beginPath();
+        for (let c = 0; c < nC; c++) {
+          const u = c / (M - 1), x = x0 + u * ancho;
+          const y = y0 - R[r * M + c] * amp + Math.sin(u * 11 + S.t * 2.2 + r * 0.33) * onda;
+          if (c) cx.lineTo(x, y); else cx.moveTo(x, y);
+        }
+        cx.globalAlpha = 0.5 + 0.5 * t;
+        cx.lineWidth = (0.7 + 1.7 * t) * (1 + S.flash * 0.9);
+        if (S.cascada) { // por tramos: el tono recorre graves → agudos a lo ancho de la fila
+          const NCH = 14;
+          for (let k = 0; k < NCH; k++) {
+            const c0 = Math.round(k * (nC - 1) / NCH), c1 = Math.round((k + 1) * (nC - 1) / NCH);
+            cx.beginPath();
+            for (let c = c0; c <= c1; c++) {
+              const u = c / (M - 1), x = x0 + u * ancho, y = y0 - R[r * M + c] * amp + Math.sin(u * 11 + S.t * 2.2 + r * 0.33) * onda;
+              if (c === c0) cx.moveTo(x, y); else cx.lineTo(x, y);
+            }
+            cx.strokeStyle = tinta(hb + (k / NCH) * gi + t * 40, t); cx.stroke();
+          }
+        } else { cx.strokeStyle = tinta(hb + t * gi, t); cx.stroke(); }
+        if (S.vista === 'completa' && X.modo === 'detras' && r === X.capa && !viejo) {
+          cx.globalAlpha = 1;
+          pintaActor((xs) => { const c = Math.max(0, Math.min(M - 1, Math.round(((xs - x0) / ancho) * (M - 1)))); return y0 - R[r * M + c] * amp + Math.sin(c / (M - 1) * 11 + S.t * 2.2 + r * 0.33) * onda; });
+        }
+      }
+      cx.globalAlpha = 1;
+    }
+    if (S.vista === 'completa' && (X.modo !== 'detras' || !S.rows || ((S.cascada && !S.mixto) ? 1 : S.pluma) * N_ROWS <= X.capa)) pintaActor(null);
+    cartela();
+  }
+
+  // etapa 1 del proceso: el dato crudo del motor, la altura normalizada en una rejilla
+  function datos() {
+    const T = S.terr, G = T.G, lado = Math.min(W, H) * 0.8, ox = (W - lado) / 2, oy = (H - lado) / 2 - H * 0.02;
+    if (!S._img || S._imgDe !== S.semilla) {
+      const c = document.createElement('canvas'); c.width = c.height = G; const ic = c.getContext('2d'), im = ic.createImageData(G, G);
+      for (let i = 0; i < G * G; i++) {
+        const v = T.h[i], col = MT.oklch(0.18 + 0.72 * v, 0.02 + 0.1 * v, S.hue + 220 * v);
+        im.data[i * 4] = parseInt(col.slice(1, 3), 16); im.data[i * 4 + 1] = parseInt(col.slice(3, 5), 16); im.data[i * 4 + 2] = parseInt(col.slice(5, 7), 16); im.data[i * 4 + 3] = 255;
+      }
+      ic.putImageData(im, 0, 0); S._img = c; S._imgDe = S.semilla;
+    }
+    cx.imageSmoothingEnabled = false; cx.drawImage(S._img, ox, oy, lado, lado);
+    // las 112 filas que se van a trazar, como marcas al borde de la rejilla
+    cx.strokeStyle = tinta(S.hue + 90, 1); cx.lineWidth = 1;
+    for (let r = 0; r < N_ROWS; r += 4) { const y = oy + (r / (N_ROWS - 1)) * lado; cx.beginPath(); cx.moveTo(ox - 10, y); cx.lineTo(ox, y); cx.stroke(); }
+  }
+  // la cartela viva: la escribe la letra de un trazo, y lo que dice sale del terreno y de la señal
+  function escribe(txt, x, y, size, color, halo) {
+    const L = MT.letra.trazos(txt, x, y, size, { crudo: true, track: size * 0.12 }).lineas;
+    const pasada = (c, w) => {
+      cx.strokeStyle = c; cx.lineWidth = w; cx.beginPath();
+      for (const ln of L) { ln.forEach(([px, py], i) => (i ? cx.lineTo(px, py) : cx.moveTo(px, py))); }
+      cx.stroke();
+    };
+    if (halo) pasada(halo, Math.max(3, size * 0.45));
+    pasada(color, Math.max(1.2, size * 0.13));
+  }
+  const pad = (n, k = 2) => n.toFixed(k);
+  function cartela() {
+    const T = S.terr, size = Math.max(9, Math.round(H / 62)), x = Math.round(W * 0.025);
+    const fondo = papel(), col = S.oscuro ? neon(S.hue + 40) : MT.oklch(0.3, 0.1, S.hue);
+    let y = H - Math.round(H * 0.035);
+    const lineas = [];
+    if (S.mensaje) lineas.push(S.mensaje.toUpperCase());
+    if (T) {
+      const alt = Math.round(T.base + T.relieve);
+      const cumbre = (T.nombres && T.nombres[0]) ? ' · CUMBRE ' + T.nombres[0].nombre : '';
+      lineas.push(('LAMINA ' + S.semilla + ' · ' + T.tipo + ' · ' + String(alt).replace(/\B(?=(\d{3})+$)/g, ' ') + ' M' + cumbre).toUpperCase());
+      lineas.push(('EXAG X' + pad(S.exag) + ' · TONO ' + String(Math.round(((S.hue + S.shift) % 360 + 360) % 360)).padStart(3, '0') + ' · GRAVES ' + pad(S.b) + ' MEDIOS ' + pad(S.m) + ' AGUDOS ' + pad(S.a)).toUpperCase());
+      lineas.push(('ENTRADA ' + A.modo + ' · LEVANTO EN ' + (S.levanto / 1000).toFixed(2) + ' S · ACTIVIDAD ' + pad(S.act) + ' · BANCO ' + S.banco.length + '/' + BANCO_N + ' · CAMBIOS ' + S.cambios.length + (S.auto ? '' : ' (MANUAL)') + ' · HYDRA ' + pad(S.mezcla) + (S.mixto ? ' \u00b7 TERRENO+ESPECTRO' : S.cascada ? ' \u00b7 CASCADA' : '')).toUpperCase());
+    }
+    for (let i = lineas.length - 1; i >= 0; i--) { escribe(lineas[i], x, y, size, col, fondo); y -= size * 2.1; }
+  }
+
+  // ── el actor de texto ──────────────────────────────────────────────────────
+  // Escribe como a máquina, se equivoca y se corrige, a veces cambia de frase de golpe. Su tamaño
+  // sigue la actividad de la pieza: en calma es chiquito y bajo; con mucho movimiento crece y se
+  // atreve a ponerse delante o detrás de las crestas. Lo que dice sale del terreno y de la señal.
+  // Sólo usa glifos que la letra tiene (sin = _ > < % ~ * [ ]).
+  const X = { rng: null, n: 0, meta: '', txt: '', fase: 'espera', t: 0, hasta: 0, modo: 'cielo', capa: 60, yf: 0.5, ax: 0.05,
+              tam: 0, p: 0, color: null, errores: 0, ultimaBrusca: -9, prevFlash: 0 };
+  function frases() {
+    const T = S.terr; if (!T) return ['TRASPUESTA'];
+    const alt = Math.round(T.base + T.relieve), mil = (n) => String(n).replace(/\B(?=(\d{3})+$)/g, ' ');
+    const h = Math.round(((S.hue + S.shift) % 360 + 360) % 360), f = [];
+    f.push('LAMINA ' + S.semilla, T.tipo + ' · ' + mil(alt) + ' M', 'TRASPUESTA: LO QUE LA ELEVACION IMPIDE VER');
+    for (const n of (T.nombres || []).slice(0, 3)) {
+      f.push('CUMBRE ' + n.nombre, n.nombre);
+      if (n.glosa) f.push(n.nombre + ' - ' + n.glosa);
+    }
+    const cod = (S.codigo || '').split('\n').map((l) => l.trim().replace(/=>/g, ':').replace(/[=_<>%~*\[\]{}`$;]/g, '')).filter((l) => l.length > 3 && l.length < 46);
+    for (const l of cod) f.push(l);
+    if (T.rios) f.push(T.rios.length + ' RIOS · ' + N_ROWS + ' FILAS');
+    f.push('montana(' + S.semilla + ').exag(' + S.exag.toFixed(2) + ')',
+           'osc(' + Math.round(8 + S.a * 70) + ', ' + S.b.toFixed(2) + ').modulate(montana)',
+           'src(s0).hue(' + (h / 360).toFixed(2) + ').diff(src(o0))',
+           'a.fft/0/ · graves ' + S.b.toFixed(2), 'golpe(' + S.flash.toFixed(1) + ') · tono ' + h);
+    return f;
+  }
+  const elige = (arr) => arr[Math.floor(X.rng() * arr.length)];
+  const rango = (a, b) => a + (b - a) * X.rng();
+  function nuevoColor() { // motor de color del texto: independiente del paisaje, derivado de la semilla y la señal
+    const tipo = elige(['jodi', 'complemento', 'inverso', 'sombra-larga', 'eco']);
+    const h = S.hue + 180 + rango(-50, 50), o = S.oscuro;
+    const tinta = (hh) => (o ? neon(hh) : MT.oklch(0.3, 0.15, hh));
+    const claro = (hh) => (o ? MT.oklch(0.2, 0.07, hh) : MT.oklch(0.93, 0.07, hh));
+    const c = { tipo, h, fondo: null, fondoA: 0.9, sombras: [], tinta: tinta(h) };
+    if (tipo === 'jodi') c.sombras = [{ col: tinta(h + 120), dx: 0.14, dy: 0.1 }];
+    else if (tipo === 'complemento') { c.fondo = claro(h + 180); c.tinta = o ? MT.oklch(0.93, 0.12, h) : MT.oklch(0.3, 0.14, h); }
+    else if (tipo === 'inverso') { c.fondo = tinta(h + 40); c.fondoA = 1; c.tinta = o ? MT.oklch(0.14, 0.03, h) : MT.oklch(0.97, 0.02, h); }
+    else if (tipo === 'sombra-larga') { for (let i = 3; i >= 1; i--) c.sombras.push({ col: o ? MT.oklch(0.25 + 0.08 * i, 0.12, h + 20 * i) : MT.oklch(0.55 + 0.1 * i, 0.12, h + 20 * i), dx: 0.09 * i, dy: 0.09 * i }); }
+    else { c.tinta = o ? MT.oklch(0.97, 0.02, h) : MT.oklch(0.2, 0.03, h); c.sombras = [{ col: tinta(h), dx: -0.12, dy: 0.06 }, { col: tinta(h + 180), dx: 0.12, dy: -0.06 }]; }
+    return c;
+  }
+  function nuevoModo() { // la posición la decide la actividad: en calma discreto, activo se mete al paisaje
+    const p = X.p, peso = [['abajo', 1.1 * (1 - p) + 0.15], ['cielo', 0.9 * (1 - p) + 0.3], ['detras', 0.25 + 1.5 * p], ['encima', 0.2 + 1.1 * p]];
+    let tot = 0; for (const [, w] of peso) tot += w;
+    let u = X.rng() * tot; X.modo = 'abajo';
+    for (const [m, w] of peso) { u -= w; if (u <= 0) { X.modo = m; break; } }
+    X.capa = Math.round(N_ROWS * rango(0.22, 0.72)); X.yf = rango(0.34, 0.78); X.ax = rango(0.0, 1.0);
+  }
+  function nuevaFrase(brusca) {
+    const pool = frases(); let f = elige(pool), k = 0;
+    while (f === X.meta && k++ < 6) f = elige(pool);
+    X.meta = f; X.n++; X.color = nuevoColor(); nuevoModo();
+    if (brusca) { X.txt = ''; X.ultimaBrusca = S.t; }
+    X.fase = 'escribe'; X.t = 0; X.errores = 0; X.hasta = 0;
+  }
+  const TECLAS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'.split('');
+  // guion (opcional, para videos de una pieza): X.guion(t) → la frase que toca a esa hora, o null para que el
+  // actor siga solo. Cuando el guion cambia de frase, el actor borra la suya y teclea la nueva; mientras dure,
+  // no la suelta ni la cambia por golpe.
+  function guionPaso() {
+    const g = X.guion(S.t) || null;
+    if (g === X.gActual) return;
+    X.gActual = g;
+    if (g) { X.meta = g; X.n++; X.color = nuevoColor(); nuevoModo(); X.txt = ''; X.fase = 'escribe'; X.t = 0; X.errores = 0; X.hasta = 0; }
+    else { X.fase = 'borra'; X.t = 0; X.hasta = 0; }
+  }
+  function actor(dt) {
+    if (!X.rng) { if (!S.terr) return; X.rng = MT.rng(S.semilla + ':texto'); nuevaFrase(true); }
+    if (X.fijo) return; // el proceso congela al actor para capturar una etapa
+    if (X.guion) guionPaso();
+    const conGuion = !!(X.guion && X.gActual);
+    const p = prom(); X.p += (p - X.p) * Math.min(1, dt * 1.6);
+    const base = H * 0.019, max = H * 0.17, obj = base + (max - base) * Math.pow(X.p, 1.5);
+    if (!X.tam) X.tam = base; else X.tam += (obj - X.tam) * Math.min(1, dt * 3.2);
+    X.t += dt;
+    // golpe fuerte con actividad alta: a veces cambia de frase sin avisar
+    const borde = S.flash > 0.85 && X.prevFlash <= 0.85; X.prevFlash = S.flash;
+    if (!conGuion && borde && X.p > 0.35 && S.t - X.ultimaBrusca > 1.3 && X.rng() < 0.5) { nuevaFrase(true); return; }
+    const cps = 6 + 30 * Math.pow(X.p, 1.2); // caracteres por segundo
+    if (X.fase === 'escribe') {
+      X.hasta += dt * cps;
+      while (X.hasta >= 1) {
+        X.hasta -= 1;
+        if (X.txt === X.meta) { X.fase = 'espera'; X.t = 0; break; }
+        if (X.meta.startsWith(X.txt)) {
+          if (X.rng() < 0.011 + 0.022 * X.p && X.errores < 1) { // se equivoca de tecla
+            X.txt += elige(TECLAS); X.errores++; X.fase = 'duda'; X.t = 0; break;
+          }
+          X.txt += X.meta[X.txt.length];
+        } else { X.fase = 'duda'; X.t = 0; break; }
+      }
+    } else if (X.fase === 'duda') { // un instante: ve el error
+      if (X.t > 0.22 + 0.25 * (1 - X.p)) { X.fase = 'corrige'; X.t = 0; X.hasta = 0; }
+    } else if (X.fase === 'corrige') {
+      X.hasta += dt * cps * 2.2;
+      while (X.hasta >= 1 && X.txt.length && !X.meta.startsWith(X.txt)) { X.hasta -= 1; X.txt = X.txt.slice(0, -1); }
+      if (X.meta.startsWith(X.txt)) { X.fase = 'escribe'; X.hasta = 0; }
+    } else if (X.fase === 'espera') {
+      if (!conGuion && X.t > (1.6 + 2.6 * X.rng()) / (0.5 + 1.5 * X.p)) { X.fase = 'borra'; X.t = 0; X.hasta = 0; }
+    } else if (X.fase === 'borra') {
+      X.hasta += dt * cps * 2.6;
+      while (X.hasta >= 1 && X.txt.length) { X.hasta -= 1; X.txt = X.txt.slice(0, -1); }
+      if (!X.txt.length) nuevaFrase(false);
+    }
+  }
+  function trazaLineas(L, col, w, dx, dy) {
+    cx.strokeStyle = col; cx.lineWidth = w; cx.beginPath();
+    for (const ln of L) ln.forEach(([px, py], i) => (i ? cx.lineTo(px + dx, py + dy) : cx.moveTo(px + dx, py + dy)));
+    cx.stroke();
+  }
+  // Parte la frase completa en renglones que quepan; el texto que se va escribiendo reparte sus
+  // caracteres sobre esos mismos cortes, así nada brinca mientras se teclea.
+  function renglones(meta, size, maxW, track) {
+    const palabras = meta.split(' '), out = []; let ini = 0, linea = '';
+    for (const p of palabras) {
+      const prueba = linea ? linea + ' ' + p : p;
+      if (linea && MT.letra.mide(prueba, size, { crudo: true, track }) > maxW) { out.push([ini, ini + linea.length]); ini += linea.length + 1; linea = p; }
+      else linea = prueba;
+    }
+    out.push([ini, ini + linea.length]);
+    return out;
+  }
+  // yFn(x): y de la cresta de la fila 'capa' en ese x de pantalla (sólo en el modo 'detras')
+  function pintaActor(yFn) {
+    if (!X.color || !X.tam) return;
+    const c = X.color, maxW = W * 0.92, MAXL = 3; let size = X.tam, R, tr;
+    for (let k = 0; k < 14; k++) { // si no cabe en 3 renglones, se achica
+      tr = size * 0.12; R = renglones(X.meta, size, maxW, tr);
+      const palabraLarga = Math.max(...X.meta.split(' ').map((w) => MT.letra.mide(w, size, { crudo: true, track: tr })));
+      if (R.length <= MAXL && palabraLarga <= maxW) break;
+      size *= 0.88;
+    }
+    const meds = R.map(([a, b]) => MT.letra.mide(X.meta.slice(a, b), size, { crudo: true, track: tr }));
+    const anchoF = Math.max(...meds), alto = size * 1.5 * (R.length - 1);
+    const x = W * 0.03 + X.ax * Math.max(0, W * 0.94 - anchoF);
+    let y;
+    if (X.modo === 'abajo') y = H * 0.83 - alto;
+    else if (X.modo === 'cielo') y = H * 0.06 + size * 1.3;
+    else if (X.modo === 'encima') y = H * X.yf + size * 0.5 - alto / 2;
+    else y = (yFn ? yFn(x + anchoF / 2) : H * 0.5) - size * 0.2;
+    const w = Math.max(1.2, size * 0.13), alfa = 0.45 + 0.55 * clamp(0.25 + X.p * 1.2);
+    const escribiendo = X.fase === 'duda' || X.fase === 'corrige';
+    const L2 = []; let finX = x, finY = y;
+    R.forEach(([a, b], i) => {
+      const visible = i === R.length - 1 ? X.txt.slice(a) : X.txt.slice(a, b);
+      if (X.txt.length <= a && i > 0) return; // todavía no llega a este renglón
+      const L = MT.letra.trazos(visible, x, y + i * size * 1.5, size, { crudo: true, track: tr });
+      for (const ln of L.lineas) L2.push(ln);
+      finX = x + L.ancho; finY = y + i * size * 1.5;
+    });
+    cx.save();
+    if (c.fondo) { cx.globalAlpha = alfa * c.fondoA; cx.fillStyle = c.fondo; cx.fillRect(x - size * 0.55, y - size * 1.35, anchoF + size * 1.1, size * 1.9 + alto); }
+    cx.globalAlpha = alfa;
+    for (const s of c.sombras) trazaLineas(L2, s.col, w, s.dx * size, s.dy * size);
+    trazaLineas(L2, papel(), w * 2.2, 0, 0); // contorno de papel para que se lea sobre las crestas
+    trazaLineas(L2, c.tinta, w, 0, 0);
+    if (Math.floor(S.t * 2.4) % 2 === 0 || escribiendo) { // el cursor, que parpadea
+      const cxx = finX + size * 0.35;
+      cx.strokeStyle = escribiendo ? neon(c.h + 150) : c.tinta; cx.lineWidth = w * 1.4;
+      cx.beginPath(); cx.moveTo(cxx, finY); cx.lineTo(cxx, finY - size); cx.stroke();
+    }
+    cx.restore();
+  }
+
+  // ── Hydra encima ─────────────────────────────────────────────────────────────
+  // La escena (el lienzo #c) entra a Hydra como s0; el resultado vive en #fx, encima, con una
+  // opacidad que es la mezcla 0..1 (a 0 ni se calcula). El código se edita a la vista y se evalúa
+  // con Ctrl+Enter; si no compila, se queda el programa anterior y el error se ve debajo.
+  // Hydra mira el audio por `a.fft[0..3]`: graves, medios, agudos, golpe.
+  const fx = $('fx'), edBox = $('ed'), edTxt = $('codigo'), edErr = $('ederr');
+  const aud = { fft: [0, 0, 0, 0], setBins() { return aud; }, setCutoff() { return aud; }, setScale() { return aud; }, setSmooth() { return aud; }, show() {}, hide() {} };
+  const PRESETS = [
+    ['eco', 'src(s0)\n  .modulate(noise(3, 0.12), () => a.fft[0] * 0.12)\n  .hue(() => a.fft[2] * 0.6)\n  .blend(src(o0).scale(1.01).rotate(0.002), 0.55)\n  .out(o0)'],
+    ['rgb', 'src(s0)\n  .color(1, 0.2, 0.3)\n  .add(src(s0).scrollX(() => a.fft[0] * 0.03).color(0.1, 0.4, 1), 1)\n  .add(src(s0).scrollX(() => -a.fft[1] * 0.03).color(0.2, 1, 0.3), 1)\n  .contrast(() => 1 + a.fft[3])\n  .out(o0)'],
+    ['caleidoscopio', 'src(s0)\n  .scrollY(-0.25)\n  .kaleid(() => 3 + Math.round(a.fft[0] * 5))\n  .rotate(() => time * 0.1)\n  .add(src(s0), 0.25)\n  .out(o0)'],
+    ['pixel', 'src(s0)\n  .pixelate(() => 420 - a.fft[0] * 380, () => 240 - a.fft[0] * 210)\n  .saturate(() => 1.5 + a.fft[2] * 2)\n  .out(o0)'],
+    ['ventana', 'osc(() => 10 + a.fft[0] * 40, 0.08, 1.2)\n  .color(0.9, 0.2, 1)\n  .modulate(noise(3, 0.1), 0.2)\n  .mask(src(s0).thresh(0.04, 0.02))\n  .add(src(s0), 0.35)\n  .out(o0)'],
+    // ── presets de las canciones de terreno (20 oct 2026; HYDRA.md). Se agregan al final: los índices de antes no cambian ──
+    // curvas: la escena posterizada contra sí misma un pixel abajo = curvas de nivel; los graves cambian la equidistancia
+    ['curvas', 'src(s0).posterize(() => 3 + a.fft[0] * 7, 0.7)\n  .diff(src(s0).posterize(() => 3 + a.fft[0] * 7, 0.7).scrollY(0.004))\n  .saturate(2.5).hue(() => time * 0.02)\n  .add(src(s0), 0.25)\n  .out(o0)'],
+    // erosión: el eco se escurre ladera abajo y el ruido lo carcome; cada golpe vuelve a depositar la escena
+    ['erosion', 'src(o0).scrollY(() => 0.0015 + a.fft[0] * 0.008)\n  .modulate(noise(4, 0.1), 0.004).scale(0.999)\n  .blend(src(s0), () => 0.12 + a.fft[3] * 0.5)\n  .out(o0)'],
+    // marea: lo oscuro de la escena (debajo del nivel) se vuelve mar de celdas; el nivel sube con los graves
+    ['marea', 'voronoi(() => 6 + a.fft[1] * 12, 0.2, 0.4)\n  .color(0.15, 0.35, 0.7).hue(() => time * 0.01)\n  .mask(src(s0).luma(() => 0.04 + a.fft[0] * 0.35, 0.05).invert())\n  .add(src(s0))\n  .out(o0)'],
+    // flujo (de un ejemplo de Canek): dos búferes; o1 es ruido que gira encima del eco, y empuja el matiz de o0 (modulateHue)
+    ['flujo', 'noise(1, 0.2).rotate(2, 0.5)\n  .layer(src(o0).scrollX(0.2))\n  .out(o1)\nsrc(o0).saturate(1.01).scale(0.999).hue(0.01)\n  .modulateHue(src(o1).hue(0.3).posterize(-1).contrast(0.7), () => 1 + a.fft[0] * 3)\n  .layer(src(s0).luma(0.08).mult(gradient(1).saturate(0.9)))\n  .out(o0)'],
+    // tectónica: placas de Voronoi corren la escena en x y en y; el golpe es un sismo
+    ['tectonica', 'src(s0)\n  .modulateScrollX(voronoi(() => 4 + a.fft[0] * 10, 0.15, 0), () => 0.01 + a.fft[3] * 0.12)\n  .modulateScrollY(voronoi(5, 0.1, 0), () => a.fft[3] * 0.06)\n  .blend(src(o0), 0.4)\n  .out(o0)'],
+    // lo que cambia: o1 es la memoria lenta de la escena; se ve sólo la diferencia (lo que la música mueve)
+    ['diferencia', 'src(o1).blend(src(s0), 0.04).out(o1)\nsrc(s0).diff(src(o1))\n  .saturate(3).contrast(() => 1.5 + a.fft[3] * 2)\n  .add(src(o0).scale(1.004), 0.6)\n  .out(o0)'],
+    // estratos: franjas horizontales que se corren cada una a su lado, como capas plegadas; los medios las empujan
+    ['estratos', 'src(s0)\n  .modulateScrollX(osc(() => 12 + a.fft[1] * 30, 0, 0).rotate(1.5708), () => 0.02 + a.fft[0] * 0.2)\n  .add(src(o0).scrollX(0.001), 0.5)\n  .out(o0)'],
+    // pantalla de Sutura: líneas de barrido, canales corridos y una pulsación que la enciende
+    ['crt', 'src(s0).color(1, 0.3, 0.3)\n  .add(src(s0).scrollX(() => 0.002 + a.fft[3] * 0.01).color(0.2, 1, 0.5), 1)\n  .add(src(s0).scrollX(() => -0.003).color(0.3, 0.4, 1), 1)\n  .mult(osc(540, 0, 0).rotate(1.5708).brightness(0.4))\n  .posterize(() => 6 - a.fft[3] * 4, 0.8)\n  .out(o0)'],
+    // luciérnagas: chispas que sólo nacen sobre las líneas del terreno, con cola; el golpe las enciende
+    ['luciernagas', 'noise(() => 60 + a.fft[2] * 60, 0.4).thresh(() => 0.78 - a.fft[3] * 0.3, 0.02)\n  .mult(src(s0).luma(0.05))\n  .add(src(o0).scale(1.002).mult(solid(0.93, 0.93, 0.96)), 1)\n  .add(src(s0), 0.3)\n  .out(o0)'],
+    // derrame (del primer ejemplo de Canek): Voronoi por oscilador en caleidoscopio que se come a sí mismo y sube; la escena encima
+    ['derrame', 'voronoi(8, 1)\n  .mult(osc(10, 0.1, () => Math.sin(time) * 3).saturate(3).kaleid(200))\n  .modulate(o0, 0.5).add(o0, 0.8)\n  .scrollY(-0.01).scale(0.99)\n  .modulate(voronoi(8, 1), 0.008)\n  .luma(0.3)\n  .add(src(s0), () => 0.4 + a.fft[0])\n  .out(o0)'],
+    // ── presets que leen el mapa de la lámina (s1 = alturas vistas desde arriba, gris). La escena va en perspectiva y el mapa
+    //    es cenital: no se calcan, el mapa entra como otra imagen (la diapositiva de una linterna mágica) ──
+    // linterna: el mapa proyectado como diapositiva que parpadea con el golpe, teñido, girando lento, sobre la escena
+    ['linterna', 'src(s1).scale(() => 0.9 + a.fft[0] * 0.15).rotate(() => time * 0.02)\n  .colorama(() => 0.05 + a.fft[2] * 0.1).luma(0.08)\n  .modulate(noise(2, 0.05), 0.02)\n  .blend(src(o0).scale(1.003), 0.6)\n  .mult(solid(1, 1, 1), () => 0.6 + a.fft[3] * 0.4)\n  .add(src(s0), 0.7)\n  .out(o0)'],
+    // inundar: el agua sube por el mapa con los graves; lo más hondo (cenotes, dolinas) se llena primero
+    ['inundar', 'src(s1).thresh(() => 0.12 + a.fft[0] * 0.55, 0.03).invert()\n  .mult(voronoi(14, 0.3, 0.6).color(0.1, 0.4, 0.8).hue(() => time * 0.01))\n  .scale(0.95).add(src(o0).scale(1.002).mult(solid(0.9, 0.9, 0.95)), 0.6)\n  .add(src(s0), 0.8)\n  .out(o0)'],
+    // relieve: la escena se dobla según el mapa (las alturas desplazan los renglones)
+    ['relieve', 'src(s0)\n  .modulate(src(s1).scale(1.1), () => 0.04 + a.fft[0] * 0.18)\n  .modulateScrollY(src(s1), () => a.fft[3] * 0.05)\n  .blend(src(o0), 0.35)\n  .out(o0)'],
+    // sombra: «Piramidal, funesta, de la tierra / nacida sombra»: una pirámide que sube con el tiempo y tapa la escena; el mapa adentro
+    ['sombra', 'src(s0)\n  .mult(shape(3, () => 0.25 + (time * 0.01) % 0.9, 0.04).scrollY(() => 0.2 - (time * 0.006) % 0.5).invert(), 1)\n  .add(src(s1).mask(shape(3, () => 0.25 + (time * 0.01) % 0.9, 0.04).scrollY(() => 0.2 - (time * 0.006) % 0.5)).color(0.4, 0.3, 0.6), 0.5)\n  .out(o0)'],
+    // nivel del mar («El coral que no se deja hundir»): el mapa se corta con un nivel que sube con el tiempo de la canción (Darwin:
+    //   el volcán se hunde = el mar sube sobre él); lo de abajo se ondula y se azula; lo que asoma queda nítido y brilla con los agudos
+    ['nivel del mar', 'src(s0).modulate(osc(9, 0.04, 0).rotate(0.4), () => 0.008 + a.fft[0] * 0.02).color(0.25, 0.5, 0.95).luma(0.04)\n  .layer(src(s0).mask(src(s1).thresh(() => Math.min(0.94, 0.04 + time / 250), 0.025)))\n  .add(src(s1).thresh(() => Math.min(0.94, 0.04 + time / 250), 0.025).color(1, 0.82, 0.45), () => 0.06 + a.fft[3] * 0.25)\n  .blend(src(o0), 0.25)\n  .out(o0)'],
+    // salto («Las islas del cielo»): de las paredes empinadas del mapa (donde la altura cambia de golpe) caen estelas que se
+    //   ensanchan y se borran: las cascadas de los tepuyes que se vuelven niebla antes de llegar
+    ['salto', 'src(s1).diff(src(s1).scrollY(0.005)).thresh(0.03, 0.02).color(0.75, 0.9, 1)\n  .add(src(o0).scrollY(-0.004).modulate(noise(5, 0.1), 0.003).mult(solid(0.94, 0.96, 1)), 0.92)\n  .blend(src(s0), () => 0.45 - a.fft[2] * 0.2)\n  .out(o0)'],
+    // bocina («La ciudad se hunde bailando»): las cimas del mapa (los conos) son bocinas de sonidero: de cada una salen anillos
+    //   que se agrandan con el bajo
+    ['bocina', 'src(s1).thresh(0.82, 0.04).scale(() => 1 + a.fft[0] * 0.25)\n  .add(src(o0).scale(1.025).mult(solid(0.9, 0.86, 0.95)), 0.88)\n  .color(1, 0.7, 0.95).blend(src(s0), () => 0.5 - a.fft[0] * 0.2)\n  .out(o0)'],
+    // cárcava («Lo que el agua dibuja»): la lluvia cae como chispas de ruido (más con los agudos) en un búfer, o1, que se desliza
+    // cuesta abajo por el gradiente del mapa (s1 es la altura: su diferencia a izquierda y derecha, arriba y abajo, empuja la
+    // muestra); lo que se junta en las hondonadas se queda y decae lento: el agua dibuja sus cárcavas sobre la escena.
+    ['cárcava', 'src(o1).modulate(src(s1).scrollX(0.004).add(src(s1).scrollX(-0.004).invert()).color(1, 0, 0)\n    .add(src(s1).scrollY(0.004).add(src(s1).scrollY(-0.004).invert()).color(0, 1, 0)).add(solid(-1, -1, 0)), () => 0.5 + a.fft[0] * 0.5)\n  .mult(solid(0.985, 0.985, 0.985))\n  .add(noise(400, 0.9).thresh(() => 0.9 - a.fft[2] * 0.12, 0.01), () => 0.04 + a.fft[2] * 0.25)\n  .out(o1)\nsrc(s0).add(src(o1).color(0.45, 0.75, 1), 0.85)\n  .out(o0)'],
+  ];
+  let hy = null, hyFallo = false;
+  const iniciaHydra = () => {
+    if (hy || hyFallo) return !!hy;
+    try {
+      if (typeof Hydra === 'undefined') throw new Error('Hydra no cargó');
+      hy = new Hydra({ canvas: fx, width: W, height: H, detectAudio: false, enableStreamCapture: false, autoLoop: false, makeGlobal: false });
+      hy.synth.s0.init({ src: cv });
+      hy.synth.s1.init({ src: mapaCv, dynamic: true }); // el mapa de la lámina: Hydra lee la montaña como dato
+      hy.setResolution(W, H); // con canvas propio Hydra no toma el tamaño de las opciones
+      return true;
+    } catch (e) { hyFallo = true; edErr.textContent = 'Hydra no disponible: ' + e.message; return false; }
+  };
+  function evalua(codigo) {
+    if (!iniciaHydra()) return false;
+    try {
+      const f = new Function('synth', 'a', 'with (synth) {\n' + codigo + '\n}'); // el código es del usuario, en su máquina
+      f(hy.synth, aud);
+      S.codigo = codigo; edErr.textContent = ''; S.hydraError = ''; return true;
+    } catch (e) { S.hydraError = String(e.message || e); edErr.textContent = '× ' + S.hydraError + ' (sigue el programa anterior)'; return false; }
+  }
+  function fxResize() { fx.style.width = W + 'px'; fx.style.height = H + 'px'; try { if (hy) hy.setResolution(W, H); } catch (e) {} }
+  function usaPreset(i) {
+    const p = PRESETS[((i % PRESETS.length) + PRESETS.length) % PRESETS.length];
+    S.presetN = PRESETS.indexOf(p); edTxt.value = p[1]; $('preset').value = String(S.presetN);
+    if (S.mezcla < 0.02) mezcla(0.6); // si estaba apagado, se enciende para que se vea qué pasó
+    return evalua(p[1]);
+  }
+  function mezcla(v) { S.mezcla = clamp(+v); $('mezcla').value = String(S.mezcla); fx.style.opacity = String(S.mezcla); if (S.mezcla > 0.005 && !hy) { iniciaHydra(); if (hy && !S.codigo) evalua(edTxt.value); } }
+  // un cuadro de Hydra y el compuesto para capturar (escena + Hydra con la mezcla + el editor, si toca)
+  const cap = document.createElement('canvas');
+  function hydraCuadro(dt) {
+    aud.fft[0] = S.b; aud.fft[1] = S.m; aud.fft[2] = S.a; aud.fft[3] = S.flash;
+    if (S.mezclaAuto) { const o = 0.12 + 0.88 * prom(); mezcla(S.mezcla + (o - S.mezcla) * Math.min(1, dt * 1.5)); }
+    if (S.mezcla > 0.005 && hy) { try { hy.tick(dt * 1000); } catch (e) { S.hydraError = String(e.message || e); edErr.textContent = '× ' + S.hydraError; } }
+    if (S.mezcla > 0.005 || S.editorEnCaptura) {
+      cap.width = cv.width; cap.height = cv.height; const k = cap.getContext('2d');
+      k.drawImage(cv, 0, 0);
+      if (S.mezcla > 0.005 && hy) { k.globalAlpha = S.mezcla; k.drawImage(fx, 0, 0, cv.width, cv.height); k.globalAlpha = 1; }
+      if (S.editorEnCaptura) pintaEditor(k);
+    }
+  }
+  function pintaEditor(k) { // el editor, tal como se ve, para que el PNG y el GIF lo lleven
+    const lineas = edTxt.value.split('\n').slice(0, 12), fam = 'ui-monospace, Menlo, Consolas, monospace';
+    let size = Math.max(10, Math.round(H / 34)) * DPR; const pad = size * 0.7, maxW = cap.width * 0.5 - pad * 2;
+    k.font = size + 'px ' + fam;
+    const lw = Math.max(1, ...lineas.map((l) => k.measureText(l).width));
+    if (lw > maxW) { size *= maxW / lw; k.font = size + 'px ' + fam; } // el renglón más largo manda
+    const ancho = Math.min(maxW, Math.max(k.measureText('HYDRA 00000000000000000000000000').width, lw * Math.min(1, maxW / lw))) + pad * 2;
+    const x = cap.width - ancho - pad, y = pad, alto = pad * 2 + size * 1.5 * (lineas.length + 2) + (S.hydraError ? size * 1.5 : 0);
+    k.save(); k.fillStyle = 'rgba(0,0,0,0.62)'; k.fillRect(x, y, ancho, alto);
+    k.strokeStyle = 'rgba(255,255,255,0.3)'; k.lineWidth = DPR; k.strokeRect(x, y, ancho, alto);
+    k.font = size + 'px ' + fam; k.textBaseline = 'top';
+    k.fillStyle = 'rgba(255,255,255,0.55)';
+    k.fillText('HYDRA \u00b7 ' + PRESETS[S.presetN || 0][0] + ' \u00b7 MEZCLA ' + S.mezcla.toFixed(2) + (S.mezclaAuto ? ' AUTO' : ''), x + pad, y + pad);
+    k.fillStyle = '#e8e8f0';
+    lineas.forEach((l, i) => k.fillText(l, x + pad, y + pad + size * 1.5 * (i + 1.4)));
+    if (S.hydraError) { k.fillStyle = '#ff7a8a'; k.fillText('\u00d7 ' + S.hydraError.slice(0, 60), x + pad, y + pad + size * 1.5 * (lineas.length + 2)); }
+    k.restore();
+  }
+  const lienzo = () => ((S.mezcla > 0.005 || S.editorEnCaptura) ? cap : cv);
+
+  // la interfaz del editor
+  PRESETS.forEach(([n], i) => { const o = document.createElement('option'); o.value = String(i); o.textContent = (i + 1) + ' · ' + n; $('preset').appendChild(o); });
+  $('preset').onchange = (e) => usaPreset(+e.target.value);
+  $('mezcla').oninput = (e) => { S.mezclaAuto = false; mezcla(e.target.value); };
+  edTxt.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) { e.preventDefault(); evalua(edTxt.value); }
+    else if (e.key === 'Escape') edTxt.blur();
+    e.stopPropagation();
+  });
+  edTxt.value = PRESETS[0][1]; S.presetN = 0;
+
+  // ── cascada de espectro (tecla C) ───────────────────────────────────────────────
+  // Cada fila es un instante del pasado reciente (la de adelante es "ahora", las de atrás van hacia
+  // atrás en el tiempo) y su relieve es el espectro de ese instante: graves a la izquierda, agudos
+  // a la derecha, en escala logarítmica. El color de cada tramo es su frecuencia. La montaña la dibuja
+  // la música; el terreno sólo pone la paleta y, con el cambio por golpe, la semilla.
+  const DT_FILA = 0.045; // 112 filas ≈ 5 s de historia
+  const hist = Array.from({ length: N_ROWS }, () => new Float32Array(N_COLS + 1));
+  let acumFila = 0;
+  S.cascada = Q.get('cascada') === '1' || Q.get('mixto') === '1'; S.mixto = Q.get('mixto') === '1';
+  S.casRows = new Float32Array(N_ROWS * (N_COLS + 1)); S.mixRows = new Float32Array(N_ROWS * (N_COLS + 1)); S.prevMix = new Float32Array(N_ROWS * (N_COLS + 1));
+  // terreno + espectro: el terreno da la forma (una fila de terreno por cada instante del pasado) y el
+  // espectro la infla donde hay energía en esa frecuencia: grave a la izquierda, agudo a la derecha
+  function mezclaFilas(ter, out) {
+    const M = N_COLS + 1;
+    for (let r = 0; r < N_ROWS; r++) {
+      const h = hist[r];
+      for (let c = 0; c < M; c++) { const t = ter[r * M + c], e = h[c]; out[r * M + c] = t * (0.35 + Math.pow(e, 0.9)) + 0.1 * e; }
+    }
+  }
+  function espectroAhora(out) {
+    const M = N_COLS + 1;
+    if ((A.modo === 'micro' || A.modo === 'archivo' || A.modo === 'pista') && A.bytes) {
+      const sr = (A.modo === 'pista' && A.buf) ? A.buf.sampleRate : A.ctx.sampleRate, hzBin = sr / 2048, nb = A.bytes.length;
+      for (let c = 0; c < M; c++) {
+        const u = c / (M - 1), f = 40 * Math.pow(12000 / 40, u), b = Math.min(nb - 2, f / hzBin), i = Math.floor(b), fr = b - i;
+        const v = (A.bytes[i] * (1 - fr) + A.bytes[i + 1] * fr) / 255;
+        out[c] = clamp(Math.pow(v, 1.9) * (0.7 + 0.7 * u) * A.ganancia);
+      }
+    } else { // sin audio: un espectro inventado con la misma forma que el de verdad (tres bandas + rizado armónico)
+      for (let c = 0; c < M; c++) {
+        const u = c / (M - 1);
+        const env = S.b * (1 - sst(0.02, 0.3, u)) + S.m * Math.exp(-Math.pow((u - 0.45) / 0.2, 2)) + S.a * sst(0.5, 0.9, u);
+        const rizo = 0.5 + 0.5 * Math.sin(u * 46 + S.t * 3 + Math.sin(u * 7 + S.t) * 2);
+        out[c] = clamp(env * (0.35 + 0.65 * rizo) + S.flash * 0.25 * Math.exp(-u * 3));
+      }
+    }
+    // un suavizado mínimo entre columnas para que no sea ruido de bins
+    let p = out[0];
+    for (let c = 1; c < M - 1; c++) { const v = (p + 2 * out[c] + out[c + 1]) / 4; p = out[c]; out[c] = v; }
+  }
+  function cascadaPaso(dt) {
+    if (!S.cascada) return;
+    acumFila += dt; let n = 0;
+    while (acumFila >= DT_FILA && n++ < 4) {
+      acumFila -= DT_FILA;
+      const nueva = hist.shift(); espectroAhora(nueva); hist.push(nueva); // la fila de adelante es la más nueva
+    }
+    for (let r = 0; r < N_ROWS; r++) S.casRows.set(hist[r], r * (N_COLS + 1));
+    if (S.mixto && S.rows) { mezclaFilas(S.rows, S.mixRows); if (S.prev) mezclaFilas(S.prev.rows, S.prevMix); }
+  }
+
+  // ── reloj ──────────────────────────────────────────────────────────────────
+  const PLUMA_SEG = 7;
+  function paso(dt) {
+    S.t += dt; actualiza(dt); actor(dt); cascadaPaso(dt);
+    if (S.rows && S.pluma < 1) S.pluma = Math.min(1, S.pluma + dt / S.penDur);
+    if (S.pluma >= 1) S.prev = null;
+    dibuja();
+    hydraCuadro(dt);
+  }
+  let ult = performance.now();
+  function marco(ahora) {
+    const dt = Math.max(0, Math.min(0.1, (ahora - ult) / 1000)); ult = ahora; // nunca negativo: el primer rAF puede llegar antes que performance.now()
+    paso(dt); requestAnimationFrame(marco);
+  }
+
+  // ── guardar un cuadro (servidor local de la pieza; si no, descarga) ─────────────
+  async function guardaPNG(nombre) {
+    const blob = await new Promise((r) => lienzo().toBlob(r, 'image/png'));
+    try {
+      const r = await fetch('/guarda?n=' + encodeURIComponent(nombre || 'cuadro'), { method: 'POST', body: blob });
+      if (r.ok) return await r.json();
+    } catch (e) {}
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = (nombre || 'cuadro') + '.png'; a.click();
+    return { descarga: true };
+  }
+
+  // ── controles ──────────────────────────────────────────────────────────────
+  let dormir = null;
+  function despierta() { $('hud').classList.remove('dormido'); clearTimeout(dormir); if (!MANUAL) dormir = setTimeout(() => $('hud').classList.add('dormido'), 5000); }
+  window.addEventListener('mousemove', despierta);
+  $('bMic').onclick = () => usaMicro();
+  $('bDemo').onclick = () => { desconecta(); A.modo = 'demo'; };
+  $('bArchivo').onclick = () => $('archivo').click();
+  $('archivo').onchange = (e) => { if (e.target.files[0]) usaArchivo(e.target.files[0]); };
+  $('dispositivo').onchange = (e) => usaMicro(e.target.value);
+  window.addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'SELECT' || e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    const k = e.key.toLowerCase();
+    if (k === 'r') otra();
+    else if (k === 's') { const v = prompt('Semilla:', S.semilla); if (v) otra(v.trim()); }
+    else if (k === 'l') S.oscuro = !S.oscuro;
+    else if (k === 'n') { if (!cambia('tecla')) otra(); }
+    else if (k === 'b') S.auto = !S.auto;
+    else if (k === 'c') { S.cascada = !S.cascada; S.mixto = false; }
+    else if (k === 'v') { S.mixto = !S.mixto; S.cascada = S.mixto; }
+    else if (k === '[') { S.mezclaAuto = false; mezcla(S.mezcla - 0.05); }
+    else if (k === ']') { S.mezclaAuto = false; mezcla(S.mezcla + 0.05); }
+    else if (/^[0-9]$/.test(k) && (+k || 10) <= PRESETS.length) usaPreset((+k || 10) - 1);   // 1–9 y 0 = el 10 (numérico: con 15 presets, '2' <= '15' era falso)
+    else if (k === 'a') S.mezclaAuto = !S.mezclaAuto;
+    else if (k === 'e') { edBox.classList.toggle('oculto'); if (!edBox.classList.contains('oculto')) edTxt.focus(); }
+    else if (k === 'm') usaMicro();
+    else if (k === 'h') $('hud').classList.toggle('dormido');
+    else if (k === 'p') guardaPNG('s' + S.semilla);
+    else if (e.key === 'ArrowUp') { A.ganancia = Math.min(8, A.ganancia * 1.2); e.preventDefault(); }
+    else if (e.key === 'ArrowDown') { A.ganancia = Math.max(0.2, A.ganancia / 1.2); e.preventDefault(); }
+    despierta();
+  });
+
+  // ── arranque ───────────────────────────────────────────────────────────────
+  const a0 = Q.get('audio');
+  if (a0 === 'mic' && !MANUAL) usaMicro();
+  const pista0 = Q.get('pista'); // ?pista=ruta/relativa.wav (servida por servir_musica.py)
+  if (pista0) usaPista('/pista?f=' + encodeURIComponent(pista0));
+  window.musica = { paso, guardaPNG, S, A, otra, X, cascada: (v) => { S.cascada = !!v; S.mixto = false; }, mixto: (v) => { S.mixto = !!v; S.cascada = !!v; }, cambia, usaPista, rellena, lienzo, hydra: { evalua, mezcla, usaPreset, PRESETS, editor: (v) => { S.editorEnCaptura = !!v; }, get listo() { return !!hy; }, get error() { return S.hydraError; } }, colorNuevo: () => nuevoColor(), vista: (v) => { S.vista = v; }, estado: () => ({ semilla: S.semilla, levanto: S.levanto, t: S.t, pluma: S.pluma, b: S.b, m: S.m, a: S.a, exag: S.exag, hue: S.hue, tipo: S.terr && S.terr.tipo, version: VERSION }) };
+  if (MANUAL) { $('hud').classList.add('dormido'); if (Q.get('editor') !== '1') edBox.classList.add('oculto'); } else despierta();
+  if (Q.get('preset')) usaPreset(+Q.get('preset') - 1);
+  if (Q.get('mezcla') != null) mezcla(+Q.get('mezcla'));
+  otra(Q.get('semilla') || semillaAzar()).then(() => { window.musicaLista = true; });
+  if (!MANUAL) requestAnimationFrame(marco);
+})();
+</script>
+</body>
+</html>

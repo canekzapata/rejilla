@@ -1,0 +1,15 @@
+{
+ "id": "consola-kalimba",
+ "nombre": "Kalimba (la de siempre)",
+ "familia": "idiófono · lengüetas (sintética)",
+ "motor": "voz",
+ "fisica": {
+  "tipo": "kalimba"
+ },
+ "notas": "Seno con una chispa en 5.4×: la voz de partida de consola.",
+ "procedencia": {
+  "nace": "consola · visor de lectura §27 (motor musical v1)",
+  "archivo": "consola/consola/static/lectura/musica.js",
+  "sha256": "0c9b5438248a37ab353559861535a15a841c719448dd4c865b6a005acf168621"
+ }
+}

@@ -1,0 +1,32 @@
+# Entornos, credenciales y cachés
+.env
+.env.*
+*.local
+*.pem
+*.key
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+node_modules/
+.DS_Store
+Thumbs.db
+# Productos regenerables
+renders/
+render/
+salidas/
+*.wav
+*.flac
+*.wv
+*.m4a
+*.mp3
+*.mp4
+*.f32
+*.raw
+*.npy
+*.npz
+*.zip
+*.7z
+usos.jsonl
+# Datos de voz opcionales
+difonos/bancos/

@@ -1,0 +1,22 @@
+{
+ "id": "objeto-tambor-que-habla",
+ "nombre": "Tambor que habla",
+ "familia": "membranófono · tambor parlante (modelado físico)",
+ "motor": "objeto",
+ "fisica": {
+  "modulo": "tambor.js",
+  "api": "Tambor",
+  "forma": "eventos",
+  "evento": {
+   "texto": "el tambor habla"
+  },
+  "cola": 1.5
+ },
+ "notas": "El parche cambia de tensión siguiendo las sílabas de un texto.",
+ "procedencia": {
+  "nace": "rejilla · objetos que cantan · tambor",
+  "archivo": "research/rejilla/objetos/motor/tambor.js",
+  "copia": "codigo/rejilla/research/rejilla/objetos/motor/tambor.js",
+  "sha256": "ca6b488cc32dc3234e8dcd20ebb13de390a09a87cf463366767bdcaa89754796"
+ }
+}

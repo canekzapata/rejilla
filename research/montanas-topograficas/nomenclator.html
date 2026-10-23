@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nomenclátor de Traspuesta — Canek Zapata</title>
+<meta name="description" content="Todos los nombres de las láminas de Traspuesta: cada cima, río, laguna y paso, con su lengua, lo que dice, su fuente y las láminas donde aparece.">
+<meta name="author" content="Canek Zapata">
+<meta name="date" content="2026">
+<meta name="copyright" content="© 2026 Canek Zapata">
+<meta name="keywords" content="net art, generativo, toponimia, nomenclátor, topografía, náhuatl, maya, quechua, zapoteco, rarámuri, purépecha, Traspuesta">
+<meta name="theme-color" content="">
+<link rel="canonical" href="https://traspuesta.canekzapata.net/nomenclator.html">
+<link rel="icon" href="favicon.png">
+
+<!-- Open Graph: Facebook, Instagram (al compartir links), WhatsApp, LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Canek Zapata">
+<meta property="og:title" content="Nomenclátor de Traspuesta">
+<meta property="og:description" content="Todos los nombres de las láminas de Traspuesta, con su lengua, lo que dicen y su fuente.">
+<meta property="og:url" content="https://traspuesta.canekzapata.net/nomenclator.html">
+<meta property="og:image" content="https://traspuesta.canekzapata.net/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Un paisaje de montañas trazado a pluma con los nombres de sus cimas.">
+<meta property="og:locale" content="es_MX">
+<meta property="og:locale:alternate" content="en_US">
+
+<!-- X / Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nomenclátor de Traspuesta">
+<meta name="twitter:description" content="Todos los nombres de las láminas de Traspuesta, con su lengua, lo que dicen y su fuente.">
+<meta name="twitter:image" content="https://traspuesta.canekzapata.net/og.png">
+<meta name="twitter:image:alt" content="Un paisaje de montañas trazado a pluma con los nombres de sus cimas.">
+<style>
+  /* el color lo pone una lámina de la edición al azar (nomenclator.js) */
+  :root { --papel: Canvas; --tinta: CanvasText; --tenue: GrayText; --raya: GrayText; color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  html, body { background: var(--papel); }
+  body { margin: 0; color: var(--tinta); font: 13px/1.55 ui-monospace, "Cascadia Mono", Consolas, monospace; }
+  a { color: inherit; }
+  .marco { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 30px 0 10px; }
+  .volver { font-size: 12px; text-decoration: none; border-bottom: 1px solid var(--raya); color: var(--tenue); }
+  #idioma { float: right; font-size: 12px; text-decoration: none; border-bottom: 1px solid var(--raya); color: var(--tenue); }
+  h1 { font-weight: normal; letter-spacing: 0.22em; font-size: clamp(20px, 4vw, 30px); margin: 18px 0 6px; }
+  #intro { color: var(--tenue); max-width: 70ch; margin: 0 0 6px; }
+  .filtros { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: end; padding: 14px 0 10px; position: sticky; top: 0; background: var(--papel); z-index: 2; border-bottom: 1px solid var(--raya); }
+  .filtros label { display: flex; flex-direction: column; gap: 2px; font-size: 11px; color: var(--tenue); }
+  .filtros select, .filtros input { font: inherit; font-size: 12px; color: var(--tinta); background: transparent; border: 0; border-bottom: 1px solid var(--raya); padding: 3px 0; max-width: 230px; }
+  .filtros select option { background: var(--papel); color: var(--tinta); }
+  .filtros .check { flex-direction: row; align-items: center; gap: 6px; }
+  #cuenta { margin-left: auto; color: var(--tenue); font-size: 11px; }
+  .letra { font-size: 22px; letter-spacing: 0.2em; margin: 26px 0 6px; border-bottom: 1px solid var(--raya); padding-bottom: 2px; }
+  .entrada { padding: 9px 0 10px; border-bottom: 1px dotted var(--raya); }
+  .entrada .nom { letter-spacing: 0.06em; }
+  .entrada .meta { color: var(--tenue); font-size: 11px; }
+  .entrada .dice { margin: 2px 0 0; }
+  .entrada .glosa { font-style: italic; color: var(--tenue); }
+  .entrada .fuente { color: var(--tenue); font-size: 11px; }
+  .entrada .laminas { margin-top: 3px; font-size: 11px; }
+  .entrada .laminas a { text-decoration: none; border-bottom: 1px solid var(--raya); margin-right: 8px; white-space: nowrap; }
+  .entrada .laminas a.titulo { border-bottom-color: var(--tinta); }
+  #mas { display: block; margin: 20px auto 50px; font: inherit; color: var(--tinta); background: none; border: 0; border-bottom: 1px solid var(--raya); cursor: pointer; }
+  footer { color: var(--tenue); font-size: 11px; padding: 10px 0 30px; }
+</style>
+</head>
+<body>
+<div class="marco">
+  <header>
+    <a class="volver" id="volver" href="index.html">← Traspuesta</a>
+    <a id="idioma" href="?lang=en">english</a>
+    <h1 id="t">NOMENCLÁTOR</h1>
+    <p id="intro"></p>
+  </header>
+  <section class="filtros">
+    <label><span id="l-lengua"></span><select id="f-lengua"></select></label>
+    <label><span id="l-clase"></span><select id="f-clase"></select></label>
+    <label>&nbsp;<input id="f-texto" type="search" autocomplete="off"></label>
+    <label class="check"><input id="f-titulos" type="checkbox"><span id="l-titulos"></span></label>
+    <span id="cuenta"></span>
+  </section>
+  <main id="lista"></main>
+  <button id="mas" hidden></button>
+  <footer id="pie"></footer>
+</div>
+<script src="nomenclator.js?v=38"></script>
+</body>
+</html>

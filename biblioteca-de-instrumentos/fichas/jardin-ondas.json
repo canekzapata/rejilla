@@ -1,0 +1,19 @@
+{
+ "id": "jardin-ondas",
+ "nombre": "Ondas Martenot",
+ "familia": "electrófono · ondas",
+ "motor": "python",
+ "fisica": {
+  "archivo": "codigo/jardin/netart/jardin-camara/musica/temas/instrumentos.py",
+  "funcion": "ondas",
+  "firma": "linea"
+ },
+ "notas": "Casi triangular por el difusor «palme», con cuerdas simpáticas afinadas a la casa.",
+ "procedencia": {
+  "nace": "jardín de cámara · música (temas/instrumentos.py)",
+  "archivo": "netart/jardin-camara/musica/temas/instrumentos.py",
+  "copia": "codigo/jardin/netart/jardin-camara/musica/temas/instrumentos.py",
+  "funcion": "ondas",
+  "sha256": "27aa1e7298e8dfeb3f0862d0a68ebe20f4e0dc1654d8b97ed494bd97703312f9"
+ }
+}

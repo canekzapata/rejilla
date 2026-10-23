@@ -1,0 +1,20 @@
+{
+ "id": "objeto-piano-papel",
+ "nombre": "Piano preparado: papel",
+ "familia": "cordófono · piano (modelado físico)",
+ "motor": "objeto",
+ "fisica": {
+  "modulo": "piano.js",
+  "api": "Piano",
+  "forma": "eventos",
+  "prep": "papel",
+  "cola": 2
+ },
+ "notas": "Cuerda de acero rígida en tramos: cejilla → preparación → puente (Cage).",
+ "procedencia": {
+  "nace": "rejilla · objetos que cantan · piano",
+  "archivo": "research/rejilla/objetos/motor/piano.js",
+  "copia": "codigo/rejilla/research/rejilla/objetos/motor/piano.js",
+  "sha256": "34295192810252d51baf0e20b6fc390a6757c47e6d78f773bcf434dd9bcf1ed3"
+ }
+}

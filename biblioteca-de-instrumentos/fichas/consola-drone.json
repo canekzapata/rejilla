@@ -1,0 +1,15 @@
+{
+ "id": "consola-drone",
+ "nombre": "Zumbido",
+ "familia": "electrófono · bordón",
+ "motor": "voz",
+ "fisica": {
+  "tipo": "drone"
+ },
+ "notas": "Triángulo y quinta: un bordón que respira.",
+ "procedencia": {
+  "nace": "consola · visor de lectura §27 (motor musical v1)",
+  "archivo": "consola/consola/static/lectura/musica.js",
+  "sha256": "0c9b5438248a37ab353559861535a15a841c719448dd4c865b6a005acf168621"
+ }
+}

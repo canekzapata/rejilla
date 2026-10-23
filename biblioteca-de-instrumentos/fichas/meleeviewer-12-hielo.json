@@ -1,0 +1,25 @@
+{
+ "id": "meleeviewer-12-hielo",
+ "nombre": "Hielo · yoshi 12 popo esta solo",
+ "familia": "idiófono · campana",
+ "motor": "meleeviewer",
+ "fisica": {
+  "escenario": "codigo/meleeviewer/escenarios/2026-09-30_yoshi_es_un_vector_12_popo_esta_solo.js",
+  "funcion": "hielo",
+  "params": [
+   "t",
+   "n",
+   "vel",
+   "p"
+  ],
+  "escenario_sha256": "1952f0b4ef6e7482365e4630f2632aecb6956a4676a33cf3d97242eb25a952c4"
+ },
+ "notas": "La función hielo(t, n, vel, p) de la canción 12 popo esta solo de «yoshi es un vector», tal cual, en su escenario seco.",
+ "procedencia": {
+  "nace": "meleeviewer · yoshi es un vector 12 popo esta solo",
+  "archivo": "meleeviewer/output/Arte/2026-09-30_yoshi_es_un_vector_12_popo_esta_solo/cancion.js",
+  "funcion": "hielo",
+  "sha256": "73b51862aed3e2228b45f3ae81c02a32c3e8d8c1a5b1d8ca45e9ed417809fed7",
+  "variante_de": "Hielo"
+ }
+}

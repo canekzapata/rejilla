@@ -1,0 +1,21 @@
+{
+ "id": "objeto-contrabajo",
+ "nombre": "Contrabajo (objeto)",
+ "familia": "cordófono · frotado (modelado físico)",
+ "motor": "objeto",
+ "fisica": {
+  "modulo": "cuerda.js",
+  "api": "Cuerda",
+  "forma": "eventos",
+  "control": {
+   "instrumento": "contrabajo"
+  }
+ },
+ "notas": "Cuerda frotada por modelado físico, con la caja de un violín escalada por tamaño.",
+ "procedencia": {
+  "nace": "rejilla · objetos que cantan · cuerda",
+  "archivo": "research/rejilla/objetos/motor/cuerda.js",
+  "copia": "codigo/rejilla/research/rejilla/objetos/motor/cuerda.js",
+  "sha256": "ca8024df0c2df4aab2f049c596aa8137d38aa28fe89022f8a1ab538663880625"
+ }
+}

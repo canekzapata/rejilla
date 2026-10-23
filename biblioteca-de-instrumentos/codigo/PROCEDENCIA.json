@@ -1,0 +1,499 @@
+{
+ "consola/consola/consola/static/lectura/musica.js": {
+  "origen": "consola/consola/static/lectura/musica.js",
+  "sha256": "724d5b2d5624621a9efc0616a2982122717f6405fd7410041f9c525040153ebb",
+  "bytes": 78608,
+  "copiado": "2026-10-18",
+  "commit_origen": null
+ },
+ "consola/consola/consola/static/lectura/bateria.js": {
+  "origen": "consola/consola/static/lectura/bateria.js",
+  "sha256": "b5f7a5af9ba649d09dffe602ab927cd35fddf8f9ebbe9f2143a2b9af00076d2d",
+  "bytes": 4305,
+  "copiado": "2026-10-18",
+  "commit_origen": null
+ },
+ "consola/consola/consola/static/lectura/instrumentos.js": {
+  "origen": "consola/consola/static/lectura/instrumentos.js",
+  "sha256": "14c201bccf5be5155ced8f301881425ad141143b2dedf8aea8911e968c90a34f",
+  "bytes": 6445,
+  "copiado": "2026-10-18",
+  "commit_origen": null
+ },
+ "rejilla/research/rejilla/musica.py": {
+  "origen": "research/rejilla/musica.py",
+  "sha256": "cdef770dba5ccb31e4c36983a810c63f622a9399c3dad541081f9c5c62fff3e3",
+  "bytes": 21879,
+  "copiado": "2026-10-18",
+  "commit_origen": "1eff5bf 2026-10-09"
+ },
+ "rejilla/research/rejilla/esquinas.py": {
+  "origen": "research/rejilla/esquinas.py",
+  "sha256": "ec4eca0572c7879123be99c8304b9289c6ef0dcab6152b171315e24f14eba3bc",
+  "bytes": 24548,
+  "copiado": "2026-10-18",
+  "commit_origen": "1eff5bf 2026-10-09"
+ },
+ "rejilla/research/rejilla/rejilla.py": {
+  "origen": "research/rejilla/rejilla.py",
+  "sha256": "dc4db07046e28129dddc7107b75436516a39caad6f5c4227a6a02fa214e23a4d",
+  "bytes": 6747,
+  "copiado": "2026-10-18",
+  "commit_origen": "4a50977 2026-10-09"
+ },
+ "rejilla/research/rejilla/aurora/instrumentos.py": {
+  "origen": "research/rejilla/aurora/instrumentos.py",
+  "sha256": "97fd63a4668a0d2d8082e45c5afa4dc7b18f48a5b7a879940d7269f3574afb7e",
+  "bytes": 13183,
+  "copiado": "2026-10-18",
+  "commit_origen": "099aa88 2026-10-09"
+ },
+ "rejilla/research/rejilla/aurora/motor.py": {
+  "origen": "research/rejilla/aurora/motor.py",
+  "sha256": "9cb363791cbbd970fa613df397bab1fca77a7391fd86fe61a325d9164550fae0",
+  "bytes": 10736,
+  "copiado": "2026-10-18",
+  "commit_origen": "46e8648 2026-10-09"
+ },
+ "rejilla/research/rejilla/pixeles/instrumentos.py": {
+  "origen": "research/rejilla/pixeles/instrumentos.py",
+  "sha256": "8ceed39eaf3a8db910e5a4cceb49c2663b377ccf3f902e6411b46ba8e332d26f",
+  "bytes": 6818,
+  "copiado": "2026-10-18",
+  "commit_origen": "59086b2 2026-10-09"
+ },
+ "rejilla/research/rejilla/pixeles/motor.py": {
+  "origen": "research/rejilla/pixeles/motor.py",
+  "sha256": "bcc17ac550be0e30d15fcbf9f0389ca106351ad515d9ea8b41fc6074dd8c92bc",
+  "bytes": 8928,
+  "copiado": "2026-10-18",
+  "commit_origen": "59086b2 2026-10-09"
+ },
+ "rejilla/research/rejilla/maquina/nave.py": {
+  "origen": "research/rejilla/maquina/nave.py",
+  "sha256": "9709557dbae972e38e0bc92d3c734a36f60f3f03a61d5745b1d32c3b76ada371",
+  "bytes": 19734,
+  "copiado": "2026-10-18",
+  "commit_origen": "83e9608 2026-10-14"
+ },
+ "rejilla/research/rejilla/maquina/boceto.py": {
+  "origen": "research/rejilla/maquina/boceto.py",
+  "sha256": "57bc63cbfab823375c3c07c260896ba252b48aafca08680c7a68a23e2cbe0dca",
+  "bytes": 5234,
+  "copiado": "2026-10-18",
+  "commit_origen": "d97fbc4 2026-10-14"
+ },
+ "rejilla/research/rejilla/planeta9/mezcla.py": {
+  "origen": "research/rejilla/planeta9/mezcla.py",
+  "sha256": "43e4c8f8784066fd8ca749c1f5187da796d6e12bc98b570a6a49d02819d9bf96",
+  "bytes": 8796,
+  "copiado": "2026-10-18",
+  "commit_origen": "568b48c 2026-10-16"
+ },
+ "rejilla/research/rejilla/planeta9/objetos.js": {
+  "origen": "research/rejilla/planeta9/objetos.js",
+  "sha256": "008e624fc9b2c6f1e683be522f41700ce9df8acdebe744773302043bc45cc67c",
+  "bytes": 3960,
+  "copiado": "2026-10-18",
+  "commit_origen": "568b48c 2026-10-16"
+ },
+ "rejilla/research/rejilla/linea/mezcla.py": {
+  "origen": "research/rejilla/linea/mezcla.py",
+  "sha256": "6747a7da50ac26c6266deb28ecf78597f7c6a13589aa3912ae413398b4e3784d",
+  "bytes": 9707,
+  "copiado": "2026-10-18",
+  "commit_origen": "d565146 2026-10-16"
+ },
+ "rejilla/research/rejilla/inferencia/mezcla.py": {
+  "origen": "research/rejilla/inferencia/mezcla.py",
+  "sha256": "f78689eab3fd411f6cb934ec9a1873bafe7a64bd89099fd1b4320fe7c4a35013",
+  "bytes": 5577,
+  "copiado": "2026-10-18",
+  "commit_origen": "8d2366d 2026-10-15"
+ },
+ "rejilla/research/rejilla/garganta/mezcla.py": {
+  "origen": "research/rejilla/garganta/mezcla.py",
+  "sha256": "8bb1a0c88319cb329c67672d4315e023916e7a94317741ee57e82a68947c41f9",
+  "bytes": 10638,
+  "copiado": "2026-10-18",
+  "commit_origen": "6ae124c 2026-10-15"
+ },
+ "rejilla/research/rejilla/epistrofe/mezcla.py": {
+  "origen": "research/rejilla/epistrofe/mezcla.py",
+  "sha256": "7a3b99de0e7579fd2b20710acd472ffdd6af5004b9b07e6d74e8cad662325b1e",
+  "bytes": 7571,
+  "copiado": "2026-10-18",
+  "commit_origen": "f17f329 2026-10-15"
+ },
+ "rejilla/research/rejilla/objetos/motor/agua.js": {
+  "origen": "research/rejilla/objetos/motor/agua.js",
+  "sha256": "86911dd2fded3df1b100625548fa8eb634325b833bf31c7c09fc6909ed1d7ad5",
+  "bytes": 8753,
+  "copiado": "2026-10-18",
+  "commit_origen": "a87f222 2026-10-15"
+ },
+ "rejilla/research/rejilla/objetos/motor/clarinete.js": {
+  "origen": "research/rejilla/objetos/motor/clarinete.js",
+  "sha256": "737180e4f8bb174584499643e4f572a55b51328941f40904be5da5c5da48610c",
+  "bytes": 4920,
+  "copiado": "2026-10-18",
+  "commit_origen": "ff574d0 2026-10-15"
+ },
+ "rejilla/research/rejilla/objetos/motor/cuerda.js": {
+  "origen": "research/rejilla/objetos/motor/cuerda.js",
+  "sha256": "ca8024df0c2df4aab2f049c596aa8137d38aa28fe89022f8a1ab538663880625",
+  "bytes": 8119,
+  "copiado": "2026-10-18",
+  "commit_origen": "670b18e 2026-10-15"
+ },
+ "rejilla/research/rejilla/objetos/motor/gong.js": {
+  "origen": "research/rejilla/objetos/motor/gong.js",
+  "sha256": "96b89fe85f2e96d732dad456f9916856b2f55e8abe25bd568256c48861b77522",
+  "bytes": 6723,
+  "copiado": "2026-10-18",
+  "commit_origen": "2051d17 2026-10-15"
+ },
+ "rejilla/research/rejilla/objetos/motor/metal.js": {
+  "origen": "research/rejilla/objetos/motor/metal.js",
+  "sha256": "e6c2ae41a7afda2f6d0d2ce42ed0add27ba21f8894894fada275a17aefae5407",
+  "bytes": 7766,
+  "copiado": "2026-10-18",
+  "commit_origen": "8726a6a 2026-10-15"
+ },
+ "rejilla/research/rejilla/objetos/motor/modos.js": {
+  "origen": "research/rejilla/objetos/motor/modos.js",
+  "sha256": "5dd7e1a631b462bad0718919512cb04b786b226623b0f2855149fc7aafb126b7",
+  "bytes": 1473,
+  "copiado": "2026-10-18",
+  "commit_origen": "0198581 2026-10-15"
+ },
+ "rejilla/research/rejilla/objetos/motor/objeto.js": {
+  "origen": "research/rejilla/objetos/motor/objeto.js",
+  "sha256": "0b80724c3bd23b0cc6194155f989063be2c37f06fdb80bf0c59c447f97517519",
+  "bytes": 9764,
+  "copiado": "2026-10-18",
+  "commit_origen": "bc20c41 2026-10-15"
+ },
+ "rejilla/research/rejilla/objetos/motor/pajaro.js": {
+  "origen": "research/rejilla/objetos/motor/pajaro.js",
+  "sha256": "1948f885cc5bb0f404a31ad4b77e03c835e66a08be9539d878673ff56dde2884",
+  "bytes": 6957,
+  "copiado": "2026-10-18",
+  "commit_origen": "5b943eb 2026-10-15"
+ },
+ "rejilla/research/rejilla/objetos/motor/piano.js": {
+  "origen": "research/rejilla/objetos/motor/piano.js",
+  "sha256": "34295192810252d51baf0e20b6fc390a6757c47e6d78f773bcf434dd9bcf1ed3",
+  "bytes": 10257,
+  "copiado": "2026-10-18",
+  "commit_origen": "81fb8c4 2026-10-15"
+ },
+ "rejilla/research/rejilla/objetos/motor/tambor.js": {
+  "origen": "research/rejilla/objetos/motor/tambor.js",
+  "sha256": "ca6b488cc32dc3234e8dcd20ebb13de390a09a87cf463366767bdcaa89754796",
+  "bytes": 6996,
+  "copiado": "2026-10-18",
+  "commit_origen": "97dc88b 2026-10-15"
+ },
+ "rejilla/research/rejilla/objetos/motor/vozagua.js": {
+  "origen": "research/rejilla/objetos/motor/vozagua.js",
+  "sha256": "15b5ffa32c68d150d820f2e80131f67799c3eb39a0b2a0b74001cbf05d50a85a",
+  "bytes": 10292,
+  "copiado": "2026-10-18",
+  "commit_origen": "fa31148 2026-10-18"
+ },
+ "rejilla/research/rejilla/objetos/motor/waterphone.js": {
+  "origen": "research/rejilla/objetos/motor/waterphone.js",
+  "sha256": "0989198435c118e5c8dc08070d78aac0ee2a819badd2b82fbaaf12eff2a1edb2",
+  "bytes": 5004,
+  "copiado": "2026-10-18",
+  "commit_origen": "0198581 2026-10-15"
+ },
+ "meleeviewer/meleeviewer/output/Arte/2026-09-27_yoshi_es_un_vector/cancion/cancion.js": {
+  "origen": "meleeviewer/output/Arte/2026-09-27_yoshi_es_un_vector/cancion/cancion.js",
+  "sha256": "0fcc2ba37c304ba5c4ade58dc220556acaa1189e90f3ee55192f34660a680586",
+  "bytes": 18267,
+  "copiado": "2026-10-18",
+  "commit_origen": null
+ },
+ "meleeviewer/meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_2_modo_suspension/cancion.js": {
+  "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_2_modo_suspension/cancion.js",
+  "sha256": "5de00a24be25aaad4a8a447a32791b4453a27e0e778716f95f67cb2be5836d13",
+  "bytes": 19378,
+  "copiado": "2026-10-18",
+  "commit_origen": null
+ },
+ "meleeviewer/meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js": {
+  "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_3_kirby/cancion.js",
+  "sha256": "ae9c2a3a8da3731679b8a91fca88580f35475f98ced496b05c14a85371dae30b",
+  "bytes": 27040,
+  "copiado": "2026-10-18",
+  "commit_origen": null
+ },
+ "meleeviewer/meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_4_cuaternion/cancion.js": {
+  "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_4_cuaternion/cancion.js",
+  "sha256": "b802d780c7c7ed9ec1b5c15ff292232cfef19aec95e9cbf2baaefae4032e9b13",
+  "bytes": 20143,
+  "copiado": "2026-10-18",
+  "commit_origen": null
+ },
+ "meleeviewer/meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_5_la_ley_canta/cancion.js": {
+  "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_5_la_ley_canta/cancion.js",
+  "sha256": "00a3384440eda29cb934f3dcc73c997b56d55b3820e3ae514fcac37f96f368bb",
+  "bytes": 11028,
+  "copiado": "2026-10-18",
+  "commit_origen": null
+ },
+ "meleeviewer/meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_7_nadie_canta/cancion.js": {
+  "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_7_nadie_canta/cancion.js",
+  "sha256": "36dd5aa950acf47d96a5771b9c2fce4a2d82978caefaf55d820fa367dd8d9d05",
+  "bytes": 13062,
+  "copiado": "2026-10-18",
+  "commit_origen": null
+ },
+ "meleeviewer/meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_8_falcon_drift/cancion.js": {
+  "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_8_falcon_drift/cancion.js",
+  "sha256": "4936e2fc358adb6135188ea985ab28eb039d03d99baf3df533a933f019e21684",
+  "bytes": 20635,
+  "copiado": "2026-10-18",
+  "commit_origen": null
+ },
+ "meleeviewer/meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_10_la_mitocondria_es_un_pokemon/cancion.js": {
+  "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_10_la_mitocondria_es_un_pokemon/cancion.js",
+  "sha256": "90e51b08aa816faaabfeff31273b9c420b4c44440ba9c3b5ac4fa7a3312dc4aa",
+  "bytes": 20039,
+  "copiado": "2026-10-18",
+  "commit_origen": null
+ },
+ "meleeviewer/meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_11_que_dice_el_zorro/cancion.js": {
+  "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_11_que_dice_el_zorro/cancion.js",
+  "sha256": "43581006d9749c4093ead6b87864cc8a86c96ba237d693c7e9cabaeaaedadc7d",
+  "bytes": 19277,
+  "copiado": "2026-10-18",
+  "commit_origen": null
+ },
+ "meleeviewer/meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_9_coro_de_gritos/cancion.js": {
+  "origen": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_9_coro_de_gritos/cancion.js",
+  "sha256": "a9629f3e34b474f0bb8efe0958e547a04325ec22a032b368a4174c8cc154fd2f",
+  "bytes": 16524,
+  "copiado": "2026-10-18",
+  "commit_origen": null
+ },
+ "meleeviewer/meleeviewer/output/Arte/2026-09-30_yoshi_es_un_vector_12_popo_esta_solo/cancion.js": {
+  "origen": "meleeviewer/output/Arte/2026-09-30_yoshi_es_un_vector_12_popo_esta_solo/cancion.js",
+  "sha256": "73b51862aed3e2228b45f3ae81c02a32c3e8d8c1a5b1d8ca45e9ed417809fed7",
+  "bytes": 12672,
+  "copiado": "2026-10-18",
+  "commit_origen": null
+ },
+ "meleeviewer/meleeviewer/output/Arte/2026-09-30_yoshi_es_un_vector_13_sonidero/cancion.js": {
+  "origen": "meleeviewer/output/Arte/2026-09-30_yoshi_es_un_vector_13_sonidero/cancion.js",
+  "sha256": "f8bdb1161d5c5792be7aac2209712f1f7ae9fff29ce1d8a2a275970b8714642a",
+  "bytes": 19249,
+  "copiado": "2026-10-18",
+  "commit_origen": null
+ },
+ "meleeviewer/meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_14_buenas_noches/cancion.js": {
+  "origen": "meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_14_buenas_noches/cancion.js",
+  "sha256": "c3269f6c9b4d596e9638d9d1dcc2bc4e91d33e486338fda4a7743fb85bed1013",
+  "bytes": 14127,
+  "copiado": "2026-10-18",
+  "commit_origen": "90381c1 2026-10-03"
+ },
+ "meleeviewer/meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_15_una_mas/cancion.js": {
+  "origen": "meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_15_una_mas/cancion.js",
+  "sha256": "783425243cbbc2bee093868a9a5862393d45e55b605e61c4553cc33299d4a2b6",
+  "bytes": 19312,
+  "copiado": "2026-10-18",
+  "commit_origen": "59ffe78 2026-10-03"
+ },
+ "meleeviewer/meleeviewer/output/Arte/2026-10-09_yoshi_es_un_vector_16_jpop/cancion.js": {
+  "origen": "meleeviewer/output/Arte/2026-10-09_yoshi_es_un_vector_16_jpop/cancion.js",
+  "sha256": "5fd813de871d4b3eb5ed42795ac90eb4fe109d15e38ab2a3f53b6d299ea2dd96",
+  "bytes": 15162,
+  "copiado": "2026-10-18",
+  "commit_origen": "b15e12c 2026-10-09"
+ },
+ "meleeviewer/meleeviewer/output/Arte/2026-10-18_yoshi_es_un_vector_17_buenos_dias/banda.py": {
+  "origen": "meleeviewer/output/Arte/2026-10-18_yoshi_es_un_vector_17_buenos_dias/banda.py",
+  "sha256": "7d450da6d8b0ac20f1d8da71d2c9d0d73ac0832339f332fe14d0716cd9b6078c",
+  "bytes": 27147,
+  "copiado": "2026-10-18",
+  "commit_origen": "8779e54 2026-10-18"
+ },
+ "jardin/netart/jardin-camara/musica/temas/instrumentos.py": {
+  "origen": "netart/jardin-camara/musica/temas/instrumentos.py",
+  "sha256": "27aa1e7298e8dfeb3f0862d0a68ebe20f4e0dc1654d8b97ed494bd97703312f9",
+  "bytes": 13645,
+  "copiado": "2026-10-18",
+  "commit_origen": "53cab19 2026-10-17"
+ },
+ "jardin/netart/jardin-camara/musica/temas/aves.py": {
+  "origen": "netart/jardin-camara/musica/temas/aves.py",
+  "sha256": "6e2f27807f2881a8a2ca98fb11d6a615fa3be8ddaeb93e2cc0ac02579e90cda6",
+  "bytes": 9272,
+  "copiado": "2026-10-18",
+  "commit_origen": "ca184af 2026-10-17"
+ },
+ "jardin/netart/jardin-camara/musica/temas/pajaros.py": {
+  "origen": "netart/jardin-camara/musica/temas/pajaros.py",
+  "sha256": "19e55973c53fffca5d7b8be833d3ba3ac03e9218b5411a09d50699369579de57",
+  "bytes": 4439,
+  "copiado": "2026-10-18",
+  "commit_origen": "d2413aa 2026-10-16"
+ },
+ "jardin/netart/jardin-camara/musica/temas/parlante.py": {
+  "origen": "netart/jardin-camara/musica/temas/parlante.py",
+  "sha256": "14ebb64172203e5c53bfca8f9ec7a80bd0f97fc8f08715cf7bd01d3765065d52",
+  "bytes": 4783,
+  "copiado": "2026-10-18",
+  "commit_origen": "d2413aa 2026-10-16"
+ },
+ "jardin/netart/jardin-camara/musica/temas/agua.py": {
+  "origen": "netart/jardin-camara/musica/temas/agua.py",
+  "sha256": "ac2100991c71d734ea9f45f86dd389de65e4b755848aa523d57de3cf45b657dd",
+  "bytes": 5662,
+  "copiado": "2026-10-18",
+  "commit_origen": "9486c23 2026-10-17"
+ },
+ "jardin/netart/jardin-camara/musica/temas/principal.py": {
+  "origen": "netart/jardin-camara/musica/temas/principal.py",
+  "sha256": "8c9e84afa38d081356d2d98135b7e1101393023c2a65ffa5e81452bb61815a01",
+  "bytes": 10189,
+  "copiado": "2026-10-18",
+  "commit_origen": "9486c23 2026-10-17"
+ },
+ "jardin/netart/jardin-camara/musica/temas/escalas_choque.py": {
+  "origen": "netart/jardin-camara/musica/temas/escalas_choque.py",
+  "sha256": "e5bb4be18019a124b71780eb23929cc3453f8c1d6988fb63ecaaaf4303c53a76",
+  "bytes": 8964,
+  "copiado": "2026-10-18",
+  "commit_origen": "f2b8c7f 2026-10-16"
+ },
+ "jardin/netart/jardin-camara/musica/temas/laberintos.py": {
+  "origen": "netart/jardin-camara/musica/temas/laberintos.py",
+  "sha256": "1c97d894cae6a371d68d76207a5d2143c2e70b0cea1402d176589316adeb3412",
+  "bytes": 42375,
+  "copiado": "2026-10-18",
+  "commit_origen": "9486c23 2026-10-17"
+ },
+ "jardin/netart/jardin-camara/musica/temas/serie.py": {
+  "origen": "netart/jardin-camara/musica/temas/serie.py",
+  "sha256": "02b21c9569ebd4fe3841b06761612cc8b3ae6e6fe74c8d6e4e3055817f2f36b2",
+  "bytes": 21068,
+  "copiado": "2026-10-18",
+  "commit_origen": "9486c23 2026-10-17"
+ },
+ "jardin/netart/jardin-camara/musica/temas/ganchos.py": {
+  "origen": "netart/jardin-camara/musica/temas/ganchos.py",
+  "sha256": "3271412f0ec6a8aafcc51279f80fcea89aaa4e5ee4fb2b8270aa915b48565bfd",
+  "bytes": 14910,
+  "copiado": "2026-10-18",
+  "commit_origen": "d4f1650 2026-10-16"
+ },
+ "jardin/netart/jardin-camara/musica/vivo/voces.js": {
+  "origen": "netart/jardin-camara/musica/vivo/voces.js",
+  "sha256": "e71650f2b73ed06ea3a7e7a26cde1bea95c27006614a4ff3bc770b6172000680",
+  "bytes": 24953,
+  "copiado": "2026-10-18",
+  "commit_origen": "8e690ed 2026-10-17"
+ },
+ "jardin/netart/jardin-camara/musica/vivo/motor.js": {
+  "origen": "netart/jardin-camara/musica/vivo/motor.js",
+  "sha256": "1a60ae278b10183de21a46d5422cf8ad81fc5d4bd6035220c878338d145e1cb4",
+  "bytes": 57372,
+  "copiado": "2026-10-18",
+  "commit_origen": "66bd27e 2026-10-18"
+ },
+ "jardin/netart/jardin-camara/musica/epode/epode.js": {
+  "origen": "netart/jardin-camara/musica/epode/epode.js",
+  "sha256": "e555df2f71371ee4c6939f543d565b889c1ae6fc362481f7663a86361b5128ce",
+  "bytes": 12364,
+  "copiado": "2026-10-18",
+  "commit_origen": "38a54b5 2026-10-16"
+ },
+ "difonos/difonos/runtime/difonos.js": {
+  "origen": "difonos/runtime/difonos.js",
+  "sha256": "472f940dc1f5ca7b0374d232f4553ec6c2f7d44016d683e3b97f3749e528052e",
+  "bytes": 22815,
+  "copiado": "2026-10-18",
+  "commit_origen": "b90c045 2026-10-15"
+ },
+ "otros/little-maestro/index.html": {
+  "origen": "little-maestro/index.html",
+  "sha256": "8435f2666716767b6595f70cfa4579df07da5aaeee1da7f2fea1bcecef3c4453",
+  "bytes": 70575,
+  "copiado": "2026-10-18",
+  "commit_origen": "e11127c 2026-10-11"
+ },
+ "otros/netart/el-clave-bien-tenido/js/cuerpo.js": {
+  "origen": "netart/el-clave-bien-tenido/js/cuerpo.js",
+  "sha256": "afe96a86ff262efbae73c9776d595e39523d927e2ab7aded0d0d5fcd246b4aeb",
+  "bytes": 15072,
+  "copiado": "2026-10-18",
+  "commit_origen": "f25e59b 2026-08-04"
+ },
+ "otros/netart/el-clave-bien-tenido/js/tiempo.js": {
+  "origen": "netart/el-clave-bien-tenido/js/tiempo.js",
+  "sha256": "f1dacca33a0f8c9b4986d30d9fc9322ee0aa3d8139b83f22aed8ad28521eae83",
+  "bytes": 16867,
+  "copiado": "2026-10-18",
+  "commit_origen": "f25e59b 2026-08-04"
+ },
+ "otros/netart/portadora/motor/sonido.js": {
+  "origen": "netart/portadora/motor/sonido.js",
+  "sha256": "78d20f13309f96884f1788bffdd28b7b0fb75928f4109a831742661e5d460641",
+  "bytes": 47423,
+  "copiado": "2026-10-18",
+  "commit_origen": "87529fb 2026-10-15"
+ },
+ "otros/netart/herbario-celular/loop-12/music.js": {
+  "origen": "netart/herbario-celular/loop-12/music.js",
+  "sha256": "c9062b23e6212b2a9eda6e314fd3d1486482b212dc21ad5ea4e0ffe85e6216db",
+  "bytes": 9060,
+  "copiado": "2026-10-18",
+  "commit_origen": null
+ },
+ "otros/netart/atlas/atlas.js": {
+  "origen": "netart/atlas/atlas.js",
+  "sha256": "2dbca046f156b3f7ac244787c4c8aca06bb49fc81eaa9d9d490ef71e72306195",
+  "bytes": 114347,
+  "copiado": "2026-10-18",
+  "commit_origen": "f25e59b 2026-08-04"
+ },
+ "otros/output/front-nuevo/matfront2026/sonido-front.js": {
+  "origen": "output/front-nuevo/matfront2026/sonido-front.js",
+  "sha256": "763c4474cb3153e40220731265e489694ae90c86877bfc40cd9730726b29b244",
+  "bytes": 39496,
+  "copiado": "2026-10-18",
+  "commit_origen": null
+ },
+ "consola/consola/consola/static/lectura/musica.0c9b5438248a.js": {
+  "origen": "consola/consola/static/lectura/musica.js",
+  "sha256": "0c9b5438248a37ab353559861535a15a841c719448dd4c865b6a005acf168621",
+  "bytes": 79151,
+  "copiado": "2026-10-18",
+  "commit_origen": null
+ },
+ "meleeviewer/meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_7_nadie_canta/ecosistema.js": {
+  "origen": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_7_nadie_canta/ecosistema.js",
+  "sha256": "aad9e52e2bca68c4163b5b23d43bc2a5518d89bde05694cde5a6b4b942fcfced",
+  "bytes": 11412,
+  "copiado": "2026-10-18",
+  "commit_origen": null
+ },
+ "rejilla/research/rejilla/lo-que-tapa-la-traspuesta/motor/garganta.js": {
+  "origen": "research/rejilla/lo-que-tapa-la-traspuesta/motor/garganta.js",
+  "sha256": "60bf59970b3cc5c183443fe725e2f9eafb6b172c95987355a4c7a151a6bd08ec",
+  "bytes": 9971,
+  "copiado": "2026-10-19",
+  "commit_origen": "c187d6b 2026-10-19"
+ },
+ "rejilla/research/rejilla/lo-que-tapa-la-traspuesta/motor/viento.js": {
+  "origen": "research/rejilla/lo-que-tapa-la-traspuesta/motor/viento.js",
+  "sha256": "1013fb445c348d8f089c594ab162f9d49f4c07d902cca6127ad2b6ab16728de0",
+  "bytes": 6869,
+  "copiado": "2026-10-19",
+  "commit_origen": "c187d6b 2026-10-19"
+ }
+}

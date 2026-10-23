@@ -1,0 +1,75 @@
+{
+ "semilla": "67",
+ "arq": "badlands",
+ "nombre": "TIERRAS MALAS",
+ "G": 360,
+ "relieve": 220,
+ "anchoKm": 6,
+ "umbralMar": 0.0001,
+ "nivelMar": null,
+ "umbralMarFondo": 0.0001,
+ "relieveFondo": 220,
+ "historia": [
+  "ARCILLAS",
+  "LLUVIAS RARAS Y VIOLENTAS",
+  "CÁRCAVAS",
+  "TIERRAS MALAS"
+ ],
+ "especiales": [],
+ "nombres": [
+  {
+   "nombre": "LA CUCHILLA DEL ORIENTE",
+   "clase": "cumbre",
+   "u": 0.9554317548746518,
+   "v": 0.6629526462395543
+  },
+  {
+   "nombre": "YUKU ISO",
+   "clase": "cumbre",
+   "u": 0.41225626740947074,
+   "v": 0.415041782729805
+  },
+  {
+   "nombre": "YUKU KUA'A",
+   "clase": "cumbre",
+   "u": 0.8467966573816156,
+   "v": 0.7827298050139275
+  },
+  {
+   "nombre": "YUKU YA'A",
+   "clase": "cumbre",
+   "u": 0.4011142061281337,
+   "v": 0.34540389972144847
+  },
+  {
+   "nombre": "YUKU LULU",
+   "clase": "cumbre",
+   "u": 0.21448467966573817,
+   "v": 0.9498607242339833
+  },
+  {
+   "nombre": "EL BOQUERÓN",
+   "clase": "paso",
+   "u": 0.42896935933147634,
+   "v": 0.403899721448468
+  },
+  {
+   "nombre": "EL PORTICHUELO",
+   "clase": "paso",
+   "u": 0.9164345403899722,
+   "v": 0.766016713091922
+  },
+  {
+   "nombre": "YUCHA KA'NU",
+   "clase": "rio",
+   "u": 0.7755919220055711,
+   "v": 0.5443941504178273
+  },
+  {
+   "nombre": "EL RÍO SALADO",
+   "clase": "rio",
+   "u": 0.3871866295264624,
+   "v": 0.45595403899721443
+  }
+ ]
+}

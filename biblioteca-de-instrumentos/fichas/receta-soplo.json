@@ -1,0 +1,39 @@
+{
+ "id": "receta-soplo",
+ "nombre": "Soplo",
+ "familia": "aerófono · soplo (receta)",
+ "motor": "receta",
+ "fisica": {
+  "name": "soplo",
+  "gain": 0.9,
+  "attack": 0.25,
+  "decay": 0.3,
+  "sustain": 0.6,
+  "release": 0.9,
+  "filterType": "bandpass",
+  "filterFreq": 900,
+  "filterQ": 6,
+  "sweep": 1,
+  "vibRate": 4,
+  "vibDepth": 8,
+  "vibDelay": 0.3,
+  "fmRatio": 0,
+  "fmIndex": 0,
+  "fmDecay": 1,
+  "noise": 0.7,
+  "partials": [
+   {
+    "wave": "sine",
+    "ratio": 1,
+    "gain": 0.5,
+    "detune": 0
+   }
+  ]
+ },
+ "notas": "Receta de partida del editor de instrumentos de consola: parciales, filtro con barrido, vibrato, FM y aire.",
+ "procedencia": {
+  "nace": "consola · visor de lectura §27 (instrumentos por receta)",
+  "archivo": "consola/consola/static/lectura/musica.js",
+  "sha256": "0c9b5438248a37ab353559861535a15a841c719448dd4c865b6a005acf168621"
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "id": "mbira",
+ "nombre": "Mbira",
+ "familia": "idiófono · lengüetas con chapitas",
+ "motor": "golpe",
+ "fisica": {
+  "gain": 0.88,
+  "dk": 0.35,
+  "shift": 15,
+  "loose": 8,
+  "parts": [
+   [
+    1,
+    1,
+    2.2
+   ],
+   [
+    5.8,
+    0.22,
+    0.15
+   ],
+   [
+    12,
+    0.06,
+    0.04
+   ]
+  ],
+  "click": [
+   3800,
+   1.5,
+   0.15,
+   0.007
+  ],
+  "buzz": [
+   0.5,
+   2600
+  ],
+  "body": [
+   180,
+   2,
+   0.6
+  ]
+ },
+ "notas": "Zimbabue (dzavadzawa): lengüetas en el bule (deze) y chapitas (machachara) que zumban.",
+ "procedencia": {
+  "nace": "consola · visor de lectura §27.48",
+  "fecha": "2026-10-18",
+  "archivo": "consola/consola/static/lectura/musica.js",
+  "sha256": "0c9b5438248a37ab353559861535a15a841c719448dd4c865b6a005acf168621"
+ }
+}

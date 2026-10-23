@@ -1,0 +1,25 @@
+{
+ "id": "meleeviewer-9-saw7",
+ "nombre": "Sierra (séptima) · yoshi 9 coro de gritos",
+ "familia": "electrófono · sinte",
+ "motor": "meleeviewer",
+ "fisica": {
+  "escenario": "codigo/meleeviewer/escenarios/2026-09-29_yoshi_es_un_vector_9_coro_de_gritos.js",
+  "funcion": "saw7",
+  "params": [
+   "t",
+   "n",
+   "dur",
+   "vel"
+  ],
+  "escenario_sha256": "4e8ac2a551ee51b42807a3deb14bac9a73805f4617e3be7ba85c73f36372bff7"
+ },
+ "notas": "La función saw7(t, n, dur, vel) de la canción 9 coro de gritos de «yoshi es un vector», tal cual, en su escenario seco.",
+ "procedencia": {
+  "nace": "meleeviewer · yoshi es un vector 9 coro de gritos",
+  "archivo": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_9_coro_de_gritos/cancion.js",
+  "funcion": "saw7",
+  "sha256": "a9629f3e34b474f0bb8efe0958e547a04325ec22a032b368a4174c8cc154fd2f",
+  "variante_de": "Sierra (séptima)"
+ }
+}

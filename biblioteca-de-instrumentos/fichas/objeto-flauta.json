@@ -1,0 +1,19 @@
+{
+ "id": "objeto-flauta",
+ "nombre": "Flauta (objeto)",
+ "familia": "aerófono · chorro (modelado físico)",
+ "motor": "objeto",
+ "fisica": {
+  "modulo": "objeto.js",
+  "api": "Objeto",
+  "forma": "objeto",
+  "puro": "flauta"
+ },
+ "notas": "Tubo, retardo del chorro y no linealidad cúbica, con soplo ruidoso (STK Flute).",
+ "procedencia": {
+  "nace": "rejilla · objetos que cantan · loop A",
+  "archivo": "research/rejilla/objetos/motor/objeto.js",
+  "copia": "codigo/rejilla/research/rejilla/objetos/motor/objeto.js",
+  "sha256": "0b80724c3bd23b0cc6194155f989063be2c37f06fdb80bf0c59c447f97517519"
+ }
+}

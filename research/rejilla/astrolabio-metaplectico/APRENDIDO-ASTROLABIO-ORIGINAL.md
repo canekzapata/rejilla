@@ -1,0 +1,77 @@
+# rejilla · investigación y lo aprendido con El Astrolabio Metapléctico ($\text{Mp}_{2n}$, 20 de octubre de 2026)
+
+Cuaderno de investigación, construcción y mediciones de **El Astrolabio Metapléctico** (`astrolabio_metaplectico.py`), diseñado para cruzar el motor espectral de [Rejilla](../README.md) (`spectrumsynth` de FFmpeg) y el banco de prototipos temporales ([motores.py](../instrumentos-de-tres-tiempos/motores.py)) con la geometría del [grupo metapléctico \$\\text{Mp}\_{2n}(\\mathbb{R})\$](https://en.wikipedia.org/wiki/Metaplectic_group).
+
+Complementa [APRENDIDO.md](../APRENDIDO.md), [ESPECTRAL.md](../aurora/ESPECTRAL.md), [BASES-TEORICAS-INSTRUMENTOS-2026-10-19.md](../BASES-TEORICAS-INSTRUMENTOS-2026-10-19.md), [08-SONAR-LO-VIRTUAL.md](../la-fase-vuelve-distinta/la-fase-vuelve-distinta-s19102691-7fbc97cc5f1c/fuentes/08-SONAR-LO-VIRTUAL.md) y [TEXTURAS.md](../maquina/TEXTURAS.md). Aquí queda registrado de qué teoría sale, qué se midió en la sonda, qué salió mal en la primera pasada y cómo se corrigió.
+
+## 1. De la física matemática a la imagen de `spectrumsynth`
+
+En mecánica clásica, el grupo simpléctico $\text{Sp}_{2n}(\mathbb{R})$ agrupa las transformaciones lineales de posición y momento $(q, p)$ que conservan la forma de Hamilton ([Transformación canónica lineal](https://en.wikipedia.org/wiki/Linear_canonical_transformation)). Cuando esas mismas simetrías actúan sobre funciones de onda $\psi \in L^2(\mathbb{R}^n)$ mediante la [representación del oscilador o de Weil](https://en.wikipedia.org/wiki/Oscillator_representation), no actúa $\text{Sp}_{2n}(\mathbb{R})$ sino su **recubrimiento doble conexo**: el [grupo metapléctico \$\\text{Mp}\_{2n}(\\mathbb{R})\$](https://en.wikipedia.org/wiki/Metaplectic_group).
+
+Al leer los `.md` del proyecto apareció que **la rejilla tiempo-frecuencia de `spectrumsynth` ya es un espacio fase simpléctico $(q, p) = (t, f)$** donde una columna dura $N/S$ segundos y cada fila suma $S/N$ Hz ([APRENDIDO.md](../APRENDIDO.md)). Los tres operadores unitarios que generan la representación de Weil para $n=1$ ($\text{Mp}_2(\mathbb{R})$ sobre $\text{SL}_2(\mathbb{R})$) reúnen bajo una sola ecuación tres gestos que antes vivían sueltos en distintas piezas de Rejilla:
+
+| Generador de Weil en $\text{Mp}_2(\mathbb{R})$ | Fórmula sobre $\psi(t)$ | Matriz en $\text{SL}_2(\mathbb{R})$ | Qué unifica dentro de Rejilla |
+| :--- | :--- | :--- | :--- |
+| **Transformada de Fourier ($\mathcal{F}$) y giro fraccionario ($U(\theta)$)** | $U(\theta) = e^{-i\theta\hat{H}}$ con $\hat{H} = \frac{1}{2}(P^2+Q^2)$ | $\begin{pmatrix}\cos\theta & \sin\theta \\ -\sin\theta & \cos\theta\end{pmatrix}$ | En $\theta=0$ escribe un acorde espectral vertical; en $\theta=\pi/2$ ($\mathcal{F}$) lo acuesta en un ritmo de ataques sucesivos; en $\theta=\pi$ ($\mathcal{F}^2$) invierte el compás como en *Esquinas* ([APRENDIDO.md](../APRENDIDO.md)). |
+| **Dilatación simpléctica ($\mathcal{A}_a$)** | $\mathcal{A}_a\psi(t) = \lvert a\rvert^{1/2}\psi(at)$ | $\begin{pmatrix}a & 0 \\ 0 & a^{-1}\end{pmatrix}$ | Al estirar la duración por $1/a$, comprime las frecuencias por $a$ y ajusta la ganancia por $\lvert a\rvert^{1/2}$ conservando el producto de incertidumbre $\Delta t \cdot \Delta f = 1$ (la prolación de *Sobre la aurora*, [INSTRUMENTOS.md](../aurora/INSTRUMENTOS.md)). |
+| **Cizalla cuadrática de chirp ($\mathcal{T}_c$)** | $\mathcal{T}_c\psi(t) = e^{\pi i c t^2}\psi(t)$ | $\begin{pmatrix}1 & c \\ 0 & 1\end{pmatrix}$ | Inclina un ataque vertical o un parcial horizontal en una diagonal tiempo-frecuencia (la «diagonal de Boulez» de [08-SONAR-LO-VIRTUAL.md](../la-fase-vuelve-distinta/la-fase-vuelve-distinta-s19102691-7fbc97cc5f1c/fuentes/08-SONAR-LO-VIRTUAL.md) y las oleadas de [ESPECTRAL.md](../aurora/ESPECTRAL.md)). |
+
+## 2. Qué salió mal y qué descubrió la sonda (medido, no supuesto)
+
+Siguiendo la regla de [APRENDIDO-CANCIONES-DE-TERRENO-2026-10-20.md](../APRENDIDO-CANCIONES-DE-TERRENO-2026-10-20.md) (*«cada motor lleva su sonda que mide lo que promete antes de usarlo»*), antes de renderizar la pieza probamos el motor contra `spectrumsynth` (`S = 32768`, `H = 16384`, 1 columna = $1.0\text{ s}$, 1 fila = $1.0\text{ Hz}$). La sonda atrapó dos trampas físicas y acústicas que definieron el diseño final del instrumento:
+
+### Hallazgo 1: Una sola hoja metapléctica es muda al oído humano (por qué hace falta la Hoja Testigo)
+
+En el [grupo metapléctico](https://en.wikipedia.org/wiki/Metaplectic_group), dar una vuelta entera en el espacio fase ($\theta = 2\pi$) devuelve cada nota exactamente a su tiempo $q$ y frecuencia $p$, pero multiplica el estado base por el signo del recubrimiento doble: $U(2\pi)\psi_0 = e^{-i\pi}\psi_0 = -\psi_0$. Sólo en $\theta = 4\pi$ regresa a $+\psi_0$.
+
+- **Lo que midió la sonda en una sola hoja aislada (`mezcla = 1.0`):** cuando la función de onda gira sola, entre $\theta = 0$ y $\theta = 2\pi$ la onda temporal se invierte (correlación de onda $= -0.6655$ por la combinación de modos pares e impares), pero la magnitud espectral se mantiene casi intacta (correlación de magnitud $= +0.9072$, y $= +1.0000$ si todos los parciales giran con la misma fase $-\theta/2$). Es decir, sin referencia, invertir el signo global $-\psi$ sería «estructura técnica de magia» ([08-SONAR-LO-VIRTUAL.md](../la-fase-vuelve-distinta/la-fase-vuelve-distinta-s19102691-7fbc97cc5f1c/fuentes/08-SONAR-LO-VIRTUAL.md)): una cuenta elegante en el código que el oído no distingue.
+- **Cómo se resolvió (el Interferómetro de Doble Hoja + Paridad de Hermite):** el Astrolabio divide cada nota en dos haces que viven en las mismas filas de la rejilla:
+  1. **La Hoja Testigo ($\psi_{\text{testigo}}$):** permanece anclada en la hoja positiva $+1$.
+  2. **La Hoja Viajera ($\psi_{\text{viajera}}$):** recorre $\text{Mp}_2(\mathbb{R})$ asignando a los parciales impares de la serie ($m=0, 2, 4 \to 1f, 3f, 5f$) la fase semientera $-\theta/2$ y a los parciales pares ($m=1, 3, 5 \to 2f, 4f, 6f$) la fase entera $-\theta$.
+- **Consecuencia audible y medida:** en $\theta = 0$ ambas hojas están en fase constructiva (acorde con fundamental llena en $110\text{ Hz}$, centroide en **$522.6\text{ Hz}$**). En $\theta = 2\pi$ (Hoja $-1$), los parciales $1f, 3f, 5f$ llegan con signo $-1$ y **se cancelan destructivamente contra la Hoja Testigo**: la energía en la banda de la fundamental ($105\text{–}116\text{ Hz}$) cae **$-28.98\text{ dB}$** (quedando únicamente la falda espectral de los parciales superiores), mientras los armónicos pares ($2f, 4f, 6f$) se refuerzan y suben el centroide a **$859.3\text{ Hz}$**. El acorde se vuelve una sombra hueca a la octava (pariente de un tubo cerrado de clarinete y de la `voz en negativo` de [INSTRUMENTOS.md](../aurora/INSTRUMENTOS.md)). Al llegar a $\theta = 4\pi$, la segunda vuelta devuelve la fundamental con **$0.00\text{ dB}$ de diferencia** y el centroide regresa exactamente a **$522.6\text{ Hz}$**.
+
+### Hallazgo 2: La trampa del paneo estéreo ($\text{Sp}_2$ contra $\text{Mp}_2$)
+
+En la primera versión del código hicimos girar también el paneo estéreo con el ángulo de media vuelta $\cos(\theta/2)$.
+- **Lo que atrapó la sonda:** en $\theta = 2\pi$, la caída de la fundamental se quedaba en apenas **$-10.04\text{ dB}$** (o $-12.76\text{ dB}$ con colas largas) en lugar de cancelarse a fondo.
+- **Por qué pasaba:** la posición en el espacio estéreo (izquierda/derecha) es un observable clásico del **grupo simpléctico $\text{Sp}_2(\mathbb{R})$** (periodo $2\pi$), mientras que el signo $\pm 1$ pertenece al recubrimiento cuántico $\text{Mp}_2(\mathbb{R})$ (periodo $4\pi$). Al meter $\cos(\theta/2)$ en el paneo, en $\theta = 2\pi$ la Hoja Viajera aparecía en la bocina contraria ($\text{pan} \mapsto -\text{pan}$, cruzando $g_L \leftrightarrow g_R$), de modo que en cada oído las amplitudes del Testigo y la Viajera ya no eran iguales y no podían anularse.
+- **Corrección:** el paneo espacial debe girar con $\cos(\theta)$ ($\text{Sp}_2$, periodo $2\pi$) y la fase de los modos con $-\theta/2$ ($\text{Mp}_2$, periodo $4\pi$). Así, en $\theta = 2\pi$ la Hoja Viajera regresa exactamente al mismo punto del espacio estéreo que la Hoja Testigo, pero con signo opuesto, bajando de $-10.04\text{ dB}$ a **$-28.98\text{ dB}$** en la banda de la fundamental (y cancelación algebraica exacta de $110.0\text{ Hz}$).
+
+### Hallazgo 3: Prueba exacta en `spectrumsynth` de FFmpeg y giro de acorde a ritmo
+
+| Prueba medida en `ejecutar_sonda()` | Valor medido | Qué comprueba |
+| :--- | :--- | :--- |
+| **SNR `spectrumsynth` vs suma temporal** | **$69.69\text{ dB}$** (error rel. máx. $0.00245$) | La escritura por serie geométrica cerrada (`expm1`) en `gray16le` y la regla de escribir todas las filas cuando un modo rotado cruza la raya del compás reconstruyen el interferómetro metapléctico sin clics de borde. |
+| **Caída de la banda fundamental en $\theta = 2\pi$ (Hoja $-1$)** | **$-28.98\text{ dB}$** (vs $-10.04\text{ dB}$ antes de corregir el paneo) | La primera vuelta de $2\pi$ excava la fundamental y deja la sombra de armónicos pares. |
+| **Recuperación en $\theta = 4\pi$ (Hoja $+1$)** | **$0.00\text{ dB}$** ($522.6\text{ Hz} \to 859.3\text{ Hz} \to 522.6\text{ Hz}$) | La segunda vuelta cierra el recubrimiento doble y restaura el cuerpo original. |
+| **Dispersión temporal RMS ($\theta = 0 \to \theta = \pi/2$)** | **$104.1\text{ ms} \to 184.8\text{ ms}$** ($+77.5\%$) | En $\theta = \pi/2$ (Transformada de Fourier), el bloque vertical del acorde se acuesta en el tiempo y se convierte en una secuencia rítmica de ataques a lo largo del compás, despertando además el chisporroteo de la cáustica de Maslov. |
+| **Conservación de norma en el acoplamiento $\text{Mp}_4(\mathbb{R})$** | **Error máx. $8.88 \times 10^{-16}$** | En la escena a dúo ($2n = 4$), la rotación simpléctica que transfiere el pulso del bajo ($q_1$) al segundo formante $F_2$ de la Boca de tres tiempos ($p_2$) conserva la norma hasta la precisión de punto flotante de 64 bits. |
+
+## 3. Cómo funciona el acoplamiento $\text{Mp}_4(\mathbb{R})$ en una canción (Costura y Contrapunto)
+
+En la escena de 24 segundos (`escena-mp4-astrolabio-s20261020.wav` / `.m4a`, medida a **$-16.6\text{ LUFS}$**, LRA **$7.1$**, pico **$-8.7\text{ dBTP}$**), probamos las dos propiedades que hacen del Astrolabio un instrumento de ensamble para Rejilla y no sólo un solista abstracto:
+
+1. **Entrelazamiento entre Bajo y Boca de tres tiempos ($\text{Mp}_4(\mathbb{R})$, sección II, $6\text{–}12\text{ s}$):**
+   En dimensión $2n = 4$, el espacio fase reúne las coordenadas del bajo $(q_{\text{bajo}}, p_{\text{bajo}})$ y las de la [Boca de tres tiempos](../instrumentos-de-tres-tiempos/README.md) $(q_{\text{boca}}, p_{\text{boca}})$. Al abrir el ángulo $\phi_{\text{Mp4}}$ de $0$ a $\pi/2$:
+   - La envolvente rítmica de los golpes del bajo ($q_{\text{bajo}}$) se proyecta sobre la coordenada de frecuencia formántica de la boca ($p_{\text{boca}}$), haciendo que cada golpe de bajo abra los formantes $F_1$ y $F_2$ como un *auto-wah* vocal articulado desde otro instrumento.
+   - Recíprocamente, la vocal en la que se encuentra la boca ($p_{\text{boca}}$, viajando de «a» a «u» e «i») desplaza micro-temporalmente los ataques del bajo ($\Delta t = 95\text{ ms} \cdot \sin\phi \cdot p_{\text{boca}}$), de modo que una vocal cerrada adelanta el groove y una vocal abierta lo recuesta hacia atrás.
+2. **La Hoja $-1$ como Costura Automática (sección III, $12\text{–}18\text{ s}$):**
+   En [TEXTURAS.md](../maquina/TEXTURAS.md), la sexta capa (*Costura*) exige responder *«¿quién le deja hueco a quién?»*. En la sección III ($12\text{–}18\text{ s}$), cuando la Boca de tres tiempos sube al registro agudo para cantar su frase principal, no hace falta apagar la armonía ni meter un filtro externo: basta con llevar el Astrolabio a **$\theta = 2\pi$ (Hoja $-1$)**. La interferencia destructiva metapléctica vacía por sí sola la región grave/media de la fundamental ($110\text{–}330\text{ Hz}$) y deja flotando un halo cristalino de armónicos pares por encima y por los costados de la voz, hasta que en $t = 18\text{ s}$ ($\theta \to 4\pi$) la voz calla y el grave del acorde vuelve a cerrarse en la Hoja $+1$.
+
+## 4. Archivos producidos y verificados (Semilla `20261020`)
+
+Todos los archivos se generaron y comprobaron con código real, sin muestras externas y con revisión ocular de las tres láminas PNG para evitar textos encimados o escalas truncadas:
+
+- `astrolabio_metaplectico.py` — Motor completo (clase `PistaRejilla` con serie geométrica cerrada para `spectrumsynth`, motor temporal `render_astrolabio_temporal`, escena `render_escena_mp4`, sonda `ejecutar_sonda` y generador gráfico en OKLCh).
+- `muestra-astrolabio-s20261020.wav` (y `.m4a`) — Muestra aislada de $24.0\text{ s}$ ($-18.7\text{ LUFS}$, LRA $7.2$, $-2.5\text{ dBTP}$, SHA-256 WAV `337fc67966e9ae3e`). Recorre las cinco estaciones del recubrimiento doble: Hoja $+1$ ($\theta=0$), Giro FrFT a diagonal y ritmo ($\theta=\pi/4 \to \pi/2$), Espejo ($\theta=\pi$), Hoja $-1$ en sombra hueca ($\theta=2\pi$) y segunda vuelta de regreso a la Hoja $+1$ ($\theta=4\pi$).
+- `escena-mp4-astrolabio-s20261020.wav` (y `.m4a`) — Escena en contexto de $24.0\text{ s}$ ($-16.6\text{ LUFS}$, LRA $7.1$, $-8.7\text{ dBTP}$, SHA-256 WAV `3466124326ad972a`) con Astrolabio, Bajo elástico y Boca de tres tiempos acoplados en $\text{Mp}_4(\mathbb{R})$.
+- `01-hojas-y-espacio-fase-s20261020.png` — Lámina 01: retrato del espacio fase $(q, p)$ en $\theta \in \{0, \pi/2, 2\pi, 4\pi\}$, tabla de hallazgos medidos por la sonda (incluyendo la corrección del paneo $\text{Sp}_2$ vs $\text{Mp}_2$) y curvas comparadas de $\cos(\theta)$ frente a $\cos(\theta/2)$ y la cáustica de Maslov.
+- `02-partitura-y-espectrograma-mp2-s20261020.png` — Lámina 02: curvas de control ($\theta$, signo $\cos(\theta/2)$, dilatación $a(t)$, cáustica de Maslov), onda estéreo normalizada y espectrograma real ($48\text{ Hz–}11\text{ kHz}$) de la muestra aislada, donde se observa visualmente el hueco de la fundamental en la sección IV ($\theta = 2\pi$).
+- `03-escena-mp4-bajo-y-boca-s20261020.png` — Lámina 03: trazas del ángulo de entrelazamiento $\phi_{\text{Mp4}}(t)$, pulso del bajo $q_1(t)$, ondulación inducida sobre el formante $F_2$ de la boca $p_2(t)$, melodía $f_0$ y espectrograma de la mezcla.
+- `proceso-astrolabio-s20261020.gif` — GIF en loop de $5.4\text{ s}$ ($3$ cuadros a $1200\times 720$) con el proceso real.
+- `receta-astrolabio-s20261020.json` — Receta completa con parámetros, partitura, resultados de la sonda y huellas SHA-256.
+
+## 5. Límites declarados y siguientes pasos
+
+- **Verificación técnica vs. escucha humana:** igual que en [APRENDIDO-CANCIONES-DE-TERRENO-2026-10-20.md](../APRENDIDO-CANCIONES-DE-TERRENO-2026-10-20.md), las pruebas de la sonda certifican la cancelación de $-28.98\text{ dB}$ en $\theta=2\pi$, el regreso a $0.00\text{ dB}$ en $\theta=4\pi$, la dispersión rítmica en $\theta=\pi/2$ y el SNR de $69.69\text{ dB}$ en `spectrumsynth`, pero la valoración estética de qué tan expresivo resulta el hueco de la Hoja $-1$ o el *auto-wah* simpléctico sobre la Boca queda para tu escucha.
+- **Qué sigue si te gusta el timbre:** incorporar `astrolabio-metaplectico` al catálogo interactivo (`web.js` / `motores-propios.html`) con una perilla continua de $\theta \in [0, 4\pi]$ y probar una canción completa donde un coro entero regrese en el segundo estribillo en la Hoja $-1$ ($\theta = 2\pi$), dejando su propia silueta hueca para que la voz solista cante adentro.

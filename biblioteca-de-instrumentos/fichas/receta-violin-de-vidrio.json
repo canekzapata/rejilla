@@ -1,0 +1,45 @@
+{
+ "id": "receta-violin-de-vidrio",
+ "nombre": "Violín de vidrio",
+ "familia": "cordófono · frotado (receta)",
+ "motor": "receta",
+ "fisica": {
+  "name": "violín de vidrio",
+  "gain": 0.8,
+  "attack": 0.35,
+  "decay": 0.4,
+  "sustain": 0.7,
+  "release": 1.2,
+  "filterType": "bandpass",
+  "filterFreq": 1800,
+  "filterQ": 3,
+  "sweep": 0.5,
+  "vibRate": 5.5,
+  "vibDepth": 14,
+  "vibDelay": 0.25,
+  "fmRatio": 0,
+  "fmIndex": 0,
+  "fmDecay": 1,
+  "noise": 0.06,
+  "partials": [
+   {
+    "wave": "sawtooth",
+    "ratio": 1,
+    "gain": 1,
+    "detune": 0
+   },
+   {
+    "wave": "sine",
+    "ratio": 2.01,
+    "gain": 0.3,
+    "detune": 4
+   }
+  ]
+ },
+ "notas": "Receta de partida del editor de instrumentos de consola: parciales, filtro con barrido, vibrato, FM y aire.",
+ "procedencia": {
+  "nace": "consola · visor de lectura §27 (instrumentos por receta)",
+  "archivo": "consola/consola/static/lectura/musica.js",
+  "sha256": "0c9b5438248a37ab353559861535a15a841c719448dd4c865b6a005acf168621"
+ }
+}

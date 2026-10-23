@@ -1,0 +1,41 @@
+{
+ "id": "saron",
+ "nombre": "Saron",
+ "familia": "idiófono · barras de bronce (gamelán)",
+ "motor": "golpe",
+ "fisica": {
+  "gain": 1.04,
+  "dk": 0.3,
+  "pair": 6,
+  "parts": [
+   [
+    1,
+    1,
+    2.6
+   ],
+   [
+    2.71,
+    0.3,
+    0.7
+   ],
+   [
+    5.1,
+    0.12,
+    0.25
+   ]
+  ],
+  "click": [
+   3000,
+   1,
+   0.25,
+   0.008
+  ]
+ },
+ "notas": "Bronce grueso sin afinar los parciales; cada nota es una pareja desafinada: el ombak (batido) es parte del sonido.",
+ "procedencia": {
+  "nace": "consola · visor de lectura §27.48",
+  "fecha": "2026-10-18",
+  "archivo": "consola/consola/static/lectura/musica.js",
+  "sha256": "0c9b5438248a37ab353559861535a15a841c719448dd4c865b6a005acf168621"
+ }
+}

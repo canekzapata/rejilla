@@ -1,0 +1,25 @@
+{
+ "id": "meleeviewer-1-bass",
+ "nombre": "Bajo · yoshi 1",
+ "familia": "electrófono · bajo",
+ "motor": "meleeviewer",
+ "fisica": {
+  "escenario": "codigo/meleeviewer/escenarios/2026-09-27_yoshi_es_un_vector.js",
+  "funcion": "bass",
+  "params": [
+   "t",
+   "n",
+   "dur",
+   "vel"
+  ],
+  "escenario_sha256": "cd49f77aab49098bf070029bb3486bdefc1811070244c9b5d5b437cd6632a1fe"
+ },
+ "notas": "La función bass(t, n, dur, vel) de la canción 1 de «yoshi es un vector», tal cual, en su escenario seco.",
+ "procedencia": {
+  "nace": "meleeviewer · yoshi es un vector 1",
+  "archivo": "meleeviewer/output/Arte/2026-09-27_yoshi_es_un_vector/cancion/cancion.js",
+  "funcion": "bass",
+  "sha256": "0fcc2ba37c304ba5c4ade58dc220556acaa1189e90f3ee55192f34660a680586",
+  "variante_de": "Bajo"
+ }
+}

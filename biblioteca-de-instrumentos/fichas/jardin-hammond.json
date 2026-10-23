@@ -1,0 +1,19 @@
+{
+ "id": "jardin-hammond",
+ "nombre": "Hammond con Leslie",
+ "familia": "electrófono · órgano de ruedas",
+ "motor": "python",
+ "fisica": {
+  "archivo": "codigo/jardin/netart/jardin-camara/musica/temas/instrumentos.py",
+  "funcion": "hammond",
+  "firma": "linea"
+ },
+ "notas": "Barras 16′ 8′ 5⅓′ 4′ 2⅔′ por un Leslie lento: «Hammond es el mejor» (Canek).",
+ "procedencia": {
+  "nace": "jardín de cámara · música (temas/instrumentos.py)",
+  "archivo": "netart/jardin-camara/musica/temas/instrumentos.py",
+  "copia": "codigo/jardin/netart/jardin-camara/musica/temas/instrumentos.py",
+  "funcion": "hammond",
+  "sha256": "27aa1e7298e8dfeb3f0862d0a68ebe20f4e0dc1654d8b97ed494bd97703312f9"
+ }
+}

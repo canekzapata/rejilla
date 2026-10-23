@@ -1,0 +1,25 @@
+{
+ "id": "objeto-waterphone",
+ "nombre": "Waterphone",
+ "familia": "idiófono · varas con agua (modelado físico)",
+ "motor": "objeto",
+ "fisica": {
+  "modulo": "waterphone.js",
+  "api": "Waterphone",
+  "forma": "eventos",
+  "evento": {
+   "tipo": "arco",
+   "vara": 3,
+   "agua": 2,
+   "ola": 0.3
+  },
+  "cola": 2.5
+ },
+ "notas": "Varas de metal frotadas con arco sobre una vasija con agua: el gemido.",
+ "procedencia": {
+  "nace": "rejilla · objetos que cantan · waterphone",
+  "archivo": "research/rejilla/objetos/motor/waterphone.js",
+  "copia": "codigo/rejilla/research/rejilla/objetos/motor/waterphone.js",
+  "sha256": "0989198435c118e5c8dc08070d78aac0ee2a819badd2b82fbaaf12eff2a1edb2"
+ }
+}

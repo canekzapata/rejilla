@@ -1,0 +1,25 @@
+{
+ "id": "meleeviewer-5-bass",
+ "nombre": "Bajo · yoshi 5 la ley canta",
+ "familia": "electrófono · bajo",
+ "motor": "meleeviewer",
+ "fisica": {
+  "escenario": "codigo/meleeviewer/escenarios/2026-09-28_yoshi_es_un_vector_5_la_ley_canta.js",
+  "funcion": "bass",
+  "params": [
+   "t",
+   "n",
+   "dur",
+   "vel"
+  ],
+  "escenario_sha256": "5e2dd64c509e32076ace8b120d5117e1cafe14b127ef4ad42e7a10a73a687bf3"
+ },
+ "notas": "La función bass(t, n, dur, vel) de la canción 5 la ley canta de «yoshi es un vector», tal cual, en su escenario seco.",
+ "procedencia": {
+  "nace": "meleeviewer · yoshi es un vector 5 la ley canta",
+  "archivo": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_5_la_ley_canta/cancion.js",
+  "funcion": "bass",
+  "sha256": "00a3384440eda29cb934f3dcc73c997b56d55b3820e3ae514fcac37f96f368bb",
+  "variante_de": "Bajo"
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "id": "meleeviewer-14-bajo",
+ "nombre": "Bajo · yoshi 14 buenas noches",
+ "familia": "electrófono · bajo",
+ "motor": "meleeviewer",
+ "fisica": {
+  "escenario": "codigo/meleeviewer/escenarios/2026-10-03_yoshi_es_un_vector_14_buenas_noches.js",
+  "funcion": "bajo",
+  "params": [
+   "t",
+   "n",
+   "dur",
+   "vel"
+  ],
+  "escenario_sha256": "01c0e5fe156e42d3d748e13001c288eecbe9b81e2c86caebbee3e8eea4a4fa85"
+ },
+ "notas": "La función bajo(t, n, dur, vel) de la canción 14 buenas noches de «yoshi es un vector», tal cual, en su escenario seco.",
+ "procedencia": {
+  "nace": "meleeviewer · yoshi es un vector 14 buenas noches",
+  "archivo": "meleeviewer/output/Arte/2026-10-03_yoshi_es_un_vector_14_buenas_noches/cancion.js",
+  "funcion": "bajo",
+  "sha256": "c3269f6c9b4d596e9638d9d1dcc2bc4e91d33e486338fda4a7743fb85bed1013",
+  "variante_de": "Bajo"
+ }
+}

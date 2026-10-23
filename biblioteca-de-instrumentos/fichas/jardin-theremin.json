@@ -1,0 +1,19 @@
+{
+ "id": "jardin-theremin",
+ "nombre": "Theremin",
+ "familia": "electrófono · theremin",
+ "motor": "python",
+ "fisica": {
+  "archivo": "codigo/jardin/netart/jardin-camara/musica/temas/instrumentos.py",
+  "funcion": "theremin",
+  "firma": "linea"
+ },
+ "notas": "Casi un seno; la heterodina le deja un poco de 2.º y 3.º armónico.",
+ "procedencia": {
+  "nace": "jardín de cámara · música (temas/instrumentos.py)",
+  "archivo": "netart/jardin-camara/musica/temas/instrumentos.py",
+  "copia": "codigo/jardin/netart/jardin-camara/musica/temas/instrumentos.py",
+  "funcion": "theremin",
+  "sha256": "27aa1e7298e8dfeb3f0862d0a68ebe20f4e0dc1654d8b97ed494bd97703312f9"
+ }
+}

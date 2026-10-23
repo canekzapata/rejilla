@@ -1,0 +1,20 @@
+{
+ "id": "jardin-tambor-parlante",
+ "nombre": "Tambor parlante (dùndún)",
+ "familia": "membranófono · tambor parlante",
+ "motor": "python",
+ "fisica": {
+  "archivo": "codigo/jardin/netart/jardin-camara/musica/temas/parlante.py",
+  "funcion": "golpe",
+  "firma": "golpe",
+  "habla": 1.15
+ },
+ "notas": "El tambor que habla: cada golpe baja deslizándose a su nota, con piel y caja. Lo pidió Canek («el tambor bonito»).",
+ "procedencia": {
+  "nace": "jardín de cámara · día v1.2",
+  "archivo": "netart/jardin-camara/musica/temas/parlante.py",
+  "copia": "codigo/jardin/netart/jardin-camara/musica/temas/parlante.py",
+  "funcion": "golpe",
+  "sha256": "14ebb64172203e5c53bfca8f9ec7a80bd0f97fc8f08715cf7bd01d3765065d52"
+ }
+}

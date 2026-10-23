@@ -1,0 +1,46 @@
+{
+ "id": "kalimbacaja",
+ "nombre": "Kalimba de caja",
+ "familia": "idiófono · lengüetas",
+ "motor": "golpe",
+ "fisica": {
+  "gain": 0.9,
+  "dk": 0.4,
+  "shift": 22,
+  "parts": [
+   [
+    1,
+    1,
+    1.8
+   ],
+   [
+    6.27,
+    0.18,
+    0.12
+   ],
+   [
+    17.5,
+    0.05,
+    0.03
+   ]
+  ],
+  "click": [
+   5200,
+   2,
+   0.12,
+   0.006
+  ],
+  "body": [
+   320,
+   3,
+   0.45
+  ]
+ },
+ "notas": "Lengüeta empotrada (1:6.27:17.5) que arranca un poco alta y baja; caja de madera que resuena.",
+ "procedencia": {
+  "nace": "consola · visor de lectura §27.48",
+  "fecha": "2026-10-18",
+  "archivo": "consola/consola/static/lectura/musica.js",
+  "sha256": "0c9b5438248a37ab353559861535a15a841c719448dd4c865b6a005acf168621"
+ }
+}

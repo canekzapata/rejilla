@@ -1,0 +1,19 @@
+{
+ "id": "jardin-flauta",
+ "nombre": "Flauta (jardín)",
+ "familia": "aerófono · flauta",
+ "motor": "python",
+ "fisica": {
+  "archivo": "codigo/jardin/netart/jardin-camara/musica/temas/instrumentos.py",
+  "funcion": "flauta",
+  "firma": "linea"
+ },
+ "notas": "Seis armónicos y soplo en banda.",
+ "procedencia": {
+  "nace": "jardín de cámara · música (temas/instrumentos.py)",
+  "archivo": "netart/jardin-camara/musica/temas/instrumentos.py",
+  "copia": "codigo/jardin/netart/jardin-camara/musica/temas/instrumentos.py",
+  "funcion": "flauta",
+  "sha256": "27aa1e7298e8dfeb3f0862d0a68ebe20f4e0dc1654d8b97ed494bd97703312f9"
+ }
+}

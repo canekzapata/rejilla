@@ -1,0 +1,36 @@
+{
+ "id": "objeto-trombon-plunger",
+ "nombre": "Trombón con plunger",
+ "familia": "aerófono · metal con sordina (modelado físico)",
+ "motor": "objeto",
+ "fisica": {
+  "modulo": "metal.js",
+  "api": "Metal",
+  "forma": "metal",
+  "control": {
+   "voz": "trombon",
+   "sordina": "plunger",
+   "wah": [
+    [
+     0,
+     0.2
+    ],
+    [
+     0.4,
+     1
+    ],
+    [
+     0.9,
+     0.3
+    ]
+   ]
+  }
+ },
+ "notas": "El trombón con la sordina de destapacaños que abre y cierra (wah).",
+ "procedencia": {
+  "nace": "rejilla · objetos que cantan · metal",
+  "archivo": "research/rejilla/objetos/motor/metal.js",
+  "copia": "codigo/rejilla/research/rejilla/objetos/motor/metal.js",
+  "sha256": "e6c2ae41a7afda2f6d0d2ce42ed0add27ba21f8894894fada275a17aefae5407"
+ }
+}

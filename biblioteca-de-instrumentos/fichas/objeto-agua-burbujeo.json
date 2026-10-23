@@ -1,0 +1,22 @@
+{
+ "id": "objeto-agua-burbujeo",
+ "nombre": "Agua: burbujeo",
+ "familia": "agua (modelado físico)",
+ "motor": "objeto",
+ "fisica": {
+  "modulo": "agua.js",
+  "api": "Agua",
+  "forma": "eventos",
+  "evento": {
+   "tipo": "burbujeo"
+  },
+  "cola": 1
+ },
+ "notas": "Burbujas físicas (Minnaert).",
+ "procedencia": {
+  "nace": "rejilla · objetos que cantan · agua",
+  "archivo": "research/rejilla/objetos/motor/agua.js",
+  "copia": "codigo/rejilla/research/rejilla/objetos/motor/agua.js",
+  "sha256": "86911dd2fded3df1b100625548fa8eb634325b833bf31c7c09fc6909ed1d7ad5"
+ }
+}

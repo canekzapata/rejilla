@@ -1,0 +1,265 @@
+[
+  {
+    "id": "boveda-fano",
+    "nombre": "La Bóveda Resonante de Fano–BIC (Estados Ligados en el Continuo)",
+    "proyecto": "importación externa",
+    "estado": "paquete",
+    "carpeta": "paquetes/boveda-fano",
+    "codigo": "paquetes/boveda-fano/boveda_fano_bic.py",
+    "receta": "paquetes/boveda-fano/receta-boveda-fano-bic-s20261021.json",
+    "semilla": 20261021,
+    "nota": "Código y muestras recibidos; sin adaptador común ni ejecución local comprobada."
+  },
+  {
+    "id": "cascada-navier-stokes",
+    "nombre": "La Cascada de Enstrofía de Navier–Stokes (Leray–BKM)",
+    "proyecto": "importación externa",
+    "estado": "paquete",
+    "carpeta": "paquetes/cascada-navier-stokes",
+    "codigo": "paquetes/cascada-navier-stokes/cascada_navier_stokes_bkm.py",
+    "receta": "paquetes/cascada-navier-stokes/receta-cascada-navier-stokes-s20261021.json",
+    "semilla": 20261021,
+    "nota": "Código y muestras recibidos; sin adaptador común ni ejecución local comprobada."
+  },
+  {
+    "id": "condensado-gross-pitaevskii",
+    "nombre": "El Condensado de Gross–Pitaevskii (Bogoliubov–Abrikosov–Feshbach)",
+    "proyecto": "importación externa",
+    "estado": "paquete",
+    "carpeta": "paquetes/condensado-gross-pitaevskii",
+    "codigo": "paquetes/condensado-gross-pitaevskii/condensado_gross_pitaevskii.py",
+    "receta": "paquetes/condensado-gross-pitaevskii/receta-condensado-gross-pitaevskii-s20261021.json",
+    "semilla": 20261021,
+    "nota": "Código y muestras recibidos; sin adaptador común ni ejecución local comprobada."
+  },
+  {
+    "id": "mariposa-hofstadter-chern",
+    "nombre": "La Mariposa Magnética de Hofstadter–Thouless (Harper–Chern–Aubry–André)",
+    "proyecto": "importación externa",
+    "estado": "paquete",
+    "carpeta": "paquetes/mariposa-hofstadter-chern",
+    "codigo": "paquetes/mariposa-hofstadter-chern/mariposa_hofstadter_chern.py",
+    "receta": "paquetes/mariposa-hofstadter-chern/receta-mariposa-hofstadter-chern-s20261021.json",
+    "semilla": 20261021,
+    "nota": "Código y muestras recibidos; sin adaptador común ni ejecución local comprobada."
+  },
+  {
+    "id": "astrolabio-metaplectico",
+    "nombre": "Astrolabio Metapléctico",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/astrolabio-metaplectico",
+    "codigo": "../research/rejilla/astrolabio-metaplectico/astrolabio_metaplectico.py",
+    "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+    "id": "braid-organ",
+    "nombre": "Braid Organ",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/braid-organ",
+    "codigo": "../research/rejilla/braid-organ/dist/audio.mjs",
+    "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+    "id": "campana-padica",
+    "nombre": "Campana de distancias imposibles",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/campana-padica",
+    "codigo": "../research/rejilla/campana-padica/motor.mjs",
+    "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+    "id": "campana-3d-pop",
+    "nombre": "P-adic Bell (escultura, variante espacial)",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/campana-3d-pop",
+    "codigo": "../research/rejilla/campana-3d-pop/dist/audio/motor.mjs",
+    "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+    "id": "ceros-que-tocan-primos",
+    "nombre": "Los ceros que tocan a los primos",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/ceros-que-tocan-primos",
+    "codigo": "../research/rejilla/ceros-que-tocan-primos/ceros_primos.py",
+    "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+    "id": "criba-mobius-grisey",
+    "nombre": "Candelabro de Möbius–Grisey",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/criba-mobius-grisey",
+    "codigo": "../research/rejilla/criba-mobius-grisey/criba_mobius_grisey.py",
+    "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+    "id": "monodromia-berry-ep2",
+    "nombre": "Monodromía de Berry EP2",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/monodromia-berry-ep2",
+    "codigo": "../research/rejilla/monodromia-berry-ep2/monodromia_berry_ep2.py",
+    "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+    "id": "soliton-toda-kdv",
+    "nombre": "Solitón subarmónico de Toda–KdV",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/soliton-toda-kdv",
+    "codigo": "../research/rejilla/soliton-toda-kdv/soliton_toda_kdv.py",
+    "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+    "id": "tapete-de-talbot",
+    "nombre": "Tapete de Talbot",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/tapete-de-talbot",
+    "codigo": "../research/rejilla/tapete-de-talbot/tapete.py",
+    "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+    "id": "telar-de-fase",
+    "nombre": "Telar de fase",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/telar-de-fase",
+    "codigo": "../research/rejilla/telar-de-fase/motor.mjs",
+    "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+    "id": "aves-que-aprenden",
+    "nombre": "Siringua: aves que aprenden palabras",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/aves-que-aprenden",
+    "codigo": "../research/rejilla/aves-que-aprenden/adaptador-siringua.js",
+    "nota": "Vive en su proyecto; sin ficha ni adaptador de la biblioteca."
+  },
+  {
+    "id": "tres-tiempos-boca",
+    "nombre": "Boca de tres tiempos",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+    "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+    "funcion": "render(boca, partitura, duracion, ...)",
+    "nota": "fuente armónica y cuatro resonadores variables. Límite documentado: no comprueba habla inteligible; sin PSOLA ni muestras humanas"
+  },
+  {
+    "id": "tres-tiempos-cuerda",
+    "nombre": "Cuerda de cuerpos incompatibles",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+    "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+    "funcion": "render(cuerda, partitura, duracion, ...)",
+    "nota": "tres regiones, siete modos cada una, conversión activa de envolventes. Límite documentado: modelo abstracto, no simulación física conservativa de una cuerda natural"
+  },
+  {
+    "id": "tres-tiempos-piano",
+    "nombre": "Piano de tres presentes",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+    "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+    "funcion": "render(piano, partitura, duracion, ...)",
+    "nota": "ataque FM futuro, cuerpo actual y caída anterior. Límite documentado: necesita partitura conocida; sin predicción de gestos humanos futuros"
+  },
+  {
+    "id": "tres-tiempos-arpa",
+    "nombre": "Arpa que presta su vibración",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+    "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+    "funcion": "render(arpa, partitura, duracion, ...)",
+    "nota": "cinco cuerdas de siete modos y enlaces variables. Límite documentado: giro de envolventes durante 0.45 s; conversión entre alturas activa, no transferencia pasiva de julios"
+  },
+  {
+    "id": "tres-tiempos-organo",
+    "nombre": "Órgano de divisores con memoria",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+    "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+    "funcion": "render(organo, partitura, duracion, ...)",
+    "nota": "osciladores f/n, Schmitt por divisor. Límite documentado: divisores 1,2,3,5,7,9; sin segundo pedal de múltiplos en este prototipo"
+  },
+  {
+    "id": "tres-tiempos-sala",
+    "nombre": "Sala plegada que se toca",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+    "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+    "funcion": "render(sala, partitura, duracion, ...)",
+    "nota": "dos redes independientes de cuatro retardos fijos y conexiones rotatorias. Límite documentado: arquitectura digital, no recinto físico medido"
+  },
+  {
+    "id": "tres-tiempos-cristal",
+    "nombre": "Cristal orbital",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+    "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+    "funcion": "render(cristal, partitura, duracion, ...)",
+    "nota": "FM de índice decreciente, render interno 4x. Límite documentado: preset original; no emulación de hardware concreto"
+  },
+  {
+    "id": "tres-tiempos-estacion",
+    "nombre": "Cuerdas de estación",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+    "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+    "funcion": "render(estacion, partitura, duracion, ...)",
+    "nota": "tres osciladores aditivos desafinados y brillo móvil. Límite documentado: ataque 0.42 s y salida 0.65 s; notas cortas reducen su amplitud"
+  },
+  {
+    "id": "tres-tiempos-terminal",
+    "nombre": "Terminal vectorial",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+    "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+    "funcion": "render(terminal, partitura, duracion, ...)",
+    "nota": "mezcla bilineal de metal FM, vocal, pulsación y aire; render 4x. Límite documentado: interpolación de cuatro fuentes, sin emulación de sintetizador comercial"
+  },
+  {
+    "id": "tres-tiempos-plasma",
+    "nombre": "Plumón de plasma",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+    "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+    "funcion": "render(plasma, partitura, duracion, ...)",
+    "nota": "pulso por suma armónica, entrada deslizada y ráfaga de ruido. Límite documentado: scoop al inicio de cada nota; todavía sin portamento legato desde la nota anterior"
+  },
+  {
+    "id": "tres-tiempos-androide",
+    "nombre": "Bajo de androide",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+    "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+    "funcion": "render(androide, partitura, duracion, ...)",
+    "nota": "fundamental separada, medios formánticos saturados. Límite documentado: recorrido u/e prefijado; la fusión completa con los tres recorridos de Boca queda fuera de esta versión"
+  },
+  {
+    "id": "tres-tiempos-fotones",
+    "nombre": "Batería de fotones",
+    "proyecto": "rejilla",
+    "estado": "referenciado",
+    "carpeta": "../research/rejilla/instrumentos-de-tres-tiempos",
+    "codigo": "../research/rejilla/instrumentos-de-tres-tiempos/motores.py",
+    "funcion": "render(fotones, partitura, duracion, ...)",
+    "nota": "caída rápida de altura, producto de osciladores y ruido; render 4x. Límite documentado: percusión sintetizada; no muestras de batería o película"
+  }
+]

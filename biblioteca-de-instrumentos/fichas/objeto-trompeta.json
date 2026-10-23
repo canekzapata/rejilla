@@ -1,0 +1,21 @@
+{
+ "id": "objeto-trompeta",
+ "nombre": "Trompeta",
+ "familia": "aerófono · metal (modelado físico)",
+ "motor": "objeto",
+ "fisica": {
+  "modulo": "metal.js",
+  "api": "Metal",
+  "forma": "metal",
+  "control": {
+   "voz": "trompeta"
+  }
+ },
+ "notas": "El mismo modelo más corto y brillante.",
+ "procedencia": {
+  "nace": "rejilla · objetos que cantan · metal",
+  "archivo": "research/rejilla/objetos/motor/metal.js",
+  "copia": "codigo/rejilla/research/rejilla/objetos/motor/metal.js",
+  "sha256": "e6c2ae41a7afda2f6d0d2ce42ed0add27ba21f8894894fada275a17aefae5407"
+ }
+}

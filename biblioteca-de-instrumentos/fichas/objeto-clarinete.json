@@ -1,0 +1,18 @@
+{
+ "id": "objeto-clarinete",
+ "nombre": "Clarinete",
+ "familia": "aerófono · caña (modelado físico)",
+ "motor": "objeto",
+ "fisica": {
+  "modulo": "clarinete.js",
+  "api": "Clarinete",
+  "forma": "eventos"
+ },
+ "notas": "Tubo cilíndrico y caña: armónicos impares.",
+ "procedencia": {
+  "nace": "rejilla · objetos que cantan · clarinete",
+  "archivo": "research/rejilla/objetos/motor/clarinete.js",
+  "copia": "codigo/rejilla/research/rejilla/objetos/motor/clarinete.js",
+  "sha256": "737180e4f8bb174584499643e4f572a55b51328941f40904be5da5c5da48610c"
+ }
+}

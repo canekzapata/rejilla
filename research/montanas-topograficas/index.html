@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Traspuesta — Canek Zapata</title>
+<meta name="description" content="Traspuesta: una edición de láminas topográficas para plotter. Cada semilla levanta un terreno, le da nombres medidos y una pluma lo traza perfil por perfil.">
+<meta name="author" content="Canek Zapata">
+<meta name="date" content="2026">
+<meta name="copyright" content="© 2026 Canek Zapata">
+<meta name="keywords" content="net art, generativo, plotter, topografía, montañas, curvas de nivel, cartografía, toponimia, arte programado, Traspuesta">
+<meta name="theme-color" content="">
+<link rel="canonical" href="https://traspuesta.canekzapata.net/">
+<link rel="icon" href="favicon.png">
+
+<!-- Open Graph: Facebook, Instagram (al compartir links), WhatsApp, LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Canek Zapata">
+<meta property="og:title" content="Traspuesta">
+<meta property="og:description" content="Una edición de láminas topográficas para plotter: cada semilla levanta un terreno, le da nombres medidos y una pluma lo traza perfil por perfil.">
+<meta property="og:url" content="https://traspuesta.canekzapata.net/">
+<meta property="og:image" content="https://traspuesta.canekzapata.net/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Una montaña dibujada con decenas de perfiles apilados a pluma fina, con una cumbre rotulada con su nombre y su altitud.">
+<meta property="og:locale" content="es_MX">
+<meta property="og:locale:alternate" content="en_US">
+
+<!-- X / Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Traspuesta">
+<meta name="twitter:description" content="Una edición de láminas topográficas para plotter: cada semilla levanta un terreno, le da nombres medidos y una pluma lo traza perfil por perfil.">
+<meta name="twitter:image" content="https://traspuesta.canekzapata.net/og.png">
+<meta name="twitter:image:alt" content="Una montaña dibujada con decenas de perfiles apilados a pluma fina, con una cumbre rotulada con su nombre y su altitud.">
+<style>
+  /* el color no vive aquí: lo pone la lámina de portada (atlas.js), cada visita otro */
+  :root { --papel: Canvas; --tinta: CanvasText; --tenue: GrayText; --raya: GrayText; color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  html { background: var(--papel); transition: background 1.2s; }
+  body { margin: 0; background: var(--papel); color: var(--tinta); font: 13px/1.55 ui-monospace, "Cascadia Mono", Consolas, monospace; letter-spacing: 0.01em; transition: background 1.2s, color 1.2s; }
+  a { color: inherit; }
+  .marco { max-width: 1280px; margin: 0 auto; padding: 0 16px; }
+
+  #panorama { position: relative; height: 100vh; height: 100svh; overflow: hidden; }
+  #panorama-lienzo { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+  #panorama header { position: absolute; left: 0; right: 0; top: 0; padding: 26px 16px 0; max-width: 1280px; margin: 0 auto; pointer-events: none; }
+  #titulo { width: min(640px, calc(100% - 64px)); display: block; }
+  #idioma { position: absolute; top: 14px; right: 16px; z-index: 3; font-size: 12px; text-decoration: none; border-bottom: 1px solid var(--raya); color: var(--tenue); }
+  .def { margin: 4px 0 0; font-style: italic; max-width: 60ch; text-shadow: 0 0 6px var(--papel), 0 0 2px var(--papel); }
+  .def small { display: block; color: var(--tenue); font-style: normal; font-size: 11px; }
+  .cosidas { position: absolute; left: 0; right: 0; bottom: 0; padding: 26px 16px 12px; background: linear-gradient(transparent, var(--papel) 55%); font-size: 11px; color: var(--tenue); text-shadow: 0 0 5px var(--papel), 0 0 2px var(--papel); }
+  .cosidas a { text-decoration: none; border-bottom: 1px solid var(--raya); }
+  #portada-otra { color: var(--tinta); border-bottom-color: var(--tinta); }
+  #intro { max-width: 68ch; margin: 34px 0 6px; color: var(--tenue); }
+  .nomen { margin: 6px 0 0; } .nomen a { text-decoration: none; border-bottom: 1px solid var(--tinta); }
+
+  .filtros { display: flex; flex-wrap: wrap; gap: 10px 18px; padding: 18px 0 10px; align-items: end; position: sticky; top: 0; background: var(--papel); z-index: 2; transition: background 1.2s; }
+  .filtros label { display: flex; flex-direction: column; gap: 2px; font-size: 11px; color: var(--tenue); }
+  .filtros select, .filtros input, .deriva input, .deriva button {
+    font: inherit; font-size: 12px; color: var(--tinta); background: transparent; border: 0; border-bottom: 1px solid var(--raya); padding: 3px 0; border-radius: 0; max-width: 220px; }
+  .filtros select option { background: var(--papel); color: var(--tinta); }
+  #f-texto { width: 200px; }
+  #cuenta { margin-left: auto; color: var(--tenue); font-size: 11px; padding-bottom: 4px; }
+
+  #rejilla { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 28px 22px; padding: 14px 0 20px; }
+  .tarjeta { text-decoration: none; display: block; }
+  .tarjeta canvas { width: 100%; display: block; aspect-ratio: 297 / 210; background: color-mix(in oklch, var(--tinta) 6%, var(--papel)); }
+  .tarjeta canvas.v { aspect-ratio: 210 / 297; }
+  .tarjeta .pie { margin-top: 7px; font-size: 12px; letter-spacing: 0.06em; }
+  .tarjeta .n { color: var(--tenue); }
+  .tarjeta .dato { font-size: 11px; color: var(--tenue); line-height: 1.45; }
+  .tarjeta .tenue { opacity: 0.75; }
+  .tarjeta:hover .nom { border-bottom: 1px solid var(--tinta); }
+  #mas { display: block; margin: 0 auto 40px; font: inherit; color: var(--tinta); background: none; border: 0; border-bottom: 1px solid var(--raya); cursor: pointer; }
+
+  .deriva { border-top: 1px solid var(--raya); padding: 26px 0 30px; }
+  .deriva h2 { font-size: 13px; font-weight: normal; letter-spacing: 0.14em; text-transform: uppercase; margin: 0 0 6px; }
+  .deriva p { color: var(--tenue); margin: 0 0 12px; max-width: 68ch; }
+  .deriva form { display: flex; gap: 14px; align-items: end; flex-wrap: wrap; }
+  .deriva label { display: flex; flex-direction: column; font-size: 11px; color: var(--tenue); }
+  .deriva button { cursor: pointer; border-bottom-color: var(--tinta); }
+  footer { padding: 10px 0 30px; color: var(--tenue); font-size: 11px; }
+
+  @media (max-width: 760px) {
+    #rejilla { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 22px 14px; }
+    #cuenta { margin-left: 0; width: 100%; }
+    .filtros { position: static; }
+  }
+</style>
+</head>
+<body>
+<a id="idioma" href="?lang=en">english</a>
+<section id="panorama">
+  <canvas id="panorama-lienzo"></canvas>
+  <header>
+    <canvas id="titulo" aria-label="Traspuesta"></canvas>
+    <p class="def"><span id="def"></span><small id="fuente"></small></p>
+  </header>
+  <div class="cosidas"><span id="portada-cosidas-t"></span> <span id="portada-cosidas"></span> · <a id="portada-otra" href="#"></a></div>
+</section>
+<div class="marco">
+  <p id="intro"></p>
+  <p class="nomen"><a id="a-nomen" href="nomenclator.html"></a></p>
+  <section class="filtros">
+    <label><span id="l-arq"></span><select id="f-arq"></select></label>
+    <label><span id="l-hoja"></span><select id="f-hoja"></select></label>
+    <label><span id="l-papel"></span><select id="f-papel"></select></label>
+    <label><span id="l-evento"></span><select id="f-evento"></select></label>
+    <label><span id="l-orden"></span><select id="f-orden"></select></label>
+    <label>&nbsp;<input id="f-texto" type="search" autocomplete="off"></label>
+    <span id="cuenta"></span>
+  </section>
+
+  <main id="rejilla"></main>
+  <button id="mas" hidden></button>
+
+  <section class="deriva">
+    <h2 id="deriva-t"></h2>
+    <p id="deriva-txt"></p>
+    <form id="deriva-f">
+      <label><span id="l-semilla"></span><input id="semilla" inputmode="numeric" autocomplete="off" size="10"></label>
+      <button id="abrir" type="submit"></button>
+      <button id="azar" type="button"></button>
+    </form>
+  </section>
+  <footer id="pie"></footer>
+</div>
+<script src="nucleo.js?v=38"></script>
+<script src="idioma.js?v=38"></script>
+<script src="letra.js?v=38"></script>
+<script src="vistas.js?v=38"></script>
+<script src="panorama.js?v=38"></script>
+<script src="atlas.js?v=38"></script>
+</body>
+</html>

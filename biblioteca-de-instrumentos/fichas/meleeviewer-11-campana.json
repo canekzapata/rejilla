@@ -1,0 +1,25 @@
+{
+ "id": "meleeviewer-11-campana",
+ "nombre": "Campana · yoshi 11 que dice el zorro",
+ "familia": "idiófono · campana",
+ "motor": "meleeviewer",
+ "fisica": {
+  "escenario": "codigo/meleeviewer/escenarios/2026-09-29_yoshi_es_un_vector_11_que_dice_el_zorro.js",
+  "funcion": "campana",
+  "params": [
+   "t",
+   "n",
+   "vel",
+   "p"
+  ],
+  "escenario_sha256": "8a81b7040d9c9e8774a4ed745a90667823ae0fd078bafb064a4ec83ee237ff91"
+ },
+ "notas": "La función campana(t, n, vel, p) de la canción 11 que dice el zorro de «yoshi es un vector», tal cual, en su escenario seco.",
+ "procedencia": {
+  "nace": "meleeviewer · yoshi es un vector 11 que dice el zorro",
+  "archivo": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_11_que_dice_el_zorro/cancion.js",
+  "funcion": "campana",
+  "sha256": "43581006d9749c4093ead6b87864cc8a86c96ba237d693c7e9cabaeaaedadc7d",
+  "variante_de": "Campana"
+ }
+}

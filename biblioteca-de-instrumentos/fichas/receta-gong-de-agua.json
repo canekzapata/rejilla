@@ -1,0 +1,51 @@
+{
+ "id": "receta-gong-de-agua",
+ "nombre": "Gong de agua",
+ "familia": "idiófono · gong (receta)",
+ "motor": "receta",
+ "fisica": {
+  "name": "gong de agua",
+  "gain": 0.9,
+  "attack": 0.005,
+  "decay": 3,
+  "sustain": 0.1,
+  "release": 3,
+  "filterType": "lowpass",
+  "filterFreq": 3200,
+  "filterQ": 0.8,
+  "sweep": 1.5,
+  "vibRate": 0.6,
+  "vibDepth": 25,
+  "vibDelay": 0.4,
+  "fmRatio": 1.41,
+  "fmIndex": 3.5,
+  "fmDecay": 2.5,
+  "noise": 0,
+  "partials": [
+   {
+    "wave": "sine",
+    "ratio": 1,
+    "gain": 1,
+    "detune": 0
+   },
+   {
+    "wave": "sine",
+    "ratio": 2.76,
+    "gain": 0.4,
+    "detune": 0
+   },
+   {
+    "wave": "sine",
+    "ratio": 5.4,
+    "gain": 0.2,
+    "detune": 0
+   }
+  ]
+ },
+ "notas": "Receta de partida del editor de instrumentos de consola: parciales, filtro con barrido, vibrato, FM y aire.",
+ "procedencia": {
+  "nace": "consola · visor de lectura §27 (instrumentos por receta)",
+  "archivo": "consola/consola/static/lectura/musica.js",
+  "sha256": "0c9b5438248a37ab353559861535a15a841c719448dd4c865b6a005acf168621"
+ }
+}

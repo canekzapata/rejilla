@@ -1,0 +1,33 @@
+{
+ "id": "bateria-tr808",
+ "nombre": "Batería TR-808",
+ "familia": "membranófono · batería (13 piezas)",
+ "motor": "bateria",
+ "fisica": {
+  "kit": "tr808",
+  "tune": 0,
+  "decay": 1,
+  "drive": 0,
+  "piezas": [
+   "kick",
+   "snare",
+   "rim",
+   "clap",
+   "hat",
+   "openhat",
+   "crash",
+   "ride",
+   "spray",
+   "tomhi",
+   "tommid",
+   "tomlo",
+   "cowbell"
+  ]
+ },
+ "notas": "La caja de ritmos Roland 808: bombo con cola larga de sub, hats metálicos de seis cuadradas. Piezas: kick, snare, rim, clap, hat, openhat, crash, ride, spray, tomhi, tommid, tomlo, cowbell (spray = platillo ochentero).",
+ "procedencia": {
+  "nace": "consola · visor de lectura §27.42 (batería)",
+  "archivo": "consola/consola/static/lectura/musica.js",
+  "sha256": "0c9b5438248a37ab353559861535a15a841c719448dd4c865b6a005acf168621"
+ }
+}

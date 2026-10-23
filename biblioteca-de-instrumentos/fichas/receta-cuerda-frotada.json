@@ -1,0 +1,45 @@
+{
+ "id": "receta-cuerda-frotada",
+ "nombre": "Cuerda frotada",
+ "familia": "cordófono · frotado (receta)",
+ "motor": "receta",
+ "fisica": {
+  "name": "cuerda frotada",
+  "gain": 0.8,
+  "attack": 0.18,
+  "decay": 0.6,
+  "sustain": 0.55,
+  "release": 0.7,
+  "filterType": "lowpass",
+  "filterFreq": 1400,
+  "filterQ": 2,
+  "sweep": 1.2,
+  "vibRate": 5,
+  "vibDepth": 18,
+  "vibDelay": 0.35,
+  "fmRatio": 1,
+  "fmIndex": 0.6,
+  "fmDecay": 0.8,
+  "noise": 0.12,
+  "partials": [
+   {
+    "wave": "sawtooth",
+    "ratio": 1,
+    "gain": 1,
+    "detune": -6
+   },
+   {
+    "wave": "sawtooth",
+    "ratio": 1,
+    "gain": 0.7,
+    "detune": 7
+   }
+  ]
+ },
+ "notas": "Receta de partida del editor de instrumentos de consola: parciales, filtro con barrido, vibrato, FM y aire.",
+ "procedencia": {
+  "nace": "consola · visor de lectura §27 (instrumentos por receta)",
+  "archivo": "consola/consola/static/lectura/musica.js",
+  "sha256": "0c9b5438248a37ab353559861535a15a841c719448dd4c865b6a005acf168621"
+ }
+}

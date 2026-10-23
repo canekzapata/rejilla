@@ -1,0 +1,31 @@
+{
+ "id": "berimbau",
+ "nombre": "Berimbau",
+ "familia": "cordófono · arco musical con bule",
+ "motor": "arco",
+ "fisica": {
+  "gain": 1.72,
+  "cerca": 2,
+  "inarmonia": 0.00035,
+  "parciales": 14,
+  "golpe": 0.13,
+  "caida": 1.7,
+  "caidaChiado": 0.09,
+  "chiado": 0.35,
+  "cabaca": [
+   260,
+   820,
+   0.18,
+   4,
+   2.2
+  ],
+  "seco": 0.5
+ },
+ "notas": "Brasil (capoeira): alambre en un arco, varita, piedra (dobrão) que sube la nota un tono, cabaça que se abre contra el vientre y caxixi en cada golpe. Tocado suave: chiado.",
+ "procedencia": {
+  "nace": "consola · visor de lectura §27.49",
+  "fecha": "2026-10-18",
+  "archivo": "consola/consola/static/lectura/musica.js",
+  "sha256": "0c9b5438248a37ab353559861535a15a841c719448dd4c865b6a005acf168621"
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "id": "objeto-tamtam",
+ "nombre": "Tam-tam",
+ "familia": "idiófono · gong (modelado físico)",
+ "motor": "objeto",
+ "fisica": {
+  "modulo": "gong.js",
+  "api": "Gong",
+  "forma": "eventos",
+  "evento": {
+   "tipo": "tamtam",
+   "dureza": 0.3
+  },
+  "cola": 4
+ },
+ "notas": "Tam-tam: modos densos que florecen después del golpe.",
+ "procedencia": {
+  "nace": "rejilla · objetos que cantan · gong",
+  "archivo": "research/rejilla/objetos/motor/gong.js",
+  "copia": "codigo/rejilla/research/rejilla/objetos/motor/gong.js",
+  "sha256": "96b89fe85f2e96d732dad456f9916856b2f55e8abe25bd568256c48861b77522"
+ }
+}

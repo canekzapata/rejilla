@@ -1,0 +1,41 @@
+{
+ "id": "gender",
+ "nombre": "Gendér",
+ "familia": "idiófono · láminas de bronce (gamelán)",
+ "motor": "golpe",
+ "fisica": {
+  "gain": 1.17,
+  "dk": 0.4,
+  "pair": 5,
+  "parts": [
+   [
+    1,
+    1,
+    3.5
+   ],
+   [
+    3.9,
+    0.18,
+    0.8
+   ],
+   [
+    8.6,
+    0.05,
+    0.2
+   ]
+  ],
+  "click": [
+   900,
+   0.7,
+   0.08,
+   0.015
+  ]
+ },
+ "notas": "Láminas delgadas sobre tubos, baqueta acolchada, ombak más lento.",
+ "procedencia": {
+  "nace": "consola · visor de lectura §27.48",
+  "fecha": "2026-10-18",
+  "archivo": "consola/consola/static/lectura/musica.js",
+  "sha256": "0c9b5438248a37ab353559861535a15a841c719448dd4c865b6a005acf168621"
+ }
+}

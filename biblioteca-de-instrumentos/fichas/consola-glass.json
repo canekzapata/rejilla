@@ -1,0 +1,15 @@
+{
+ "id": "consola-glass",
+ "nombre": "Vidrio",
+ "familia": "idiófono · vidrio",
+ "motor": "voz",
+ "fisica": {
+  "tipo": "glass"
+ },
+ "notas": "Dos senos (1 y 2.76) una octava arriba: copa de vidrio.",
+ "procedencia": {
+  "nace": "consola · visor de lectura §27 (motor musical v1)",
+  "archivo": "consola/consola/static/lectura/musica.js",
+  "sha256": "0c9b5438248a37ab353559861535a15a841c719448dd4c865b6a005acf168621"
+ }
+}

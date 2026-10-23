@@ -1,0 +1,57 @@
+{
+ "id": "receta-organo-roto",
+ "nombre": "Órgano roto",
+ "familia": "aerófono · órgano (receta)",
+ "motor": "receta",
+ "fisica": {
+  "name": "órgano roto",
+  "gain": 0.7,
+  "attack": 0.05,
+  "decay": 0.2,
+  "sustain": 0.8,
+  "release": 0.4,
+  "filterType": "lowpass",
+  "filterFreq": 2600,
+  "filterQ": 1.5,
+  "sweep": 0,
+  "vibRate": 7,
+  "vibDepth": 30,
+  "vibDelay": 0,
+  "fmRatio": 0,
+  "fmIndex": 0,
+  "fmDecay": 1,
+  "noise": 0.05,
+  "partials": [
+   {
+    "wave": "square",
+    "ratio": 1,
+    "gain": 0.8,
+    "detune": 0
+   },
+   {
+    "wave": "square",
+    "ratio": 2,
+    "gain": 0.4,
+    "detune": -12
+   },
+   {
+    "wave": "sine",
+    "ratio": 3,
+    "gain": 0.3,
+    "detune": 9
+   },
+   {
+    "wave": "triangle",
+    "ratio": 0.5,
+    "gain": 0.5,
+    "detune": 0
+   }
+  ]
+ },
+ "notas": "Receta de partida del editor de instrumentos de consola: parciales, filtro con barrido, vibrato, FM y aire.",
+ "procedencia": {
+  "nace": "consola · visor de lectura §27 (instrumentos por receta)",
+  "archivo": "consola/consola/static/lectura/musica.js",
+  "sha256": "0c9b5438248a37ab353559861535a15a841c719448dd4c865b6a005acf168621"
+ }
+}

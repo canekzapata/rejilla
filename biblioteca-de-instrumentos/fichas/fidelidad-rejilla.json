@@ -1,0 +1,142 @@
+{
+ "arpaboca": {
+  "modos": {
+   "espectro_db": 1.3,
+   "nivel_db": 2.0,
+   "duracion": 1.08
+  },
+  "gemelo_db": -72,
+  "rejilla": "modos",
+  "nota": ""
+ },
+ "balafon": {
+  "modos": {
+   "espectro_db": 18.6,
+   "nivel_db": 1.4,
+   "duracion": 1.14
+  },
+  "gemelo_db": -86,
+  "rejilla": "gemelo",
+  "nota": "no lineal: los modos son aproximados"
+ },
+ "berimbau": {
+  "modos": {
+   "espectro_db": 6.0,
+   "nivel_db": 2.0,
+   "duracion": 1.13
+  },
+  "gemelo_db": -92,
+  "rejilla": "gemelo",
+  "nota": ""
+ },
+ "gender": {
+  "modos": {
+   "espectro_db": 0.1,
+   "nivel_db": 0.1,
+   "duracion": 1.0
+  },
+  "gemelo_db": -92,
+  "rejilla": "modos",
+  "nota": ""
+ },
+ "gyil": {
+  "modos": {
+   "espectro_db": 15.7,
+   "nivel_db": 2.8,
+   "duracion": 1.2
+  },
+  "gemelo_db": -79,
+  "rejilla": "gemelo",
+  "nota": "no lineal: los modos son aproximados"
+ },
+ "kalimbacaja": {
+  "modos": {
+   "espectro_db": 0.1,
+   "nivel_db": 0.2,
+   "duracion": 1.0
+  },
+  "gemelo_db": -101,
+  "rejilla": "modos",
+  "nota": ""
+ },
+ "marimba": {
+  "modos": {
+   "espectro_db": 0.3,
+   "nivel_db": 0.3,
+   "duracion": 1.03
+  },
+  "gemelo_db": -109,
+  "rejilla": "modos",
+  "nota": ""
+ },
+ "mbira": {
+  "modos": {
+   "espectro_db": 15.1,
+   "nivel_db": 0.5,
+   "duracion": 1.08
+  },
+  "gemelo_db": -70,
+  "rejilla": "gemelo",
+  "nota": "no lineal: los modos son aproximados"
+ },
+ "saron": {
+  "modos": {
+   "espectro_db": 0.2,
+   "nivel_db": 0.1,
+   "duracion": 1.0
+  },
+  "gemelo_db": -90,
+  "rejilla": "modos",
+  "nota": ""
+ },
+ "steelpan": {
+  "modos": {
+   "espectro_db": 0.4,
+   "nivel_db": 0.4,
+   "duracion": 1.0
+  },
+  "gemelo_db": -98,
+  "rejilla": "modos",
+  "nota": ""
+ },
+ "teponaztli": {
+  "modos": {
+   "espectro_db": 0.4,
+   "nivel_db": 0.5,
+   "duracion": 1.0
+  },
+  "gemelo_db": -115,
+  "rejilla": "modos",
+  "nota": ""
+ },
+ "vibrafono": {
+  "modos": {
+   "espectro_db": 0.3,
+   "nivel_db": 0.7,
+   "duracion": 1.05
+  },
+  "gemelo_db": -100,
+  "rejilla": "modos",
+  "nota": ""
+ },
+ "xiloelec": {
+  "modos": {
+   "espectro_db": 20.4,
+   "nivel_db": 9.6,
+   "duracion": 1.3
+  },
+  "gemelo_db": -102,
+  "rejilla": "gemelo",
+  "nota": "no lineal: los modos son aproximados"
+ },
+ "xilofono": {
+  "modos": {
+   "espectro_db": 0.4,
+   "nivel_db": 0.5,
+   "duracion": 1.0
+  },
+  "gemelo_db": -115,
+  "rejilla": "modos",
+  "nota": ""
+ }
+}

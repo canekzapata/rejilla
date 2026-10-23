@@ -1,0 +1,46 @@
+{
+ "id": "teponaztli",
+ "nombre": "Teponaztli",
+ "familia": "idiófono · tambor de hendidura",
+ "motor": "golpe",
+ "fisica": {
+  "gain": 2.35,
+  "dk": 0.5,
+  "tongues": true,
+  "parts": [
+   [
+    1,
+    1,
+    0.5
+   ],
+   [
+    0.62,
+    0.4,
+    0.25
+   ],
+   [
+    2.3,
+    0.3,
+    0.12
+   ],
+   [
+    3.95,
+    0.12,
+    0.05
+   ]
+  ],
+  "click": [
+   1800,
+   1,
+   0.25,
+   0.012
+  ]
+ },
+ "notas": "Mexica: tronco ahuecado con dos lenguas en H, baquetas de hule. Dos notas: tónica y la más cercana a una cuarta.",
+ "procedencia": {
+  "nace": "consola · visor de lectura §27.48",
+  "fecha": "2026-10-18",
+  "archivo": "consola/consola/static/lectura/musica.js",
+  "sha256": "0c9b5438248a37ab353559861535a15a841c719448dd4c865b6a005acf168621"
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "id": "meleeviewer-2-dormir",
+ "nombre": "Dormir · yoshi 2 modo suspension",
+ "familia": "efecto",
+ "motor": "meleeviewer",
+ "fisica": {
+  "escenario": "codigo/meleeviewer/escenarios/2026-09-28_yoshi_es_un_vector_2_modo_suspension.js",
+  "funcion": "dormir",
+  "params": [
+   "t",
+   "v",
+   "root"
+  ],
+  "escenario_sha256": "94797aecf9f1d7afdd9538db5dd7344aa8c848e80cc2035060fed4f8a5630d63"
+ },
+ "notas": "La función dormir(t, v, root) de la canción 2 modo suspension de «yoshi es un vector», tal cual, en su escenario seco.",
+ "procedencia": {
+  "nace": "meleeviewer · yoshi es un vector 2 modo suspension",
+  "archivo": "meleeviewer/output/Arte/2026-09-28_yoshi_es_un_vector_2_modo_suspension/cancion.js",
+  "funcion": "dormir",
+  "sha256": "5de00a24be25aaad4a8a447a32791b4453a27e0e778716f95f67cb2be5836d13",
+  "variante_de": "Dormir"
+ }
+}

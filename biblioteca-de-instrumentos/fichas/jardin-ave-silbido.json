@@ -1,0 +1,20 @@
+{
+ "id": "jardin-ave-silbido",
+ "nombre": "Ave: silbido",
+ "familia": "aves · gesto",
+ "motor": "python",
+ "fisica": {
+  "archivo": "codigo/jardin/netart/jardin-camara/musica/temas/aves.py",
+  "funcion": "g_silbido",
+  "firma": "gesto",
+  "gesto": "silbido"
+ },
+ "notas": "Gesto de ave del jardín (aves.py); sus especies (clarín jilguero, cenzontle…) los combinan.",
+ "procedencia": {
+  "nace": "jardín de cámara · día v1.5 (aves)",
+  "archivo": "netart/jardin-camara/musica/temas/aves.py",
+  "copia": "codigo/jardin/netart/jardin-camara/musica/temas/aves.py",
+  "funcion": "g_silbido",
+  "sha256": "6e2f27807f2881a8a2ca98fb11d6a615fa3be8ddaeb93e2cc0ac02579e90cda6"
+ }
+}

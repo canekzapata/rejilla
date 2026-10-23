@@ -1,0 +1,25 @@
+{
+ "id": "meleeviewer-10-bajo",
+ "nombre": "Bajo · yoshi 10 la mitocondria es un pokemon",
+ "familia": "electrófono · bajo",
+ "motor": "meleeviewer",
+ "fisica": {
+  "escenario": "codigo/meleeviewer/escenarios/2026-09-29_yoshi_es_un_vector_10_la_mitocondria_es_un_pokemon.js",
+  "funcion": "bajo",
+  "params": [
+   "t",
+   "n",
+   "dur",
+   "vel"
+  ],
+  "escenario_sha256": "d5f095404b5df2384df72c3d6cc3ea4f16296946d90922554bb72eb6264988db"
+ },
+ "notas": "La función bajo(t, n, dur, vel) de la canción 10 la mitocondria es un pokemon de «yoshi es un vector», tal cual, en su escenario seco.",
+ "procedencia": {
+  "nace": "meleeviewer · yoshi es un vector 10 la mitocondria es un pokemon",
+  "archivo": "meleeviewer/output/Arte/2026-09-29_yoshi_es_un_vector_10_la_mitocondria_es_un_pokemon/cancion.js",
+  "funcion": "bajo",
+  "sha256": "90e51b08aa816faaabfeff31273b9c420b4c44440ba9c3b5ac4fa7a3312dc4aa",
+  "variante_de": "Bajo"
+ }
+}

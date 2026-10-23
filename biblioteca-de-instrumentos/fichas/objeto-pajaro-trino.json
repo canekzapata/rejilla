@@ -1,0 +1,23 @@
+{
+ "id": "objeto-pajaro-trino",
+ "nombre": "Pájaro: trino (objeto)",
+ "familia": "aves · siringe (modelado físico)",
+ "motor": "objeto",
+ "fisica": {
+  "modulo": "pajaro.js",
+  "api": "Pajaro",
+  "forma": "eventos",
+  "evento": {
+   "tipo": "trino",
+   "rate": 24
+  },
+  "m2": 5
+ },
+ "notas": "Siringe física: trino.",
+ "procedencia": {
+  "nace": "rejilla · objetos que cantan · pájaro",
+  "archivo": "research/rejilla/objetos/motor/pajaro.js",
+  "copia": "codigo/rejilla/research/rejilla/objetos/motor/pajaro.js",
+  "sha256": "1948f885cc5bb0f404a31ad4b77e03c835e66a08be9539d878673ff56dde2884"
+ }
+}

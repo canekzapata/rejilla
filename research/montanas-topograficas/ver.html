@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Traspuesta · visor — Canek Zapata</title>
+<meta name="description" content="Generador de láminas topográficas para plotter: cada semilla levanta una montaña y la pluma la traza perfil por perfil, con sus cotas, escalas y cartela.">
+<meta name="author" content="Canek Zapata">
+<meta name="date" content="2026">
+<meta name="copyright" content="© 2026 Canek Zapata">
+<meta name="keywords" content="net art, generativo, plotter, topografía, montañas, curvas de nivel, cartografía, arte programado">
+<link rel="canonical" href="https://traspuesta.canekzapata.net/ver.html">
+<link rel="icon" href="favicon.png">
+
+<!-- Open Graph: Facebook, Instagram (al compartir links), WhatsApp, LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Canek Zapata">
+<meta property="og:title" content="Traspuesta · visor">
+<meta property="og:description" content="Cada semilla levanta una montaña y la pluma la traza perfil por perfil, con sus cotas, escalas y cartela.">
+<meta property="og:url" content="https://traspuesta.canekzapata.net/ver.html">
+<meta property="og:image" content="https://traspuesta.canekzapata.net/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Una montaña dibujada con decenas de perfiles apilados a pluma fina, con una cumbre rotulada con su altitud.">
+<meta property="og:locale" content="es_MX">
+
+<!-- X / Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Traspuesta · visor">
+<meta name="twitter:description" content="Cada semilla levanta una montaña y la pluma la traza perfil por perfil, con sus cotas, escalas y cartela.">
+<meta name="twitter:image" content="https://traspuesta.canekzapata.net/og.png">
+<meta name="twitter:image:alt" content="Una montaña dibujada con decenas de perfiles apilados a pluma fina, con una cumbre rotulada con su altitud.">
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #888; }
+  canvas { position: fixed; inset: 0; }
+  #info {
+    position: fixed; left: 12px; bottom: 10px; right: 12px;
+    font: 11px/1.5 ui-monospace, "Cascadia Mono", Consolas, monospace;
+    color: var(--tinta, #444); opacity: 0.75; pointer-events: none;
+    letter-spacing: 0.02em; text-shadow: 0 0 6px rgba(0,0,0,0.04);
+  }
+  #info.oculto { display: none; }
+  #info { transition: opacity 0.8s; }
+  /* la ficha del nombre: se abre al tocar un nombre propio en la lámina */
+  #ficha {
+    position: fixed; right: 16px; top: 16px; width: min(340px, calc(100vw - 32px)); z-index: 5;
+    font: 12px/1.5 ui-monospace, "Cascadia Mono", Consolas, monospace; color: var(--tinta, #444);
+    background: var(--papel, #fff); border: 1px solid var(--tinta, #444); padding: 14px 16px 12px;
+    box-shadow: 0 6px 30px rgba(0,0,0,0.18);
+  }
+  #ficha[hidden] { display: none; }
+  #ficha .nom { font-size: 17px; letter-spacing: 0.08em; margin: 0 0 4px; font-weight: normal; }
+  #ficha .clase { opacity: 0.7; font-size: 11px; margin: 0 0 10px; }
+  #ficha .dice { margin: 0 0 8px; }
+  #ficha .glosa { font-style: italic; opacity: 0.8; margin: 0 0 8px; }
+  #ficha .fuente { opacity: 0.6; font-size: 11px; margin: 0; }
+  #ficha .cerrar { position: absolute; right: 8px; top: 4px; background: none; border: 0; color: inherit; font: inherit; font-size: 16px; cursor: pointer; }
+  #info.dormido { opacity: 0; }
+  #info .teclas { opacity: 0.7; }
+  /* modo película: sin ayuda ni cursor, y la ficha a la escala de un cuadro de video */
+  .pelicula body { background: #000; cursor: none; }
+  .pelicula #info { display: none; }
+  .pelicula #ficha { position: absolute; right: 56px; top: 56px; width: 560px; font-size: 21px; padding: 26px 30px 22px; box-shadow: none; }
+  .pelicula #ficha .nom { font-size: 34px; margin-bottom: 8px; }
+  .pelicula #ficha .clase, .pelicula #ficha .fuente { font-size: 18px; }
+  .pelicula #ficha .cerrar { display: none; }
+  .pelicula canvas { position: absolute; }
+  @media (max-width: 640px) { #info .teclas { display: none; } }
+</style>
+</head>
+<body>
+<canvas id="papel"></canvas>
+<canvas id="cabeza"></canvas>
+<aside id="ficha" hidden aria-live="polite"><button class="cerrar" aria-label="cerrar">×</button><h2 class="nom"></h2><p class="clase"></p><p class="dice"></p><p class="glosa"></p><p class="fuente"></p></aside>
+<div id="info">
+  <div class="estado">levantando terreno…</div>
+  <div class="teclas">Esc atlas · R otra · ←→ semilla vecina · A arquetipo · L hoja (incluye corte A–A′) · M registro (mapa↔obra) · D desde dónde · P curvas o hachuras · I curvas iluminadas · O papel oscuro · C color por altitud · Z sin realismo · N english · E formación por eras · T trazar de nuevo · F terminar · espacio pausa · bajar: V SVG (plotter) · B PNG · G GIF · H ocultar</div>
+</div>
+<script src="nucleo.js?v=44"></script>
+<script src="terreno.js?v=44"></script>
+<script src="idioma.js?v=44"></script>
+<script src="letra.js?v=44"></script>
+<script src="vistas.js?v=44"></script>
+<script src="toponimia/glosario.js?v=44"></script>
+<script src="toponimia/nombrar.js?v=44"></script>
+<script src="edicion/variantes.js?v=44"></script>
+<script src="lamina.js?v=44"></script>
+<script src="visor.js?v=44"></script>
+</body>
+</html>
