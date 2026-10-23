@@ -38,3 +38,17 @@ se conservan en `renders/capturas-intentos/`, sin duplicarlas en Git.
 No se afirma haber escuchado críticamente cada resultado, reproducido cualquier
 canción histórica ni ejecutado todas las aplicaciones visuales y paquetes externos.
 La licencia propia sigue pendiente de elección. No se ha publicado esta actualización.
+
+## Copia limpia del commit
+
+Se extrajo únicamente el commit `ac8b5a5` fuera del árbol de trabajo, en
+`herramientas/validaciones/rejilla-taller-f6647e7fdd95/repo`. Desde esa copia:
+
+- 2371 filas del inventario y 1218 copias de procedencia con huellas correctas.
+- Jardín-voz produjo WAV usando el banco incluido, sin buscar datos en agent/.
+- Siringua produjo un ejemplo en inglés con eSpeak/WASM y sus gráficas/GIF.
+
+La comparación de convolución directa y por bloques sobre una curva de prueba
+produjo una diferencia máxima menor a 10⁻⁶ (redondeo de punto flotante).
+Las capturas y gráficas de las dos entregas de proceso se revisaron juntas;
+ambos GIF tienen tres cuadros, duran 5.7 s y repiten en loop.
